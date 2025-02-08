@@ -1,19 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.TextCore.Text;
 
 public class Cache 
 {
-    //private static Dictionary<Collider, Character> characters = new Dictionary<Collider, Character>();
+    private static Dictionary<Collider, FireBall> fireBall = new Dictionary<Collider, FireBall>();
 
-    //public static Character GetCharacter(Collider collider)
-    //{
-    //    if (!characters.ContainsKey(collider))
-    //    {
-    //        characters.Add(collider, collider.GetComponent<Character>());
-    //    }
+    public static FireBall GetFireBall(Collider collider)
+    {
+        if (!fireBall.ContainsKey(collider))
+        {
+            fireBall.Add(collider, collider.GetComponent<FireBall>());
+        }
 
-    //    return characters[collider];
-    //}
+        return fireBall[collider];
+    }
 
 }
