@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fa9c17816a01db4588448c228559869, type: 3}
+  m_Name: Character Data
+  m_EditorClassIdentifier: 
+  icon: {fileID: 1238268144, guid: 539238f2eb612344696521ff7660f43c, type: 3}
+  controller: {fileID: 9100000, guid: f7d6a95c2e654084ab6dbfadd5107bd3, type: 2}
+  name: Goku
+  fullName: Son Goku
+  characterDescription: "B\u1EAFp nh\xE2n v\u1EADt ch\xEDnh kh\xF4ng th\u1EC3 thua"
+  startingWeapon: {fileID: 11400000, guid: ae175977199b9aa47bd803a9256e2607, type: 2}
+  stats:
+    maxHealth: 100
+    recovery: 0
+    armor: 2
+    moveSpeed: 1
+    might: 1
+    area: 1
+    speed: 1.1
+    duration: 1
+    amount: 1
+    cooldown: 1
+    luck: 1
+    growth: 1
+    greed: 1
+    curse: 1
+    magnet: 2
+    revival: 0
