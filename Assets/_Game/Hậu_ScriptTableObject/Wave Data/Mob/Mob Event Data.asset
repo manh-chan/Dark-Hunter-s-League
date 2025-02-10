@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Mob Event Data
   m_EditorClassIdentifier: 
   possibleSpawnPrefabs:
-  - {fileID: 4260208873561234472, guid: 651571b754b819c4385ac43f9e430f11, type: 3}
+  - {fileID: 4260208873561234472, guid: ec5a3a4d8e45b0d46a0f7f5f9951d1b2, type: 3}
   spawnInterval: {x: 2, y: 3}
   spawnsPerTick: {x: 20, y: 25}
   duration: 10
