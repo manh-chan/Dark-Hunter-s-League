@@ -6,7 +6,7 @@ public class SlowAttackEnemyMovement : EnemyMovement
     public float cooldownTime = 5f;
     public float distanceAttack = 3f; 
     public float moveSpeedAttack = 5f; 
-    public float waitMoveSpeedAttack = 1f; 
+    public float waitMoveSpeedAttack; 
     public float maxDistance = 3f; 
 
     private Vector2 startPosition;
@@ -33,6 +33,7 @@ public class SlowAttackEnemyMovement : EnemyMovement
 
         if (cooldownTime <= 0 && !isAttacking && distance <= distanceAttack)
         {
+            rezoSpeedMove = false;
             StartCoroutine(AttackSequence());
         }
     }
@@ -43,12 +44,10 @@ public class SlowAttackEnemyMovement : EnemyMovement
         startPosition = transform.position; 
         animator.SetBool("Attack", true);
 
-       
         float approachTime = 0.5f;
         float elapsed = 0f;
         while (elapsed < approachTime)
         {
-            transform.position = Vector2.MoveTowards(transform.position, player.position, waitMoveSpeedAttack * Time.deltaTime);
             elapsed += Time.deltaTime;
             yield return null;
         }
@@ -67,5 +66,6 @@ public class SlowAttackEnemyMovement : EnemyMovement
         animator.SetBool("Attack", false);
         cooldownTime = 5f;
         isAttacking = false;
+        rezoSpeedMove = true;
     }
 }
