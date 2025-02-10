@@ -198,12 +198,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3f6c4fd647775445911202438d302ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sorted: {fileID: 0}
   sortingActive: 1
   outOffFrameAction: 0
   knockbackVariance: 2
+  rezoSpeedMove: 1
   cooldownTime: 0
-  waitingTimeAttack: 0
-  distanceAttack: 4
+  distanceAttack: 3
   moveSpeedAttack: 15
   waitMoveSpeedAttack: 0
-  maxDistance: 6
+  maxDistance: 5

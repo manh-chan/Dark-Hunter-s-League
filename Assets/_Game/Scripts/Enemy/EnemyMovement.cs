@@ -19,6 +19,7 @@ public class EnemyMovement : Sortable
     public KnockbackVariance knockbackVariance = KnockbackVariance.velocity;
 
     protected bool spawnedOutOffFarme = false;
+    public bool rezoSpeedMove = true;
     protected override void Start()
     {
         base.Start();
@@ -39,7 +40,7 @@ public class EnemyMovement : Sortable
         }
         else
         {
-            Move();
+            if (rezoSpeedMove == true) Move();
             HandleOutOffFrameAction();
         }
     }

@@ -4,7 +4,8 @@ using UnityEngine;
 [RequireComponent(typeof(SpriteRenderer))]
 public abstract class Sortable : MonoBehaviour
 {
-    SpriteRenderer sorted;
+    [HideInInspector]
+    public SpriteRenderer sorted;
     public bool sortingActive = true;
     public const float MIN_DISTANCE = 0.2f;
     int lastSortOrder = 0;
