@@ -41,3 +41,54 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Ground
+    uniqueID: 621782527
+    locked: 0
+  - name: Stain
+    uniqueID: 953572203
+    locked: 0
+  - name: Stone
+    uniqueID: 455144567
+    locked: 0
+  - name: BackGrass
+    uniqueID: 954495781
+    locked: 0
+  - name: Grass
+    uniqueID: 315877601
+    locked: 0
+  - name: StainWhite
+    uniqueID: 542527547
+    locked: 0
+  - name: Box
+    uniqueID: 74914139
+    locked: 0
+  - name: Dark
+    uniqueID: 2446211377
+    locked: 0
+  - name: Stele
+    uniqueID: 2275710399
+    locked: 0
+  - name: StonePillar
+    uniqueID: 2986726631
+    locked: 0
+  - name: Brick
+    uniqueID: 195305841
+    locked: 0
+  - name: OldBrick
+    uniqueID: 1528986913
+    locked: 0
+  - name: Player
+    uniqueID: 1599890327
+    locked: 0
+  - name: Skull
+    uniqueID: 3352299423
+    locked: 0
+  - name: Rock
+    uniqueID: 1792509915
+    locked: 0
+  - name: Sticker
+    uniqueID: 1773135507
+    locked: 0
+  - name: Dark
+    uniqueID: 2356437751
+    locked: 0
