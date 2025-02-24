@@ -29,8 +29,7 @@ public class PoolAmount {
 public enum ObjectType
 {
     Axe = 0,
-    Candy = 1,
-    Enemy = 2,
-    Player = 3,
+    Dragonbit = 1,
+    Spear = 2,
 }
 

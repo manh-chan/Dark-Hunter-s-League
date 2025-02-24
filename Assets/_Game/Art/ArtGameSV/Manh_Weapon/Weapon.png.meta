@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 200
+  spritePixelsToUnits: 500
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -176,7 +176,7 @@ TextureImporter:
       name: Weapon_3
       rect:
         serializedVersion: 2
-        x: 539
+        x: 535
         y: 934
         width: 212
         height: 142
@@ -189,6 +189,48 @@ TextureImporter:
       bones: []
       spriteID: f01d0018be64db948896b08c304bb12c
       internalID: -358592765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weapon_4
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 544
+        width: 162
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22669373d0b5a5e40bd1cbd719ae1449
+      internalID: 674225454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weapon_5
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 0
+        width: 180
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bdfd92159884e44f86f45231ee120d5
+      internalID: -66748223
       vertices: []
       indices: 
       edges: []
@@ -208,6 +250,8 @@ TextureImporter:
       Weapon_1: 1236795766
       Weapon_2: 234405835
       Weapon_3: -358592765
+      Weapon_4: 674225454
+      Weapon_5: -66748223
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

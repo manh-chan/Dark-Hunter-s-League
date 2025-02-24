@@ -4908,7 +4908,7 @@ MonoBehaviour:
   data:
   - {fileID: 11400000, guid: 114bd7424464fb245a7f738aeb793fbf, type: 2}
   - {fileID: 11400000, guid: 73d642f5f308a1d4e89a59f48b92ac49, type: 2}
-  referenceCamera: {fileID: 0}
+  referenceCamera: {fileID: 519420034}
   maximumEnemyCount: 300
   boostedByCurse: 1
 --- !u!1 &800571177
@@ -5113,7 +5113,7 @@ MonoBehaviour:
   currentState: 0
   previosState: 0
   damageCanvas: {fileID: 828243900}
-  textFontsize: 20
+  textFontsize: 40
   textFont: {fileID: 0}
   referenceCamera: {fileID: 0}
   pauseScreen: {fileID: 1251413524}
@@ -5663,8 +5663,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -10639,6 +10639,8 @@ MonoBehaviour:
   availableWeapons:
   - {fileID: 11400000, guid: ae175977199b9aa47bd803a9256e2607, type: 2}
   - {fileID: 11400000, guid: 13103fa0944770640af4e3ae4d1a22f2, type: 2}
+  - {fileID: 11400000, guid: 669abf8e4e1e88d48ba25be1133426d6, type: 2}
+  - {fileID: 11400000, guid: b0ebab6eabbafd7438dd9a37e33e84b9, type: 2}
   availablePassives:
   - {fileID: 11400000, guid: 43c69bdab4d72044bb888f28a61ccaff, type: 2}
   - {fileID: 11400000, guid: 84f6eecbb726f2543ba3a3f7bc56883f, type: 2}

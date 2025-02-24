@@ -16,8 +16,8 @@ public class SpawnManager : MonoBehaviour
     float spawnTimer;
     float currentWaveDuration = 0f;
     public bool boostedByCurse = true;
-
     public static SpawnManager instance;
+
 
     private void Start()
     {
@@ -25,6 +25,7 @@ public class SpawnManager : MonoBehaviour
             Debug.LogWarning("There is more than one Spawn Manager in the scene! Please remove the extras.");
 
         instance = this;
+
 
         if (!referenceCamera)
             referenceCamera = Camera.main;
