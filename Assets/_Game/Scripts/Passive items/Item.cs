@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public abstract class Item : MonoBehaviour
+public abstract class Item : GameUnit
 {
     public int currentLevel = 1, maxLevel = 1;
     [HideInInspector] public ItemData data;

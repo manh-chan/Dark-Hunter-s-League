@@ -225,7 +225,6 @@ public class EnemyState : EntityStats
     private void OnDestroy()
     {
         count--;
-
     }
 
 }

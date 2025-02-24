@@ -28,12 +28,11 @@ public class ProjectileWeapon : Weapon
     protected override bool Attack(int attackCount = 1)
     {
         if (!currentStats.projectilePrefab)
-        {
-            Debug.LogWarning(string.Format("Projectile prefab has not been set for {0}", name));
+        {    Debug.LogWarning(string.Format("Projectile prefab has not been set for {0}", name));
             ActivateCooldown();
             return false;
         }
-
+       
         if (!CanAttack()) return false;
 
         float spawnAngle = GetSpawnAngle();
