@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - SceneContainer
   layers:
   - Default
   - TransparentFX
@@ -76,6 +77,9 @@ TagManager:
     locked: 0
   - name: OldBrick
     uniqueID: 1528986913
+    locked: 0
+  - name: Gate
+    uniqueID: 4036065029
     locked: 0
   - name: Player
     uniqueID: 1599890327
