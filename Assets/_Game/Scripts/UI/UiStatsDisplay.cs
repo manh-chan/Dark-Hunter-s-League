@@ -14,6 +14,11 @@ public class UiStatsDisplay : MonoBehaviour
     public bool updataInEditor = false;
     public TMP_Text statNames, statValues;
 
+    private void Start() {
+        player = FindObjectOfType<PlayerStats>();
+        character = FindObjectOfType<CharacterData>();
+    }
+    
     private void OnEnable()
     {
         UpdataStatFields();
