@@ -93,32 +93,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 4096
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 2
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 4096
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 2
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -126,10 +100,31 @@ TextureImporter:
       name: sactx-1-4096x4096-ASTC 8x8-OutGameUI-f66aad89_0
       rect:
         serializedVersion: 2
-        x: 2218
-        y: 3050
-        width: 778
-        height: 261
+        x: 3350
+        y: 1079
+        width: 646
+        height: 306
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22a7a36847f33a443af84a1dcba3a1be
+      internalID: 2037982189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-4096x4096-ASTC 8x8-OutGameUI-f66aad89_1
+      rect:
+        serializedVersion: 2
+        x: 2226
+        y: 2564
+        width: 407
+        height: 487
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 086c4ce7d973c0149922b23f80c984a5
-      internalID: 245788136
+      spriteID: 9e95045eb922a194e9f541cf070dd3d5
+      internalID: -1093203016
       vertices: []
       indices: 
       edges: []
@@ -146,7 +141,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: a29f6315e52388847be5f6a673df0d04
+    spriteID: b851265d960564f42a7166b7e304a4d6
     internalID: 0
     vertices: []
     indices: 
@@ -154,7 +149,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      sactx-1-4096x4096-ASTC 8x8-OutGameUI-f66aad89_0: 245788136
+      sactx-1-4096x4096-ASTC 8x8-OutGameUI-f66aad89_0: 2037982189
+      sactx-1-4096x4096-ASTC 8x8-OutGameUI-f66aad89_1: -1093203016
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
