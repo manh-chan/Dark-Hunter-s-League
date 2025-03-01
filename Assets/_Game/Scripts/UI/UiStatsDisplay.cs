@@ -37,8 +37,8 @@ public class UiStatsDisplay : MonoBehaviour
     public void UpdataStatFields()
     {
         if (!player && !character) return;
-/*        if (!statNames) statNames = transform.GetChild(0).GetComponent<TMP_Text>();
-        if (!statValues) statValues = transform.GetChild(1).GetComponent<TMP_Text>();*/
+        if (!statNames) statNames = transform.GetChild(0).GetComponent<TMP_Text>();
+        if (!statValues) statValues = transform.GetChild(1).GetComponent<TMP_Text>();
 
         StringBuilder names = new StringBuilder();
         StringBuilder values = new StringBuilder();
