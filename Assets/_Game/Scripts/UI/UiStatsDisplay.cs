@@ -12,7 +12,7 @@ public class UiStatsDisplay : MonoBehaviour
     public CharacterData character;
     public bool displayCurrentHealth = false;
     public bool updataInEditor = false;
-    TMP_Text statNames, statValues;
+    public TMP_Text statNames, statValues;
 
     private void OnEnable()
     {
