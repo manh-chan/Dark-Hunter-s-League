@@ -12,13 +12,8 @@ public class UiStatsDisplay : MonoBehaviour
     public CharacterData character;
     public bool displayCurrentHealth = false;
     public bool updataInEditor = false;
-    public TMP_Text statNames, statValues;
+    TMP_Text statNames, statValues;
 
-    private void Start() {
-        player = FindObjectOfType<PlayerStats>();
-        character = FindObjectOfType<CharacterData>();
-    }
-    
     private void OnEnable()
     {
         UpdataStatFields();
@@ -37,8 +32,8 @@ public class UiStatsDisplay : MonoBehaviour
     public void UpdataStatFields()
     {
         if (!player && !character) return;
-/*        if (!statNames) statNames = transform.GetChild(0).GetComponent<TMP_Text>();
-        if (!statValues) statValues = transform.GetChild(1).GetComponent<TMP_Text>();*/
+        if (!statNames) statNames = transform.GetChild(0).GetComponent<TMP_Text>();
+        if (!statValues) statValues = transform.GetChild(1).GetComponent<TMP_Text>();
 
         StringBuilder names = new StringBuilder();
         StringBuilder values = new StringBuilder();
