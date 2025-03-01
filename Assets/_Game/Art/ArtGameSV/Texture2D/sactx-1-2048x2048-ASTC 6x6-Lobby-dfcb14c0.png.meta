@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -231,7 +231,7 @@ TextureImporter:
         width: 215
         height: 201
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -239,6 +239,27 @@ TextureImporter:
       bones: []
       spriteID: e7061db4716fa59458ae0f6091553d82
       internalID: 1491216961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-2048x2048-ASTC 6x6-Lobby-dfcb14c0_7
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 476
+        width: 348
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7fae85a171188f4eb323953d7b8a40e
+      internalID: -771653626
       vertices: []
       indices: 
       edges: []
@@ -261,6 +282,7 @@ TextureImporter:
       sactx-1-2048x2048-ASTC 6x6-Lobby-dfcb14c0_4: 1224573799
       sactx-1-2048x2048-ASTC 6x6-Lobby-dfcb14c0_5: -1077898101
       sactx-1-2048x2048-ASTC 6x6-Lobby-dfcb14c0_6: 1491216961
+      sactx-1-2048x2048-ASTC 6x6-Lobby-dfcb14c0_7: -771653626
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

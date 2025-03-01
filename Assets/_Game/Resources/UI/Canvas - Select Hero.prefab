@@ -1002,7 +1002,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6778526972753993052}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UICanvas, Assembly-CSharp
         m_MethodName: Close
         m_Mode: 4
@@ -1026,7 +1026,6 @@ GameObject:
   - component: {fileID: 6016505164158299406}
   - component: {fileID: 3940753599528226960}
   - component: {fileID: 3152115694043268577}
-  - component: {fileID: 6778526972753993052}
   m_Layer: 5
   m_Name: Canvas - Select Hero
   m_TagString: Untagged
@@ -1117,19 +1116,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &6778526972753993052
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5768467370402172494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f72da58dc0f0e4449155fa07acb67c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isDestroyOnClose: 0
 --- !u!1 &6172971381972737992
 GameObject:
   m_ObjectHideFlags: 0
