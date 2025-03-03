@@ -1,0 +1,3678 @@
+fileFormatVersion: 2
+guid: 94870906afca6be4da7504025c558793
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 180
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_0
+      rect:
+        serializedVersion: 2
+        x: 1978
+        y: 1388
+        width: 236
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7ff4203205b22b44ac38c63565ec1f5
+      internalID: -1738410335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3281
+        width: 270
+        height: 378
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a4c00f22e203a54595a328d2dd4562e
+      internalID: -1677076105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2969
+        width: 357
+        height: 311
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0b22dbaec571e54582bb6ca66e03b74
+      internalID: 1378706844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_4
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 2941
+        width: 338
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c03e5c88277924641a84be772159896b
+      internalID: -272831754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_5
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 2944
+        width: 313
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8de2531e49deba468fd479a7694b017
+      internalID: -746582290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_6
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 2990
+        width: 312
+        height: 334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fbac780aa9e0df4f8b2843c15253914
+      internalID: -229222304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_7
+      rect:
+        serializedVersion: 2
+        x: 1863
+        y: 2886
+        width: 245
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1ec7e462bcdb4c4dbe3c2bde0e6825c
+      internalID: -1532151398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_8
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 3679
+        width: 258
+        height: 366
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc1a6ef0bd64e4f41be1f2a5abc322dc
+      internalID: -58150059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_9
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 3689
+        width: 240
+        height: 341
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec9a0d34194e5394698b5da6b9c4976e
+      internalID: -82228602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 490
+        height: 429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63fdde676a4562a4983fa42801b1d877
+      internalID: -1111894952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_11
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 3307
+        width: 290
+        height: 333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d11a41708e7f43043b305de89060bb12
+      internalID: 1735601616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_12
+      rect:
+        serializedVersion: 2
+        x: 2171
+        y: 3501
+        width: 186
+        height: 258
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23d306ace19c6b54092a23c25b02b8da
+      internalID: 580134531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1203
+        width: 361
+        height: 374
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bf64be7b6db11740adc6ca394c1bfaf
+      internalID: -229926236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_14
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 1244
+        width: 346
+        height: 391
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: accd86e7cd7e2b8448d0621592a53e1f
+      internalID: -1332226794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_15
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 394
+        width: 424
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8432918b5d0c19846be8fa8e26053751
+      internalID: 161143408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_16
+      rect:
+        serializedVersion: 2
+        x: 2113
+        y: 2617
+        width: 234
+        height: 270
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fac2370aac53b7749a2af3ba8bbab959
+      internalID: 1718793353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_17
+      rect:
+        serializedVersion: 2
+        x: 3633
+        y: 2420
+        width: 165
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d863fd93e8d4a9e4e8273d690ca9b602
+      internalID: -689093962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_18
+      rect:
+        serializedVersion: 2
+        x: 3631
+        y: 2250
+        width: 147
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d51419af4cca81469566af909836112
+      internalID: 1489012011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_19
+      rect:
+        serializedVersion: 2
+        x: 3261
+        y: 3201
+        width: 133
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1b0583a1fefd4e4d9512bfaa9c64224
+      internalID: 449074907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_20
+      rect:
+        serializedVersion: 2
+        x: 3523
+        y: 2728
+        width: 150
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d87fef7d3a95b14b99f313f2ed6a76f
+      internalID: 779223783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_21
+      rect:
+        serializedVersion: 2
+        x: 3225
+        y: 1108
+        width: 247
+        height: 228
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 085262d044e2fcb4c978c98794b1fa13
+      internalID: 256867487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_1
+      rect:
+        serializedVersion: 2
+        x: 3862
+        y: 0
+        width: 234
+        height: 262
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae598d4aba588a844aeded73596e49d2
+      internalID: 1954278101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_22
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 0
+        width: 514
+        height: 393
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fac3a6e886b164c47bde446ac23aeea3
+      internalID: -1670952332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_23
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 0
+        width: 414
+        height: 453
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a224e4e91d6e79048b975e989392f511
+      internalID: 1654037786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_24
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 3640
+        width: 253
+        height: 345
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aabd20aedbbce8f45985e904f264baf3
+      internalID: -664175903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_25
+      rect:
+        serializedVersion: 2
+        x: 1639
+        y: 3670
+        width: 300
+        height: 318
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e69d79c397999cf4999ad5e57d737e67
+      internalID: -1293735643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 862
+        width: 469
+        height: 343
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe4f45a25a291f847b33f096affe7a9e
+      internalID: -2110941217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_27
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 847
+        width: 369
+        height: 365
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e388293f8d275f84a81b3559d70549a1
+      internalID: -832718591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_28
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 452
+        width: 405
+        height: 418
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 564b859b04070fc4b97afcb824521f98
+      internalID: -1067581252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_29
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 455
+        width: 384
+        height: 402
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f980eb38dcdd1af468225d0d8020d90f
+      internalID: -1286457528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_30
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 3277
+        width: 263
+        height: 381
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f933521bbc11c7241998bac40daff142
+      internalID: 451524741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_31
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 3274
+        width: 261
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d1a6c05c347bb54d83bba1c54533e88
+      internalID: -11487521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_32
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 860
+        width: 321
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1398c38305ae9d84489e86a15ab128da
+      internalID: 1555743564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_33
+      rect:
+        serializedVersion: 2
+        x: 2081
+        y: 0
+        width: 239
+        height: 319
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b13f9afb037c3d244bc4daa696c79313
+      internalID: -1526231870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_34
+      rect:
+        serializedVersion: 2
+        x: 2321
+        y: 0
+        width: 256
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26ac6e1a016f76c4cafc337d26a881c9
+      internalID: 1039636628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_35
+      rect:
+        serializedVersion: 2
+        x: 2577
+        y: 0
+        width: 268
+        height: 268
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f8b5e76bbe13c7488831a6faeeefbad
+      internalID: 1507645685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_36
+      rect:
+        serializedVersion: 2
+        x: 2690
+        y: 566
+        width: 249
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d60364c9cf48e746aa4a469add7f4d0
+      internalID: 1838864925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_37
+      rect:
+        serializedVersion: 2
+        x: 2690
+        y: 833
+        width: 249
+        height: 251
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f432fa501f77aa44985686f76effc95a
+      internalID: 473958657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_38
+      rect:
+        serializedVersion: 2
+        x: 2949
+        y: 1419
+        width: 219
+        height: 290
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bae70004af7ea184093758a8531bc37d
+      internalID: -1832629896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2630
+        width: 354
+        height: 340
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: decd0a58131e8e34ba0f546333da4760
+      internalID: -2092824860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_40
+      rect:
+        serializedVersion: 2
+        x: 2138
+        y: 3002
+        width: 247
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59858c7a3f732dc45bdc6bf521309822
+      internalID: 296956689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_41
+      rect:
+        serializedVersion: 2
+        x: 2621
+        y: 3117
+        width: 185
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1279181cbd7a71b48910691171be1b15
+      internalID: -1663123271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_42
+      rect:
+        serializedVersion: 2
+        x: 2806
+        y: 3108
+        width: 196
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 456d62e773560f846b8c104a0bfab872
+      internalID: -1879444387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_43
+      rect:
+        serializedVersion: 2
+        x: 2839
+        y: 2831
+        width: 212
+        height: 239
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d26807eb7b1493645a0fd314f5d67241
+      internalID: 638863928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_44
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 2589
+        width: 282
+        height: 354
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e87eaea909639e44e967b2c7920ad026
+      internalID: 1097944089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_45
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 2586
+        width: 289
+        height: 358
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b881d0afad71a54d8b2246b888b3da9
+      internalID: -1594723378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_46
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 2584
+        width: 289
+        height: 362
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d064bd688d508254ea6967ed6331e031
+      internalID: -1997285311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_47
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 2648
+        width: 287
+        height: 346
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6dbec738c960ee4c826a6874995e244
+      internalID: -1777370221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_48
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 3332
+        width: 259
+        height: 346
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac4c117f135a78a49a6dff1231ad9ef0
+      internalID: -1960067083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_49
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 3338
+        width: 257
+        height: 348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec018b3d203538346ada56723e0a813d
+      internalID: 1544818873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_50
+      rect:
+        serializedVersion: 2
+        x: 1641
+        y: 3329
+        width: 262
+        height: 341
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec9dc68090ca9b44eb43d23917d0c8df
+      internalID: 84558360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_51
+      rect:
+        serializedVersion: 2
+        x: 2356
+        y: 3497
+        width: 209
+        height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 129fb496a235e6f4e90acda0892b29b2
+      internalID: -666508647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_52
+      rect:
+        serializedVersion: 2
+        x: 2919
+        y: 3635
+        width: 134
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ad5da22734705946b737878591e0c66
+      internalID: -1715678764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_53
+      rect:
+        serializedVersion: 2
+        x: 3371
+        y: 2975
+        width: 131
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc4e78d012bd4a64b8e31e31ef230a6c
+      internalID: 1411164116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_54
+      rect:
+        serializedVersion: 2
+        x: 3617
+        y: 1738
+        width: 138
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc202aabaafc28a4aac2cca9f700a773
+      internalID: -339059013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_55
+      rect:
+        serializedVersion: 2
+        x: 3623
+        y: 2062
+        width: 177
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd0b85c8f22a47e48ac1c7029d7f9af5
+      internalID: 1016120423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_56
+      rect:
+        serializedVersion: 2
+        x: 3164
+        y: 1676
+        width: 230
+        height: 244
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 426b43f9b9b70214a8ff9b4de9555ccc
+      internalID: -672709269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_57
+      rect:
+        serializedVersion: 2
+        x: 2998
+        y: 1984
+        width: 215
+        height: 262
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7e84a93cee021b4b85c29f4db8e17f3
+      internalID: 1402651343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_58
+      rect:
+        serializedVersion: 2
+        x: 3209
+        y: 1920
+        width: 230
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9270394a2cdc1349a57f39ea5190a65
+      internalID: -1441040420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_59
+      rect:
+        serializedVersion: 2
+        x: 3435
+        y: 1802
+        width: 182
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eebc27fdbb883234cbd677195fd54040
+      internalID: -64299772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_60
+      rect:
+        serializedVersion: 2
+        x: 3616
+        y: 1538
+        width: 188
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 456347a3235265f4da49c4cfdecc0793
+      internalID: -1420743846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_61
+      rect:
+        serializedVersion: 2
+        x: 3817
+        y: 1001
+        width: 175
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a377b76700ab024eaaa1b7d899799fc
+      internalID: -1902520596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_62
+      rect:
+        serializedVersion: 2
+        x: 3463
+        y: 2547
+        width: 171
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88b970902370631488b42277dce4ceac
+      internalID: -318553313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_63
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 1634
+        width: 386
+        height: 311
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 046a4d66a9ef58646b25997e0e343820
+      internalID: 2073361076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_64
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 2266
+        width: 370
+        height: 314
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87dcb422e1d983241a2a0f661be19d4a
+      internalID: 1963984146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_65
+      rect:
+        serializedVersion: 2
+        x: 1974
+        y: 1075
+        width: 225
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9fbf2e834262fb4aa1eb3cc4da4c972
+      internalID: -403131686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_66
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 867
+        width: 348
+        height: 378
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12e5c454edc8f42489c68040cbeb37a3
+      internalID: -1902836417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_67
+      rect:
+        serializedVersion: 2
+        x: 1697
+        y: 1243
+        width: 276
+        height: 319
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f21bc2e771dcba488768cfeedcdec7d
+      internalID: 1991228529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_68
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 1243
+        width: 346
+        height: 405
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baa080fff297e6749953617a3613dc49
+      internalID: -484323034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_69
+      rect:
+        serializedVersion: 2
+        x: 1721
+        y: 1565
+        width: 253
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78b2e10833a88254d954197c64216b07
+      internalID: 883780119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_70
+      rect:
+        serializedVersion: 2
+        x: 2551
+        y: 1816
+        width: 156
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06bbb51caf4f88a4cb601463cb7d5011
+      internalID: 2045789610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_71
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 1968
+        width: 204
+        height: 221
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bda4a81575d80ab459dcc2904c380000
+      internalID: 770043869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_72
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 1643
+        width: 213
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2e32f90bab063f46947aa5b85f492f0
+      internalID: 1573600126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_73
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1572
+        width: 354
+        height: 364
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b59527cf670c45542beafec20c3bf080
+      internalID: 1273440891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_74
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 1239
+        width: 314
+        height: 405
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de5ad7f5ae93b114a9c60f486031d9ed
+      internalID: -1315023361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_75
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 1935
+        width: 375
+        height: 332
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9c06898b57436447a175b918536f63a
+      internalID: 344419166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_76
+      rect:
+        serializedVersion: 2
+        x: 1798
+        y: 2040
+        width: 228
+        height: 324
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e74688e5fe014b4abe94fa7529420db
+      internalID: 1237606777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_77
+      rect:
+        serializedVersion: 2
+        x: 2312
+        y: 2191
+        width: 238
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf39d320e3ae9d447871f10ae12b157a
+      internalID: 678386935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_78
+      rect:
+        serializedVersion: 2
+        x: 2562
+        y: 2047
+        width: 231
+        height: 270
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e282f10ebefd1f3459460d6b19dc3658
+      internalID: -1781990515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_79
+      rect:
+        serializedVersion: 2
+        x: 2191
+        y: 650
+        width: 205
+        height: 234
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17317bbcc250c9341a6e7afc0cec011a
+      internalID: 1623338764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_80
+      rect:
+        serializedVersion: 2
+        x: 3659
+        y: 1014
+        width: 159
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 204f27d9d4aadb14398eebb54ec13170
+      internalID: -90699268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_81
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 1981
+        width: 371
+        height: 304
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d03af67f43d6310459c67c3981d1fd26
+      internalID: -442898332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_82
+      rect:
+        serializedVersion: 2
+        x: 3394
+        y: 1574
+        width: 222
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bee20fa7e8ebed4fb77f1e77a48df06
+      internalID: 1507259776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_83
+      rect:
+        serializedVersion: 2
+        x: 3172
+        y: 1418
+        width: 217
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1bc2c147a612e04ba844572bc0a7293
+      internalID: -1931276024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_84
+      rect:
+        serializedVersion: 2
+        x: 2976
+        y: 1161
+        width: 248
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b52d8e120e4d00f4aa83807e11e742bd
+      internalID: 725585044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_85
+      rect:
+        serializedVersion: 2
+        x: 3597
+        y: 489
+        width: 214
+        height: 284
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d600fcc363ac0a542b5b37ac8fdea8dc
+      internalID: 1284364149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_86
+      rect:
+        serializedVersion: 2
+        x: 3645
+        y: 772
+        width: 202
+        height: 244
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 404e307b5eda8694ca55fd78a3461998
+      internalID: 624508999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_87
+      rect:
+        serializedVersion: 2
+        x: 2945
+        y: 591
+        width: 229
+        height: 272
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db55f3ec39162d94b9601c0d1b721273
+      internalID: 768995316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_88
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 647
+        width: 273
+        height: 275
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74e4ce40ed89f664fbab2d719b5634ae
+      internalID: 1497243295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_89
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 1645
+        width: 356
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7caac9d907789f943892efad08757cce
+      internalID: 1700158076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 429
+        width: 495
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e0653c84ac036547ad3758c76325a78
+      internalID: 112964291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_91
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 871
+        width: 392
+        height: 372
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 556b282919908aa43a2c58f045ff3b41
+      internalID: -1587647917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_92
+      rect:
+        serializedVersion: 2
+        x: 1825
+        y: 325
+        width: 266
+        height: 301
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f4ed74bf1bc98747abf334e5d8ea8db
+      internalID: 526528516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_93
+      rect:
+        serializedVersion: 2
+        x: 2208
+        y: 1071
+        width: 231
+        height: 290
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 849b33710848e1b4582b7eedc516b291
+      internalID: -752793611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_94
+      rect:
+        serializedVersion: 2
+        x: 2480
+        y: 1249
+        width: 245
+        height: 283
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4699722bb283314459fada4fff457c30
+      internalID: -159126511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_95
+      rect:
+        serializedVersion: 2
+        x: 2710
+        y: 1530
+        width: 240
+        height: 265
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ff012dac9f56624fbc72b116e3d09a3
+      internalID: -1052452451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_96
+      rect:
+        serializedVersion: 2
+        x: 2066
+        y: 2355
+        width: 247
+        height: 261
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37f8a7c1a801f83419025e73a2976d73
+      internalID: -1119301598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_97
+      rect:
+        serializedVersion: 2
+        x: 3007
+        y: 2567
+        width: 237
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50718b0545e166e4d8e8501cc1cdb196
+      internalID: -1933023504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_98
+      rect:
+        serializedVersion: 2
+        x: 3055
+        y: 2766
+        width: 236
+        height: 202
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a917d0f161f40e646a6bae59b6a64c9e
+      internalID: -852551103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_99
+      rect:
+        serializedVersion: 2
+        x: 3372
+        y: 2824
+        width: 147
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0035801539de182478a8dd3f3d9edd94
+      internalID: 1539688803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_100
+      rect:
+        serializedVersion: 2
+        x: 3658
+        y: 0
+        width: 204
+        height: 283
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49bb069ae97df1b4fa85d7c706548040
+      internalID: 198837817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_101
+      rect:
+        serializedVersion: 2
+        x: 3166
+        y: 289
+        width: 243
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d294031d181665c40b32afbc8a2e9518
+      internalID: 632671376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_102
+      rect:
+        serializedVersion: 2
+        x: 2588
+        y: 2302
+        width: 198
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb2bef1bcac3d2340b8699fde9895d06
+      internalID: -455726060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_103
+      rect:
+        serializedVersion: 2
+        x: 2350
+        y: 2453
+        width: 238
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52a955d2c1421864c8b21d2cfd46cc76
+      internalID: 347415054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_104
+      rect:
+        serializedVersion: 2
+        x: 1327
+        y: 2998
+        width: 257
+        height: 340
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22a6db58dac91a0439e3b0e2590a175e
+      internalID: 483464525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_105
+      rect:
+        serializedVersion: 2
+        x: 2169
+        y: 3257
+        width: 229
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af6acaa42f53ddb44a69a554b695e56f
+      internalID: -806619137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_106
+      rect:
+        serializedVersion: 2
+        x: 2357
+        y: 3704
+        width: 184
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb61eafdf36469644a10d7a1fd4da6d1
+      internalID: -1762230734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_107
+      rect:
+        serializedVersion: 2
+        x: 3031
+        y: 3285
+        width: 230
+        height: 175
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d1ba74f5ce83e6428855dd97162418e
+      internalID: -1376447451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_108
+      rect:
+        serializedVersion: 2
+        x: 3031
+        y: 3461
+        width: 170
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d60fbfa73495afd48b7e621daa5ad71b
+      internalID: 1554508696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_109
+      rect:
+        serializedVersion: 2
+        x: 2385
+        y: 3008
+        width: 236
+        height: 239
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a1ff12118fd64340a2f12ab932d4e2b
+      internalID: -886263083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_110
+      rect:
+        serializedVersion: 2
+        x: 2589
+        y: 2591
+        width: 208
+        height: 271
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fd9fa2aab4f1df46844079cd59f344e
+      internalID: -384283235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_111
+      rect:
+        serializedVersion: 2
+        x: 2710
+        y: 1797
+        width: 243
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a1ae0f39c3b4a34b938a89395f0cb7d
+      internalID: -1613803622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_112
+      rect:
+        serializedVersion: 2
+        x: 2955
+        y: 1710
+        width: 208
+        height: 273
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 526a8f789c1b7e04d8ad2e1e0ca6f4ec
+      internalID: 1394668801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_113
+      rect:
+        serializedVersion: 2
+        x: 3390
+        y: 1338
+        width: 220
+        height: 235
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 211d0255d9d0ef84dabb3fe4f0c9e165
+      internalID: -1166739231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_114
+      rect:
+        serializedVersion: 2
+        x: 3610
+        y: 1318
+        width: 185
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0c2068bbe0db124e8a166ba7563c00d
+      internalID: 331825308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_115
+      rect:
+        serializedVersion: 2
+        x: 2727
+        y: 1087
+        width: 245
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ee5e5f1e1f4fa847be8f42103f003f8
+      internalID: -1085497299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_116
+      rect:
+        serializedVersion: 2
+        x: 2980
+        y: 867
+        width: 223
+        height: 293
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bfe17107e49016449c5ec6b856bcc7f
+      internalID: -2024043029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_117
+      rect:
+        serializedVersion: 2
+        x: 3416
+        y: 253
+        width: 239
+        height: 231
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 710666efd022cdc469908306087ffd3f
+      internalID: 1861159960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_118
+      rect:
+        serializedVersion: 2
+        x: 3178
+        y: 557
+        width: 211
+        height: 296
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 118924d0b848b6b469e7df507301c6b2
+      internalID: 269929119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_119
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 2617
+        width: 242
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b09fd2385b290ce46b0dffc3107c00f9
+      internalID: -1153678091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_120
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 2669
+        width: 261
+        height: 335
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea8e010bcb637cf48a0717fdc65ef02a
+      internalID: -2071904978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_121
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 1649
+        width: 324
+        height: 349
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b1dd36471dac2f4399221c0b85288a2
+      internalID: -884010661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_122
+      rect:
+        serializedVersion: 2
+        x: 2794
+        y: 2043
+        width: 203
+        height: 278
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e2a0d30e23de72428599ef80ee9944e
+      internalID: 373783981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_123
+      rect:
+        serializedVersion: 2
+        x: 3012
+        y: 2246
+        width: 217
+        height: 244
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20e3231800116bf42990071ae0e05450
+      internalID: -1172107058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_124
+      rect:
+        serializedVersion: 2
+        x: 3230
+        y: 2163
+        width: 189
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 093e39874774bd14cba6d7e5c40537af
+      internalID: -2141747452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_125
+      rect:
+        serializedVersion: 2
+        x: 3438
+        y: 2069
+        width: 185
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04385bec378636e48943bc4a48bf2786
+      internalID: 1535757639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_126
+      rect:
+        serializedVersion: 2
+        x: 3447
+        y: 2326
+        width: 184
+        height: 219
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b486a7a44bb46b4099280724181110f
+      internalID: -157330374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_127
+      rect:
+        serializedVersion: 2
+        x: 2484
+        y: 1533
+        width: 226
+        height: 283
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13c44c93cecaaa44bb1a02230b4b5d6b
+      internalID: 973961246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_128
+      rect:
+        serializedVersion: 2
+        x: 2214
+        y: 1362
+        width: 264
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b91cdae4a78639447993b6c25a2d116d
+      internalID: -1874573605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_129
+      rect:
+        serializedVersion: 2
+        x: 2941
+        y: 307
+        width: 223
+        height: 283
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 839bc478a72e6254d874991b22f17e2c
+      internalID: 751544809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_130
+      rect:
+        serializedVersion: 2
+        x: 3209
+        y: 852
+        width: 207
+        height: 252
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e96b7e6e9e53df45bb870e8f2286b33
+      internalID: 1854474977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_131
+      rect:
+        serializedVersion: 2
+        x: 2625
+        y: 2862
+        width: 210
+        height: 241
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7264cfb01d697d6459c3912e58ccd681
+      internalID: 685823182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_132
+      rect:
+        serializedVersion: 2
+        x: 3217
+        y: 2969
+        width: 154
+        height: 228
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9dc6c48dcdb8e2458a436000e229d55
+      internalID: -1422420473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_133
+      rect:
+        serializedVersion: 2
+        x: 3002
+        y: 3070
+        width: 215
+        height: 214
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e306d4a2556ba2e4591bd0f7fbd66528
+      internalID: 1058690149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_134
+      rect:
+        serializedVersion: 2
+        x: 2787
+        y: 2323
+        width: 225
+        height: 243
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 826402f8b2eb39843b15108cca0b1c9c
+      internalID: -1438537784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_135
+      rect:
+        serializedVersion: 2
+        x: 3472
+        y: 1064
+        width: 188
+        height: 252
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c32bb28791795e4184db807dc57150b
+      internalID: 1834633903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_136
+      rect:
+        serializedVersion: 2
+        x: 3422
+        y: 837
+        width: 223
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c1cffd2534409f4b90be0d88a826fa0
+      internalID: -191628228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_137
+      rect:
+        serializedVersion: 2
+        x: 3390
+        y: 555
+        width: 206
+        height: 279
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c03e370c0f6bdb4683b1dfb05501511
+      internalID: -761445822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_138
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3661
+        width: 262
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cf225a698e0b7349b3b21bc8961454c
+      internalID: 1262607237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_139
+      rect:
+        serializedVersion: 2
+        x: 1793
+        y: 2365
+        width: 272
+        height: 251
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 675c5ab27894bce45ae7e87af0052a1a
+      internalID: 431948559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_140
+      rect:
+        serializedVersion: 2
+        x: 2743
+        y: 3574
+        width: 177
+        height: 220
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70f46afc3d41ab84b844d991cc110b3a
+      internalID: 1955848395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_141
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 3364
+        width: 221
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23b02278ab83c2c4b93d8f679fc49d8f
+      internalID: -1075095146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_142
+      rect:
+        serializedVersion: 2
+        x: 2214
+        y: 1617
+        width: 249
+        height: 275
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41b541098d0ab2a4da49189632f8cc5d
+      internalID: 207242286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_143
+      rect:
+        serializedVersion: 2
+        x: 2339
+        y: 1892
+        width: 223
+        height: 296
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5679eae6088a224188236d1364dc64e
+      internalID: -1959166743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_144
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1963
+        width: 370
+        height: 327
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a55cd2222f6ea8448c3dda454a85aa7
+      internalID: -952585813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_145
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 2267
+        width: 364
+        height: 315
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67035e07b97529a48809b4d8352231b6
+      internalID: 430200518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_146
+      rect:
+        serializedVersion: 2
+        x: 1218
+        y: 2285
+        width: 280
+        height: 364
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f61fb63189f2c44781c00605973eb78
+      internalID: -1547226673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_147
+      rect:
+        serializedVersion: 2
+        x: 1499
+        y: 2334
+        width: 291
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc9b5a29cccb862499c786c58e0f32ff
+      internalID: -221906083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_148
+      rect:
+        serializedVersion: 2
+        x: 3079
+        y: 0
+        width: 213
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f344f8a3d0ae5e43ba901ed4682763e
+      internalID: -2132267908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_149
+      rect:
+        serializedVersion: 2
+        x: 2845
+        y: 0
+        width: 235
+        height: 307
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dceb373b09780ef45be5383f20159f8a
+      internalID: -1637636910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_150
+      rect:
+        serializedVersion: 2
+        x: 2028
+        y: 2040
+        width: 227
+        height: 314
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac6fd96f3615281408c537b3cf3c998f
+      internalID: 2014176949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_151
+      rect:
+        serializedVersion: 2
+        x: 2335
+        y: 324
+        width: 232
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b4c291569c2713438df322b86f3c136
+      internalID: 1697584161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_152
+      rect:
+        serializedVersion: 2
+        x: 2349
+        y: 2711
+        width: 210
+        height: 297
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cb85335a47843a4dac191fe55521021
+      internalID: -657462865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_153
+      rect:
+        serializedVersion: 2
+        x: 3243
+        y: 2414
+        width: 199
+        height: 235
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbd0b3da939c90c4287ce4b459fbecd2
+      internalID: 1013333039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_154
+      rect:
+        serializedVersion: 2
+        x: 2091
+        y: 322
+        width: 244
+        height: 326
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b07e65d7e5913804fb8c4e2bc3ff893e
+      internalID: 890764678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_155
+      rect:
+        serializedVersion: 2
+        x: 2451
+        y: 652
+        width: 234
+        height: 287
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b40c6b0cc9741994fa8e65a36c464ef4
+      internalID: -183923330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_156
+      rect:
+        serializedVersion: 2
+        x: 2447
+        y: 946
+        width: 234
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9961b020e31f97a4aadb9b34caf9b5e6
+      internalID: 1023120957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_157
+      rect:
+        serializedVersion: 2
+        x: 2563
+        y: 3374
+        width: 185
+        height: 231
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 786b85e0353d63c45b815e0313890ede
+      internalID: 1653173896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_158
+      rect:
+        serializedVersion: 2
+        x: 1827
+        y: 0
+        width: 253
+        height: 325
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09b8eeb8c1396c240a9194e1579d2cb9
+      internalID: 923923001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_159
+      rect:
+        serializedVersion: 2
+        x: 1904
+        y: 3175
+        width: 228
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ab1c191221e3b14a988644ff06e5b61
+      internalID: -843138277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_160
+      rect:
+        serializedVersion: 2
+        x: 1592
+        y: 3004
+        width: 270
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b4fc366ff8073545b9f6b21baf6fb0e
+      internalID: -1840778608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_161
+      rect:
+        serializedVersion: 2
+        x: 1915
+        y: 3444
+        width: 255
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b5067056a0da9241865ca423117e0d6
+      internalID: -203736837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_0: -1738410335
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_1: 1954278101
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_10: -1111894952
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_100: 198837817
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_101: 632671376
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_102: -455726060
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_103: 347415054
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_104: 483464525
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_105: -806619137
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_106: -1762230734
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_107: -1376447451
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_108: 1554508696
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_109: -886263083
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_11: 1735601616
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_110: -384283235
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_111: -1613803622
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_112: 1394668801
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_113: -1166739231
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_114: 331825308
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_115: -1085497299
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_116: -2024043029
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_117: 1861159960
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_118: 269929119
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_119: -1153678091
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_12: 580134531
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_120: -2071904978
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_121: -884010661
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_122: 373783981
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_123: -1172107058
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_124: -2141747452
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_125: 1535757639
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_126: -157330374
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_127: 973961246
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_128: -1874573605
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_129: 751544809
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_13: -229926236
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_130: 1854474977
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_131: 685823182
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_132: -1422420473
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_133: 1058690149
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_134: -1438537784
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_135: 1834633903
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_136: -191628228
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_137: -761445822
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_138: 1262607237
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_139: 431948559
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_14: -1332226794
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_140: 1955848395
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_141: -1075095146
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_142: 207242286
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_143: -1959166743
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_144: -952585813
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_145: 430200518
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_146: -1547226673
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_147: -221906083
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_148: -2132267908
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_149: -1637636910
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_15: 161143408
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_150: 2014176949
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_151: 1697584161
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_152: -657462865
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_153: 1013333039
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_154: 890764678
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_155: -183923330
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_156: 1023120957
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_157: 1653173896
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_158: 923923001
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_159: -843138277
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_16: 1718793353
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_160: -1840778608
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_161: -203736837
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_17: -689093962
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_18: 1489012011
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_19: 449074907
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_2: -1677076105
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_20: 779223783
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_21: 256867487
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_22: -1670952332
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_23: 1654037786
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_24: -664175903
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_25: -1293735643
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_26: -2110941217
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_27: -832718591
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_28: -1067581252
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_29: -1286457528
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_3: 1378706844
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_30: 451524741
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_31: -11487521
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_32: 1555743564
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_33: -1526231870
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_34: 1039636628
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_35: 1507645685
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_36: 1838864925
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_37: 473958657
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_38: -1832629896
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_39: -2092824860
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_4: -272831754
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_40: 296956689
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_41: -1663123271
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_42: -1879444387
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_43: 638863928
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_44: 1097944089
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_45: -1594723378
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_46: -1997285311
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_47: -1777370221
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_48: -1960067083
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_49: 1544818873
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_5: -746582290
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_50: 84558360
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_51: -666508647
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_52: -1715678764
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_53: 1411164116
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_54: -339059013
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_55: 1016120423
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_56: -672709269
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_57: 1402651343
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_58: -1441040420
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_59: -64299772
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_6: -229222304
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_60: -1420743846
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_61: -1902520596
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_62: -318553313
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_63: 2073361076
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_64: 1963984146
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_65: -403131686
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_66: -1902836417
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_67: 1991228529
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_68: -484323034
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_69: 883780119
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_7: -1532151398
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_70: 2045789610
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_71: 770043869
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_72: 1573600126
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_73: 1273440891
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_74: -1315023361
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_75: 344419166
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_76: 1237606777
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_77: 678386935
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_78: -1781990515
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_79: 1623338764
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_8: -58150059
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_80: -90699268
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_81: -442898332
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_82: 1507259776
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_83: -1931276024
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_84: 725585044
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_85: 1284364149
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_86: 624508999
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_87: 768995316
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_88: 1497243295
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_89: 1700158076
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_9: -82228602
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_90: 112964291
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_91: -1587647917
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_92: 526528516
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_93: -752793611
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_94: -159126511
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_95: -1052452451
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_96: -1119301598
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_97: -1933023504
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_98: -852551103
+      sactx-0-4096x4096-ASTC 8x8-Monster-e6eca26f_99: 1539688803
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
