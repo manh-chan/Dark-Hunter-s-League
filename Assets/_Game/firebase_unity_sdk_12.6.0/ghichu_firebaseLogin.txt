@@ -1,0 +1,2 @@
+- chọn asset -> import packege -> custom package -> vào file firebase_unity_sdk_12.6.0 trong asset chọn FirebaseDatabase và FirebaseAuth.
+- xg rồi mở scrip FireBaseLogin ra mở lại và sửa lại phần chuyển scene rồi cho vào 1 game object
