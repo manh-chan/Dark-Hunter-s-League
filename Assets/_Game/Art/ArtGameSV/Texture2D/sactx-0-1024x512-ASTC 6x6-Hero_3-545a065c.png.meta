@@ -1,11 +1,9 @@
 fileFormatVersion: 2
 guid: 539238f2eb612344696521ff7660f43c
-timeCreated: 1736624611
-licenseType: Free
 TextureImporter:
-  serializedVersion: 12
   internalIDToNameTable: []
   externalObjects: {}
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -50,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 184
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -82,45 +80,254 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: sactx-0-1024x512-ASTC 6x6-Hero_3-545a065c_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 220
+        width: 186
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8962483a2f547f44094514ef60958e4c
+      internalID: 202856492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x512-ASTC 6x6-Hero_3-545a065c_3
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 217
+        width: 187
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b31ccec440913a04ab8b9d2bf2a8cde6
+      internalID: -1416780562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x512-ASTC 6x6-Hero_3-545a065c_7
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 220
+        width: 172
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2004421fee8ace4f926e4aafb6be7aa
+      internalID: -1200150398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x512-ASTC 6x6-Hero_3-545a065c_9
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 184
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e6a637ec2cc6a448a56245e12126712
+      internalID: -1143386374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x512-ASTC 6x6-Hero_3-545a065c_11
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 0
+        width: 183
+        height: 214
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cae32373b5363d43889819dea21ea28
+      internalID: 1238268144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x512-ASTC 6x6-Hero_3-545a065c_15
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 0
+        width: 166
+        height: 214
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30648dbc008b2494dbf2a90c93e59b8a
+      internalID: 487204279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x512-ASTC 6x6-Hero_3-545a065c_16
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 0
+        width: 169
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0013e92a5ec6a2c4ea230fc4ab031b24
+      internalID: 1124046713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x512-ASTC 6x6-Hero_3-545a065c_21
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 0
+        width: 159
+        height: 204
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7487ee9651ef8d4f8ad16ed3f11b06b
+      internalID: -10421076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID:
+    spriteID: c679753b040bc85469ab39d994cbf2b8
     internalID: 0
     vertices: []
-    indices: []
+    indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
-  mipmapLimitGroupName:
-  output:
-    textureImportInstructions:
-      compressedFormat: 0
-      uncompressedFormat: 0
-      desiredFormat: 0
-      usageMode: 0
-      colorSpace: 0
-      androidETC2FallbackFormat: 0
-      width: 0
-      height: 0
-      depth: 0
-      cubeIntermediateSize: 0
-      cubeMode: 0
-      cubeLayout: 0
-      compressionQuality: 0
-      androidETC2FallbackDownscale: 0
-      vtOnly: 0
-    sourceTextureInformation:
-      width: 0
-      height: 0
-      doesTextureContainAlpha: 0
-      sourceWasHDR: 0
-    importInspectorWarnings:
+    nameFileIdTable:
+      sactx-0-1024x512-ASTC 6x6-Hero_3-545a065c_0: 202856492
+      sactx-0-1024x512-ASTC 6x6-Hero_3-545a065c_1: 620566973
+      sactx-0-1024x512-ASTC 6x6-Hero_3-545a065c_10: -1514069067
+      sactx-0-1024x512-ASTC 6x6-Hero_3-545a065c_11: 1238268144
+      sactx-0-1024x512-ASTC 6x6-Hero_3-545a065c_12: -563024410
+      sactx-0-1024x512-ASTC 6x6-Hero_3-545a065c_13: 1520289912
+      sactx-0-1024x512-ASTC 6x6-Hero_3-545a065c_14: 1132982373
+      sactx-0-1024x512-ASTC 6x6-Hero_3-545a065c_15: 487204279
+      sactx-0-1024x512-ASTC 6x6-Hero_3-545a065c_16: 1124046713
+      sactx-0-1024x512-ASTC 6x6-Hero_3-545a065c_17: -1703595879
+      sactx-0-1024x512-ASTC 6x6-Hero_3-545a065c_18: 427952351
+      sactx-0-1024x512-ASTC 6x6-Hero_3-545a065c_19: -893297391
+      sactx-0-1024x512-ASTC 6x6-Hero_3-545a065c_2: -508755299
+      sactx-0-1024x512-ASTC 6x6-Hero_3-545a065c_20: -1793884009
+      sactx-0-1024x512-ASTC 6x6-Hero_3-545a065c_21: -10421076
+      sactx-0-1024x512-ASTC 6x6-Hero_3-545a065c_22: -947227413
+      sactx-0-1024x512-ASTC 6x6-Hero_3-545a065c_23: 618449325
+      sactx-0-1024x512-ASTC 6x6-Hero_3-545a065c_24: 1993431893
+      sactx-0-1024x512-ASTC 6x6-Hero_3-545a065c_3: -1416780562
+      sactx-0-1024x512-ASTC 6x6-Hero_3-545a065c_4: 2089520882
+      sactx-0-1024x512-ASTC 6x6-Hero_3-545a065c_5: -1339184107
+      sactx-0-1024x512-ASTC 6x6-Hero_3-545a065c_6: -905669176
+      sactx-0-1024x512-ASTC 6x6-Hero_3-545a065c_7: -1200150398
+      sactx-0-1024x512-ASTC 6x6-Hero_3-545a065c_8: -755786355
+      sactx-0-1024x512-ASTC 6x6-Hero_3-545a065c_9: -1143386374
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  userData:
-  assetBundleName:
-  assetBundleVariant:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
