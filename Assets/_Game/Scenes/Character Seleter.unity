@@ -932,10 +932,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9749740d5717ec4eba2f909de9ca5f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  updateInEditor: 0
   player: {fileID: 0}
   character: {fileID: 0}
   displayCurrentHealth: 0
-  updataInEditor: 1
 --- !u!1 &567903135
 GameObject:
   m_ObjectHideFlags: 0
@@ -2100,7 +2100,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Game
+          m_StringArgument: Level Seleter
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1068967152

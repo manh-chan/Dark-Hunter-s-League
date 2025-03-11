@@ -50,8 +50,11 @@ public class GameManager : MonoBehaviour
     float stopwatchTime;
     public TMP_Text stopwatchDisplay;
 
+    bool levelEnded = false;
+    public GameObject reaperPerfab;
 
     PlayerStats[] players;
+    public VariableJoystick joystick;
 
     public bool isGameOver { get { return currentState == GameState.Paused; } }
     public bool choosingUpgrade { get { return currentState == GameState.LevelUp; } }
@@ -82,6 +85,9 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         players = FindObjectsOfType<PlayerStats>();
+
+        timeLimit = UILevelSelector.currentLevel.timeLimit;
+
         if (instance == null)
         {
             instance = this;
@@ -129,6 +135,7 @@ public class GameManager : MonoBehaviour
         if (currentState != GameState.Paused)
         {
             ChangeState(GameState.Paused);
+            joystick.gameObject.SetActive(false);
             Time.timeScale = 0f;
             pauseScreen.SetActive(true);
         }
@@ -138,6 +145,7 @@ public class GameManager : MonoBehaviour
         if (currentState == GameState.Paused)
         {
             ChangeState(previosState);
+            joystick.gameObject.SetActive(true);
             Time.timeScale = 1f;
             pauseScreen.SetActive(false);
         }
@@ -166,6 +174,7 @@ public class GameManager : MonoBehaviour
     {
         timeSurvivedDisplay.text = stopwatchDisplay.text;
         ChangeState(GameState.GameOver);
+        joystick.gameObject.SetActive(false);
         Time.timeScale = 0f;
         DisPlayResults();
     }
@@ -182,18 +191,29 @@ public class GameManager : MonoBehaviour
     {
         levelReachedDisplay.text = levelReachedData.ToString();
     }
+/*    public Vector2 GetRandomPlayerLocation()
+    {
+        int chosenPlayer = Random.Range(0,players.Length);
+        return new Vector2(players[chosenPlayer].transform.position.x, players[chosenPlayer].transform.position.y);
+    }*/
     private void UpdateStopwatch()
     {
-        stopwatchTime += Time.deltaTime;
+        stopwatchTime += Time.deltaTime * UILevelSelector.currentLevel.clockSpeed;
 
         UpdateStopwatchDisplay();
 
-        if (stopwatchTime >= timeLimit)
+        if (stopwatchTime >= timeLimit &&!levelEnded)
         {
-            foreach (PlayerStats p in players)
+            levelEnded = true;
+            FindObjectOfType<SpawnManager>().gameObject.SetActive(false);
+            foreach(EnemyState e in FindObjectsOfType<EnemyState>())
             {
-                p.SendMessage("Kill");
+                e.SendMessage("Kill");
             }
+            //Vector2 reaperOffset = Random.insideUnitCircle * 50f;
+            //Vector2 spawnPosition = GetRandomPlayerLocation() + reaperOffset;
+            Vector2 spawnPosition = Vector2.zero;
+            Instantiate(reaperPerfab, spawnPosition, Quaternion.identity);
         }
     }
     private void UpdateStopwatchDisplay()
@@ -211,6 +231,7 @@ public class GameManager : MonoBehaviour
         else
         {
             levelUpScreen.SetActive(true);
+            joystick.gameObject.SetActive(false);
             Time.timeScale = 0f;
             foreach (PlayerStats p in players)
             {
@@ -220,6 +241,7 @@ public class GameManager : MonoBehaviour
     }
     public void EndLevelUp()
     {
+        joystick.gameObject.SetActive(true);
         Time.timeScale = 1;
         levelUpScreen.SetActive(false);
         ChangeState(GameState.GamePlay);
