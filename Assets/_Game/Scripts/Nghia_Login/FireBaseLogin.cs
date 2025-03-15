@@ -42,6 +42,7 @@ public class FireBaseLogin : MonoBehaviour
 
             if (task.IsFaulted)
             {
+                Debug.LogError("Lỗi Firebase: " + task.Exception.ToString());
                 Debug.Log("Dk that bai");
                 return;
             }
