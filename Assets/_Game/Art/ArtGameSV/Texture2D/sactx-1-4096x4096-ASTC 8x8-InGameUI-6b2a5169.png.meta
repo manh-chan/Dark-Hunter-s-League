@@ -1,9 +1,11 @@
 fileFormatVersion: 2
 guid: 2a0386fca15a4c648b7214d0d01fe06b
+timeCreated: 1736624611
+licenseType: Free
 TextureImporter:
+  serializedVersion: 12
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -34,7 +36,7 @@ TextureImporter:
   maxTextureSize: 4096
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -48,7 +50,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 50.9
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -80,167 +82,45 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Standalone
-    maxTextureSize: 4096
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 2
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: sactx-1-4096x4096-ASTC 8x8-InGameUI-6b2a5169_0
-      rect:
-        serializedVersion: 2
-        x: 2567
-        y: 2615
-        width: 388
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b9c156e1f31ceb4469ad8c45220c9ece
-      internalID: -1851989540
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sactx-1-4096x4096-ASTC 8x8-InGameUI-6b2a5169_1
-      rect:
-        serializedVersion: 2
-        x: 2844
-        y: 3750
-        width: 215
-        height: 215
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ad5c63e6bdc59044b9e0fdde0c9f058e
-      internalID: -1829350762
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sactx-1-4096x4096-ASTC 8x8-InGameUI-6b2a5169_2
-      rect:
-        serializedVersion: 2
-        x: 2610
-        y: 3748
-        width: 220
-        height: 201
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ce69c1143736d0e43963131a2c74379c
-      internalID: 1346286802
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sactx-1-4096x4096-ASTC 8x8-InGameUI-6b2a5169_3
-      rect:
-        serializedVersion: 2
-        x: 2494
-        y: 2064
-        width: 247
-        height: 249
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 97929faee6a08934cac793ff291343a1
-      internalID: 940161045
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sactx-1-4096x4096-ASTC 8x8-InGameUI-6b2a5169_4
-      rect:
-        serializedVersion: 2
-        x: 2659
-        y: 1337
-        width: 209
-        height: 284
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 882c3cbf810a1c74e897372fa7cc7d1d
-      internalID: 446052316
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sactx-1-4096x4096-ASTC 8x8-InGameUI-6b2a5169_5
-      rect:
-        serializedVersion: 2
-        x: 2022
-        y: 3676
-        width: 206
-        height: 259
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: feaf0ca0a93b5e1439cdee6f67462b53
-      internalID: 1016771592
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: e721aac5867d9ee4488f9271c335e400
+    spriteID:
     internalID: 0
     vertices: []
-    indices: 
+    indices: []
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      sactx-1-4096x4096-ASTC 8x8-InGameUI-6b2a5169_0: -1851989540
-      sactx-1-4096x4096-ASTC 8x8-InGameUI-6b2a5169_1: -1829350762
-      sactx-1-4096x4096-ASTC 8x8-InGameUI-6b2a5169_2: 1346286802
-      sactx-1-4096x4096-ASTC 8x8-InGameUI-6b2a5169_3: 940161045
-      sactx-1-4096x4096-ASTC 8x8-InGameUI-6b2a5169_4: 446052316
-      sactx-1-4096x4096-ASTC 8x8-InGameUI-6b2a5169_5: 1016771592
-  mipmapLimitGroupName: 
+    nameFileIdTable: {}
+  mipmapLimitGroupName:
+  output:
+    textureImportInstructions:
+      compressedFormat: 0
+      uncompressedFormat: 0
+      desiredFormat: 0
+      usageMode: 0
+      colorSpace: 0
+      androidETC2FallbackFormat: 0
+      width: 0
+      height: 0
+      depth: 0
+      cubeIntermediateSize: 0
+      cubeMode: 0
+      cubeLayout: 0
+      compressionQuality: 0
+      androidETC2FallbackDownscale: 0
+      vtOnly: 0
+    sourceTextureInformation:
+      width: 0
+      height: 0
+      doesTextureContainAlpha: 0
+      sourceWasHDR: 0
+    importInspectorWarnings:
   pSDRemoveMatte: 0
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
+  userData:
+  assetBundleName:
+  assetBundleVariant:

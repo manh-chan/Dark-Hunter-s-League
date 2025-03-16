@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 228
+  spritePixelsToUnits: 400
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -106,19 +106,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 2
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -126,82 +113,19 @@ TextureImporter:
       name: sactx-0-1024x1024-ASTC 6x6-Hero_4-036b2774_0
       rect:
         serializedVersion: 2
-        x: 463
-        y: 258
-        width: 217
-        height: 263
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2e94da6a8602d014793b4cb84944469c
-      internalID: -1907815859
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sactx-0-1024x1024-ASTC 6x6-Hero_4-036b2774_1
-      rect:
-        serializedVersion: 2
         x: 0
-        y: 0
-        width: 270
-        height: 249
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dd2fc27869b31ef438f3fabd45843dcb
-      internalID: -883882828
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sactx-0-1024x1024-ASTC 6x6-Hero_4-036b2774_2
-      rect:
-        serializedVersion: 2
-        x: 269
-        y: 0
-        width: 235
+        y: 749
+        width: 209
         height: 257
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91c5c646b38f1dd49b9b5d5fec19e821
-      internalID: 1666116765
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sactx-0-1024x1024-ASTC 6x6-Hero_4-036b2774_3
-      rect:
-        serializedVersion: 2
-        x: 717
-        y: 0
-        width: 235
-        height: 261
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 56567064c00e3de4c99f8453e126e486
-      internalID: 395981903
+      spriteID: a606a00849bd8724f862d173abfc6fbe
+      internalID: -1646904313
       vertices: []
       indices: 
       edges: []
@@ -209,7 +133,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: eafa62a98762af146ba48b7e0266890c
+    spriteID: 066d09117052a5a47bb8dfe77cc7f7fb
     internalID: 0
     vertices: []
     indices: 
@@ -217,10 +141,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      sactx-0-1024x1024-ASTC 6x6-Hero_4-036b2774_0: -1907815859
-      sactx-0-1024x1024-ASTC 6x6-Hero_4-036b2774_1: -883882828
-      sactx-0-1024x1024-ASTC 6x6-Hero_4-036b2774_2: 1666116765
-      sactx-0-1024x1024-ASTC 6x6-Hero_4-036b2774_3: 395981903
+      sactx-0-1024x1024-ASTC 6x6-Hero_4-036b2774_0: -1646904313
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

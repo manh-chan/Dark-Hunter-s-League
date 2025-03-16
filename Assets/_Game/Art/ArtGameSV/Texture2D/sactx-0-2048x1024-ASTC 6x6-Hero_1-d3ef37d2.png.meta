@@ -1,9 +1,11 @@
 fileFormatVersion: 2
 guid: 352bcd4015411314fb5e9e73480c8139
+timeCreated: 1736624611
+licenseType: Free
 TextureImporter:
+  serializedVersion: 12
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -80,70 +82,45 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 2
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 2
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: sactx-0-2048x1024-ASTC 6x6-Hero_1-d3ef37d2_0
-      rect:
-        serializedVersion: 2
-        x: 1215
-        y: 212
-        width: 201
-        height: 218
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9be3e6a59cfa6c343ae5aab5333291a1
-      internalID: 349068448
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 860fbf420a1dfb74499ab345ae001299
+    spriteID:
     internalID: 0
     vertices: []
-    indices: 
+    indices: []
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      sactx-0-2048x1024-ASTC 6x6-Hero_1-d3ef37d2_0: 349068448
-  mipmapLimitGroupName: 
+    nameFileIdTable: {}
+  mipmapLimitGroupName:
+  output:
+    textureImportInstructions:
+      compressedFormat: 0
+      uncompressedFormat: 0
+      desiredFormat: 0
+      usageMode: 0
+      colorSpace: 0
+      androidETC2FallbackFormat: 0
+      width: 0
+      height: 0
+      depth: 0
+      cubeIntermediateSize: 0
+      cubeMode: 0
+      cubeLayout: 0
+      compressionQuality: 0
+      androidETC2FallbackDownscale: 0
+      vtOnly: 0
+    sourceTextureInformation:
+      width: 0
+      height: 0
+      doesTextureContainAlpha: 0
+      sourceWasHDR: 0
+    importInspectorWarnings:
   pSDRemoveMatte: 0
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
+  userData:
+  assetBundleName:
+  assetBundleVariant:

@@ -1,9 +1,11 @@
 fileFormatVersion: 2
 guid: 1fb938862d524f84cb11167c3f1c515e
+timeCreated: 1736624608
+licenseType: Free
 TextureImporter:
+  serializedVersion: 12
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -48,7 +50,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 156
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -80,171 +82,45 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 2
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 2
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 2
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_0
-      rect:
-        serializedVersion: 2
-        x: 286
-        y: 1647
-        width: 206
-        height: 226
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: add0cf53e6b28954b884e27f3c2c47b9
-      internalID: 1314598488
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_1
-      rect:
-        serializedVersion: 2
-        x: 567
-        y: 1449
-        width: 206
-        height: 218
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7f6d49643797a6c49b67fd14d077eb8d
-      internalID: -1325930848
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_2
-      rect:
-        serializedVersion: 2
-        x: 776
-        y: 1466
-        width: 195
-        height: 228
-      alignment: 9
-      pivot: {x: 0.5486957, y: 0.3721778}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 686cf8c11382a7d46b033522c853cff5
-      internalID: 994392077
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_3
-      rect:
-        serializedVersion: 2
-        x: 719
-        y: 1713
-        width: 165
-        height: 228
-      alignment: 9
-      pivot: {x: 0.5486957, y: 0.3721778}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 18ac96d7a80dd5b49811e3c8d0dec565
-      internalID: 663642791
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_4
-      rect:
-        serializedVersion: 2
-        x: 997
-        y: 17
-        width: 176
-        height: 228
-      alignment: 9
-      pivot: {x: 0.5486957, y: 0.3721778}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 68eefd658c7b2db4b8b95bab05a1d062
-      internalID: 1551934417
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: f9bb20b3a2c313444b3906fb4b228cad
+    spriteID:
     internalID: 0
     vertices: []
-    indices: 
+    indices: []
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_0: 1314598488
-      sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_1: -1325930848
-      sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_2: 994392077
-      sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_3: 663642791
-      sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_4: 1551934417
-  mipmapLimitGroupName: 
+    nameFileIdTable: {}
+  mipmapLimitGroupName:
+  output:
+    textureImportInstructions:
+      compressedFormat: 0
+      uncompressedFormat: 0
+      desiredFormat: 0
+      usageMode: 0
+      colorSpace: 0
+      androidETC2FallbackFormat: 0
+      width: 0
+      height: 0
+      depth: 0
+      cubeIntermediateSize: 0
+      cubeMode: 0
+      cubeLayout: 0
+      compressionQuality: 0
+      androidETC2FallbackDownscale: 0
+      vtOnly: 0
+    sourceTextureInformation:
+      width: 0
+      height: 0
+      doesTextureContainAlpha: 0
+      sourceWasHDR: 0
+    importInspectorWarnings:
   pSDRemoveMatte: 0
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
+  userData:
+  assetBundleName:
+  assetBundleVariant:

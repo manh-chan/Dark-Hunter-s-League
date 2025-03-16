@@ -1,9 +1,11 @@
 fileFormatVersion: 2
 guid: 959afc10fb0e2024787b601d5d495fa4
+timeCreated: 1736624610
+licenseType: Free
 TextureImporter:
+  serializedVersion: 12
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -34,7 +36,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -48,7 +50,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -80,211 +82,45 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 2
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: sactx-1-2048x2048-ASTC 6x6-Lobby-dfcb14c0_0
-      rect:
-        serializedVersion: 2
-        x: 1635
-        y: 601
-        width: 265
-        height: 59
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 453e9d06f9145d54996e3f1c730cd7b8
-      internalID: 306856569
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sactx-1-2048x2048-ASTC 6x6-Lobby-dfcb14c0_1
-      rect:
-        serializedVersion: 2
-        x: 1591
-        y: 1314
-        width: 226
-        height: 206
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ce441015cdf631d428a83bfd801812d1
-      internalID: -1594409806
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sactx-1-2048x2048-ASTC 6x6-Lobby-dfcb14c0_2
-      rect:
-        serializedVersion: 2
-        x: 1530
-        y: 1581
-        width: 185
-        height: 188
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 657c6c802f9de7d4688674df04c33fc0
-      internalID: 25053362
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sactx-1-2048x2048-ASTC 6x6-Lobby-dfcb14c0_3
-      rect:
-        serializedVersion: 2
-        x: 1727
-        y: 1556
-        width: 199
-        height: 219
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 57b83c99a1f643e43a17bbf0f5ade5c2
-      internalID: 701500547
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sactx-1-2048x2048-ASTC 6x6-Lobby-dfcb14c0_4
-      rect:
-        serializedVersion: 2
-        x: 1490
-        y: 1034
-        width: 176
-        height: 228
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2bb9551fc786a0a41a1ff3ad43429547
-      internalID: 1224573799
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sactx-1-2048x2048-ASTC 6x6-Lobby-dfcb14c0_5
-      rect:
-        serializedVersion: 2
-        x: 1702
-        y: 957
-        width: 163
-        height: 229
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ee975ee6743494d44abba695eeddd32a
-      internalID: -1077898101
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sactx-1-2048x2048-ASTC 6x6-Lobby-dfcb14c0_6
-      rect:
-        serializedVersion: 2
-        x: 1792
-        y: 42
-        width: 215
-        height: 201
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e7061db4716fa59458ae0f6091553d82
-      internalID: 1491216961
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sactx-1-2048x2048-ASTC 6x6-Lobby-dfcb14c0_7
-      rect:
-        serializedVersion: 2
-        x: 1288
-        y: 476
-        width: 348
-        height: 276
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c7fae85a171188f4eb323953d7b8a40e
-      internalID: -771653626
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 746f3e4f41a46ec47a98594101dd87ba
+    spriteID:
     internalID: 0
     vertices: []
-    indices: 
+    indices: []
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      sactx-1-2048x2048-ASTC 6x6-Lobby-dfcb14c0_0: 306856569
-      sactx-1-2048x2048-ASTC 6x6-Lobby-dfcb14c0_1: -1594409806
-      sactx-1-2048x2048-ASTC 6x6-Lobby-dfcb14c0_2: 25053362
-      sactx-1-2048x2048-ASTC 6x6-Lobby-dfcb14c0_3: 701500547
-      sactx-1-2048x2048-ASTC 6x6-Lobby-dfcb14c0_4: 1224573799
-      sactx-1-2048x2048-ASTC 6x6-Lobby-dfcb14c0_5: -1077898101
-      sactx-1-2048x2048-ASTC 6x6-Lobby-dfcb14c0_6: 1491216961
-      sactx-1-2048x2048-ASTC 6x6-Lobby-dfcb14c0_7: -771653626
-  mipmapLimitGroupName: 
+    nameFileIdTable: {}
+  mipmapLimitGroupName:
+  output:
+    textureImportInstructions:
+      compressedFormat: 0
+      uncompressedFormat: 0
+      desiredFormat: 0
+      usageMode: 0
+      colorSpace: 0
+      androidETC2FallbackFormat: 0
+      width: 0
+      height: 0
+      depth: 0
+      cubeIntermediateSize: 0
+      cubeMode: 0
+      cubeLayout: 0
+      compressionQuality: 0
+      androidETC2FallbackDownscale: 0
+      vtOnly: 0
+    sourceTextureInformation:
+      width: 0
+      height: 0
+      doesTextureContainAlpha: 0
+      sourceWasHDR: 0
+    importInspectorWarnings:
   pSDRemoveMatte: 0
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
+  userData:
+  assetBundleName:
+  assetBundleVariant:
