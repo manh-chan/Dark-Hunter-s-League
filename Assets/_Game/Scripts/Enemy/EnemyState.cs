@@ -107,6 +107,10 @@ public class EnemyState : EntityStats
     protected override void Start()
     {
         base.Start();
+
+        if (UILevelSelector.globaBuff && !UILevelSelector.globalBuffAffectsEnemies)
+            ApplyBuff(UILevelSelector.globaBuff);
+
         RecalculateStats();
         health = actualStats.maxHealth;
         movement = GetComponent<EnemyMovement>();
