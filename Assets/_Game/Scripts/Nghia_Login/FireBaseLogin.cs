@@ -1,14 +1,11 @@
-﻿using Firebase.Auth;
-using Firebase.Extensions;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class FireBaseLogin : MonoBehaviour
 {
-    [Header("Register")]
+   /* [Header("Register")]
     public InputField isRegiEmail;
     public InputField isRegiPass;
     public Button btnRegis;
@@ -42,7 +39,6 @@ public class FireBaseLogin : MonoBehaviour
 
             if (task.IsFaulted)
             {
-                Debug.LogError("Lỗi Firebase: " + task.Exception.ToString());
                 Debug.Log("Dk that bai");
                 return;
             }
@@ -79,11 +75,10 @@ public class FireBaseLogin : MonoBehaviour
                 Debug.Log("DN thanh cong");
                 FirebaseUser user = task.Result.User;
 
-                //muốn đăng nhập vào scene nào thì đổi tên scene đấy
 
                 SceneManager.LoadScene("Play");
                 return;
             }
         });
-    }
+    }*/
 }
