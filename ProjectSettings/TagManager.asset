@@ -8,10 +8,10 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
-  - 
+  - Enemy
   - 
   - 
   - 
@@ -41,51 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Ground
-    uniqueID: 3722392547
+  - name: Background
+    uniqueID: 4032110555
     locked: 0
-  - name: Stain
-    uniqueID: 3143275925
+  - name: Midground
+    uniqueID: 1755885081
     locked: 0
-  - name: Stone
-    uniqueID: 3476751489
-    locked: 0
-  - name: BackGrass
-    uniqueID: 1342719197
-    locked: 0
-  - name: Grass
-    uniqueID: 2460716223
-    locked: 0
-  - name: StainWhite
-    uniqueID: 4097287537
-    locked: 0
-  - name: Dark
-    uniqueID: 2667506001
-    locked: 0
-  - name: Box
-    uniqueID: 2883038629
-    locked: 0
-  - name: Stele
-    uniqueID: 704639665
-    locked: 0
-  - name: StonePillar
-    uniqueID: 1060727809
-    locked: 0
-  - name: Brick
-    uniqueID: 1182467719
-    locked: 0
-  - name: OldBrick
-    uniqueID: 3539182553
-    locked: 0
-  - name: Skull
-    uniqueID: 2253726753
-    locked: 0
-  - name: Rock
-    uniqueID: 2603081987
-    locked: 0
-  - name: Sticker
-    uniqueID: 2827758789
-    locked: 0
-  - name: Dark
-    uniqueID: 1372147297
+  - name: Foreground
+    uniqueID: 1185487789
     locked: 0
