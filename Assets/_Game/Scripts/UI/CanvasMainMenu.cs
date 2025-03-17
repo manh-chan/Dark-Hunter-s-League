@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class CanvasMainMenu : UICanvas
 {
-    public void PlayButton()
+    public void MapButton()
     {
         Close(0);
-        UIManager.Instance.OpenUI<CanvasGamePlay>();
+        UIManager.Instance.OpenUI<CanvasMap>();
     }
 
     public void SettingsButton()
