@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4f4002ed8610ac479d8cd0854fd5692, type: 3}
   m_Name: DragonBit
   m_EditorClassIdentifier: 
-  icon: {fileID: 1236795766, guid: f1a0b149b0c47e74aaeb7eeec77fb216, type: 3}
+  icon: {fileID: -66748223, guid: eed553b0d63d6c54bb950ce4320a4768, type: 3}
   maxLevel: 8
   evolutinData: []
   behaviour: CannonWeapon
