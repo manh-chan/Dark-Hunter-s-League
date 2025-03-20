@@ -3,6 +3,7 @@ using Firebase.Database;
 using Firebase.Extensions;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.VersionControl;
 using UnityEngine;
 
 public class FirebaseDataManager : MonoBehaviour
@@ -18,6 +19,7 @@ public class FirebaseDataManager : MonoBehaviour
     private void Start()
     {
         WriteDatabase("1", "Hello");
+        ReadDatabase("1");
     }
 
     public void WriteDatabase(string id, string message)
@@ -31,6 +33,22 @@ public class FirebaseDataManager : MonoBehaviour
             else
             {
                 Debug.Log("Ghi du lieu that bai" + task.Exception);
+            }
+        });
+    }
+
+    public void ReadDatabase(string id)
+    {
+        reference.Child("Users").Child(id).GetValueAsync().ContinueWithOnMainThread(task =>
+        {
+            if (task.IsCompleted)
+            {
+                DataSnapshot snapshot = task.Result;
+                Debug.Log("Doc du lieu thanh cong: " +snapshot.Value.ToString());
+            }
+            else
+            {
+                Debug.Log("Doc du lieu that bai" + task.Exception);
             }
         });
     }
