@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class CanvasHero : UICanvas
 {
+    public void MapButton()
+    {
+        UIManager.Instance.OpenUI<CanvasMap>();
+    }
     public void MainMenuButton()
     {
         UIManager.Instance.OpenUI<CanvasMainMenu>();

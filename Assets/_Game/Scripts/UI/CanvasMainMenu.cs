@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class CanvasMainMenu : UICanvas
 {
-    public void MapButton()
+/*    public void MapButton()
     {
         Close(0);
         UIManager.Instance.OpenUI<CanvasMap>();
-    }
+    }*/
 
     public void SettingsButton()
     {

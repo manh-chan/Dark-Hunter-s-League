@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,7 +105,7 @@ TextureImporter:
         width: 265
         height: 329
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -113,6 +113,48 @@ TextureImporter:
       bones: []
       spriteID: e85d87cb01d38cc439c35c2200655569
       internalID: 1520970201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2-4096x4096-ASTC 8x8-OutGameUI-f66aad89_1
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 3018
+        width: 316
+        height: 435
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6ff264c8ee3757458077274b3fbd2cb
+      internalID: -1112575885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2-4096x4096-ASTC 8x8-OutGameUI-f66aad89_2
+      rect:
+        serializedVersion: 2
+        x: 1407
+        y: 682
+        width: 305
+        height: 461
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a075c96b10211e14e97438a496b20aa1
+      internalID: -2066364020
       vertices: []
       indices: 
       edges: []
@@ -129,6 +171,8 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       sactx-2-4096x4096-ASTC 8x8-OutGameUI-f66aad89_0: 1520970201
+      sactx-2-4096x4096-ASTC 8x8-OutGameUI-f66aad89_1: -1112575885
+      sactx-2-4096x4096-ASTC 8x8-OutGameUI-f66aad89_2: -2066364020
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
