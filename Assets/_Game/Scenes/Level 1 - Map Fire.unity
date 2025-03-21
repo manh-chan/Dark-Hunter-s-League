@@ -4903,6 +4903,7 @@ MonoBehaviour:
   currentEventCooldown: 0
   events:
   - {fileID: 11400000, guid: 7f5fa9856ff089f42b9b97dc3c169d0f, type: 2}
+  - {fileID: 11400000, guid: 466c6b53d10d1d54a877267e1a308c31, type: 2}
   firstTrigerDelay: 5
   triggerInterval: 30
 --- !u!114 &794759843
