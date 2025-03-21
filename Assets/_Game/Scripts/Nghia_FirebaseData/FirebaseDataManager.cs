@@ -25,18 +25,23 @@ public class FirebaseDataManager : MonoBehaviour
        
         if (Input.GetKeyDown(KeyCode.G))
         {
-            PlayerData player = new PlayerData("Warrior123", 10, 150, 3200);
-            WritePlayerData("2", player);
+            CharacterData player = ScriptableObject.CreateInstance<CharacterData>();
+
+            // Gán giá trị từng thuộc tính
+            player.Name = "Player123";
+            player.CharacterDescription = "Player phu";
+            player.FullName = "Player123 up";
+            WritePlayerData("3", player);
         }
 
        
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.V))
         {
-            ReadPlayerData("1");
+            ReadPlayerData("3");
         }
     }
 
-    public void WritePlayerData(string id, PlayerData player)
+    public void WritePlayerData(string id, CharacterData player)
     {
         string json = JsonUtility.ToJson(player); 
 
@@ -60,12 +65,15 @@ public class FirebaseDataManager : MonoBehaviour
         {
             if (task.IsCompleted)
             {
+              
                 DataSnapshot snapshot = task.Result;
                 if (snapshot.Exists)
                 {
+                    Debug.Log("áđâsda");
                    
-                    PlayerData player = JsonUtility.FromJson<PlayerData>(snapshot.GetRawJsonValue());
-                    ShowReadPlayerData("Đọc dữ liệu người chơi thành công: " + player.name + ", Level: " + player.level + ", HP: " + player.hp + ", XP: " + player.xp);
+                    CharacterData player = ScriptableObject.CreateInstance<CharacterData>();
+                    JsonUtility.FromJsonOverwrite(snapshot.GetRawJsonValue(), player);
+                    ShowReadPlayerData("Đọc dữ liệu người chơi thành công: " + player.Name + ", characterDescription: " + player.CharacterDescription + ", fullName: " + player.FullName);
                 }
                 else
                 {
