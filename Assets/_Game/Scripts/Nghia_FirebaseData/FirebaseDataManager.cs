@@ -1,9 +1,7 @@
-using Firebase;
+﻿using Firebase;
 using Firebase.Database;
 using Firebase.Extensions;
 using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.VersionControl;
 using UnityEngine;
 
 public class FirebaseDataManager : MonoBehaviour
@@ -12,43 +10,58 @@ public class FirebaseDataManager : MonoBehaviour
 
     private void Awake()
     {
+        // Khởi tạo Firebase
         FirebaseApp app = FirebaseApp.DefaultInstance;
         reference = FirebaseDatabase.DefaultInstance.RootReference;
     }
 
     private void Start()
     {
-        WriteDatabase("1", "Hello");
-        ReadDatabase("1");
+        PlayerData player = new PlayerData("Warrior123", 10, 150, 3200);
+        WritePlayerData("1", player);
+
+        ReadPlayerData("1");
     }
 
-    public void WriteDatabase(string id, string message)
+    public void WritePlayerData(string id, PlayerData player)
     {
-        reference.Child("Users").Child(id).SetValueAsync(message).ContinueWithOnMainThread(task =>
+        string json = JsonUtility.ToJson(player); 
+
+        reference.Child("Users").Child(id).Child("Player").SetRawJsonValueAsync(json).ContinueWithOnMainThread(task =>
         {
-            if(task.IsCompleted)
+            if (task.IsCompleted)
             {
-                Debug.Log("Ghi du lieu thanh cong");
+                Debug.Log("Ghi dữ liệu người chơi thành công");
             }
             else
             {
-                Debug.Log("Ghi du lieu that bai" + task.Exception);
+                Debug.LogError("Ghi dữ liệu người chơi thất bại: " + task.Exception);
             }
         });
     }
 
-    public void ReadDatabase(string id)
+
+    public void ReadPlayerData(string id)
     {
-        reference.Child("Users").Child(id).GetValueAsync().ContinueWithOnMainThread(task =>
+        reference.Child("Users").Child(id).Child("Player").GetValueAsync().ContinueWithOnMainThread(task =>
         {
             if (task.IsCompleted)
             {
                 DataSnapshot snapshot = task.Result;
-                Debug.Log("Doc du lieu thanh cong: " +snapshot.Value.ToString());
+                if (snapshot.Exists)
+                {
+                   
+                    PlayerData player = JsonUtility.FromJson<PlayerData>(snapshot.GetRawJsonValue());
+                    Debug.Log("Đọc dữ liệu người chơi thành công: " + player.name + ", Level: " + player.level + ", HP: " + player.hp + ", XP: " + player.xp);
+                }
+                else
+                {
+                    Debug.Log("Dữ liệu người chơi không tồn tại!");
+                }
             }
             else
             {
-                Debug.Log("Doc du lieu that bai" + task.Exception);
+                Debug.LogError("Đọc dữ liệu người chơi thất bại: " + task.Exception);
             }
         });
     }
