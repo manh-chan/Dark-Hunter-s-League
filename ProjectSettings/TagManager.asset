@@ -41,15 +41,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Background
-    uniqueID: 4032110555
-    locked: 0
-  - name: Midground
-    uniqueID: 1755885081
-    locked: 0
-  - name: Foreground
-    uniqueID: 1185487789
-    locked: 0
   - name: Ground
     uniqueID: 2904502009
     locked: 0
@@ -94,4 +85,13 @@ TagManager:
     locked: 0
   - name: Sticker
     uniqueID: 3855522521
+    locked: 0
+  - name: Background
+    uniqueID: 2792506973
+    locked: 0
+  - name: Midground
+    uniqueID: 2937092753
+    locked: 0
+  - name: Foreground
+    uniqueID: 2000424739
     locked: 0
