@@ -2,11 +2,16 @@
 using Firebase.Database;
 using Firebase.Extensions;
 using System.Collections;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FirebaseDataManager : MonoBehaviour
 {
     private DatabaseReference reference;
+
+    public TextMeshProUGUI showReadPlayerData;
+    public TextMeshProUGUI showWritePlayerData;
 
     private void Awake()
     {
@@ -15,12 +20,20 @@ public class FirebaseDataManager : MonoBehaviour
         reference = FirebaseDatabase.DefaultInstance.RootReference;
     }
 
-    private void Start()
+    private void Update()
     {
-        PlayerData player = new PlayerData("Warrior123", 10, 150, 3200);
-        WritePlayerData("1", player);
+       
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            PlayerData player = new PlayerData("Warrior123", 10, 150, 3200);
+            WritePlayerData("2", player);
+        }
 
-        ReadPlayerData("1");
+       
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            ReadPlayerData("1");
+        }
     }
 
     public void WritePlayerData(string id, PlayerData player)
@@ -31,11 +44,11 @@ public class FirebaseDataManager : MonoBehaviour
         {
             if (task.IsCompleted)
             {
-                Debug.Log("Ghi dữ liệu người chơi thành công");
+                ShowWritePlayerData("Ghi dữ liệu người chơi thành công");
             }
             else
             {
-                Debug.LogError("Ghi dữ liệu người chơi thất bại: " + task.Exception);
+                ShowWritePlayerData("Ghi dữ liệu người chơi thất bại: " + task.Exception);
             }
         });
     }
@@ -52,17 +65,26 @@ public class FirebaseDataManager : MonoBehaviour
                 {
                    
                     PlayerData player = JsonUtility.FromJson<PlayerData>(snapshot.GetRawJsonValue());
-                    Debug.Log("Đọc dữ liệu người chơi thành công: " + player.name + ", Level: " + player.level + ", HP: " + player.hp + ", XP: " + player.xp);
+                    ShowReadPlayerData("Đọc dữ liệu người chơi thành công: " + player.name + ", Level: " + player.level + ", HP: " + player.hp + ", XP: " + player.xp);
                 }
                 else
                 {
-                    Debug.Log("Dữ liệu người chơi không tồn tại!");
+                    ShowReadPlayerData("Dữ liệu người chơi không tồn tại!");
                 }
             }
             else
             {
-                Debug.LogError("Đọc dữ liệu người chơi thất bại: " + task.Exception);
+                ShowReadPlayerData("Đọc dữ liệu người chơi thất bại: " + task.Exception);
             }
         });
+    }
+
+    public void ShowReadPlayerData(string message)
+    {
+        showReadPlayerData.text = message;
+    }
+    public void ShowWritePlayerData(string message)
+    {
+        showWritePlayerData.text = message;
     }
 }
