@@ -1,55 +1,98 @@
-using Firebase;
+﻿using Firebase;
 using Firebase.Database;
 using Firebase.Extensions;
 using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.VersionControl;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FirebaseDataManager : MonoBehaviour
 {
     private DatabaseReference reference;
 
+    public TextMeshProUGUI showReadPlayerData;
+    public TextMeshProUGUI showWritePlayerData;
+
     private void Awake()
     {
+        // Khởi tạo Firebase
         FirebaseApp app = FirebaseApp.DefaultInstance;
         reference = FirebaseDatabase.DefaultInstance.RootReference;
     }
 
-    private void Start()
+    private void Update()
     {
-        WriteDatabase("1", "Hello");
-        ReadDatabase("1");
-    }
-
-    public void WriteDatabase(string id, string message)
-    {
-        reference.Child("Users").Child(id).SetValueAsync(message).ContinueWithOnMainThread(task =>
+       
+        if (Input.GetKeyDown(KeyCode.G))
         {
-            if(task.IsCompleted)
-            {
-                Debug.Log("Ghi du lieu thanh cong");
-            }
-            else
-            {
-                Debug.Log("Ghi du lieu that bai" + task.Exception);
-            }
-        });
+            CharacterData player = ScriptableObject.CreateInstance<CharacterData>();
+
+            // Gán giá trị từng thuộc tính
+            player.Name = "Player123";
+            player.CharacterDescription = "Player phu";
+            player.FullName = "Player123 up";
+            WritePlayerData("3", player);
+        }
+
+       
+        if (Input.GetKeyDown(KeyCode.V))
+        {
+            ReadPlayerData("3");
+        }
     }
 
-    public void ReadDatabase(string id)
+    public void WritePlayerData(string id, CharacterData player)
     {
-        reference.Child("Users").Child(id).GetValueAsync().ContinueWithOnMainThread(task =>
+        string json = JsonUtility.ToJson(player); 
+
+        reference.Child("Users").Child(id).Child("Player").SetRawJsonValueAsync(json).ContinueWithOnMainThread(task =>
         {
             if (task.IsCompleted)
             {
-                DataSnapshot snapshot = task.Result;
-                Debug.Log("Doc du lieu thanh cong: " +snapshot.Value.ToString());
+                ShowWritePlayerData("Ghi dữ liệu người chơi thành công");
             }
             else
             {
-                Debug.Log("Doc du lieu that bai" + task.Exception);
+                ShowWritePlayerData("Ghi dữ liệu người chơi thất bại: " + task.Exception);
             }
         });
+    }
+
+
+    public void ReadPlayerData(string id)
+    {
+        reference.Child("Users").Child(id).Child("Player").GetValueAsync().ContinueWithOnMainThread(task =>
+        {
+            if (task.IsCompleted)
+            {
+              
+                DataSnapshot snapshot = task.Result;
+                if (snapshot.Exists)
+                {
+                    Debug.Log("áđâsda");
+                   
+                    CharacterData player = ScriptableObject.CreateInstance<CharacterData>();
+                    JsonUtility.FromJsonOverwrite(snapshot.GetRawJsonValue(), player);
+                    ShowReadPlayerData("Đọc dữ liệu người chơi thành công: " + player.Name + ", characterDescription: " + player.CharacterDescription + ", fullName: " + player.FullName);
+                }
+                else
+                {
+                    ShowReadPlayerData("Dữ liệu người chơi không tồn tại!");
+                }
+            }
+            else
+            {
+                ShowReadPlayerData("Đọc dữ liệu người chơi thất bại: " + task.Exception);
+            }
+        });
+    }
+
+    public void ShowReadPlayerData(string message)
+    {
+        showReadPlayerData.text = message;
+    }
+    public void ShowWritePlayerData(string message)
+    {
+        showWritePlayerData.text = message;
     }
 }
