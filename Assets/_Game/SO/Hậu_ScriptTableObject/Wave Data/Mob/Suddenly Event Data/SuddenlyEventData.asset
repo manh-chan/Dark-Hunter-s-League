@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35de2bdf1947ff043a32dd0fad3669fe, type: 3}
+  m_Name: SuddenlyEventData
+  m_EditorClassIdentifier: 
+  possibleSpawnPrefabs:
+  - {fileID: 6522533994833770283, guid: 8d7958f662b34ef4f84dd0890e8010cc, type: 3}
+  spawnInterval: {x: 5, y: 7}
+  spawnsPerTick: {x: 1, y: 1}
+  duration: 30
+  probability: 1
+  luckFactor: 1
+  activeAfter: 0
+  spawnEffectPrefab: {fileID: 2141021531875497792, guid: 1d7dc5260c273a945b4fea7b88f648aa, type: 3}
+  possibleAngles: 360
+  spawnRadius: 1
+  spawnDistance: 4
