@@ -41,57 +41,57 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Background
-    uniqueID: 4032110555
-    locked: 0
-  - name: Midground
-    uniqueID: 1755885081
-    locked: 0
-  - name: Foreground
-    uniqueID: 1185487789
-    locked: 0
   - name: Ground
-    uniqueID: 1868664713
+    uniqueID: 2904502009
     locked: 0
   - name: Stain
-    uniqueID: 2460964683
+    uniqueID: 2854213243
     locked: 0
   - name: Stone
-    uniqueID: 3935380239
-    locked: 0
-  - name: Grass
-    uniqueID: 3569133573
+    uniqueID: 3387806349
     locked: 0
   - name: BackGrass
-    uniqueID: 4155222633
+    uniqueID: 104918915
+    locked: 0
+  - name: Grass
+    uniqueID: 3944117571
     locked: 0
   - name: StainWhite
-    uniqueID: 3780175901
+    uniqueID: 2048013439
     locked: 0
   - name: Dark
-    uniqueID: 3310789755
+    uniqueID: 1385119149
     locked: 0
   - name: Box
-    uniqueID: 2212079607
+    uniqueID: 1144367965
     locked: 0
   - name: Stele
-    uniqueID: 2690827115
+    uniqueID: 531147653
     locked: 0
   - name: StonePillar
-    uniqueID: 2907705057
+    uniqueID: 3212750623
     locked: 0
   - name: Brick
-    uniqueID: 2719343607
+    uniqueID: 2929589769
     locked: 0
   - name: OldBrick
-    uniqueID: 3221914521
+    uniqueID: 2903486115
     locked: 0
   - name: Skull
-    uniqueID: 2783624735
+    uniqueID: 181611343
     locked: 0
   - name: Rock
-    uniqueID: 967257279
+    uniqueID: 2915600477
     locked: 0
   - name: Sticker
-    uniqueID: 753278697
+    uniqueID: 3855522521
+    locked: 0
+  - name: Background
+    uniqueID: 2792506973
+    locked: 0
+  - name: Midground
+    uniqueID: 2937092753
+    locked: 0
+  - name: Foreground
+    uniqueID: 2000424739
     locked: 0

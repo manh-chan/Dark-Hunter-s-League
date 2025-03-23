@@ -1,84 +1,79 @@
+using Firebase.Auth;
+using Firebase.Extensions;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class FireBaseLogin : MonoBehaviour
 {
-   /* [Header("Register")]
-    public InputField isRegiEmail;
-    public InputField isRegiPass;
-    public Button btnRegis;
+    [Header("Register")]
+    public InputField isReEmail;
+    public InputField isRePassword;
+    public Button btnRegister;
 
     [Header("Login")]
     public InputField isLoginEmail;
-    public InputField isLoginPass;
+    public InputField isLoginPassword;
     public Button btnLogin;
+
 
     private FirebaseAuth auth;
 
     void Start()
     {
         auth = FirebaseAuth.DefaultInstance;
-        btnRegis.onClick.AddListener(RegisAccFire);
-        btnLogin.onClick.AddListener(LoginAccFire);
+        btnRegister.onClick.AddListener(RegisterFirebase);
+        btnLogin.onClick.AddListener(LoginFirebase);
     }
 
-    public void RegisAccFire()
+    public void RegisterFirebase()
     {
-        string email = isRegiEmail.text;
-        string pass = isRegiPass.text;
+        string email = isReEmail.text;
+        string password = isRePassword.text;
 
-        auth.CreateUserWithEmailAndPasswordAsync(email, pass).ContinueWithOnMainThread(task =>
+        auth.CreateUserWithEmailAndPasswordAsync(email, password).ContinueWithOnMainThread(task =>
         {
             if (task.IsCanceled)
             {
                 Debug.Log("Dk bi huy");
-                return;
             }
-
-            if (task.IsFaulted)
+            if(task.IsFaulted)
             {
                 Debug.Log("Dk that bai");
-                return;
             }
-
-            if (task.IsCompleted)
+            if(task.IsCompleted)
             {
                 Debug.Log("Dk thanh cong");
-                return;
             }
         });
     }
 
-    public void LoginAccFire()
-    {
-        string email = isLoginEmail.text;
-        string pass = isLoginPass.text;
 
-        auth.SignInWithEmailAndPasswordAsync(email, pass).ContinueWithOnMainThread(task =>
+    public void LoginFirebase()
+    {
+        string email = isReEmail.text;
+        string password = isRePassword.text;
+
+        auth.SignInWithEmailAndPasswordAsync(email, password).ContinueWithOnMainThread(task =>
         {
             if (task.IsCanceled)
             {
-                Debug.Log("DN bi huy");
-                return;
+                Debug.Log("Dn bi huy");
             }
-
             if (task.IsFaulted)
             {
-                Debug.Log("DN that bai");
-                return;
+                Debug.Log("Dn that bai");
             }
-
             if (task.IsCompleted)
             {
-                Debug.Log("DN thanh cong");
+                Debug.Log("Dn thanh cong");
                 FirebaseUser user = task.Result.User;
 
-
-                SceneManager.LoadScene("Play");
-                return;
+                //chuyen scene nao ghi ten scene do
+                SceneManager.LoadScene("Menu");
             }
         });
-    }*/
+    }
 }
