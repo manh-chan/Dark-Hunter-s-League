@@ -73,8 +73,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1185487789
-  m_SortingLayer: 3
+  m_SortingLayerID: 2000424739
+  m_SortingLayer: 18
   m_SortingOrder: 0
   m_Sprite: {fileID: 1637092875, guid: 79829f440052f0c47810ea1dbab55379, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -161,6 +161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17157db90f9caea458debb1f4ef7daf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sorted: {fileID: 0}
   sortingActive: 1
   lifespan: 0.5
   bobbingAnimation:
