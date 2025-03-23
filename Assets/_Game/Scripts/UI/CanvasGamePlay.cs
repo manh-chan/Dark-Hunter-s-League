@@ -12,7 +12,7 @@ public class CanvasGamePlay : UICanvas
         base.Setup();
         UpdateCoin(0);
     }
-    //xu
+
     public void UpdateCoin(int coin)
     {
         coinText.text = coin.ToString();

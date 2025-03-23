@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 4096
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -164,48 +164,6 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: sactx-1-4096x4096-ASTC 8x8-InGameUI-6b2a5169_2
-      rect:
-        serializedVersion: 2
-        x: 2861
-        y: 3486
-        width: 228
-        height: 227
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9f8dfc41094da8442a2cf28ef4074983
-      internalID: 1917069624
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sactx-1-4096x4096-ASTC 8x8-InGameUI-6b2a5169_3
-      rect:
-        serializedVersion: 2
-        x: 2601
-        y: 3741
-        width: 237
-        height: 214
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 376a595b01c1fd045b47ac6d9e34af10
-      internalID: 1553432639
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -219,8 +177,6 @@ TextureImporter:
     nameFileIdTable:
       sactx-1-4096x4096-ASTC 8x8-InGameUI-6b2a5169_0: -1694000872
       sactx-1-4096x4096-ASTC 8x8-InGameUI-6b2a5169_1: 163478282
-      sactx-1-4096x4096-ASTC 8x8-InGameUI-6b2a5169_2: 1917069624
-      sactx-1-4096x4096-ASTC 8x8-InGameUI-6b2a5169_3: 1553432639
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
