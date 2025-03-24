@@ -777,9 +777,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loadingImage: {fileID: 967159333}
   textLoadings:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 967159331}
+  - {fileID: 967159331}
+  - {fileID: 967159331}
 --- !u!1 &2062602243
 GameObject:
   m_ObjectHideFlags: 0
