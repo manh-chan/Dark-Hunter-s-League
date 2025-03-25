@@ -41,15 +41,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Background
-    uniqueID: 2792506973
-    locked: 0
-  - name: Midground
-    uniqueID: 2937092753
-    locked: 0
-  - name: Foreground
-    uniqueID: 2000424739
-    locked: 0
   - name: Ground
     uniqueID: 2904502009
     locked: 0
@@ -68,8 +59,14 @@ TagManager:
   - name: StainWhite
     uniqueID: 2048013439
     locked: 0
+  - name: Box
+    uniqueID: 1144367965
+    locked: 0
   - name: Stele
     uniqueID: 531147653
+    locked: 0
+  - name: StonePillar
+    uniqueID: 3212750623
     locked: 0
   - name: Brick
     uniqueID: 2929589769
@@ -80,23 +77,23 @@ TagManager:
   - name: Skull
     uniqueID: 181611343
     locked: 0
-  - name: Sticker
-    uniqueID: 3855522521
-    locked: 0
-  - name: Player
-    uniqueID: 2434091521
-    locked: 0
-  - name: StonePillar
-    uniqueID: 3212750623
-    locked: 0
   - name: Rock
     uniqueID: 2915600477
     locked: 0
-  - name: Box
-    uniqueID: 1144367965
+  - name: Sticker
+    uniqueID: 3855522521
     locked: 0
-  - name: Glow stone
-    uniqueID: 1729171809
+  - name: Background
+    uniqueID: 2792506973
+    locked: 0
+  - name: Midground
+    uniqueID: 2937092753
+    locked: 0
+  - name: Foreground
+    uniqueID: 2000424739
+    locked: 0
+  - name: Player
+    uniqueID: 2404158511
     locked: 0
   - name: Dark
     uniqueID: 1385119149
