@@ -1588,6 +1588,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1608372324}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &1634831421
 GameObject:
   m_ObjectHideFlags: 0
@@ -1917,6 +1918,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeToSence: 85
+=======
+>>>>>>> parent of 5b14659 (bach 9.1)
 --- !u!1 &1683441071
 GameObject:
   m_ObjectHideFlags: 0
@@ -2774,6 +2777,3 @@ SceneRoots:
   - {fileID: 1712312492}
   - {fileID: 1758305963}
   - {fileID: 168633809}
-  - {fileID: 1675699936}
-  - {fileID: 1639252915}
-  - {fileID: 1634831422}
