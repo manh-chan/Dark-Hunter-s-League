@@ -8,10 +8,10 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Player
+  - 
   - Water
   - UI
-  - Enemy
+  - 
   - 
   - 
   - 
@@ -42,146 +42,41 @@ TagManager:
     uniqueID: 0
     locked: 0
   - name: Ground
-    uniqueID: 2904502009
+    uniqueID: 3904800889
     locked: 0
   - name: Stain
-    uniqueID: 2854213243
+    uniqueID: 1424788675
     locked: 0
   - name: Stone
-    uniqueID: 3387806349
+    uniqueID: 3915190751
     locked: 0
   - name: BackGrass
-    uniqueID: 104918915
+    uniqueID: 2854100801
     locked: 0
   - name: Grass
-    uniqueID: 3944117571
+    uniqueID: 2796475263
     locked: 0
   - name: StainWhite
-    uniqueID: 2048013439
-    locked: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-  - name: Dark
-    uniqueID: 1385119149
-    locked: 0
->>>>>>> 36abff236e3d5198a5e17b5c2131adf84273fa5e
-=======
-  - name: Dark
-    uniqueID: 1385119149
-    locked: 0
->>>>>>> 36abff236e3d5198a5e17b5c2131adf84273fa5e
-=======
-  - name: Dark
-    uniqueID: 1385119149
-    locked: 0
->>>>>>> 36abff236e3d5198a5e17b5c2131adf84273fa5e
-=======
-  - name: Dark
-    uniqueID: 1385119149
-    locked: 0
->>>>>>> 36abff236e3d5198a5e17b5c2131adf84273fa5e
-=======
-  - name: Dark
-    uniqueID: 1385119149
-    locked: 0
->>>>>>> 36abff236e3d5198a5e17b5c2131adf84273fa5e
-=======
-  - name: Dark
-    uniqueID: 1385119149
-    locked: 0
->>>>>>> 36abff236e3d5198a5e17b5c2131adf84273fa5e
-=======
-  - name: Dark
-    uniqueID: 1385119149
-    locked: 0
->>>>>>> 36abff236e3d5198a5e17b5c2131adf84273fa5e
-  - name: Box
-    uniqueID: 1144367965
-    locked: 0
-  - name: Stele
-    uniqueID: 531147653
-    locked: 0
-  - name: StonePillar
-    uniqueID: 3212750623
-    locked: 0
-  - name: Brick
-    uniqueID: 2929589769
-    locked: 0
-  - name: OldBrick
-    uniqueID: 2903486115
+    uniqueID: 3414916891
     locked: 0
   - name: Skull
-    uniqueID: 181611343
+    uniqueID: 46278509
     locked: 0
-  - name: Rock
-    uniqueID: 2915600477
+  - name: Stele
+    uniqueID: 1697904511
+    locked: 0
+  - name: Brick
+    uniqueID: 788163507
+    locked: 0
+  - name: OldBrick
+    uniqueID: 3118172573
     locked: 0
   - name: Sticker
-    uniqueID: 3855522521
-    locked: 0
-  - name: Background
-    uniqueID: 2792506973
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 36abff236e3d5198a5e17b5c2131adf84273fa5e
-=======
->>>>>>> 36abff236e3d5198a5e17b5c2131adf84273fa5e
-=======
->>>>>>> 36abff236e3d5198a5e17b5c2131adf84273fa5e
-=======
->>>>>>> 36abff236e3d5198a5e17b5c2131adf84273fa5e
-=======
->>>>>>> 36abff236e3d5198a5e17b5c2131adf84273fa5e
-=======
->>>>>>> 36abff236e3d5198a5e17b5c2131adf84273fa5e
-    locked: 0
-  - name: Midground
-    uniqueID: 2937092753
-    locked: 0
-  - name: Foreground
-    uniqueID: 2000424739
+    uniqueID: 1353650427
     locked: 0
   - name: Player
-    uniqueID: 2404158511
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 36abff236e3d5198a5e17b5c2131adf84273fa5e
+    uniqueID: 2887836247
     locked: 0
-  - name: Midground
-    uniqueID: 2937092753
-    locked: 0
-  - name: Foreground
-    uniqueID: 2000424739
-    locked: 0
-  - name: Player
-    uniqueID: 2404158511
-=======
->>>>>>> 36abff236e3d5198a5e17b5c2131adf84273fa5e
-=======
->>>>>>> 36abff236e3d5198a5e17b5c2131adf84273fa5e
-=======
->>>>>>> 36abff236e3d5198a5e17b5c2131adf84273fa5e
-=======
->>>>>>> 36abff236e3d5198a5e17b5c2131adf84273fa5e
-=======
->>>>>>> 36abff236e3d5198a5e17b5c2131adf84273fa5e
-=======
->>>>>>> 36abff236e3d5198a5e17b5c2131adf84273fa5e
+  - name: Dark
+    uniqueID: 2908805613
     locked: 0
