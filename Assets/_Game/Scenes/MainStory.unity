@@ -1589,6 +1589,7 @@ CanvasRenderer:
   m_GameObject: {fileID: 1608372324}
   m_CullTransparentMesh: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &1634831421
 GameObject:
   m_ObjectHideFlags: 0
@@ -1918,6 +1919,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeToSence: 85
+=======
+>>>>>>> parent of 5b14659 (bach 9.1)
 =======
 >>>>>>> parent of 5b14659 (bach 9.1)
 --- !u!1 &1683441071
