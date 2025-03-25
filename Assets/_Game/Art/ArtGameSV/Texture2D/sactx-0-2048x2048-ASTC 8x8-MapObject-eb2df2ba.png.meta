@@ -131,7 +131,7 @@ TextureImporter:
         width: 206
         height: 226
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -152,7 +152,7 @@ TextureImporter:
         width: 206
         height: 218
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -227,6 +227,71 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_5
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 1213
+        width: 278
+        height: 414
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -100, y: -126}
+        - {x: -106, y: -126}
+        - {x: -112, y: -128}
+        - {x: -128, y: -146}
+        - {x: -128, y: -185}
+        - {x: -120, y: -206}
+        - {x: -82, y: -206}
+        - {x: -73, y: -196}
+        - {x: -73, y: -168}
+        - {x: -79, y: -153}
+      - - {x: 111, y: -52}
+        - {x: 88, y: -74}
+        - {x: 82, y: -61}
+        - {x: 95, y: 15}
+        - {x: -80, y: 29}
+        - {x: -95, y: -23}
+        - {x: -133, y: -23}
+        - {x: -137, y: -59}
+        - {x: -132, y: -90}
+        - {x: -85, y: -169}
+        - {x: 12, y: -195}
+        - {x: 107, y: -195}
+        - {x: 139, y: -96}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6e89336b0796b440b5680693423c083
+      internalID: -2145231812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_6
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 0
+        width: 178
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f9a9bde6c378504483ab7990a20b9b7
+      internalID: -1816709114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -243,6 +308,9 @@ TextureImporter:
       sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_2: 994392077
       sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_3: 663642791
       sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_4: 1551934417
+      sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_5: -2145231812
+      sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_6: -1816709114
+      sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_7: 1291540111
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
