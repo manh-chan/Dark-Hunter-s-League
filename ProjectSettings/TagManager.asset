@@ -60,6 +60,12 @@ TagManager:
     uniqueID: 2048013439
     locked: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  - name: Dark
+    uniqueID: 1385119149
+    locked: 0
+>>>>>>> 36abff236e3d5198a5e17b5c2131adf84273fa5e
 =======
   - name: Dark
     uniqueID: 1385119149
@@ -92,15 +98,7 @@ TagManager:
   - name: Background
     uniqueID: 2792506973
 <<<<<<< HEAD
-    locked: 0
-  - name: Midground
-    uniqueID: 2937092753
-    locked: 0
-  - name: Foreground
-    uniqueID: 2000424739
-    locked: 0
-  - name: Player
-    uniqueID: 2404158511
+<<<<<<< HEAD
 =======
 >>>>>>> 36abff236e3d5198a5e17b5c2131adf84273fa5e
     locked: 0
@@ -112,4 +110,18 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 2404158511
+<<<<<<< HEAD
+=======
+>>>>>>> 36abff236e3d5198a5e17b5c2131adf84273fa5e
+    locked: 0
+  - name: Midground
+    uniqueID: 2937092753
+    locked: 0
+  - name: Foreground
+    uniqueID: 2000424739
+    locked: 0
+  - name: Player
+    uniqueID: 2404158511
+=======
+>>>>>>> 36abff236e3d5198a5e17b5c2131adf84273fa5e
     locked: 0

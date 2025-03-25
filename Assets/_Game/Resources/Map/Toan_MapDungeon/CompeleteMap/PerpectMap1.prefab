@@ -451,6 +451,9 @@ TilemapRenderer:
 =======
   m_SortingLayerID: 2048013439
   m_SortingLayer: 6
+<<<<<<< HEAD:Assets/_Game/Resources/Map/Toan_MapDungeon/CompeleteMap/PerpectMap1.prefab
+>>>>>>> 36abff236e3d5198a5e17b5c2131adf84273fa5e:Assets/_Game/Scenes/Toan_DungeonMap 1.unity
+=======
 >>>>>>> 36abff236e3d5198a5e17b5c2131adf84273fa5e:Assets/_Game/Scenes/Toan_DungeonMap 1.unity
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
@@ -3021,6 +3024,9 @@ TilemapRenderer:
 =======
   m_SortingLayerID: 1385119149
   m_SortingLayer: 7
+<<<<<<< HEAD:Assets/_Game/Resources/Map/Toan_MapDungeon/CompeleteMap/PerpectMap1.prefab
+>>>>>>> 36abff236e3d5198a5e17b5c2131adf84273fa5e:Assets/_Game/Scenes/Toan_DungeonMap 1.unity
+=======
 >>>>>>> 36abff236e3d5198a5e17b5c2131adf84273fa5e:Assets/_Game/Scenes/Toan_DungeonMap 1.unity
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}

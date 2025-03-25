@@ -159,6 +159,9 @@ SpriteRenderer:
 =======
   m_SortingLayerID: -350849725
   m_SortingLayer: 5
+<<<<<<< HEAD:Assets/_Game/Resources/Map/Toan_MapDungeon/CompeleteMap/PerpectMap3.prefab
+>>>>>>> 36abff236e3d5198a5e17b5c2131adf84273fa5e:Assets/_Game/Scenes/Toan_DungeonMap 3.unity
+=======
 >>>>>>> 36abff236e3d5198a5e17b5c2131adf84273fa5e:Assets/_Game/Scenes/Toan_DungeonMap 3.unity
   m_SortingOrder: 0
   m_Sprite: {fileID: -2145231812, guid: 1fb938862d524f84cb11167c3f1c515e, type: 3}
@@ -4474,6 +4477,9 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 104918915
   m_SortingLayer: 4
+<<<<<<< HEAD:Assets/_Game/Resources/Map/Toan_MapDungeon/CompeleteMap/PerpectMap3.prefab
+>>>>>>> 36abff236e3d5198a5e17b5c2131adf84273fa5e:Assets/_Game/Scenes/Toan_DungeonMap 3.unity
+=======
 >>>>>>> 36abff236e3d5198a5e17b5c2131adf84273fa5e:Assets/_Game/Scenes/Toan_DungeonMap 3.unity
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
@@ -10641,6 +10647,9 @@ SpriteRenderer:
 =======
   m_SortingLayerID: -1860875775
   m_SortingLayer: 0
+<<<<<<< HEAD:Assets/_Game/Resources/Map/Toan_MapDungeon/CompeleteMap/PerpectMap3.prefab
+>>>>>>> 36abff236e3d5198a5e17b5c2131adf84273fa5e:Assets/_Game/Scenes/Toan_DungeonMap 3.unity
+=======
 >>>>>>> 36abff236e3d5198a5e17b5c2131adf84273fa5e:Assets/_Game/Scenes/Toan_DungeonMap 3.unity
   m_SortingOrder: 0
   m_Sprite: {fileID: 1469688391, guid: 30e8753407aa8d0449fe9478a6eb03bb, type: 3}
@@ -10988,6 +10997,9 @@ SpriteRenderer:
 =======
   m_SortingLayerID: -1860875775
   m_SortingLayer: 0
+<<<<<<< HEAD:Assets/_Game/Resources/Map/Toan_MapDungeon/CompeleteMap/PerpectMap3.prefab
+>>>>>>> 36abff236e3d5198a5e17b5c2131adf84273fa5e:Assets/_Game/Scenes/Toan_DungeonMap 3.unity
+=======
 >>>>>>> 36abff236e3d5198a5e17b5c2131adf84273fa5e:Assets/_Game/Scenes/Toan_DungeonMap 3.unity
   m_SortingOrder: 0
   m_Sprite: {fileID: -1816709114, guid: 1fb938862d524f84cb11167c3f1c515e, type: 3}
@@ -12503,6 +12515,9 @@ SpriteRenderer:
 =======
   m_SortingLayerID: -1860875775
   m_SortingLayer: 0
+<<<<<<< HEAD:Assets/_Game/Resources/Map/Toan_MapDungeon/CompeleteMap/PerpectMap3.prefab
+>>>>>>> 36abff236e3d5198a5e17b5c2131adf84273fa5e:Assets/_Game/Scenes/Toan_DungeonMap 3.unity
+=======
 >>>>>>> 36abff236e3d5198a5e17b5c2131adf84273fa5e:Assets/_Game/Scenes/Toan_DungeonMap 3.unity
   m_SortingOrder: 0
   m_Sprite: {fileID: -2145231812, guid: 1fb938862d524f84cb11167c3f1c515e, type: 3}
@@ -13290,6 +13305,9 @@ SpriteRenderer:
 =======
   m_SortingLayerID: -1860875775
   m_SortingLayer: 0
+<<<<<<< HEAD:Assets/_Game/Resources/Map/Toan_MapDungeon/CompeleteMap/PerpectMap3.prefab
+>>>>>>> 36abff236e3d5198a5e17b5c2131adf84273fa5e:Assets/_Game/Scenes/Toan_DungeonMap 3.unity
+=======
 >>>>>>> 36abff236e3d5198a5e17b5c2131adf84273fa5e:Assets/_Game/Scenes/Toan_DungeonMap 3.unity
   m_SortingOrder: 0
   m_Sprite: {fileID: -1816709114, guid: 1fb938862d524f84cb11167c3f1c515e, type: 3}
