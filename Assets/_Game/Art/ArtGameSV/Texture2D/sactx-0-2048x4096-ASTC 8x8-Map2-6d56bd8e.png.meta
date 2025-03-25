@@ -163,11 +163,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -150.5, y: 75}
-        - {x: -150.5, y: -256}
-        - {x: 148.5, y: -256}
-        - {x: 150.5, y: 73}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: bc01fdd6561368c4c862dc006070696f
@@ -188,11 +184,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -150, y: 74}
-        - {x: -149, y: -250}
-        - {x: 149, y: -250}
-        - {x: 150, y: 75}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: b755592aeabcf1640b0028f3170e78c8
@@ -213,11 +205,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: 152, y: 94.5}
-        - {x: -152, y: 99.5}
-        - {x: -152, y: -205.5}
-        - {x: 149, y: -205.5}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 2961cbf8a835e134e896aa6fcf5c187e
@@ -511,13 +499,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -107, y: -118}
-        - {x: -93, y: -130}
-        - {x: 64, y: -130}
-        - {x: 107, y: -116}
-        - {x: 106, y: 36}
-        - {x: -105, y: 36}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: f0a604f53abb14d4fbaec472e46036c0
@@ -538,15 +520,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -113, y: 30}
-        - {x: -110, y: -95}
-        - {x: -96, y: -104}
-        - {x: -70, y: -108}
-        - {x: 24, y: -121}
-        - {x: 106, y: -121}
-        - {x: 110, y: -112}
-        - {x: 109, y: 30}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 4f610ed6fd2c29d47be86159039988c6
