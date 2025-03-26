@@ -93,19 +93,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 2
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -265,7 +252,7 @@ TextureImporter:
         width: 348
         height: 276
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -273,27 +260,6 @@ TextureImporter:
       bones: []
       spriteID: c7fae85a171188f4eb323953d7b8a40e
       internalID: -771653626
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sactx-1-2048x2048-ASTC 6x6-Lobby-dfcb14c0_8
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 554
-        width: 1273
-        height: 546
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 409, y: 0, z: 401, w: 84}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 309eb7f871d60d04b8434339d5e97765
-      internalID: 1844945122
       vertices: []
       indices: 
       edges: []
@@ -317,7 +283,6 @@ TextureImporter:
       sactx-1-2048x2048-ASTC 6x6-Lobby-dfcb14c0_5: -1077898101
       sactx-1-2048x2048-ASTC 6x6-Lobby-dfcb14c0_6: 1491216961
       sactx-1-2048x2048-ASTC 6x6-Lobby-dfcb14c0_7: -771653626
-      sactx-1-2048x2048-ASTC 6x6-Lobby-dfcb14c0_8: 1844945122
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
