@@ -50,6 +50,7 @@ public class PlayerStats : EntityStats
     public int experience = 0;
     public int level = 1;
     public int experienceCap = 100;
+    public int coin = 100;
 
     //Class for definign a level range and the corresponding
     [System.Serializable]
@@ -76,6 +77,7 @@ public class PlayerStats : EntityStats
     public Image healthBar;
     public Image expBar;
     public TMP_Text levelText;
+    public TMP_Text coinText;
 
     PlayerAnimator playerAnimator;
 
@@ -101,7 +103,7 @@ public class PlayerStats : EntityStats
     {
         base.Start();
 
-        if(UILevelSelector.globaBuff && !UILevelSelector.globalBuffAffectsPlayer)
+        if (UILevelSelector.globaBuff && !UILevelSelector.globalBuffAffectsPlayer)
             ApplyBuff(UILevelSelector.globaBuff);
 
         inventory.Add(charactedData.StartingWeapon);
@@ -184,8 +186,9 @@ public class PlayerStats : EntityStats
     public void IncreaseExperience(int amount)
     {
         experience += amount;
+        coin += amount;
         LevelUpChecker();
-
+        UpdateCoinText();
         UpdateExpBar();
     }
     private void LevelUpChecker()
@@ -220,7 +223,11 @@ public class PlayerStats : EntityStats
     }
     private void UpdateLevelText()
     {
-        levelText.text = "LV " + level.ToString();
+        levelText.text = level.ToString();
+    }
+    private void UpdateCoinText()
+    {
+        coinText.text = coin.ToString();
     }
     public override void TakeDamage(float damage)
     {
