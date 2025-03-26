@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4f4002ed8610ac479d8cd0854fd5692, type: 3}
   m_Name: Spear
   m_EditorClassIdentifier: 
-  icon: {fileID: -1128082927, guid: f1a0b149b0c47e74aaeb7eeec77fb216, type: 3}
+  icon: {fileID: 1886618947, guid: 6a6036d0d77735b49ad51bbe0359b793, type: 3}
   maxLevel: 8
   evolutinData: []
   behaviour: ProjectileWeapon

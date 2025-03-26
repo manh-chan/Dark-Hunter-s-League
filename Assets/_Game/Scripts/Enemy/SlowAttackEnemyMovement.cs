@@ -42,7 +42,6 @@ public class SlowAttackEnemyMovement : EnemyMovement
     {
         isAttacking = true;
         startPosition = transform.position; 
-        animator.SetBool("Attack", true);
 
         float approachTime = 0.5f;
         float elapsed = 0f;
@@ -63,7 +62,6 @@ public class SlowAttackEnemyMovement : EnemyMovement
             yield return null;
         }
 
-        animator.SetBool("Attack", false);
         cooldownTime = 5f;
         isAttacking = false;
         rezoSpeedMove = true;
