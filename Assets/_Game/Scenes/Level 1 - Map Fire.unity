@@ -827,7 +827,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &794759841
 Transform:
   m_ObjectHideFlags: 0
@@ -1412,7 +1412,7 @@ GameObject:
   - component: {fileID: 1691638765}
   m_Layer: 3
   m_Name: Character
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1710,7 +1710,7 @@ MonoBehaviour:
   - statsLevel: 8
     endLevel: 10
     experienceCapIncrease: 1500000
-  invincibilityDuration: 0.5
+  invincibilityDuration: 0.3
   healthBar: {fileID: 324201213}
   expBar: {fileID: 1283920252}
   levelText: {fileID: 6045714594180793617}
