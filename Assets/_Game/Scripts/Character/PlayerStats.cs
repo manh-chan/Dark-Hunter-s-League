@@ -43,6 +43,7 @@ public class PlayerStats : EntityStats
     [Header("Visuals")]
     public ParticleSystem damageEffect;
     public ParticleSystem blockeEffect;
+    public ParticleSystem lvUpEffect;
 
     //Ecperience and level of the player
     [Header("Experience/Level")]
@@ -99,6 +100,10 @@ public class PlayerStats : EntityStats
     protected override void Start()
     {
         base.Start();
+
+        if(UILevelSelector.globaBuff && !UILevelSelector.globalBuffAffectsPlayer)
+            ApplyBuff(UILevelSelector.globaBuff);
+
         inventory.Add(charactedData.StartingWeapon);
 
         experienceCap = levelRanges[0].experienceCapIncrease;
@@ -128,6 +133,7 @@ public class PlayerStats : EntityStats
 
             UpdateExpBar();
         }
+        InputPLvUp();
     }
     public override void RecalculateStats()
     {
@@ -189,6 +195,7 @@ public class PlayerStats : EntityStats
             level++;
             experience -= experienceCap;
             int experienceCapIncrease = 0;
+            if (lvUpEffect) Destroy(Instantiate(lvUpEffect, transform.position, Quaternion.identity), 5f);
             foreach (LevelRange range in levelRanges)
             {
                 if (level >= range.statsLevel && level <= range.endLevel)
@@ -227,7 +234,7 @@ public class PlayerStats : EntityStats
                 if (damageEffect) Destroy(Instantiate(damageEffect, transform.position, Quaternion.identity), 5f);
 
 
-                if (CurrentHealth < 0)
+                if (CurrentHealth <= 0)
                 {
                     Kill();
                 }
@@ -275,6 +282,16 @@ public class PlayerStats : EntityStats
                 CurrentHealth = actualStats.maxHealth;
             }
             UpdateHealthBar();
+        }
+    }
+    private void InputPLvUp()
+    {
+        if (Input.GetKeyUp(KeyCode.P))
+        {
+            experience += 50;
+            LevelUpChecker();
+
+            UpdateExpBar();
         }
     }
 }

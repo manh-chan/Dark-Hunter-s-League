@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EventManager : MonoBehaviour
+public class EventManager : Singleton<EventManager>
 {
     public float currentEventCooldown = 0;
 
@@ -14,7 +14,6 @@ public class EventManager : MonoBehaviour
     [Tooltip("How long to wait between each event.")]
     public float triggerInterval = 30f;
 
-    public static EventManager instance;
 
     [System.Serializable]
     public class Event
@@ -28,8 +27,6 @@ public class EventManager : MonoBehaviour
 
     private void Start()
     {
-        if (instance) Debug.LogWarning("There is more than one Spawn Manager in the scene! Please remove the extras.");
-        instance = this;
         currentEventCooldown = firstTrigerDelay > 0 ? firstTrigerDelay : triggerInterval;
         allPlayers = FindObjectsOfType<PlayerStats>();
 

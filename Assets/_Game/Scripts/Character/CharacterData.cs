@@ -87,4 +87,11 @@ public class CharacterData : ScriptableObject
         growth = 1,
         curse = 1
     };
+
+    public CharacterData(string name, string characterDescription, string fullName)
+    {
+        this.name = name;
+        this.characterDescription = characterDescription;
+        this.fullName = fullName;
+    }
 }

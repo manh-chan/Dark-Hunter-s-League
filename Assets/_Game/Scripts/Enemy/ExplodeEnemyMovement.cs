@@ -12,7 +12,6 @@ public class ExplodeEnemyMovement : EnemyMovement
     public float damageAmount = 20f;
 
     public LayerMask targetLayer;
-    public GameObject flame;
     public ParticleSystem ParticleSystem;
 
     private Color color1 = Color.white;
@@ -50,7 +49,6 @@ public class ExplodeEnemyMovement : EnemyMovement
     {
         DealDamage();
         Instantiate(ParticleSystem, transform.position, Quaternion.identity);
-        Instantiate(flame, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
     public void DealDamage()
@@ -62,7 +60,7 @@ public class ExplodeEnemyMovement : EnemyMovement
     }
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.red; // Viền đỏ rõ hơn
+        Gizmos.color = Color.red; 
         Gizmos.DrawWireSphere(transform.position, damageRadius);
     }
 }
