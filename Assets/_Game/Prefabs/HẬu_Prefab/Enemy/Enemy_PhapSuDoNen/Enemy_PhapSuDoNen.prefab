@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 6191591458199955587}
   - component: {fileID: 3885743444338233690}
   - component: {fileID: 745015935071434802}
-  - component: {fileID: 7185156106132119493}
   - component: {fileID: 5616476323606178641}
   - component: {fileID: 5150141823744670638}
   - component: {fileID: 7167646086068558581}
+  - component: {fileID: 8464117327882393273}
   m_Layer: 6
-  m_Name: Enemy_LinhDaoGam 11
+  m_Name: Enemy_PhapSuDoNen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -78,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: 2000424739
   m_SortingLayer: 18
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1738410335, guid: 8dca372f9388ec74b9227cdd9cbdec96, type: 3}
+  m_Sprite: {fileID: -1315023361, guid: 94870906afca6be4da7504025c558793, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -104,7 +104,7 @@ MonoBehaviour:
   baseStats:
     maxHealth: 20
     moveSpeed: 1
-    damage: 3
+    damage: 0
     knokbackMultiplier: 1
     resistances:
       freeze: 0
@@ -116,23 +116,6 @@ MonoBehaviour:
   damageColor: {r: 1, g: 0, b: 0, a: 1}
   damageFlashDuration: 0.2
   deathFadeTime: 0.6
---- !u!114 &7185156106132119493
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4260208873561234472}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71e691e5c41872e4c81e387b4fafb74d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sorted: {fileID: 0}
-  sortingActive: 1
-  outOffFrameAction: 1
-  knockbackVariance: 2
-  rezoSpeedMove: 1
 --- !u!114 &5616476323606178641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,7 +143,7 @@ Animator:
   m_GameObject: {fileID: 4260208873561234472}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 87c4c55ed2b240543ad9c6359bea53d9, type: 2}
+  m_Controller: {fileID: 9100000, guid: 95fbdc460fcd0a14d90e093aab272217, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -207,7 +190,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.3111111, y: 1.8222222}
+    oldSize: {x: 1.7444445, y: 2.25}
     newSize: {x: 3, y: 3.19}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -216,3 +199,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.94943076, y: 1.7178915}
   m_EdgeRadius: 0
+--- !u!114 &8464117327882393273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4260208873561234472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57415083add0b5d41b6b353569abdc33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sorted: {fileID: 0}
+  sortingActive: 1
+  outOffFrameAction: 0
+  knockbackVariance: 2
+  rezoSpeedMove: 1
+  cooldownTime: 0
+  distanceAttack: 1.5
+  summonPrefab: {fileID: 3489055248132405350, guid: bda1a6273da1f9a41be3201119810c06, type: 3}
