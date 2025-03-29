@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4260208873561234472
+--- !u!1 &7519307235046858582
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,27 +8,27 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6191591458199955587}
-  - component: {fileID: 3885743444338233690}
-  - component: {fileID: 745015935071434802}
-  - component: {fileID: 7185156106132119493}
-  - component: {fileID: 5616476323606178641}
-  - component: {fileID: 5150141823744670638}
-  - component: {fileID: 7167646086068558581}
+  - component: {fileID: 501745125077845200}
+  - component: {fileID: 5467943948100806793}
+  - component: {fileID: 6123760826699074637}
+  - component: {fileID: 517931206751612991}
+  - component: {fileID: 4013837983174958462}
+  - component: {fileID: 2474688284933608095}
+  - component: {fileID: 3335283703217799297}
   m_Layer: 6
-  m_Name: Enemy_LinhDaoGam
+  m_Name: Enemy_QuaiDoThoi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6191591458199955587
+--- !u!4 &501745125077845200
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4260208873561234472}
+  m_GameObject: {fileID: 7519307235046858582}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -37,13 +37,13 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &3885743444338233690
+--- !u!212 &5467943948100806793
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4260208873561234472}
+  m_GameObject: {fileID: 7519307235046858582}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -78,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: 2000424739
   m_SortingLayer: 18
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1738410335, guid: 8dca372f9388ec74b9227cdd9cbdec96, type: 3}
+  m_Sprite: {fileID: 1284364149, guid: 94870906afca6be4da7504025c558793, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -89,13 +89,13 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &745015935071434802
+--- !u!114 &6123760826699074637
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4260208873561234472}
+  m_GameObject: {fileID: 7519307235046858582}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e502400438471fb40b3a5e8b8c082ed6, type: 3}
@@ -116,30 +116,13 @@ MonoBehaviour:
   damageColor: {r: 1, g: 0, b: 0, a: 1}
   damageFlashDuration: 0.2
   deathFadeTime: 0.6
---- !u!114 &7185156106132119493
+--- !u!114 &517931206751612991
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4260208873561234472}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71e691e5c41872e4c81e387b4fafb74d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sorted: {fileID: 0}
-  sortingActive: 1
-  outOffFrameAction: 0
-  knockbackVariance: 2
-  rezoSpeedMove: 1
---- !u!114 &5616476323606178641
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4260208873561234472}
+  m_GameObject: {fileID: 7519307235046858582}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bd6d8ebe4eebcce48a995606c26d948b, type: 3}
@@ -150,17 +133,17 @@ MonoBehaviour:
   - name: Ngoc
     itemPrefab: {fileID: 3017881812221728157, guid: de8320c11866da547a95fb988556d0ee, type: 3}
     dropRate: 100
---- !u!95 &5150141823744670638
+--- !u!95 &4013837983174958462
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4260208873561234472}
+  m_GameObject: {fileID: 7519307235046858582}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 87c4c55ed2b240543ad9c6359bea53d9, type: 2}
+  m_Controller: {fileID: 9100000, guid: 8ace5f48bf3612445a47d2c30a9825f4, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -171,13 +154,13 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!61 &7167646086068558581
+--- !u!61 &2474688284933608095
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4260208873561234472}
+  m_GameObject: {fileID: 7519307235046858582}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -203,16 +186,37 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.10433087, y: -0.017388463}
+  m_Offset: {x: 0.01031208, y: -0.07423982}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.3111111, y: 1.8222222}
+    oldSize: {x: 1.1888889, y: 1.5777777}
     newSize: {x: 3, y: 3.19}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.94943076, y: 1.7178915}
+  m_Size: {x: 0.9494308, y: 1.149379}
   m_EdgeRadius: 0
+--- !u!114 &3335283703217799297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7519307235046858582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3f408a50b11efd4290ae5c2c6a68824, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sorted: {fileID: 0}
+  sortingActive: 1
+  outOffFrameAction: 0
+  knockbackVariance: 2
+  rezoSpeedMove: 1
+  cooldownTime: 0
+  distanceAttack: 1
+  ani: {fileID: 4013837983174958462}
+  isAttacking: 0
