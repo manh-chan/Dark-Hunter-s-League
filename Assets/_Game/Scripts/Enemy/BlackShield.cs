@@ -42,7 +42,6 @@ public class BlackShield : EnemyMovement
 
         ani.enabled = true;
         cooldownTime = 5f;
-        ani.gameObject.SetActive(true);
         isAttacking = false;
         rezoSpeedMove = true;
     }

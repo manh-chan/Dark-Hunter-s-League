@@ -44,6 +44,7 @@ public class PlayerStats : EntityStats
     public ParticleSystem damageEffect;
     public ParticleSystem blockeEffect;
     public ParticleSystem lvUpEffect;
+    public ParticleSystem targetEffect;
 
     //Ecperience and level of the player
     [Header("Experience/Level")]
@@ -299,6 +300,21 @@ public class PlayerStats : EntityStats
             LevelUpChecker();
 
             UpdateExpBar();
+        }
+    }
+    public void EnableEffect()
+    {
+        if (targetEffect != null && !targetEffect.isPlaying)
+        {
+            targetEffect.Play();
+        }
+    }
+
+    public void DisableEffect()
+    {
+        if (targetEffect != null && targetEffect.isPlaying)
+        {
+            targetEffect.Stop();
         }
     }
 }
