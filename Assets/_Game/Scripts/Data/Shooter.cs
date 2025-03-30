@@ -15,7 +15,8 @@ public class Shooter : MonoBehaviour
         shootTime -= Time.deltaTime;
         if (shootTime <= 0) { 
             shootTime = shootRate;
-            Instantiate(projectilePrefab,transform.position,Quaternion.identity);
+            Projectile1 projectile = Instantiate(projectilePrefab,transform.position,Quaternion.identity).GetComponent<Projectile1>();
+
         }
     }
 }
