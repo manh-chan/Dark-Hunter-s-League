@@ -126,10 +126,10 @@ TextureImporter:
       name: sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_0
       rect:
         serializedVersion: 2
-        x: 286
-        y: 1647
-        width: 206
-        height: 226
+        x: 306
+        y: 1658
+        width: 167
+        height: 197
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,9 +147,9 @@ TextureImporter:
       name: sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_1
       rect:
         serializedVersion: 2
-        x: 567
+        x: 575
         y: 1449
-        width: 206
+        width: 198
         height: 218
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -189,10 +189,10 @@ TextureImporter:
       name: sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_3
       rect:
         serializedVersion: 2
-        x: 719
-        y: 1713
-        width: 165
-        height: 228
+        x: 721
+        y: 1728
+        width: 159
+        height: 194
       alignment: 9
       pivot: {x: 0.5486957, y: 0.3721778}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,6 +288,27 @@ TextureImporter:
       bones: []
       spriteID: 4f9a9bde6c378504483ab7990a20b9b7
       internalID: -1816709114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_7
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 1233
+        width: 301
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55e6d06433836da41b004922c0a70a14
+      internalID: 1291540111
       vertices: []
       indices: 
       edges: []

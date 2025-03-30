@@ -41,11 +41,17 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Back
+    uniqueID: 1746254843
+    locked: 0
   - name: Ground
     uniqueID: 2904502009
     locked: 0
   - name: Stain
     uniqueID: 2854213243
+    locked: 0
+  - name: Seed
+    uniqueID: 3169341429
     locked: 0
   - name: Stone
     uniqueID: 3387806349
@@ -53,14 +59,38 @@ TagManager:
   - name: BackGrass
     uniqueID: 104918915
     locked: 0
+  - name: Branch
+    uniqueID: 3857825883
+    locked: 0
+  - name: Leaf
+    uniqueID: 3379867281
+    locked: 0
+  - name: PineCone
+    uniqueID: 1211233365
+    locked: 0
+  - name: Nut
+    uniqueID: 3653271775
+    locked: 0
+  - name: SecondGrass
+    uniqueID: 55980827
+    locked: 0
   - name: Grass
     uniqueID: 3944117571
     locked: 0
   - name: StainWhite
     uniqueID: 2048013439
     locked: 0
-  - name: Dark
-    uniqueID: 1385119149
+  - name: Camp
+    uniqueID: 3897090023
+    locked: 0
+  - name: Wood
+    uniqueID: 394252009
+    locked: 0
+  - name: WoodHead
+    uniqueID: 4011882561
+    locked: 0
+  - name: StoneSlab
+    uniqueID: 2846304909
     locked: 0
   - name: Box
     uniqueID: 1144367965
@@ -97,4 +127,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 2404158511
+    locked: 0
+  - name: Dark
+    uniqueID: 1385119149
     locked: 0
