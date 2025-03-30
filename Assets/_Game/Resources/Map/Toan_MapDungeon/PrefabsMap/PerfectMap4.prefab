@@ -178,6 +178,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4219404488951692899}
   - component: {fileID: 5955164843744370325}
+  - component: {fileID: 2579901522956515985}
   m_Layer: 0
   m_Name: Light 2D (5)
   m_TagString: Untagged
@@ -250,6 +251,22 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &2579901522956515985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 172818459180974567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec84d82cb3e98344cae6cbd20b676db9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireLight: {fileID: 5955164843744370325}
+  minIntensity: 1.5
+  maxIntensity: 3.5
+  flickerSpeed: 2
 --- !u!1 &199330269594340327
 GameObject:
   m_ObjectHideFlags: 0
@@ -545,6 +562,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7077359372192527368}
   - component: {fileID: 3173378673452002415}
+  - component: {fileID: 2771336498478287587}
   m_Layer: 0
   m_Name: Light 2D
   m_TagString: Untagged
@@ -617,6 +635,22 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &2771336498478287587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363331751314328605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec84d82cb3e98344cae6cbd20b676db9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireLight: {fileID: 3173378673452002415}
+  minIntensity: 1.5
+  maxIntensity: 3.5
+  flickerSpeed: 2
 --- !u!1 &412484158726341401
 GameObject:
   m_ObjectHideFlags: 0
@@ -1775,9 +1809,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.2}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 1
 --- !u!1 &1003591644105352448
 GameObject:
   m_ObjectHideFlags: 0
@@ -2577,6 +2611,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2870010701389982022}
   - component: {fileID: 4521469679163159574}
+  - component: {fileID: 9196025449903378162}
   m_Layer: 0
   m_Name: Light 2D (3)
   m_TagString: Untagged
@@ -2649,6 +2684,22 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &9196025449903378162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1529489715293132585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec84d82cb3e98344cae6cbd20b676db9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireLight: {fileID: 4521469679163159574}
+  minIntensity: 1.5
+  maxIntensity: 3.5
+  flickerSpeed: 2
 --- !u!1 &1538431524319328860
 GameObject:
   m_ObjectHideFlags: 0
@@ -4864,9 +4915,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.2}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 1
 --- !u!1 &2814392898456598485
 GameObject:
   m_ObjectHideFlags: 0
@@ -5185,9 +5236,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.2}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 1
 --- !u!1 &3186525669014436828
 GameObject:
   m_ObjectHideFlags: 0
@@ -5282,6 +5333,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6338107822009842967}
   - component: {fileID: 4261218379260980071}
+  - component: {fileID: 7886843436271752787}
   m_Layer: 0
   m_Name: Light 2D (4)
   m_TagString: Untagged
@@ -5354,6 +5406,22 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &7886843436271752787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3203478615902316357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec84d82cb3e98344cae6cbd20b676db9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireLight: {fileID: 4261218379260980071}
+  minIntensity: 1.5
+  maxIntensity: 3.5
+  flickerSpeed: 2
 --- !u!1 &3371933594666823724
 GameObject:
   m_ObjectHideFlags: 0
@@ -5588,9 +5656,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.2}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 1
 --- !u!1 &3568628565240601401
 GameObject:
   m_ObjectHideFlags: 0
@@ -5657,9 +5725,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.2}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 1
 --- !u!1 &3649029057391768706
 GameObject:
   m_ObjectHideFlags: 0
@@ -7215,6 +7283,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5659996342879952453}
   - component: {fileID: 9081268971658557019}
+  - component: {fileID: 1778370206593537898}
   m_Layer: 0
   m_Name: Light 2D (1)
   m_TagString: Untagged
@@ -7287,6 +7356,22 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1778370206593537898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4946538675587661663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec84d82cb3e98344cae6cbd20b676db9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireLight: {fileID: 9081268971658557019}
+  minIntensity: 1.5
+  maxIntensity: 3.5
+  flickerSpeed: 2
 --- !u!1 &4951235648281960430
 GameObject:
   m_ObjectHideFlags: 0
@@ -7521,9 +7606,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.2}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 1
 --- !u!1 &5116600153848788659
 GameObject:
   m_ObjectHideFlags: 0
@@ -16965,6 +17050,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6558979330593993392}
   - component: {fileID: 2444228169817973596}
+  - component: {fileID: 6295510095725156965}
   m_Layer: 0
   m_Name: Light 2D (6)
   m_TagString: Untagged
@@ -17037,6 +17123,22 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &6295510095725156965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7688017013521870318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec84d82cb3e98344cae6cbd20b676db9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireLight: {fileID: 2444228169817973596}
+  minIntensity: 1.5
+  maxIntensity: 3.5
+  flickerSpeed: 2
 --- !u!1 &7825473584767562101
 GameObject:
   m_ObjectHideFlags: 0
@@ -17759,6 +17861,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6135692475845865949}
   - component: {fileID: 5968775839119448937}
+  - component: {fileID: 6000488989193798888}
   m_Layer: 0
   m_Name: Light 2D (2)
   m_TagString: Untagged
@@ -17831,6 +17934,22 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &6000488989193798888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8185649093101899963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec84d82cb3e98344cae6cbd20b676db9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireLight: {fileID: 5968775839119448937}
+  minIntensity: 1.5
+  maxIntensity: 3.5
+  flickerSpeed: 2
 --- !u!1 &8242733298769711390
 GameObject:
   m_ObjectHideFlags: 0
@@ -19430,6 +19549,6 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.2}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 1
