@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c4f4002ed8610ac479d8cd0854fd5692, type: 3}
-  m_Name: Weapon Data 1
+  m_Name: "C\u1EA7u l\u1EEDa"
   m_EditorClassIdentifier: 
-  icon: {fileID: 21300000, guid: 6c3680aad78ff8c4a83935d50648d9ce, type: 3}
-  maxLevel: 8
+  icon: {fileID: -1838105208, guid: c2441fbff301c934ea69c7e9849a537b, type: 3}
+  maxLevel: 5
   evolutinData: []
   behaviour: OrbitWeapon
   baseStats:
@@ -141,11 +141,11 @@ MonoBehaviour:
     maxInstances: 0
     appliedBuffs: []
   randomGrowth:
-  - name: 
-    description: 
+  - name: "c\u1EA7u l\u1EEDa l\u1EDBn"
+    description: "c\xE1c qu\u1EA3 c\u1EA7u l\u1EEDa l\u1EDBn h\u01A1n"
     projectilePrefab: {fileID: 0}
     cannonPrefab: {fileID: 0}
-    OrbitPrefab: {fileID: 0}
+    OrbitPrefab: {fileID: 7549253302827061329, guid: 7be70868e7896a946a1ef8b9cd47f315, type: 3}
     hitEffect: {fileID: 0}
     spawnVariace:
       serializedVersion: 2
@@ -163,5 +163,54 @@ MonoBehaviour:
     knocback: 0
     number: 0
     piercing: 0
+    maxInstances: 0
+    appliedBuffs: []
+  - name: "t\u0103ng s\xE1t th\u01B0\u01A1ng l\u1EDBn"
+    description: "t\u1EAFng s\xE1t th\u01B0\u01A1ng kh\u1ED5ng l\u1ED3"
+    projectilePrefab: {fileID: 0}
+    cannonPrefab: {fileID: 0}
+    OrbitPrefab: {fileID: 0}
+    hitEffect: {fileID: 0}
+    spawnVariace:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    lifespan: 0
+    damage: 30
+    damageVariance: 0
+    area: 0
+    speed: 0
+    cooldown: 0
+    projectileInterval: 0
+    knocback: 0
+    number: 0
+    piercing: 0
+    maxInstances: 0
+    appliedBuffs: []
+  - name: "c\u1EA7u l\u1EEDa xuy\xEAn m\u1EE5c ti\xEAu"
+    description: "c\xE1c qu\u1EA3 c\u1EA7u c\xF3 th\u1EC3 g\xE2y s\xE1t th\u01B0\u01A1ng
+      nhi\xE8ue k\u1EBB \u0111\u1ECBch"
+    projectilePrefab: {fileID: 0}
+    cannonPrefab: {fileID: 0}
+    OrbitPrefab: {fileID: 0}
+    hitEffect: {fileID: 0}
+    spawnVariace:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    lifespan: 0
+    damage: 30
+    damageVariance: 0
+    area: 0
+    speed: 0
+    cooldown: 0
+    projectileInterval: 0
+    knocback: 0
+    number: 0
+    piercing: 99
     maxInstances: 0
     appliedBuffs: []

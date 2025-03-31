@@ -10,19 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2ea245414abf689438a69da43c188dd1, type: 3}
-  m_Name: Passive Data 1
+  m_Name: "H\u1ED3i m\xE1u"
   m_EditorClassIdentifier: 
-  icon: {fileID: -1416780562, guid: 539238f2eb612344696521ff7660f43c, type: 3}
+  icon: {fileID: 1201490210, guid: a9ca9a41598dd2e44b125928045c518f, type: 3}
   maxLevel: 5
   evolutinData: []
   baseStats:
-    name: tang speed
-    description: Kamekame HAAAAAAA
+    name: "H\u1ED3i m\xE1u"
+    description: "Cho ph\xE9p ng\u01B0\u1EDDi ch\u01A1i h\u1ED3i m\xE1u theo gi\xE2y"
     boosts:
       maxHealth: 0
-      recovery: 0
+      recovery: 0.3
       armor: 0
-      moveSpeed: 0.1
+      moveSpeed: 0
       might: 0
       area: 0
       speed: 0
@@ -36,13 +36,13 @@ MonoBehaviour:
       magnet: 0
       revival: 0
   growth:
-  - name: tang toc do chay
-    description: chay nhanh hon
+  - name: Level 2
+    description: "H\u1ED3i m\xE1u nhi\u1EC1u h\u01A1n"
     boosts:
       maxHealth: 0
-      recovery: 0
+      recovery: 0.3
       armor: 0
-      moveSpeed: 0.1
+      moveSpeed: 0
       might: 0
       area: 0
       speed: 0
@@ -55,13 +55,13 @@ MonoBehaviour:
       curse: 0
       magnet: 0
       revival: 0
-  - name: tang toc do chay
-    description: chay nhanh hon
+  - name: Level 3
+    description: "H\u1ED3i m\xE1u nhi\u1EC1u h\u01A1n"
     boosts:
       maxHealth: 0
-      recovery: 0
+      recovery: 0.3
       armor: 0
-      moveSpeed: 0.1
+      moveSpeed: 0
       might: 0
       area: 0
       speed: 0
@@ -74,13 +74,13 @@ MonoBehaviour:
       curse: 0
       magnet: 0
       revival: 0
-  - name: tang toc do chay
-    description: chay nhanh hon
+  - name: Level 4
+    description: "H\u1ED3i m\xE1u nhi\u1EC1u h\u01A1n"
     boosts:
       maxHealth: 0
-      recovery: 0
+      recovery: 0.3
       armor: 0
-      moveSpeed: 0.1
+      moveSpeed: 0
       might: 0
       area: 0
       speed: 0
@@ -93,13 +93,13 @@ MonoBehaviour:
       curse: 0
       magnet: 0
       revival: 0
-  - name: tang toc do chay
-    description: chay nhanh hon
+  - name: Level 5
+    description: "H\u1ED3i m\xE1u nhi\u1EC1u h\u01A1n"
     boosts:
       maxHealth: 0
-      recovery: 0
+      recovery: 0.3
       armor: 0
-      moveSpeed: 0.1
+      moveSpeed: 0
       might: 0
       area: 0
       speed: 0

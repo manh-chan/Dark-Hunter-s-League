@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7549253302827061329}
   - component: {fileID: -8120788591488759294}
   m_Layer: 0
-  m_Name: Orbit
+  m_Name: Orbit big
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.9307771, y: 1.1972932, z: -0.0273026}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -137,7 +137,7 @@ MonoBehaviour:
   owner: {fileID: 0}
   weapon: {fileID: 0}
   orbitSpeed: 360
-  maxRadius: 1
+  maxRadius: 1.5
   expansionSpeed: 2
   maxRotations: 2
   startAngle: 0

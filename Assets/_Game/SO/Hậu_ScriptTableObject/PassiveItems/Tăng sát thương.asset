@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2ea245414abf689438a69da43c188dd1, type: 3}
-  m_Name: Passive Data
+  m_Name: "T\u0103ng s\xE1t th\u01B0\u01A1ng"
   m_EditorClassIdentifier: 
-  icon: {fileID: -1416780562, guid: 539238f2eb612344696521ff7660f43c, type: 3}
+  icon: {fileID: -61268645, guid: a9ca9a41598dd2e44b125928045c518f, type: 3}
   maxLevel: 5
   evolutinData: []
   baseStats:
-    name: tang giap
-    description: Kamekame HAAAAAAA
+    name: "T\u0103ng s\xE1t th\u01B0\u01A1ng"
+    description: "T\u0103ng th\xEAm cho ng\u01B0\u1EDDi ch\u01A1i"
     boosts:
       maxHealth: 0
       recovery: 0
-      armor: 0.1
+      armor: 0
       moveSpeed: 0
-      might: 0
+      might: 0.1
       area: 0
       speed: 0
       duration: 0
@@ -36,14 +36,14 @@ MonoBehaviour:
       magnet: 0
       revival: 0
   growth:
-  - name: tang giap 2
-    description: fdasfsadfsfsafas
+  - name: Level 2
+    description: "T\u0103ng S\xE1t th\u01B0\u01A1ng"
     boosts:
       maxHealth: 0
       recovery: 0
-      armor: 1
+      armor: 0
       moveSpeed: 0
-      might: 0
+      might: 0.1
       area: 0
       speed: 0
       duration: 0
@@ -55,14 +55,14 @@ MonoBehaviour:
       curse: 0
       magnet: 0
       revival: 0
-  - name: tang giap 3
-    description: fdasfsadfsfsafas
+  - name: Level 3
+    description: "T\u0103ng S\xE1t th\u01B0\u01A1ng"
     boosts:
       maxHealth: 0
       recovery: 0
-      armor: 1
+      armor: 0
       moveSpeed: 0
-      might: 0
+      might: 0.1
       area: 0
       speed: 0
       duration: 0
@@ -74,14 +74,14 @@ MonoBehaviour:
       curse: 0
       magnet: 0
       revival: 0
-  - name: tang giap 4
-    description: fdasfsadfsfsafas
+  - name: Level 4
+    description: "T\u0103ng S\xE1t th\u01B0\u01A1ng"
     boosts:
       maxHealth: 0
       recovery: 0
-      armor: 1
+      armor: 0
       moveSpeed: 0
-      might: 0
+      might: 0.1
       area: 0
       speed: 0
       duration: 0
@@ -93,14 +93,14 @@ MonoBehaviour:
       curse: 0
       magnet: 0
       revival: 0
-  - name: tang giap 5
-    description: fdasfsadfsfsafas
+  - name: Level 5
+    description: "T\u0103ng S\xE1t th\u01B0\u01A1ng"
     boosts:
       maxHealth: 0
       recovery: 0
-      armor: 1
+      armor: 0
       moveSpeed: 0
-      might: 0
+      might: 0.1
       area: 0
       speed: 0
       duration: 0

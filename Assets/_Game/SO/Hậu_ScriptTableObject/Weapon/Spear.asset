@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Spear
   m_EditorClassIdentifier: 
   icon: {fileID: 1886618947, guid: 6a6036d0d77735b49ad51bbe0359b793, type: 3}
-  maxLevel: 8
+  maxLevel: 5
   evolutinData: []
   behaviour: ProjectileWeapon
   baseStats:
