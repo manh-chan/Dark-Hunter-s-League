@@ -21,6 +21,7 @@ MonoBehaviour:
     description: Ban Lua ve muc tieu
     projectilePrefab: {fileID: -530065241227759983, guid: de101b276b898e64fa7d94a39b8949be, type: 3}
     cannonPrefab: {fileID: 1115941710497007542, guid: ef2dcdf7102dcdd4592d3a6e0eedefb6, type: 3}
+    OrbitPrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariace:
       serializedVersion: 2
@@ -45,6 +46,7 @@ MonoBehaviour:
     description: Baka2
     projectilePrefab: {fileID: 0}
     cannonPrefab: {fileID: 0}
+    OrbitPrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariace:
       serializedVersion: 2
@@ -68,6 +70,7 @@ MonoBehaviour:
     description: Baka3
     projectilePrefab: {fileID: 0}
     cannonPrefab: {fileID: 0}
+    OrbitPrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariace:
       serializedVersion: 2
@@ -91,6 +94,7 @@ MonoBehaviour:
     description: Baka4
     projectilePrefab: {fileID: 0}
     cannonPrefab: {fileID: 0}
+    OrbitPrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariace:
       serializedVersion: 2
@@ -114,6 +118,7 @@ MonoBehaviour:
     description: Baka5
     projectilePrefab: {fileID: 0}
     cannonPrefab: {fileID: 0}
+    OrbitPrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariace:
       serializedVersion: 2
@@ -137,6 +142,7 @@ MonoBehaviour:
     description: Baka6
     projectilePrefab: {fileID: 0}
     cannonPrefab: {fileID: 0}
+    OrbitPrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariace:
       serializedVersion: 2
@@ -160,6 +166,7 @@ MonoBehaviour:
     description: Baka7
     projectilePrefab: {fileID: 0}
     cannonPrefab: {fileID: 0}
+    OrbitPrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariace:
       serializedVersion: 2
@@ -183,6 +190,7 @@ MonoBehaviour:
     description: Baka8
     projectilePrefab: {fileID: 0}
     cannonPrefab: {fileID: 0}
+    OrbitPrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariace:
       serializedVersion: 2

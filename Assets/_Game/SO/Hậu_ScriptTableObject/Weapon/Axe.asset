@@ -18,9 +18,10 @@ MonoBehaviour:
   behaviour: AxeWeapon
   baseStats:
     name: Axe
-    description: Nem riu
+    description: "n\xE9m ra chi\u1EBFc r\xECu g\xE2y s\xE1t th\u01B0\u01A1ng l\u1EDBn"
     projectilePrefab: {fileID: 5224522249957981241, guid: cd391cdcfdb155e439e72f57bd3916ca, type: 3}
     cannonPrefab: {fileID: 0}
+    OrbitPrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariace:
       serializedVersion: 2
@@ -29,7 +30,7 @@ MonoBehaviour:
       width: 0
       height: 0
     lifespan: 3
-    damage: 50
+    damage: 30
     damageVariance: 2
     area: 2
     speed: 0
@@ -37,7 +38,7 @@ MonoBehaviour:
     projectileInterval: 0.5
     knocback: 0.5
     number: 2
-    piercing: 5
+    piercing: 2
     maxInstances: 20
     appliedBuffs: []
   linearGrowth:
@@ -45,6 +46,7 @@ MonoBehaviour:
     description: Baka2
     projectilePrefab: {fileID: 0}
     cannonPrefab: {fileID: 0}
+    OrbitPrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariace:
       serializedVersion: 2
@@ -68,6 +70,7 @@ MonoBehaviour:
     description: Baka3
     projectilePrefab: {fileID: 0}
     cannonPrefab: {fileID: 0}
+    OrbitPrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariace:
       serializedVersion: 2
@@ -91,6 +94,7 @@ MonoBehaviour:
     description: Baka4
     projectilePrefab: {fileID: 0}
     cannonPrefab: {fileID: 0}
+    OrbitPrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariace:
       serializedVersion: 2
@@ -114,6 +118,7 @@ MonoBehaviour:
     description: Baka4
     projectilePrefab: {fileID: 0}
     cannonPrefab: {fileID: 0}
+    OrbitPrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariace:
       serializedVersion: 2
@@ -137,6 +142,7 @@ MonoBehaviour:
     description: Baka5
     projectilePrefab: {fileID: 0}
     cannonPrefab: {fileID: 0}
+    OrbitPrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariace:
       serializedVersion: 2
@@ -160,6 +166,7 @@ MonoBehaviour:
     description: Baka6
     projectilePrefab: {fileID: 0}
     cannonPrefab: {fileID: 0}
+    OrbitPrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariace:
       serializedVersion: 2
@@ -183,6 +190,7 @@ MonoBehaviour:
     description: Baka7
     projectilePrefab: {fileID: 0}
     cannonPrefab: {fileID: 0}
+    OrbitPrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariace:
       serializedVersion: 2
@@ -206,6 +214,7 @@ MonoBehaviour:
     description: Baka8
     projectilePrefab: {fileID: 0}
     cannonPrefab: {fileID: 0}
+    OrbitPrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariace:
       serializedVersion: 2
