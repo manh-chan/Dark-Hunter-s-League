@@ -22,7 +22,17 @@ public class OrbitProjectile : WeaponEffect
 
     private void Start()
     {
-        angle = startAngle; 
+        angle = startAngle;
+        Weapon.Stats stats = weapon.GetStats();
+
+        float area = weapon.GetArea();
+        if (area <= 0) area = 1;
+        transform.localScale = new Vector3(
+        area * Mathf.Sign(transform.localScale.x),
+            area * Mathf.Sign(transform.localScale.y), 1);
+
+        piercing = stats.piercing;
+        //if (stats.lifespan > 0) Destroy(gameObject, stats.lifespan);
     }
 
     private void Update()
