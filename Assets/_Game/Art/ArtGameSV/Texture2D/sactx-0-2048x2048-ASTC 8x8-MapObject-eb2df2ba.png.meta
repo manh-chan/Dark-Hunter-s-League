@@ -322,7 +322,7 @@ TextureImporter:
         width: 282
         height: 428
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -330,6 +330,27 @@ TextureImporter:
       bones: []
       spriteID: 36afdb633fc558b448f8045f87a6bf63
       internalID: 860609432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 401
+        width: 291
+        height: 463
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c85a9983512b814da0229e48ca97927
+      internalID: 1822462055
       vertices: []
       indices: 
       edges: []
@@ -354,6 +375,7 @@ TextureImporter:
       sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_6: -1816709114
       sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_7: 1291540111
       sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_8: 860609432
+      sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_9: 1822462055
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
