@@ -10,21 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2ea245414abf689438a69da43c188dd1, type: 3}
-  m_Name: "T\u0103ng k\xEDch th\u01B0\u1EDBng v\u0169 kh\xED"
+  m_Name: "T\u0103ng th\xEAm m\xE1u t\u1ED1i \u0111a"
   m_EditorClassIdentifier: 
-  icon: {fileID: 135815649, guid: a9ca9a41598dd2e44b125928045c518f, type: 3}
+  icon: {fileID: 1201490210, guid: a9ca9a41598dd2e44b125928045c518f, type: 3}
   maxLevel: 5
   evolutinData: []
   baseStats:
-    name: "T\u0103ng k\xEDch th\u01B0\u1EDBng v\u0169 kh\xED"
-    description: "V\u0169 kh\xED ch\u1EDF l\xEAn l\u1EDBn h\u01A1n"
+    name: "T\u0103ng th\xEAm m\xE1u t\u1ED1i \u0111a"
+    description: "Gi\xFAp t\u0103ng th\xEAm m\xE1u t\u1ED1i \u0111a c\u1EE7a ng\u01B0\u1EDDi
+      ch\u01A1i"
     boosts:
-      maxHealth: 0
+      maxHealth: 5
       recovery: 0
       armor: 0
       moveSpeed: 0
       might: 0
-      area: 0.1
+      area: 0
       speed: 0
       duration: 0
       amount: 0
@@ -37,14 +38,15 @@ MonoBehaviour:
       revival: 0
   growth:
   - name: Level 2
-    description: "V\u0169 kh\xED ch\u1EDF l\xEAn l\u1EDBn h\u01A1n"
+    description: "Gi\xFAp t\u0103ng th\xEAm m\xE1u t\u1ED1i \u0111a c\u1EE7a ng\u01B0\u1EDDi
+      ch\u01A1i"
     boosts:
-      maxHealth: 0
+      maxHealth: 5
       recovery: 0
       armor: 0
       moveSpeed: 0
       might: 0
-      area: 0.1
+      area: 0
       speed: 0
       duration: 0
       amount: 0
@@ -56,14 +58,15 @@ MonoBehaviour:
       magnet: 0
       revival: 0
   - name: Level 3
-    description: "V\u0169 kh\xED ch\u1EDF l\xEAn l\u1EDBn h\u01A1n"
+    description: "Gi\xFAp t\u0103ng th\xEAm m\xE1u t\u1ED1i \u0111a c\u1EE7a ng\u01B0\u1EDDi
+      ch\u01A1i"
     boosts:
-      maxHealth: 0
+      maxHealth: 5
       recovery: 0
       armor: 0
       moveSpeed: 0
       might: 0
-      area: 0.1
+      area: 0
       speed: 0
       duration: 0
       amount: 0
@@ -75,14 +78,15 @@ MonoBehaviour:
       magnet: 0
       revival: 0
   - name: Level 4
-    description: "V\u0169 kh\xED ch\u1EDF l\xEAn l\u1EDBn h\u01A1n"
+    description: "Gi\xFAp t\u0103ng th\xEAm m\xE1u t\u1ED1i \u0111a c\u1EE7a ng\u01B0\u1EDDi
+      ch\u01A1i"
     boosts:
-      maxHealth: 0
+      maxHealth: 5
       recovery: 0
       armor: 0
       moveSpeed: 0
       might: 0
-      area: 0.1
+      area: 0
       speed: 0
       duration: 0
       amount: 0
@@ -94,14 +98,15 @@ MonoBehaviour:
       magnet: 0
       revival: 0
   - name: Level 5
-    description: "V\u0169 kh\xED ch\u1EDF l\xEAn l\u1EDBn h\u01A1n"
+    description: "Gi\xFAp t\u0103ng th\xEAm m\xE1u t\u1ED1i \u0111a c\u1EE7a ng\u01B0\u1EDDi
+      ch\u01A1i"
     boosts:
-      maxHealth: 0
+      maxHealth: 5
       recovery: 0
       armor: 0
       moveSpeed: 0
       might: 0
-      area: 0.1
+      area: 0
       speed: 0
       duration: 0
       amount: 0

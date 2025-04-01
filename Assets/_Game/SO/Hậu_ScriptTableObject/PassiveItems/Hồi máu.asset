@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ea245414abf689438a69da43c188dd1, type: 3}
   m_Name: "H\u1ED3i m\xE1u"
   m_EditorClassIdentifier: 
-  icon: {fileID: 1201490210, guid: a9ca9a41598dd2e44b125928045c518f, type: 3}
+  icon: {fileID: 2082725684, guid: a9ca9a41598dd2e44b125928045c518f, type: 3}
   maxLevel: 5
   evolutinData: []
   baseStats:
