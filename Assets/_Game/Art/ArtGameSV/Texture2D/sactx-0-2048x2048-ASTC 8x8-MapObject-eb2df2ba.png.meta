@@ -343,7 +343,7 @@ TextureImporter:
         width: 291
         height: 463
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -351,6 +351,195 @@ TextureImporter:
       bones: []
       spriteID: 1c85a9983512b814da0229e48ca97927
       internalID: 1822462055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_10
+      rect:
+        serializedVersion: 2
+        x: 1581
+        y: 910
+        width: 177
+        height: 196
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f60b32f531007841b867b54f73b32bf
+      internalID: 1531864387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_11
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 1309
+        width: 120
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85ba66e21998a3648b7eeb9a860c3ce3
+      internalID: 1434810337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_12
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 1606
+        width: 124
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e4e45ef5e486bf42857be5f8c321a21
+      internalID: -129740030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_13
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 1783
+        width: 125
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d21ae22827d73674783c02752a785f7a
+      internalID: 819638970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_14
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 1701
+        width: 194
+        height: 282
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e60e4689c1eb0149bb95c7fe9743308
+      internalID: -2056650673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_15
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 774
+        width: 177
+        height: 229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fae5b60c2f01bd4ea3ae55020c2fadd
+      internalID: -670550654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_16
+      rect:
+        serializedVersion: 2
+        x: 1775
+        y: 214
+        width: 155
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd51ac9e685e8534e9d2c7055c6fe910
+      internalID: 1909464902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_17
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 1505
+        width: 120
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7715d85ded47d594196a45986a9d78c9
+      internalID: 731404518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_18
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 1146
+        width: 126
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7f8672f8c981be4a86423a40f81b62d
+      internalID: -1108777944
       vertices: []
       indices: 
       edges: []
@@ -368,6 +557,15 @@ TextureImporter:
     nameFileIdTable:
       sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_0: 1314598488
       sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_1: -1325930848
+      sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_10: 1531864387
+      sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_11: 1434810337
+      sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_12: -129740030
+      sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_13: 819638970
+      sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_14: -2056650673
+      sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_15: -670550654
+      sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_16: 1909464902
+      sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_17: 731404518
+      sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_18: -1108777944
       sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_2: 994392077
       sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_3: 663642791
       sactx-0-2048x2048-ASTC 8x8-MapObject-eb2df2ba_4: 1551934417
