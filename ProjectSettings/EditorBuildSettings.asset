@@ -26,4 +26,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Game/Scenes/MainStory.unity
     guid: 3519bec6730526548a08472274fe6c28
+  - enabled: 1
+    path: Assets/_Game/Scenes/TestFirebase.unity
+    guid: efe190dbbcb7b20498624859d102c7ae
+  - enabled: 1
+    path: Assets/_Game/Scenes/FirebaseData.unity
+    guid: 9b8e8a2db54990c499951ff44505253f
   m_configObjects: {}
