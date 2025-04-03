@@ -1,6 +1,12 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/_Game/Art/FX.meta
+guid: 509fe6fd78a2d3b48ad5c331ce3c3e21
+folderAsset: yes
+DefaultImporter:
+========
 guid: 4a6a10e6d7c73f64592d25b35a0b4aea
 NativeFormatImporter:
+>>>>>>>> Mạnh:Assets/TextMesh Pro/Fonts/Funstella.asset.meta
   externalObjects: {}
   mainObjectFileID: 11400000
   userData: 
