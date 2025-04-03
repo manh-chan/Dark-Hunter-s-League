@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using TMPro;
@@ -8,6 +8,7 @@ using UnityEngine.UI;
 
 public class PlayerStats : EntityStats
 {
+    public UpgradeStats upgradeStats; 
     public CharacterData charactedData;
     public CharacterData.Stats baseStats;
     [SerializeField] CharacterData.Stats actualStats;
@@ -46,14 +47,12 @@ public class PlayerStats : EntityStats
     public ParticleSystem lvUpEffect;
     public ParticleSystem targetEffect;
 
-    //Ecperience and level of the player
     [Header("Experience/Level")]
     public int experience = 0;
     public int level = 1;
     public int experienceCap = 100;
     public int coin = 100;
 
-    //Class for definign a level range and the corresponding
     [System.Serializable]
     public class LevelRange
     {
@@ -88,7 +87,7 @@ public class PlayerStats : EntityStats
 
         inventory = GetComponent<PlayerInventory>();
         collector = GetComponentInChildren<PlayerCollector>();
-
+        
         baseStats = actualStats = charactedData.stats;
         collector.SetRadius(actualStats.magnet);
         health = actualStats.maxHealth;
@@ -103,16 +102,16 @@ public class PlayerStats : EntityStats
     protected override void Start()
     {
         base.Start();
-
+        
         if (UILevelSelector.globaBuff && !UILevelSelector.globalBuffAffectsPlayer)
             ApplyBuff(UILevelSelector.globaBuff);
-
+        
         inventory.Add(charactedData.StartingWeapon);
 
         experienceCap = levelRanges[0].experienceCapIncrease;
 
         GameManager.instance.AssignChosenCharacterUI(charactedData);
-
+        Invoke(nameof(UpdateHealth1s),0.2f);
         UpdateHealthBar();
         UpdateExpBar();
         UpdateLevelText();
@@ -141,6 +140,7 @@ public class PlayerStats : EntityStats
     public override void RecalculateStats()
     {
         actualStats = baseStats;
+
         foreach (PlayerInventory.Slot s in inventory.passiveSlots)
         {
             Passive p = s.item as Passive;
@@ -149,6 +149,22 @@ public class PlayerStats : EntityStats
                 actualStats += p.GetBoosts();
             }
         }
+
+        if (upgradeStats != null)
+        {
+            actualStats.maxHealth += upgradeStats.maxHealthBonus;
+            actualStats.recovery += upgradeStats.recoveryBonus;
+            actualStats.armor += upgradeStats.armorBonus;
+            actualStats.moveSpeed += upgradeStats.moveSpeedBonus;
+            actualStats.might += upgradeStats.mightBonus;
+            actualStats.amount += upgradeStats.amountBonus;
+            actualStats.area += upgradeStats.areaBonus;
+            actualStats.speed += upgradeStats.speedBonus;
+            actualStats.duration += upgradeStats.durationBonus;
+            actualStats.cooldown += upgradeStats.cooldownBonus;
+            actualStats.luck += upgradeStats.luckBonus;
+        }
+
         CharacterData.Stats multiplier = new CharacterData.Stats
         {
             maxHealth = 1f,
@@ -168,6 +184,7 @@ public class PlayerStats : EntityStats
             magnet = 1f,
             revival = 1
         };
+
         foreach (Buff b in activeBuffs)
         {
             BuffData.Stats bd = b.GetData();
@@ -181,9 +198,23 @@ public class PlayerStats : EntityStats
                     break;
             }
         }
+
         actualStats *= multiplier;
+
+        if (CurrentHealth > actualStats.maxHealth)
+        {
+            CurrentHealth = actualStats.maxHealth;
+        }
+
         collector.SetRadius(actualStats.magnet);
+
     }
+
+    public void UpdateHealth1s()
+    {
+        CurrentHealth += actualStats.maxHealth;
+    }
+
     public void IncreaseExperience(int amount)
     {
         experience += amount;
@@ -234,7 +265,7 @@ public class PlayerStats : EntityStats
     {
         if (!isInvincible)
         {
-            damage -= actualStats.armor;
+            damage = Mathf.Max(damage - actualStats.armor, 0);
             if (damage > 0)
             {
                 CurrentHealth -= damage;

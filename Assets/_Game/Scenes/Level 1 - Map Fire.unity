@@ -827,7 +827,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &794759841
 Transform:
   m_ObjectHideFlags: 0
@@ -857,8 +857,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentEventCooldown: 0
   events:
-  - {fileID: 11400000, guid: 7f5fa9856ff089f42b9b97dc3c169d0f, type: 2}
-  - {fileID: 11400000, guid: 466c6b53d10d1d54a877267e1a308c31, type: 2}
+  - {fileID: 11400000, guid: 4662101574b84794e820bf4a7588b754, type: 2}
+  - {fileID: 11400000, guid: e25b681033cef034ea60e950ceaeaff8, type: 2}
+  - {fileID: 11400000, guid: d5829cc4546a3414ba5bd519abfe9bb6, type: 2}
   firstTrigerDelay: 5
   triggerInterval: 30
 --- !u!114 &794759843
@@ -874,11 +875,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data:
-  - {fileID: 11400000, guid: 114bd7424464fb245a7f738aeb793fbf, type: 2}
-  - {fileID: 11400000, guid: 73d642f5f308a1d4e89a59f48b92ac49, type: 2}
+  - {fileID: 11400000, guid: 1b72c28da2fa76e4daefda13b583f924, type: 2}
+  - {fileID: 11400000, guid: 7a1600b6f22a08b4faa9f416fdeedfd9, type: 2}
+  - {fileID: 11400000, guid: 2ba294add87fa384a8009498866bbc95, type: 2}
   referenceCamera: {fileID: 519420034}
   maximumEnemyCount: 300
   boostedByCurse: 1
+  playerStats: {fileID: 1691638764}
 --- !u!1 &818918993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1664,6 +1667,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1def4d63f7f37645be8023eac4ef559, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  upgradeStats: {fileID: 11400000, guid: d54b0fc83be19754c9df6ee294659d29, type: 2}
   charactedData: {fileID: 0}
   baseStats:
     maxHealth: 0

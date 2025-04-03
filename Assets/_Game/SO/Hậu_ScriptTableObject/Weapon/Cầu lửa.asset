@@ -43,7 +43,7 @@ MonoBehaviour:
     maxInstances: 70
     appliedBuffs: []
   linearGrowth:
-  - name: "c\u1EA7u l\u1EEDa 2"
+  - name: Level 2
     description: "th\xEAm m\u1ED9t qu\u1EA3 c\u1EA7u l\u1EEDa, qu\u1EA3 c\u1EA7u
       xuy\xEAn 2 m\u1EE5c ti\xEAu"
     projectilePrefab: {fileID: 0}
@@ -68,8 +68,9 @@ MonoBehaviour:
     piercing: 2
     maxInstances: 0
     appliedBuffs: []
-  - name: "c\u1EA7u l\u1EEDa 3"
-    description: Baka3
+  - name: Level 3
+    description: "th\xEAm m\u1ED9t qu\u1EA3 c\u1EA7u l\u1EEDa, qu\u1EA3 c\u1EA7u
+      xuy\xEAn 2 m\u1EE5c ti\xEAu"
     projectilePrefab: {fileID: 0}
     cannonPrefab: {fileID: 0}
     OrbitPrefab: {fileID: 0}
@@ -92,8 +93,9 @@ MonoBehaviour:
     piercing: 0
     maxInstances: 0
     appliedBuffs: []
-  - name: "c\u1EA7u l\u1EEDa 4"
-    description: Baka4
+  - name: Level 4
+    description: "th\xEAm m\u1ED9t qu\u1EA3 c\u1EA7u l\u1EEDa, qu\u1EA3 c\u1EA7u
+      xuy\xEAn 2 m\u1EE5c ti\xEAu"
     projectilePrefab: {fileID: 0}
     cannonPrefab: {fileID: 0}
     OrbitPrefab: {fileID: 0}
@@ -116,8 +118,9 @@ MonoBehaviour:
     piercing: 2
     maxInstances: 0
     appliedBuffs: []
-  - name: "c\u1EA7u l\u1EEDa 5"
-    description: Baka5
+  - name: Level 5
+    description: "th\xEAm m\u1ED9t qu\u1EA3 c\u1EA7u l\u1EEDa, qu\u1EA3 c\u1EA7u
+      xuy\xEAn 2 m\u1EE5c ti\xEAu"
     projectilePrefab: {fileID: 0}
     cannonPrefab: {fileID: 0}
     OrbitPrefab: {fileID: 0}
