@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd8f1923ec9d54a41a65d5bbec7b0377, type: 3}
+  m_Name: UpgradeStats
+  m_EditorClassIdentifier: 
+  maxHealthBonus: 0
+  recoveryBonus: 0
+  armorBonus: 0
+  moveSpeedBonus: 0
+  mightBonus: 0
+  areaBonus: 0
+  speedBonus: 0
+  durationBonus: 0
+  cooldownBonus: 0
+  luckBonus: 0
