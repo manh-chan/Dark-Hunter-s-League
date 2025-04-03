@@ -360,7 +360,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efe4db0d5691f1043b67dcb06d301ea7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeStats: {fileID: 11400000, guid: d54b0fc83be19754c9df6ee294659d29, type: 2}
+  upgradeStats: {fileID: 11400000, guid: 803ed01047514af41b17d988ad8ca13a, type: 2}
   moneyText: {fileID: 686913012222631961}
   levelText: {fileID: 8456242082948084351}
   upgradeCostText: {fileID: 4796667837386966606}
