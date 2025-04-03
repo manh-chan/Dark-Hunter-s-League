@@ -6,11 +6,14 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class FirebaseDataManager : MonoBehaviour
+public class FirebaseDataManager : Singleton<FirebaseDataManager>
 {
-    private DatabaseReference reference;
+    public UpgradeStats player;
+
     public TextMeshProUGUI showReadPlayerData;
     public TextMeshProUGUI showWritePlayerData;
+
+    private DatabaseReference reference;
 
     private void Awake()
     {
@@ -19,6 +22,7 @@ public class FirebaseDataManager : MonoBehaviour
 
     void Start()
     {
+        
         string uid = PlayerPrefs.GetString("uid", "");
         if (!string.IsNullOrEmpty(uid))
         {
@@ -30,7 +34,7 @@ public class FirebaseDataManager : MonoBehaviour
         }
     }
 
-    public void WritePlayerData(string id, CharacterData player)
+    public void WritePlayerData(string id, UpgradeStats player)
     {
         string json = JsonUtility.ToJson(player);
 
@@ -56,21 +60,27 @@ public class FirebaseDataManager : MonoBehaviour
                 DataSnapshot snapshot = task.Result;
                 if (snapshot.Exists)
                 {
-                    CharacterData player = ScriptableObject.CreateInstance<CharacterData>();
-                    JsonUtility.FromJsonOverwrite(snapshot.GetRawJsonValue(), player);
-                    ShowReadPlayerData($"Đọc thành công: {player.Name}, {player.CharacterDescription}, {player.FullName}");
+                    // Đọc dữ liệu từ Firebase
+                    player = JsonUtility.FromJson<UpgradeStats>(snapshot.GetRawJsonValue());
+
+                    // Cập nhật dữ liệu vào UI ngay khi đọc thành công
+                    UpgradeUI ui = FindObjectOfType<UpgradeUI>();
+                    if (ui != null)
+                    {
+                        ui.upgradeStats = player; // Cập nhật upgradeStats
+                        ui.UpdateUI(); // Cập nhật UI ngay lập tức
+                    }
+
+                    Debug.Log("Đọc dữ liệu người chơi thành công.");
+                   
                 }
-                else
-                {
-                    ShowReadPlayerData("Dữ liệu ngườii chơi không tồnn tại!");
-                }
+              
             }
-            else
-            {
-                ShowReadPlayerData("Đọc dữ liệu thất bại: " + task.Exception);
-            }
+          
         });
     }
+
+
 
     public void ShowReadPlayerData(string message)
     {

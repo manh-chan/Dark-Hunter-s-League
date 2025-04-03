@@ -44,10 +44,7 @@ public class FireBaseLogin : MonoBehaviour
             {
                 FirebaseUser newUser = task.Result.User;
 
-                CharacterData player = ScriptableObject.CreateInstance<CharacterData>();
-                player.Name = "Player2";
-                player.CharacterDescription = "Xấu ncc";
-                player.FullName = "Nguời chơi 2";
+                UpgradeStats player = new UpgradeStats();
 
                 FirebaseDatabase.DefaultInstance.RootReference
                     .Child("Users").Child(newUser.UserId).Child("Player")
@@ -80,7 +77,7 @@ public class FireBaseLogin : MonoBehaviour
             PlayerPrefs.SetString("uid", user.UserId);
             PlayerPrefs.Save();
 
-            SceneManager.LoadScene("FirebaseData");
+            SceneManager.LoadScene("Menu");
         });
     }
 }

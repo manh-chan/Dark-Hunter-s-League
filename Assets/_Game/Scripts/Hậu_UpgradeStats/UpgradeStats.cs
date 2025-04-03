@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-[CreateAssetMenu(fileName = "UpgradeStats", menuName = "Dark-Hunter-s-League/UpgradeStats")]
-public class UpgradeStats : ScriptableObject
+[System.Serializable]
+public class UpgradeStats
 {
     public float maxHealthBonus;
     public float recoveryBonus;
@@ -14,4 +14,19 @@ public class UpgradeStats : ScriptableObject
     public float durationBonus;
     public float cooldownBonus;
     public float luckBonus;
+
+    public UpgradeStats() { }
+    public UpgradeStats(float maxHealthBonus, float recoveryBonus, float armorBonus, float moveSpeedBonus, float mightBonus, float areaBonus, float speedBonus, float durationBonus, float cooldownBonus, float luckBonus)
+    {
+        this.maxHealthBonus = maxHealthBonus;
+        this.recoveryBonus = recoveryBonus;
+        this.armorBonus = armorBonus;
+        this.moveSpeedBonus = moveSpeedBonus;
+        this.mightBonus = mightBonus;
+        this.areaBonus = areaBonus;
+        this.speedBonus = speedBonus;
+        this.durationBonus = durationBonus;
+        this.cooldownBonus = cooldownBonus;
+        this.luckBonus = luckBonus;
+    }
 }
