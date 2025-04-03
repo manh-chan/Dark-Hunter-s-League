@@ -5,7 +5,7 @@ using static Cinemachine.DocumentationSortingAttribute;
 
 public class UpgradeUI : MonoBehaviour
 {
-
+    // code them level 
     public UpgradeStats upgradeStats; 
     public TextMeshProUGUI moneyText;
     public TextMeshProUGUI levelText;
