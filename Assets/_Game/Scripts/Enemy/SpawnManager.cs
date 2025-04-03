@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static Cinemachine.DocumentationSortingAttribute;
 
 public class SpawnManager : MonoBehaviour
 {
@@ -19,7 +18,7 @@ public class SpawnManager : MonoBehaviour
     public bool boostedByCurse = true;
     public static SpawnManager instance;
 
-    public PlayerStats playerStats;
+
     private void Start()
     {
         if (instance)
@@ -47,10 +46,6 @@ public class SpawnManager : MonoBehaviour
                 if (currentWaveIndex >= data.Length)
                 {
                     Debug.Log("All waves have been spawned! Shutting down.", this);
-                    if (!GameManager.instance.isGameOver)
-                    {
-                        Invoke(nameof(WinGame),3);
-                    }
                     enabled = false;
                 }
                 return;
@@ -87,17 +82,14 @@ public class SpawnManager : MonoBehaviour
         if (currentWaveDuration > data[currentWaveIndex].duration) return false;
         return true;
     }
+
     public static bool HasExceededMaxEnemies()
     {
         if (!instance) return false;
         if (EnemyState.count > instance.maximumEnemyCount) return true;
         return false;
     }
-    private void WinGame()
-    {
-        GameManager.instance.AssignLevelReacheUI(playerStats.level);
-        GameManager.instance.GameOver();
-    }
+
     public bool HasWaveEnded()
     {
         WaveData currentWave = data[currentWaveIndex];

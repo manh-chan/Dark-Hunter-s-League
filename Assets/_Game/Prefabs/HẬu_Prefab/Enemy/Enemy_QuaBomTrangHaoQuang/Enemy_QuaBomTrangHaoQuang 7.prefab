@@ -133,8 +133,9 @@ MonoBehaviour:
   outOffFrameAction: 0
   knockbackVariance: 2
   rezoSpeedMove: 1
-  distanceAttack: 1.5
-  damageRadius: 3
+  distanceAttack: 0.8
+  waitMoveSpeed: 0
+  damageRadius: 2.15
   damageAmount: 25
   targetLayer:
     serializedVersion: 2

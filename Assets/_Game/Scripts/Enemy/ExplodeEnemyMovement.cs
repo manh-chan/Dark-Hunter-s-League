@@ -7,6 +7,7 @@ using UnityEngine.TextCore.Text;
 public class ExplodeEnemyMovement : EnemyMovement
 {
     public float distanceAttack = 0.5f;
+    public float waitMoveSpeed = 0;
     public float damageRadius = 3f;  
     public float damageAmount = 20f;
 
@@ -60,8 +61,6 @@ public class ExplodeEnemyMovement : EnemyMovement
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red; 
-        Gizmos.DrawWireSphere(transform.position, distanceAttack);
-        Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(transform.position, damageRadius);
     }
 }

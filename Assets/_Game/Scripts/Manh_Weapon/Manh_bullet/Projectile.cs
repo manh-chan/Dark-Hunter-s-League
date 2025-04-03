@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using static UnityEngine.RuleTile.TilingRuleOutput;
@@ -17,15 +17,10 @@ public class Projectile : WeaponEffect
     {
         rb = GetComponent<Rigidbody2D>();
         Weapon.Stats stats = weapon.GetStats();
-
         if (rb.bodyType == RigidbodyType2D.Dynamic)
         {
             rb.angularVelocity = rotationSpeed.z;
-            Vector2 moveDirection = weapon.Owner.GetComponent<PlayerMovement>().LastMovedVector;
-
-            Vector2 throwDirection = new Vector2(Mathf.Sign(moveDirection.x), Mathf.Abs(moveDirection.y) + 5f).normalized;
-
-            rb.velocity = throwDirection * stats.speed * weapon.Owner.Stats.speed;
+            rb.velocity = transform.right * stats.speed * weapon.Owner.Stats.speed;
         }
 
         float area = weapon.GetArea();

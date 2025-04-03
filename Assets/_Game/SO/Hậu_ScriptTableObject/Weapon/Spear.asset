@@ -13,50 +13,47 @@ MonoBehaviour:
   m_Name: Spear
   m_EditorClassIdentifier: 
   icon: {fileID: 1886618947, guid: 6a6036d0d77735b49ad51bbe0359b793, type: 3}
-  maxLevel: 5
+  maxLevel: 8
   evolutinData: []
   behaviour: ProjectileWeapon
   baseStats:
-    name: "\u0110\u1EA1n l\u1EEDa"
-    description: "B\u1EAFn ra qu\u1EA3 \u0111\u1EA1n l\u1EEDa v\u1EC1 ph\xEDa tr\u01B0\u1EDBc"
+    name: Baka1
+    description: GAAAAAAAAAAAAAAA
     projectilePrefab: {fileID: 4920072096318692971, guid: 8c619672ce12316408ae69522a3d7d40, type: 3}
     cannonPrefab: {fileID: 0}
-    OrbitPrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariace:
       serializedVersion: 2
-      x: 1
-      y: 0.5
+      x: 0
+      y: 0
       width: 0
-      height: -1
+      height: 0
     lifespan: 3
-    damage: 30
+    damage: 15
     damageVariance: 2
     area: 1
     speed: 10
     cooldown: 1
     projectileInterval: 0.5
     knocback: 0.5
-    number: 2
+    number: 1
     piercing: 1
     maxInstances: 70
     appliedBuffs: []
   linearGrowth:
-  - name: Level 2
-    description: "B\u1EAFn Th\xEAm 1 qu\u1EA3 \u0111\u1EA1n l\u1EEDa v\u1EC1 ph\xEDa
-      tr\u01B0\u1EDBc"
+  - name: Baka2
+    description: Baka2
     projectilePrefab: {fileID: 0}
     cannonPrefab: {fileID: 0}
-    OrbitPrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariace:
       serializedVersion: 2
-      x: 1
-      y: 0.5
+      x: 0
+      y: 0
       width: 0
-      height: -1
+      height: 0
     lifespan: 0
-    damage: 20
+    damage: 5
     damageVariance: 0
     area: 0
     speed: 0
@@ -67,46 +64,19 @@ MonoBehaviour:
     piercing: 0
     maxInstances: 0
     appliedBuffs: []
-  - name: Level 3
-    description: "B\u1EAFn Th\xEAm 1 qu\u1EA3 \u0111\u1EA1n l\u1EEDa v\u1EC1 ph\xEDa
-      tr\u01B0\u1EDBc"
+  - name: Baka3
+    description: Baka3
     projectilePrefab: {fileID: 0}
     cannonPrefab: {fileID: 0}
-    OrbitPrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariace:
       serializedVersion: 2
-      x: 1
-      y: 0.5
+      x: 0
+      y: 0
       width: 0
-      height: -1
+      height: 0
     lifespan: 0
-    damage: 20
-    damageVariance: 0
-    area: 0
-    speed: 0
-    cooldown: 0
-    projectileInterval: 0
-    knocback: 0
-    number: 1
-    piercing: 1
-    maxInstances: 0
-    appliedBuffs: []
-  - name: Level 4
-    description: "B\u1EAFn Th\xEAm 1 qu\u1EA3 \u0111\u1EA1n l\u1EEDa v\u1EC1 ph\xEDa
-      tr\u01B0\u1EDBc"
-    projectilePrefab: {fileID: 0}
-    cannonPrefab: {fileID: 0}
-    OrbitPrefab: {fileID: 0}
-    hitEffect: {fileID: 0}
-    spawnVariace:
-      serializedVersion: 2
-      x: 1
-      y: 0.5
-      width: 0
-      height: -1
-    lifespan: 0
-    damage: 30
+    damage: 5
     damageVariance: 0
     area: 0
     speed: 0
@@ -117,21 +87,19 @@ MonoBehaviour:
     piercing: 0
     maxInstances: 0
     appliedBuffs: []
-  - name: Level 5
-    description: "B\u1EAFn Th\xEAm 1 qu\u1EA3 \u0111\u1EA1n l\u1EEDa v\u1EC1 ph\xEDa
-      tr\u01B0\u1EDBc"
+  - name: Baka4
+    description: Baka4
     projectilePrefab: {fileID: 0}
     cannonPrefab: {fileID: 0}
-    OrbitPrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariace:
       serializedVersion: 2
-      x: 1
-      y: 0.5
+      x: 0
+      y: 0
       width: 0
-      height: -1
+      height: 0
     lifespan: 0
-    damage: 20
+    damage: 5
     damageVariance: 0
     area: 0
     speed: 0
@@ -139,7 +107,122 @@ MonoBehaviour:
     projectileInterval: 0
     knocback: 0
     number: 1
-    piercing: 1
+    piercing: 0
+    maxInstances: 0
+    appliedBuffs: []
+  - name: Baka4
+    description: Baka4
+    projectilePrefab: {fileID: 0}
+    cannonPrefab: {fileID: 0}
+    hitEffect: {fileID: 0}
+    spawnVariace:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    lifespan: 0
+    damage: 5
+    damageVariance: 0
+    area: 0
+    speed: 0
+    cooldown: 0
+    projectileInterval: 0
+    knocback: 0
+    number: 1
+    piercing: 0
+    maxInstances: 0
+    appliedBuffs: []
+  - name: Baka5
+    description: Baka5
+    projectilePrefab: {fileID: 0}
+    cannonPrefab: {fileID: 0}
+    hitEffect: {fileID: 0}
+    spawnVariace:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    lifespan: 0
+    damage: 5
+    damageVariance: 0
+    area: 0
+    speed: 0
+    cooldown: 0
+    projectileInterval: 0
+    knocback: 0
+    number: 1
+    piercing: 0
+    maxInstances: 0
+    appliedBuffs: []
+  - name: Baka6
+    description: Baka6
+    projectilePrefab: {fileID: 0}
+    cannonPrefab: {fileID: 0}
+    hitEffect: {fileID: 0}
+    spawnVariace:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    lifespan: 0
+    damage: 5
+    damageVariance: 0
+    area: 0
+    speed: 0
+    cooldown: 0
+    projectileInterval: 0
+    knocback: 0
+    number: 1
+    piercing: 0
+    maxInstances: 0
+    appliedBuffs: []
+  - name: Baka7
+    description: Baka7
+    projectilePrefab: {fileID: 0}
+    cannonPrefab: {fileID: 0}
+    hitEffect: {fileID: 0}
+    spawnVariace:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    lifespan: 0
+    damage: 5
+    damageVariance: 0
+    area: 0
+    speed: 0
+    cooldown: 0
+    projectileInterval: 0
+    knocback: 0
+    number: 1
+    piercing: 0
+    maxInstances: 0
+    appliedBuffs: []
+  - name: Baka8
+    description: Baka8
+    projectilePrefab: {fileID: 0}
+    cannonPrefab: {fileID: 0}
+    hitEffect: {fileID: 0}
+    spawnVariace:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    lifespan: 0
+    damage: 5
+    damageVariance: 0
+    area: 0
+    speed: 0
+    cooldown: 0
+    projectileInterval: 0
+    knocback: 0
+    number: 1
+    piercing: 0
     maxInstances: 0
     appliedBuffs: []
   randomGrowth: []

@@ -99,7 +99,6 @@ public class EnemyState : EntityStats
 
     public static int count;
 
-
     private void Awake()
     {
         count++;
@@ -158,14 +157,7 @@ public class EnemyState : EntityStats
             StartCoroutine(DamageFlash());
             GameManager.GenerateFloatingText(Mathf.FloorToInt(damage).ToString(), transform);
         }
-        if (health <= 0)
-        {
-            foreach (Collider2D col in GetComponents<Collider2D>())
-            {
-                col.enabled = false;
-            }
-            Kill();
-        }
+        if (health <= 0) Kill();
     }
 
     public void TakeDamage(float dmg, Vector2 sourcePositon, float knockbackForce = 5f, float knockbackDuration = 0.2f)

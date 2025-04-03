@@ -68,16 +68,20 @@ public class UISceneDataDisplay : UIPropertyDisplay
         float fval;
         switch (field.Name)
         {
-            case "timeLimit":  
+            case "timelimit":
                 fval = value is int ? (int)value : (float)value;
-                if (fval == 0)
+                if(fval == 0)
                 {
                     output.Append(DASH).Append('\n');
                 }
                 else
                 {
                     string minutes = Mathf.FloorToInt(fval / 60).ToString();
-                    string seconds = Mathf.FloorToInt(fval % 60).ToString("00");  
+                    string seconds = (fval % 60).ToString();
+                    if(fval % 60 < 10)
+                    {
+                        seconds += "0";
+                    }
                     output.Append(minutes).Append(":").Append(seconds).Append('\n');
                 }
                 return output;
@@ -100,7 +104,7 @@ public class UISceneDataDisplay : UIPropertyDisplay
                 else
                 {
                     if (percentage > 0)
-                        output.Append('+');
+                        output.Append('\n');
                     output.Append(percentage).Append("%").Append("\n");
                 }
                 return output;
