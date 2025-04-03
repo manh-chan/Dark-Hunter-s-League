@@ -14,4 +14,6 @@ public class UpgradeStats : ScriptableObject
     public float durationBonus;
     public float cooldownBonus;
     public float luckBonus;
+
+
 }
