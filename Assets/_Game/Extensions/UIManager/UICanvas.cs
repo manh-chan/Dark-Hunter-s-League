@@ -33,12 +33,14 @@ public class UICanvas : MonoBehaviour
     public virtual void Open()
     {
         gameObject.SetActive(true);
+        AudioManager.Instance.PlayButtonClick();
     }
 
     // tat canvas sau time(s)
     public virtual void Close(float time)
     {
         Invoke(nameof(CloseDirectly), time);
+        AudioManager.Instance.PlayButtonClick();
     }
 
     // tat canvas truc tiep

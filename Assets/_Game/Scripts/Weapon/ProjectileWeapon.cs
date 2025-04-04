@@ -34,7 +34,7 @@ public class ProjectileWeapon : Weapon
         }
        
         if (!CanAttack()) return false;
-
+        
         float spawnAngle = GetSpawnAngle();
 
         Projectile prefab = Instantiate(currentStats.projectilePrefab,

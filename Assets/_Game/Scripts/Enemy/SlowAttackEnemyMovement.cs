@@ -6,18 +6,15 @@ public class SlowAttackEnemyMovement : EnemyMovement
     public float cooldownTime = 5f;
     public float distanceAttack = 3f; 
     public float moveSpeedAttack = 5f; 
-    public float waitMoveSpeedAttack; 
     public float maxDistance = 3f; 
 
     private Vector2 startPosition;
     private Vector2 chargeDirection;
-    private Animator animator;
     private bool isAttacking = false;
 
     protected override void Start()
     {
         base.Start();
-        animator = GetComponent<Animator>();
     }
 
     protected override void Update()

@@ -33,11 +33,6 @@ public class AudioManager : MonoBehaviour
         InitSFXPool();
     }
 
-    void Start()
-    {
-        PlayMenuMusic();
-    }
-
     void InitSFXPool()
     {
         for (int i = 0; i < maxSFXSources; i++)
