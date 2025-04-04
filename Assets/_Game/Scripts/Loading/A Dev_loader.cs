@@ -21,7 +21,7 @@ public class ADev_loader : MonoBehaviour
         loadingImage.DOFillAmount(1, 3); // Thanh loading lấp đầy trong 3 giây
         yield return StartCoroutine(HandleTextLoading());
         SceneManager.LoadScene("MainStory");
-        // t de tam load ra scenes menu nhe
+       
     }
 
     IEnumerator HandleTextLoading()

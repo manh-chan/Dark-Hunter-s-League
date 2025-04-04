@@ -30,6 +30,7 @@ public class UiUpgradeWindown : MonoBehaviour
 
     public void SetUpgrades(PlayerInventory inventory, List<ItemData> possibleUpgrades, int pick = 3, string tooltip = "")
     {
+        AudioManager.Instance.PlayLevelUp();
         pick = Mathf.Min(maxOptions, pick);
         if (maxOptions > upgradeOptions.Count)
         {
