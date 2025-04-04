@@ -1481,7 +1481,7 @@ GameObject:
   - component: {fileID: 5405682049053767679}
   - component: {fileID: 4789504798537813774}
   - component: {fileID: 7759725639689500189}
-  - component: {fileID: 5921564951834002799}
+  - component: {fileID: 7491088138491918569}
   m_Layer: 5
   m_Name: Canvas - MainMenu
   m_TagString: Untagged
@@ -1573,7 +1573,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &5921564951834002799
+--- !u!114 &7491088138491918569
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1585,7 +1585,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59083f8818494354fae595b8c11df4e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDestroyOnClose: 1
+  isDestroyOnClose: 0
 --- !u!1 &6011939476491347710
 GameObject:
   m_ObjectHideFlags: 0
