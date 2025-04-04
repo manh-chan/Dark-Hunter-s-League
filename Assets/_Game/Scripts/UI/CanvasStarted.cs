@@ -8,7 +8,7 @@ public class CanvasStarted : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        UIManager.Instance.OpenUI<CanvasFail>();
+        UIManager.Instance.OpenUI<CanvasMainMenu>();
     }
 
     // Update is called once per frame
