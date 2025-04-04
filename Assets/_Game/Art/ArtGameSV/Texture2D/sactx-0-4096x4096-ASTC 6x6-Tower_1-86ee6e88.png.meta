@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 360
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -130,8 +130,8 @@ TextureImporter:
         y: 577
         width: 328
         height: 328
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.4546149, y: 0.48033327}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -155,6 +155,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       sactx-0-4096x4096-ASTC 6x6-Tower_1-86ee6e88_0: -1838105208
+      sactx-0-4096x4096-ASTC 6x6-Tower_1-86ee6e88_1: 190216719
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
