@@ -758,6 +758,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2469002777933072184, guid: 5665467c58753ab47956d3fb6fbe06d6, type: 3}
+      propertyPath: m_Padding.m_Top
+      value: 55
+      objectReference: {fileID: 0}
     - target: {fileID: 2937901424498141165, guid: 5665467c58753ab47956d3fb6fbe06d6, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -906,9 +910,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6581480338628007639, guid: 5665467c58753ab47956d3fb6fbe06d6, type: 3}
+      propertyPath: levels.Array.data[0].timeLimit
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 6581480338628007639, guid: 5665467c58753ab47956d3fb6fbe06d6, type: 3}
+      propertyPath: levels.Array.data[0].playerModifiers.luck
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6581480338628007639, guid: 5665467c58753ab47956d3fb6fbe06d6, type: 3}
+      propertyPath: levels.Array.data[0].playerModifiers.moveSpeed
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7669421254275616624, guid: 5665467c58753ab47956d3fb6fbe06d6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: Menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 7767592075246690582, guid: 5665467c58753ab47956d3fb6fbe06d6, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9072277877902856454, guid: 5665467c58753ab47956d3fb6fbe06d6, type: 3}
+      propertyPath: m_Pivot.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9072277877902856454, guid: 5665467c58753ab47956d3fb6fbe06d6, type: 3}
       propertyPath: m_SizeDelta.y

@@ -32,7 +32,7 @@ public class UiStatsDisplay : UIPropertyDisplay
         if (displayCurrentHealth)
         {
             allStats[0].Insert(0, "Health\n");
-            allStats[0].Insert(0, player.CurrentHealth + "\n");
+            allStats[1].Insert(0, player.CurrentHealth + "\n");
         }
         if(propertyNames) propertyNames.text = allStats[0].ToString();
         if(propertyValues) propertyValues.text = allStats[1].ToString();
