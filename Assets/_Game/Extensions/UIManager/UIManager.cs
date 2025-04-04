@@ -17,10 +17,6 @@ public class UIManager : Singleton<UIManager>
             canvasPrefabs.Add(prefabs[i].GetType(), prefabs[i]);
         }
     }
-    private void Start()
-    {
-        DontDestroyOnLoad(this.gameObject);
-    }
 
     //mo canvas
     public T OpenUI<T>() where T : UICanvas
