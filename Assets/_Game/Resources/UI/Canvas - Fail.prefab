@@ -235,7 +235,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2937433869945735202}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CanvasFail, Assembly-CSharp
         m_MethodName: MainMenuButton
         m_Mode: 1
@@ -468,7 +468,6 @@ GameObject:
   - component: {fileID: 1293273079409020903}
   - component: {fileID: 6685818977086085754}
   - component: {fileID: 5563705830856380815}
-  - component: {fileID: 2937433869945735202}
   m_Layer: 5
   m_Name: Canvas - Fail
   m_TagString: Untagged
@@ -559,20 +558,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &2937433869945735202
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6217552416726429882}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2fa51953ff613749a3213ce562b8341, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isDestroyOnClose: 0
-  scoreText: {fileID: 1575199051446209069}
 --- !u!1 &6782321506616700316
 GameObject:
   m_ObjectHideFlags: 0
