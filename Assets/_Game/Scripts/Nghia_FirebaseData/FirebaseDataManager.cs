@@ -10,8 +10,8 @@ public class FirebaseDataManager : Singleton<FirebaseDataManager>
 {
     public UpgradeStats player;
 
-    public TextMeshProUGUI showReadPlayerData;
-    public TextMeshProUGUI showWritePlayerData;
+    private TextMeshProUGUI showReadPlayerData;
+    private TextMeshProUGUI showWritePlayerData;
 
     private DatabaseReference reference;
 

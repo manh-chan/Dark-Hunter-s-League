@@ -28,13 +28,12 @@ public class UpgradeUI : MonoBehaviour
         if (!string.IsNullOrEmpty(uid))
         {
             FirebaseDataManager.Instance.ReadPlayerData(uid);
-            Debug.LogWarning("Doc tc");
         }
         else
         {
             Debug.LogWarning("Chưa đăng nhập, không có UID để đọc dữ liệu.");
         }
-              UpdateUI();
+        UpdateUI();
         AssignButtonListeners();
         upgradeCostText.text = upgradeCost.ToString();
         levelText.text = level.ToString();
@@ -109,7 +108,7 @@ public class UpgradeUI : MonoBehaviour
     }
     public void UpdateUI()
     {
-       
+
 
         moneyText.text = money.ToString();
 

@@ -157,7 +157,7 @@ public class PlayerStats : EntityStats
             actualStats.armor += upgradeStats.armorBonus;
             actualStats.moveSpeed += upgradeStats.moveSpeedBonus;
             actualStats.might += upgradeStats.mightBonus;
-            actualStats.amount += upgradeStats.amountBonus;
+            //actualStats.amount += upgradeStats.amountBonus;
             actualStats.area += upgradeStats.areaBonus;
             actualStats.speed += upgradeStats.speedBonus;
             actualStats.duration += upgradeStats.durationBonus;
