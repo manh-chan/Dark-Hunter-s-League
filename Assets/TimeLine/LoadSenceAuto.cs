@@ -18,7 +18,7 @@ public class LoadSenceAuto : MonoBehaviour
         timeCount += Time.deltaTime;
         if (timeCount >= timeToSence) {
            
-            SceneManager.LoadScene("Menu");
+            SceneManager.LoadScene("LoadingG");
         } 
     }
 }
