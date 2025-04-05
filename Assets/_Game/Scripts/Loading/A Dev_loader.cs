@@ -20,7 +20,7 @@ public class ADev_loader : MonoBehaviour
         loadingImage.fillAmount = 0;
         loadingImage.DOFillAmount(1, 3); // Thanh loading lấp đầy trong 3 giây
         yield return StartCoroutine(HandleTextLoading());
-        SceneManager.LoadScene("MainStory");
+        SceneManager.LoadScene("Menu");
        
     }
 
