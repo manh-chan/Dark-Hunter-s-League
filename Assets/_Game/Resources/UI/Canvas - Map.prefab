@@ -1103,10 +1103,10 @@ RectTransform:
   - {fileID: 5184069469564827313}
   m_Father: {fileID: 9072277877902856454}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 180.01752, y: -250}
-  m_SizeDelta: {x: 320.03503, y: 150}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6462371060204485127
 CanvasRenderer:
@@ -2138,6 +2138,7 @@ MonoBehaviour:
   statsUI: {fileID: 6364684444072525938}
   levels:
   - scene: {fileID: 102900000, guid: 8c9cfa26abfee488c85f1582747f6a02, type: 3}
+    sceneName: Level 1 - Map Fire
     displayName: Map Fire
     label: Level 1
     description: Level start
@@ -2174,6 +2175,7 @@ MonoBehaviour:
     clockSpeed: 1
     extraNotes: --
   - scene: {fileID: 102900000, guid: 387b6800d923c00429eb3e797e1e35fc, type: 3}
+    sceneName: Level 2 - Map Fire
     displayName: Map Fire 2
     label: Level 2
     description: Map Fire 2
@@ -2210,6 +2212,7 @@ MonoBehaviour:
     clockSpeed: 1
     extraNotes: --
   - scene: {fileID: 102900000, guid: dd7a62dbe4c5d2d4d9539b34687cd3da, type: 3}
+    sceneName: Level 3 - Map Fire
     displayName: Map Fire 3
     label: Level 3
     description: Map Fire 3
@@ -3229,10 +3232,10 @@ RectTransform:
   - {fileID: 8826850579185765897}
   m_Father: {fileID: 9072277877902856454}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 180.01752, y: -75}
-  m_SizeDelta: {x: 320.03503, y: 150}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &516754117898130804
 CanvasRenderer:
@@ -4098,10 +4101,10 @@ RectTransform:
   - {fileID: 3204450624288146418}
   m_Father: {fileID: 9072277877902856454}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 180.01752, y: -425}
-  m_SizeDelta: {x: 320.03503, y: 150}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2850562630396097715
 CanvasRenderer:
