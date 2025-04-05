@@ -77,7 +77,7 @@ public class FireBaseLogin : MonoBehaviour
             PlayerPrefs.SetString("uid", user.UserId);
             PlayerPrefs.Save();
 
-            SceneManager.LoadScene("Menu");
+            SceneManager.LoadScene("MainStory");
         });
     }
 }
