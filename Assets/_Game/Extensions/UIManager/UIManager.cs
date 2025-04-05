@@ -17,7 +17,6 @@ public class UIManager : Singleton<UIManager>
             canvasPrefabs.Add(prefabs[i].GetType(), prefabs[i]);
         }
     }
-
     //mo canvas
     public T OpenUI<T>() where T : UICanvas
     {

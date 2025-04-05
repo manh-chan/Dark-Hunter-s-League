@@ -130,7 +130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sorted: {fileID: 0}
   sortingActive: 1
-  outOffFrameAction: 1
+  outOffFrameAction: 0
   knockbackVariance: 2
   rezoSpeedMove: 1
 --- !u!114 &5616476323606178641
