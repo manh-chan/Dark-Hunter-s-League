@@ -13,6 +13,7 @@ public class TutorialManager : MonoBehaviour
     public bool tutorialCompleted;
     void Start()
     {
+        DontDestroyOnLoad(this);
         // Kiểm tra xem người chơi đã hoàn thành tutorial chưa
         // PlayerPrefs.GetInt trả về 0 nếu key chưa tồn tại (mặc định là chưa hoàn thành)
 
