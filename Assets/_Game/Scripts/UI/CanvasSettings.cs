@@ -26,6 +26,5 @@ public class CanvasSettings : UICanvas
     public void MainMenuButton()
     {
         UIManager.Instance.CloseAll();
-        UIManager.Instance.OpenUI<CanvasMainMenu>();
     }
 }

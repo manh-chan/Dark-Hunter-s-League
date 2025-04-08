@@ -1,4 +1,5 @@
-using Firebase.Auth;
+﻿using Firebase.Auth;
+using Firebase.Database;
 using Firebase.Extensions;
 using System.Collections;
 using System.Collections.Generic;
@@ -18,7 +19,6 @@ public class FireBaseLogin : MonoBehaviour
     public InputField isLoginPassword;
     public Button btnLogin;
 
-
     private FirebaseAuth auth;
 
     void Start()
@@ -35,45 +35,49 @@ public class FireBaseLogin : MonoBehaviour
 
         auth.CreateUserWithEmailAndPasswordAsync(email, password).ContinueWithOnMainThread(task =>
         {
-            if (task.IsCanceled)
+            if (task.IsCanceled || task.IsFaulted)
             {
-                Debug.Log("Dk bi huy");
-            }
-            if(task.IsFaulted)
-            {
-                Debug.Log("Dk that bai");
-            }
-            if(task.IsCompleted)
-            {
-                Debug.Log("Dk thanh cong");
-            }
-        });
-    }
-
-
-    public void LoginFirebase()
-    {
-        string email = isReEmail.text;
-        string password = isRePassword.text;
-
-        auth.SignInWithEmailAndPasswordAsync(email, password).ContinueWithOnMainThread(task =>
-        {
-            if (task.IsCanceled)
-            {
-                Debug.Log("Dn bi huy");
-            }
-            if (task.IsFaulted)
-            {
-                Debug.Log("Dn that bai");
+                Debug.Log("Đăng ký thất bại");
+                return;
             }
             if (task.IsCompleted)
             {
-                Debug.Log("Dn thanh cong");
-                FirebaseUser user = task.Result.User;
+                FirebaseUser newUser = task.Result.User;
 
-                //chuyen scene nao ghi ten scene do
-                SceneManager.LoadScene("Menu");
+                UpgradeStats player = new UpgradeStats();
+
+                FirebaseDatabase.DefaultInstance.RootReference
+                    .Child("Users").Child(newUser.UserId).Child("Player")
+                    .SetRawJsonValueAsync(JsonUtility.ToJson(player));
+
             }
+
+            Debug.Log("Đăng ký thành công");
+        });
+    }
+
+    public void LoginFirebase()
+    {
+        string email = isLoginEmail.text;
+        string password = isLoginPassword.text;
+
+        auth.SignInWithEmailAndPasswordAsync(email, password).ContinueWithOnMainThread(task =>
+        {
+            if (task.IsCanceled || task.IsFaulted)
+            {
+                Debug.Log("Đăng nhập thất bại");
+                return;
+            }
+
+            Debug.Log("Đăng nhập thành công");
+
+            FirebaseUser user = task.Result.User;
+
+            // Load scene và lưu UID vào PlayerPrefs (tạm thời)
+            PlayerPrefs.SetString("uid", user.UserId);
+            PlayerPrefs.Save();
+
+            SceneManager.LoadScene("MainStory");
         });
     }
 }

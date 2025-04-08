@@ -147,7 +147,7 @@ TextureImporter:
         width: 195
         height: 207
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -155,6 +155,48 @@ TextureImporter:
       bones: []
       spriteID: 99c14c7f3b86ca94eb6531d68b413bd5
       internalID: 1858367864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-OutGameUI-f66aad89_3
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1887
+        width: 1289
+        height: 604
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b807885fcd4b4fa458e0209822f27b12
+      internalID: -1316242008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-4096x4096-ASTC 8x8-OutGameUI-f66aad89_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1088
+        height: 1922
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0b96c24b461c3140a73640a954b262f
+      internalID: 26827158
       vertices: []
       indices: 
       edges: []
@@ -173,6 +215,8 @@ TextureImporter:
       sactx-0-4096x4096-ASTC 8x8-OutGameUI-f66aad89_0: -1560514864
       sactx-0-4096x4096-ASTC 8x8-OutGameUI-f66aad89_1: -1994871034
       sactx-0-4096x4096-ASTC 8x8-OutGameUI-f66aad89_2: 1858367864
+      sactx-0-4096x4096-ASTC 8x8-OutGameUI-f66aad89_3: -1316242008
+      sactx-0-4096x4096-ASTC 8x8-OutGameUI-f66aad89_4: 26827158
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
