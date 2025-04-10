@@ -76,7 +76,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2000424739
-  m_SortingLayer: 18
+  m_SortingLayer: 29
   m_SortingOrder: 0
   m_Sprite: {fileID: -2141747452, guid: 94870906afca6be4da7504025c558793, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -150,7 +150,6 @@ MonoBehaviour:
   cooldownTime: 0
   distanceAttack: 3
   moveSpeedAttack: 15
-  waitMoveSpeedAttack: 0
   maxDistance: 5
 --- !u!95 &8066232305972726013
 Animator:

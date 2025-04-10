@@ -37,7 +37,7 @@ public class BlackShield : EnemyMovement
     {
         isAttacking = true;
         ani.enabled = false;
-        transform.localScale = Vector3.one;
+        transform.localScale = new Vector3(0.5f, 0.5f, 1f);
         yield return new WaitForSeconds(5f);
 
         ani.enabled = true;

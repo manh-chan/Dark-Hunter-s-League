@@ -20,7 +20,7 @@ public class Pickup : Sortable
     public BobbingAnimation bobbingAnimation = new BobbingAnimation
     {
         frequency = 2f,
-        direction = new Vector2(0, 0.3f)
+        direction = new Vector2(0, 0.1f)
     };
 
     [Header("Bonues")]

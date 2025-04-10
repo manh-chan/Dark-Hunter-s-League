@@ -74,7 +74,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2000424739
-  m_SortingLayer: 18
+  m_SortingLayer: 29
   m_SortingOrder: 0
   m_Sprite: {fileID: 1637092875, guid: 79829f440052f0c47810ea1dbab55379, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -119,9 +119,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.009095937}
   serializedVersion: 2
-  m_Radius: 0.57
+  m_Radius: 0.11520001
 --- !u!50 &7058611231093845386
 Rigidbody2D:
   serializedVersion: 4
@@ -166,6 +166,6 @@ MonoBehaviour:
   lifespan: 0.5
   bobbingAnimation:
     frequency: 2
-    direction: {x: 0, y: 0.3}
+    direction: {x: 0, y: 0.1}
   experience: 100
   health: 0
