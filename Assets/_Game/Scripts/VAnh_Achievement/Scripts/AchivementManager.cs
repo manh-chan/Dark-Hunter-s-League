@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class AchivementManager : MonoBehaviour
 {
+    public GameObject canvasMenu;
     public GameObject achievementPrefab;
     public Sprite[] sprites;
     private AchieveButton activeButton;
@@ -18,16 +19,17 @@ public class AchivementManager : MonoBehaviour
 
     private static AchivementManager instance;
     private float fadeTime = 1.5f;
-    public static AchivementManager Instance {
+    public static AchivementManager Instance
+    {
 
         get
         {
-            if(instance == null)
+            if (instance == null)
             {
                 instance = GameObject.FindObjectOfType<AchivementManager>();
             }
             return AchivementManager.instance;
-        }     
+        }
     }
 
     // Start is called before the first frame update
@@ -35,7 +37,7 @@ public class AchivementManager : MonoBehaviour
     {
         PlayerPrefs.DeleteAll();
         activeButton = GameObject.Find("GeneralBtn").GetComponent<AchieveButton>();
-        CreateAchievement("General","Chào mừng người chơi mới","Chơi ván game đầu tiên.",5,0);
+        CreateAchievement("General", "Chào mừng người chơi mới", "Chơi ván game đầu tiên.", 5, 0);
         CreateAchievement("General", "Tân Binh Ra Trận", "Hoàn thành Map 1.", 10, 1);
         CreateAchievement("General", "Lính Mới Đã Thành Thạo", "Hoàn thành Map 2.", 10, 5);
         CreateAchievement("General", "Kẻ Sống Sót", "Hoàn thành Map 3.", 15, 6);
@@ -60,7 +62,7 @@ public class AchivementManager : MonoBehaviour
     void Update()
     {
         //thuc hien nhiem vu de nhan dc thanh tuu
-        if(Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             EarnAchievement("Chào mừng người chơi mới");
         }
@@ -98,11 +100,11 @@ public class AchivementManager : MonoBehaviour
         yield return new WaitForSeconds(3);
         Destroy(achievement);
     }
-    public void CreateAchievement(string parent, string title,string description, int points, int spriteIndex, string[] dependencies = null)
+    public void CreateAchievement(string parent, string title, string description, int points, int spriteIndex, string[] dependencies = null)
     {
         GameObject achievement = (GameObject)Instantiate(achievementPrefab);
 
-        Achivement  newAchivement = new Achivement(title, description, points, spriteIndex, achievement);
+        Achivement newAchivement = new Achivement(title, description, points, spriteIndex, achievement);
         achievements.Add(title, newAchivement);
         SetAchievementInfor(parent, achievement, title);
         if (dependencies != null)
@@ -119,7 +121,7 @@ public class AchivementManager : MonoBehaviour
     public void SetAchievementInfor(string parent, GameObject achievement, string title)
     {
         achievement.transform.SetParent(GameObject.Find(parent).transform);
-        achievement.transform.localScale = new Vector3(1,1,1);
+        achievement.transform.localScale = new Vector3(1, 1, 1);
         achievement.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = title;
         achievement.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = achievements[title].Description;
         achievement.transform.GetChild(3).GetComponent<TextMeshProUGUI>().text = achievements[title].Points.ToString();
@@ -145,7 +147,7 @@ public class AchivementManager : MonoBehaviour
         int endAlpha = 1;
 
 
-        for(int i = 0; i < 2; i++)
+        for (int i = 0; i < 2; i++)
         {
             float progress = 0.0f;
 
@@ -162,5 +164,9 @@ public class AchivementManager : MonoBehaviour
             endAlpha = 0;
         }
         Destroy(achievement);
+    }
+    public void Hide()
+    {
+        canvasMenu.gameObject.SetActive(false);
     }
 }
