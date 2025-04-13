@@ -23,7 +23,7 @@ public class FireBaseLogin : MonoBehaviour
     {
         auth = FirebaseAuth.DefaultInstance;
         btnLogin.onClick.AddListener(LoginFirebase);
-        btnLogin.onClick.AddListener(LoadRegister);
+        btnRegister.onClick.AddListener(LoadRegister);
     }
 
 

@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class AchivementManager : MonoBehaviour
 {
+    public AchivementData achivement;
     public GameObject canvasMenu;
     public GameObject achievementPrefab;
     public Sprite[] sprites;
@@ -35,7 +36,7 @@ public class AchivementManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PlayerPrefs.DeleteAll();
+        achivement = new AchivementData();
         activeButton = GameObject.Find("GeneralBtn").GetComponent<AchieveButton>();
         CreateAchievement("General", "Chào mừng người chơi mới", "Chơi ván game đầu tiên.", 5, 0);
         CreateAchievement("General", "Tân Binh Ra Trận", "Hoàn thành Map 1.", 10, 1);
@@ -55,7 +56,7 @@ public class AchivementManager : MonoBehaviour
             achievementList.SetActive(false);
         }
         activeButton.Select();
-
+        
     }
 
     // Update is called once per frame
@@ -65,6 +66,7 @@ public class AchivementManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Q))
         {
             EarnAchievement("Chào mừng người chơi mới");
+    
         }
         if (Input.GetKeyDown(KeyCode.W))
         {
@@ -92,6 +94,8 @@ public class AchivementManager : MonoBehaviour
             SetAchievementInfor("EarnCanvas", achievement, title);
             textPoints.text = "Points: " + PlayerPrefs.GetInt("Points");
             StartCoroutine(FadeAchievement(achievement));
+            achivement.checkAchivement = true;
+            SaveToFirebase();
         }
     }
     //an achievement
@@ -169,4 +173,16 @@ public class AchivementManager : MonoBehaviour
     {
         canvasMenu.gameObject.SetActive(false);
     }
+
+    public void SaveToFirebase()
+    {
+        string uid = PlayerPrefs.GetString("uid", "");
+        if (!string.IsNullOrEmpty(uid))
+        {
+            // Ghi dữ liệu người chơi
+            AchivementFirebase.Instance.WritePlayerData(uid, achivement);
+            Debug.Log("Achi");
+        }
+    }
+
 }
