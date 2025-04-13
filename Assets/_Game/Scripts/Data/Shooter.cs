@@ -26,7 +26,7 @@ public class Shooter : MonoBehaviour
             for (int i = -1; i <= 1; i++)
             {
                 Vector3 spawnPosition = transform.position + new Vector3(0, i * spacing, 0); // Điều chỉnh theo trục Y
-                Projectile1 projectile = Instantiate(projectilePrefab, spawnPosition, Quaternion.identity).GetComponent<Projectile1>();
+                ProjectileSunny projectile = Instantiate(projectilePrefab, spawnPosition, Quaternion.identity).GetComponent<ProjectileSunny>();
 
                 projectile.InitializeProjectile(target, projectileMaxMoveSpeed, projectileRelativeHeight);
                 projectile.InitializeAnimationCurve(trajectoryAnimationCurve, axisCorrectionAnimtionCurve, projectileSpeedAnimtionCurve);
