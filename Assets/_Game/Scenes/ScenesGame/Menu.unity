@@ -708,7 +708,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a43bed348f22734eb6e0642da7be6db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1464895165
+--- !u!1 &1700951665
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -716,8 +716,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1464895166}
-  - component: {fileID: 1464895167}
+  - component: {fileID: 1700951666}
+  - component: {fileID: 1700951667}
   m_Layer: 0
   m_Name: Firebasedata Manager
   m_TagString: Untagged
@@ -725,28 +725,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1464895166
+--- !u!4 &1700951666
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1464895165}
+  m_GameObject: {fileID: 1700951665}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -68.844124, y: 869.65515, z: -7.5842433}
+  m_LocalPosition: {x: 231.5184, y: 195.79324, z: -1.0808315}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1464895167
+--- !u!114 &1700951667
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1464895165}
+  m_GameObject: {fileID: 1700951665}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dbc82dd047a2c9f4a827f78649ea793f, type: 3}
@@ -912,4 +912,4 @@ SceneRoots:
   - {fileID: 1208369288}
   - {fileID: 1423374941}
   - {fileID: 255245731}
-  - {fileID: 1464895166}
+  - {fileID: 1700951666}
