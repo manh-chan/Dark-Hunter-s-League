@@ -926,6 +926,22 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: Menu
       objectReference: {fileID: 0}
+    - target: {fileID: 7735565260809620421, guid: 5665467c58753ab47956d3fb6fbe06d6, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7735565260809620421, guid: 5665467c58753ab47956d3fb6fbe06d6, type: 3}
+      propertyPath: m_Color.b
+      value: 0.22291918
+      objectReference: {fileID: 0}
+    - target: {fileID: 7735565260809620421, guid: 5665467c58753ab47956d3fb6fbe06d6, type: 3}
+      propertyPath: m_Color.g
+      value: 0.31148794
+      objectReference: {fileID: 0}
+    - target: {fileID: 7735565260809620421, guid: 5665467c58753ab47956d3fb6fbe06d6, type: 3}
+      propertyPath: m_Color.r
+      value: 0.4943396
+      objectReference: {fileID: 0}
     - target: {fileID: 7767592075246690582, guid: 5665467c58753ab47956d3fb6fbe06d6, type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
