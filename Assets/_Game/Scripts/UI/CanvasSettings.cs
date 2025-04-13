@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CanvasSettings : UICanvas
@@ -25,6 +26,7 @@ public class CanvasSettings : UICanvas
     }
     public void MainMenuButton()
     {
+        FindObjectOfType<CanvasHero>().gameObject.SetActive(false);
         UIManager.Instance.CloseAll();
     }
 }
