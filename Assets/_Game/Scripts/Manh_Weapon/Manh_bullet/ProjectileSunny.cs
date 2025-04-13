@@ -1,25 +1,22 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Projectile1 : MonoBehaviour
+public class ProjectileSunny : WeaponEffect
 {
-
-    [SerializeField] private ProjectileVisual ProjectileVisual;
-
     private Transform target;
-    private AnimationCurve trajectoryAnimationCurve;
-    private AnimationCurve axisCorrectionAnimtionCurve;
-    private AnimationCurve projectileSpeedAnimtionCurve;
+    [SerializeField] private AnimationCurve trajectoryAnimationCurve;
+    [SerializeField] private AnimationCurve axisCorrectionAnimtionCurve;
+    [SerializeField] private AnimationCurve projectileSpeedAnimtionCurve;
 
     private Vector3 trajectoryStartPoint;
     private Vector3 projectileMoveDir;
     private Vector3 trajectoryRange;
 
-    private float trajectoryMaxHeight;
-    private float moveSpeed;
-    private float maxMoveSpeed;
+    [SerializeField] private float trajectoryMaxHeight =3f;
+    [SerializeField] private float moveSpeed = 0.3f;
+    [SerializeField] private float maxMoveSpeed = 0.3f;
     private float distanceToTargetToDestroyProjectile = 1f;
     private float nextYTrajectoryPosition;
     private float nextXTrajectoryPosition;
@@ -33,7 +30,7 @@ public class Projectile1 : MonoBehaviour
     private void Update()
     {
         UpdateProjectilePosition();
-       
+
         if (Vector3.Distance(transform.position, target.position) < distanceToTargetToDestroyProjectile) {
             Destroy(gameObject);
         }
@@ -41,12 +38,10 @@ public class Projectile1 : MonoBehaviour
 
     private void UpdateProjectilePosition() {
         trajectoryRange = target.position - trajectoryStartPoint;
-
         if (Mathf.Abs(trajectoryRange.normalized.x) < Mathf.Abs(trajectoryRange.normalized.y))
         {
             if (trajectoryRange.y < 0)
             {
-
                 moveSpeed = -moveSpeed;
 
             }
@@ -73,14 +68,6 @@ public class Projectile1 : MonoBehaviour
 
         float nextPositionXCorrectionNormalLized = axisCorrectionAnimtionCurve.Evaluate(nextPositionYNormalized);
         nextPositionXCorrectionAbsolute = nextPositionXCorrectionNormalLized * trajectoryRange.x;
-
-        //if (trajectoryRange.x > 0 && trajectoryRange.y > 0) {
-        //    nextXTrajectoryPosition = -nextXTrajectoryPosition;
-        //}
-        //if (trajectoryRange.x < 0 && trajectoryRange.y < 0)
-        //{
-        //    nextXTrajectoryPosition = -nextXTrajectoryPosition;
-        //}
 
         float nextPositionX = trajectoryStartPoint.x + nextXTrajectoryPosition + nextPositionXCorrectionAbsolute;
 
@@ -132,12 +119,10 @@ public class Projectile1 : MonoBehaviour
         float xDistanceToTaget = target.position.x  - transform.position.x;
 
         this.trajectoryMaxHeight = Mathf.Abs(xDistanceToTaget) * trajectoryMaxHeight;
-
-        ProjectileVisual.SetTarget(target);
-
     }
 
-    public void InitializeAnimationCurve(AnimationCurve trajectoryAnimationCurve, AnimationCurve axisCorrectionAnimtionCurve, AnimationCurve projectileSpeedAnimtionCurve) {
+    public void InitializeAnimationCurve(AnimationCurve trajectoryAnimationCurve, AnimationCurve axisCorrectionAnimtionCurve, AnimationCurve projectileSpeedAnimtionCurve)
+    {
         this.trajectoryAnimationCurve = trajectoryAnimationCurve;
         this.axisCorrectionAnimtionCurve = axisCorrectionAnimtionCurve;
         this.projectileSpeedAnimtionCurve = projectileSpeedAnimtionCurve;

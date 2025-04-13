@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class SunnyWeapon : Weapon
 {
-    //[SerializeField] private GameObject projectilePrefab;
-    //[SerializeField] private Transform target;
+    [SerializeField] private GameObject projectilePrefab;
+    [SerializeField] private Transform target;
     //[SerializeField] private AnimationCurve trajectoryAnimationCurve;
     //[SerializeField] private AnimationCurve axisCorrectionAnimtionCurve;
     //[SerializeField] private AnimationCurve projectileSpeedAnimtionCurve;
 
-    //[SerializeField] private float shootRate;
-    //[SerializeField] private float projectileMaxMoveSpeed;
-    //[SerializeField] private float projectileRelativeHeight;
+    [SerializeField] private float projectileMaxMoveSpeed = 1f;
+    [SerializeField] private float projectileRelativeHeight = 2f;
+    [SerializeField] private float spacing = 1f;
+    [SerializeField] private float attackRange = 5f;
+
+    [SerializeField] private LayerMask enemyLayer;
     //private float shootTimer;
 
     //private void Update()
@@ -35,6 +38,7 @@ public class SunnyWeapon : Weapon
     //}
     protected float currentAttackInterval;
     protected int currentAttackCount;
+    
     protected override void Update()
     {
         base.Update();
@@ -48,6 +52,11 @@ public class SunnyWeapon : Weapon
             }
         }
     }
+    protected override void OnInit()
+    {
+        base.OnInit();
+        enemyLayer = LayerMask.GetMask(Constant.LAYER_ENEMY);
+    }
     public override bool CanAttack()
     {
         if (currentAttackCount > 0) return true;
@@ -55,7 +64,7 @@ public class SunnyWeapon : Weapon
     }
     protected override bool Attack(int attackCount = 1)
     {
-        if (!currentStats.projectilePrefab)
+        if (!currentStats.SunnyPrefab)
         {
             Debug.LogWarning(string.Format("Projectile prefab has not been set for {0}", name));
             ActivateCooldown();
@@ -64,14 +73,20 @@ public class SunnyWeapon : Weapon
 
         if (!CanAttack()) return false;
 
-        float spawnAngle = GetSpawnAngle();
+        //Projectile prefab = Instantiate(currentStats.projectilePrefab,
+        //    owner.transform.position + (Vector3)GetSpawnOffset(spawnAngle),
+        //    Quaternion.Euler(0, 0, spawnAngle));
+        for (int i = -1; i <= 1; i++)
+        {
+            Vector3 spawnPosition = transform.position + new Vector3(0, i * spacing, 0); // Điều chỉnh theo trục Y
+            ProjectileSunny projectile = Instantiate(currentStats.SunnyPrefab, spawnPosition, Quaternion.identity).GetComponent<ProjectileSunny>();
 
-        Projectile prefab = Instantiate(currentStats.projectilePrefab,
-            owner.transform.position + (Vector3)GetSpawnOffset(spawnAngle),
-            Quaternion.Euler(0, 0, spawnAngle));
+            projectile.InitializeProjectile(FindNearestEnemy(), projectileMaxMoveSpeed, projectileRelativeHeight);
+            projectile.InitializeAnimationCurve(currentStats.trajectoryAnimationCurve, currentStats.axisCorrectionAnimtionCurve, currentStats.projectileSpeedAnimtionCurve);
+        }
 
-        prefab.weapon = this;
-        prefab.owner = owner;
+        //prefab.weapon = this;
+        //prefab.owner = owner;
 
         ActivateCooldown();
 
@@ -85,14 +100,22 @@ public class SunnyWeapon : Weapon
 
         return true;
     }
-    protected virtual float GetSpawnAngle()
+    protected Transform FindNearestEnemy()
     {
-        return Mathf.Atan2(playerMovement.LastMovedVector.y, playerMovement.LastMovedVector.x) * Mathf.Rad2Deg;
-    }
-    protected virtual Vector2 GetSpawnOffset(float spawnAngle = 0)
-    {
-        return Quaternion.Euler(0, 0, spawnAngle) * new Vector2(
-            Random.Range(currentStats.spawnVariace.xMin, currentStats.spawnVariace.xMax),
-            Random.Range(currentStats.spawnVariace.yMin, currentStats.spawnVariace.yMax));
+        Collider2D[] enemies = Physics2D.OverlapCircleAll(transform.position, attackRange, enemyLayer);
+        Transform nearestEnemy = null;
+        float minDistance = Mathf.Infinity;
+
+        foreach (var enemy in enemies)
+        {
+            float distance = Vector2.Distance(transform.position, enemy.transform.position);
+            if (distance < minDistance)
+            {
+                minDistance = distance;
+                nearestEnemy = enemy.transform;
+            }
+        }
+
+        return nearestEnemy;
     }
 }

@@ -12,16 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4f4002ed8610ac479d8cd0854fd5692, type: 3}
   m_Name: Sunny
   m_EditorClassIdentifier: 
-  icon: {fileID: 0}
-  maxLevel: 0
+  icon: {fileID: 748973308, guid: eed553b0d63d6c54bb950ce4320a4768, type: 3}
+  maxLevel: 5
   evolutinData: []
-  behaviour: 
+  behaviour: SunnyWeapon
   baseStats:
-    name: 
-    description: 
+    name: Sunny
+    description: "B\u1EAFn ra 3 qu\u1EA3 c\u1EA7u l\u1EEDa c\xF9ng l\xFAc v\xE0 c\xF3
+      kh\u1EA3 n\u0103ng t\u1EF1 timg m\u1EE5c ti\xEAu g\u1EA7n nh\u1EA5t"
     projectilePrefab: {fileID: 0}
     cannonPrefab: {fileID: 0}
     OrbitPrefab: {fileID: 0}
+    SunnyPrefab: {fileID: -6482254691868811913, guid: 538f4bac59ac2c148959e3ba34f308a3, type: 3}
     hitEffect: {fileID: 0}
     spawnVariace:
       serializedVersion: 2
@@ -33,13 +35,85 @@ MonoBehaviour:
     damage: 0
     damageVariance: 0
     area: 0
-    speed: 0
+    speed: 3
     cooldown: 0
     projectileInterval: 0
     knocback: 0
     number: 0
     piercing: 0
     maxInstances: 0
+    trajectoryAnimationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 2
+        outSlope: 2
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.9983389
+        value: 0.006333098
+        inSlope: -1.6512492
+        outSlope: -1.6512492
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.030783286
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    axisCorrectionAnimtionCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    projectileSpeedAnimtionCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: -1.8511436
+        outSlope: -1.8511436
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.047912512
+      - serializedVersion: 3
+        time: 0.70090145
+        value: -0.0009422451
+        inSlope: 2
+        outSlope: 2
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
     appliedBuffs: []
   linearGrowth: []
   randomGrowth: []
