@@ -16,6 +16,7 @@ public class UILevelSelector : MonoBehaviour
     public static int selectedLevel = -1;
     public static SceneData currentLevel;
     public List<SceneData> levels = new List<SceneData>();
+    protected int currentMap;
 
     [Header("Template")]
     public Toggle toggleTemplate;
@@ -67,6 +68,16 @@ Debug.LogWarning("this function cannot be called on builds.");
 #endif
         maps.Reverse();
         return maps.ToArray();
+    }
+
+    public virtual void Awake()
+    {
+        currentMap = levels.Count;
+        for (int i = 0; i < currentMap; i++)
+        {
+            selectableToggles[i].interactable = false;
+            selectableToggles[i].image.color = Color.red;
+        }
     }
     public void SceneChange(string name)
     {
@@ -120,4 +131,6 @@ Debug.LogWarning("this function cannot be called on builds.");
         }
         return Mathf.Approximately(sum, 0);
     }
+
+   
 }
