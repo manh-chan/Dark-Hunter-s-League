@@ -11,11 +11,15 @@ public class TutorialManager : MonoBehaviour
 
     private int currentPanelIndex = 0;
     public bool tutorialCompleted;
+    public GameObject panelToBringForward;
+
+   
     void Start()
     {
+        DontDestroyOnLoad(this);
         // Kiểm tra xem người chơi đã hoàn thành tutorial chưa
         // PlayerPrefs.GetInt trả về 0 nếu key chưa tồn tại (mặc định là chưa hoàn thành)
-
+        BringPanelToFront();
         if (tutorialCompleted)
         {
             // Nếu đã hoàn thành, không làm gì cả (hoặc có thể tự hủy GameObject này)
@@ -33,6 +37,17 @@ public class TutorialManager : MonoBehaviour
             // Tùy chọn: Có thể dừng game lại khi tutorial đang hiển thị
             // Time.timeScale = 0f;
         }
+    }
+
+    void Update()
+    {
+        BringPanelToFront();
+    }
+    void BringPanelToFront()
+    {
+        // Đưa panel này lên vị trí cuối cùng trong danh sách con của cha nó
+        // -> Hiển thị trên cùng so với các anh em (siblings) khác.
+        panelToBringForward.transform.SetAsLastSibling();
     }
 
     // Hàm hiển thị panel theo chỉ số (index)
@@ -102,5 +117,28 @@ public class TutorialManager : MonoBehaviour
                 panel.SetActive(false);
             }
         }
+    }
+    public void HeroButton()
+    {
+        UIManager.Instance.OpenUI<CanvasHero>();
+      
+    }
+
+    public void GrowthButton()
+    {
+        UIManager.Instance.OpenUI<CanvasGrowth>();
+
+    }
+
+    public void SelectHeroButton()
+    {
+        FindObjectOfType<CanvasHero>().gameObject.SetActive(false);
+         
+    }
+
+    public void UpdateGrowButton()
+    {
+        FindObjectOfType<CanvasGrowth>().gameObject.SetActive(false);
+
     }
 }
