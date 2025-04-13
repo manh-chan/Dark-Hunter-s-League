@@ -1,6 +1,8 @@
-[System.Serializable]
+using System;
+
+[Serializable]
 public class UserProfileData
 {
-    public string playerName;
-    public string imageUrl;
+    public string name;
+    public string avatarBase64;
 }
