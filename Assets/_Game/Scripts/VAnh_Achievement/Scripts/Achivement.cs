@@ -10,8 +10,8 @@ public class Achivement : MonoBehaviour
     private bool unlocked;
     private int points;
     private int spriteIndex;
-    private Image achievementRef;
-    private List<Achivement> dependencies = new List<Achivement> ();
+    private GameObject achievementRef;
+    private List<Achivement> dependencies = new List<Achivement>();
     private string child;
     public string Child
     {
@@ -25,11 +25,7 @@ public class Achivement : MonoBehaviour
         }
     }
 
-    public Achivement()
-    {
-    }
-
-    public Achivement(string name, string description, int points,int spriteIndex, Image achievementRef)
+    public Achivement(string name, string description, int points, int spriteIndex, GameObject achievementRef)
     {
         this.Name = name;
         this.Description = description;
@@ -49,7 +45,7 @@ public class Achivement : MonoBehaviour
     public bool Unlocked { get => unlocked; set => unlocked = value; }
     public int Points { get => points; set => points = value; }
     public int SpriteIndex { get => spriteIndex; set => spriteIndex = value; }
-    public Image AchievementRef { get => achievementRef; set => achievementRef = value; }
+    public GameObject AchievementRef { get => achievementRef; set => achievementRef = value; }
 
     public bool EarnAchievement()
     {
@@ -57,7 +53,7 @@ public class Achivement : MonoBehaviour
         {
             achievementRef.GetComponent<Image>().sprite = AchivementManager.Instance.unlockedSprite;
             SaveAchievement(true);
-            if(child != null)
+            if (child != null)
             {
                 AchivementManager.Instance.EarnAchievement(child);
             }
@@ -71,18 +67,14 @@ public class Achivement : MonoBehaviour
     {
         unlocked = value;
         int tmpPoints = PlayerPrefs.GetInt("Points");
-        PlayerPrefs.SetInt("Points", tmpPoints+= points);
+        PlayerPrefs.SetInt("Points", tmpPoints += points);
         PlayerPrefs.SetInt(name, value ? 1 : 0);
         PlayerPrefs.Save();
-        name = "adsadas";
-        AchivementManager.Instance.SaveToFirebase();
-
-
     }
     public void LoadAchievement()
     {
         unlocked = PlayerPrefs.GetInt(name) == 1 ? true : false;
-        if(unlocked)
+        if (unlocked)
         {
             //unlocked = true thi load du lieu
             AchivementManager.Instance.textPoints.text = "Points: " + PlayerPrefs.GetInt("Points");
@@ -90,4 +82,6 @@ public class Achivement : MonoBehaviour
 
         }
     }
+    // Start is called before the first frame update
+
 }

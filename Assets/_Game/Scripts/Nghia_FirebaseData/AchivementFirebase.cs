@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 public class AchivementFirebase : Singleton<AchivementFirebase>
 {
-    public AchivementData achivement;
+    public Achivement achivement;
 
     private DatabaseReference reference;
 
@@ -51,7 +51,7 @@ public class AchivementFirebase : Singleton<AchivementFirebase>
 
     public void ReadAcData(string id)
     {
-        reference.Child("Users").Child(id).Child("achivement").GetValueAsync().ContinueWithOnMainThread(task =>
+        reference.Child("Users").Child(id).Child("Achivement").GetValueAsync().ContinueWithOnMainThread(task =>
         {
             if (task.IsCompleted)
             {
@@ -59,7 +59,7 @@ public class AchivementFirebase : Singleton<AchivementFirebase>
                 if (snapshot.Exists)
                 {
                     // Đọc dữ liệu từ Firebase
-                    achivement = JsonUtility.FromJson<AchivementData>(snapshot.GetRawJsonValue());
+                    achivement = JsonUtility.FromJson<Achivement>(snapshot.GetRawJsonValue());
 
                    /* // Cập nhật dữ liệu vào UI ngay khi đọc thành công
                     AchivementManager ui = FindObjectOfType<AchivementManager>();

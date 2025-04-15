@@ -1571,14 +1571,14 @@ MonoBehaviour:
   canvasMenu: {fileID: 7583650479268121755}
   achievementPrefab: {fileID: 3653963368735749498, guid: ec488fd8087bef647968bbfc833c7b0c, type: 3}
   sprites:
-  - {fileID: -1231866515, guid: ef4f6145a729ff84aa271cef80ea1405, type: 3}
-  - {fileID: 2133850082, guid: ef4f6145a729ff84aa271cef80ea1405, type: 3}
-  - {fileID: -586397711, guid: ef4f6145a729ff84aa271cef80ea1405, type: 3}
-  - {fileID: -1402673754, guid: ef4f6145a729ff84aa271cef80ea1405, type: 3}
-  - {fileID: 1968900938, guid: ef4f6145a729ff84aa271cef80ea1405, type: 3}
-  - {fileID: 21300000, guid: 9ea3629d86abbdf4c99ce66bc5ad40e3, type: 3}
   - {fileID: 21300000, guid: 0a552226341ce8849ab3b76143147eb5, type: 3}
+  - {fileID: 21300000, guid: 9ea3629d86abbdf4c99ce66bc5ad40e3, type: 3}
   - {fileID: 21300000, guid: e3c38bce367121a419bb3944e306af55, type: 3}
+  - {fileID: 2133850082, guid: ef4f6145a729ff84aa271cef80ea1405, type: 3}
+  - {fileID: 21300000, guid: e3c38bce367121a419bb3944e306af55, type: 3}
+  - {fileID: 21300000, guid: 0a552226341ce8849ab3b76143147eb5, type: 3}
+  - {fileID: 21300000, guid: 9ea3629d86abbdf4c99ce66bc5ad40e3, type: 3}
+  - {fileID: 21300000, guid: 9ea3629d86abbdf4c99ce66bc5ad40e3, type: 3}
   scrollRect: {fileID: 2411037870770013045}
   visualAchievement: {fileID: 3562572086328987223, guid: a20571b30e1224a4086b68a4f3af87fa, type: 3}
   unlockedSprite: {fileID: 21300000, guid: c26223ef5308ea6468a44910489a530f, type: 3}
