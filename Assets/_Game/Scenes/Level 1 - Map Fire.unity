@@ -1059,7 +1059,6 @@ MonoBehaviour:
   currentEventCooldown: 0
   events:
   - {fileID: 11400000, guid: 7f5fa9856ff089f42b9b97dc3c169d0f, type: 2}
-  - {fileID: 11400000, guid: 466c6b53d10d1d54a877267e1a308c31, type: 2}
   firstTrigerDelay: 5
   triggerInterval: 30
 --- !u!114 &794759843
@@ -1076,11 +1075,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data:
   - {fileID: 11400000, guid: 114bd7424464fb245a7f738aeb793fbf, type: 2}
-  - {fileID: 11400000, guid: 73d642f5f308a1d4e89a59f48b92ac49, type: 2}
   referenceCamera: {fileID: 519420034}
   maximumEnemyCount: 300
   boostedByCurse: 1
-  playerStats: {fileID: 0}
+  playerStats: {fileID: 1691638764}
 --- !u!1 &818918993
 GameObject:
   m_ObjectHideFlags: 0

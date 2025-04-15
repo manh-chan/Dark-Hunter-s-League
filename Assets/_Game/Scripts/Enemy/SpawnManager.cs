@@ -97,6 +97,7 @@ public class SpawnManager : MonoBehaviour
     {
         GameManager.instance.AssignLevelReacheUI(playerStats.level);
         GameManager.instance.GameOver();
+        //check map there
     }
     public bool HasWaveEnded()
     {

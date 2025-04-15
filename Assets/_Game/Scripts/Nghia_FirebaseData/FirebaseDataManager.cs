@@ -2,6 +2,7 @@
 using Firebase.Database;
 using Firebase.Extensions;
 using System.Collections;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -17,6 +18,7 @@ public class FirebaseDataManager : Singleton<FirebaseDataManager>
 
     private void Awake()
     {
+       DontDestroyOnLoad(this);
         reference = FirebaseDatabase.DefaultInstance.RootReference;
     }
 
@@ -80,8 +82,49 @@ public class FirebaseDataManager : Singleton<FirebaseDataManager>
         });
     }
 
+    //savemap
+    public void SaveMapProgressToFirebase(string userId, List<bool> unlockedMaps)
+    {
+        MapProgressData data = new MapProgressData(unlockedMaps);
+        string json = JsonUtility.ToJson(data);
 
-
+        reference.Child("Users").Child(userId).Child("MapProgress").SetRawJsonValueAsync(json).ContinueWithOnMainThread(task =>
+        {
+            if (task.IsCompleted)
+            {
+                Debug.Log("Lưu trạng thái map thành công.");
+            }
+            else
+            {
+                Debug.LogError("Lỗi khi lưu map: " + task.Exception);
+            }
+        });
+    }
+    public void LoadMapProgressFromFirebase(string userId, System.Action<List<bool>> onLoaded)
+    {
+        reference.Child("Users").Child(userId).Child("MapProgress").GetValueAsync().ContinueWithOnMainThread(task =>
+        {
+            if (task.IsCompleted)
+            {
+                DataSnapshot snapshot = task.Result;
+                if (snapshot.Exists)
+                {
+                    MapProgressData data = JsonUtility.FromJson<MapProgressData>(snapshot.GetRawJsonValue());
+                    onLoaded?.Invoke(data.unlockedMaps);
+                }
+                else
+                {
+                    Debug.LogWarning("Chưa có dữ liệu MapProgress.");
+                    onLoaded?.Invoke(new List<bool>()); // hoặc tạo mặc định
+                }
+            }
+            else
+            {
+                Debug.LogError("Lỗi khi đọc dữ liệu MapProgress: " + task.Exception);
+                onLoaded?.Invoke(new List<bool>()); // fallback
+            }
+        });
+    }
     public void ShowReadPlayerData(string message)
     {
         showReadPlayerData.text = message;

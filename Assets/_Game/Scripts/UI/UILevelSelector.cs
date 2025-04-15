@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
@@ -17,6 +17,7 @@ public class UILevelSelector : MonoBehaviour
     public static SceneData currentLevel;
     public List<SceneData> levels = new List<SceneData>();
     protected int currentMap;
+    MapProgressData mapProgressData;
 
     [Header("Template")]
     public Toggle toggleTemplate;
@@ -72,12 +73,27 @@ Debug.LogWarning("this function cannot be called on builds.");
 
     public virtual void Awake()
     {
-        currentMap = levels.Count;
-        for (int i = 0; i < currentMap; i++)
+        string uid = PlayerPrefs.GetString("uid", "");
+        mapProgressData = new MapProgressData(levels.Count);
+        mapProgressData.unlockedMaps[0] = true;
+        FirebaseDataManager.Instance.SaveMapProgressToFirebase(uid, mapProgressData.unlockedMaps);
+
+        FirebaseDataManager.Instance.LoadMapProgressFromFirebase(uid, (unlockedMaps) =>
         {
-            selectableToggles[i].interactable = false;
-            selectableToggles[i].image.color = Color.red;
-        }
+            for (int i = 0; i < selectableToggles.Count; i++)
+            {
+                if (i < unlockedMaps.Count && unlockedMaps[i])
+                {
+                    selectableToggles[i].interactable = true;
+                    selectableToggles[i].image.color = Color.green;
+                }
+                else
+                {
+                    selectableToggles[i].interactable = false;
+                    selectableToggles[i].image.color = Color.red;
+                }
+            }
+        });
     }
     public void SceneChange(string name)
     {
