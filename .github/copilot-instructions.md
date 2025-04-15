@@ -2,7 +2,7 @@
 - Project name: Dark-Hunter-s-League
 - Unity version: Unity 2022.3.44f1
 - Active game object:
-  - Name: AchivementManager
+  - Name: Firebasedata Manager
   - Tag: Untagged
   - Layer: Default
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->
