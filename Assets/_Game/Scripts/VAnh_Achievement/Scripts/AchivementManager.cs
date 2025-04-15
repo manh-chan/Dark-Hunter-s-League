@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class AchivementManager : MonoBehaviour
 {
-    public AchivementData achivement;
+    public Achivement achivement;
     public GameObject canvasMenu;
     public GameObject achievementPrefab;
     public Sprite[] sprites;
@@ -36,12 +36,15 @@ public class AchivementManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        achivement = new AchivementData();
+        string uid = PlayerPrefs.GetString("uid", "");
+        achivement = new Achivement();
         activeButton = GameObject.Find("GeneralBtn").GetComponent<AchieveButton>();
         CreateAchievement("General", "Chào mừng người chơi mới", "Chơi ván game đầu tiên.", 5, 0);
         CreateAchievement("General", "Tân Binh Ra Trận", "Hoàn thành Map 1.", 10, 1);
         CreateAchievement("General", "Lính Mới Đã Thành Thạo", "Hoàn thành Map 2.", 10, 5);
         CreateAchievement("General", "Kẻ Sống Sót", "Hoàn thành Map 3.", 15, 6);
+        CreateAchievement("General", "Kẻ Sống Sót2", "Hoàn thành Map 3.", 15, 6);
+        CreateAchievement("General", "Kẻ Sống Sót3", "Hoàn thành Map 3.", 15, 6);
         //hoan thanh 3 thanh tuu tren de mo khoa
         CreateAchievement("General", "Kẻ Chiến Thắng", "Hoàn thành Toàn Bộ Màn Chơi.", 100, 7, new string[] { "Tân Binh Ra Trận", "Lính Mới Đã Thành Thạo", "Kẻ Sống Sót" });
 
@@ -65,16 +68,20 @@ public class AchivementManager : MonoBehaviour
         //thuc hien nhiem vu de nhan dc thanh tuu
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            EarnAchievement("Chào mừng người chơi mới");
-    
+            EarnAchievement("Kẻ Sống Sót3");
+
         }
         if (Input.GetKeyDown(KeyCode.W))
         {
             EarnAchievement("Tân Binh Ra Trận");
+
+
         }
         if (Input.GetKeyDown(KeyCode.E))
         {
             EarnAchievement("Lính Mới Đã Thành Thạo");
+
+
         }
         if (Input.GetKeyDown(KeyCode.R))
         {
@@ -83,6 +90,8 @@ public class AchivementManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.T))
         {
             EarnAchievement("Thần Săn Quái");
+
+
         }
     }
     //dat duoc thanh tuu
@@ -94,8 +103,7 @@ public class AchivementManager : MonoBehaviour
             SetAchievementInfor("EarnCanvas", achievement, title);
             textPoints.text = "Points: " + PlayerPrefs.GetInt("Points");
             StartCoroutine(FadeAchievement(achievement));
-            achivement.checkAchivement = true;
-            SaveToFirebase();
+            
         }
     }
     //an achievement
@@ -107,8 +115,8 @@ public class AchivementManager : MonoBehaviour
     public void CreateAchievement(string parent, string title, string description, int points, int spriteIndex, string[] dependencies = null)
     {
         GameObject achievement = (GameObject)Instantiate(achievementPrefab);
-
-        Achivement newAchivement = new Achivement(title, description, points, spriteIndex, achievement);
+        Image achievementImage = achievement.GetComponent<Image>();
+        Achivement newAchivement = new Achivement(title, description, points, spriteIndex, achievementImage);
         achievements.Add(title, newAchivement);
         SetAchievementInfor(parent, achievement, title);
         if (dependencies != null)

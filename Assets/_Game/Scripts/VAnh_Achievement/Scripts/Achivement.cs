@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,7 +10,7 @@ public class Achivement : MonoBehaviour
     private bool unlocked;
     private int points;
     private int spriteIndex;
-    private GameObject achievementRef;
+    private Image achievementRef;
     private List<Achivement> dependencies = new List<Achivement> ();
     private string child;
     public string Child
@@ -25,7 +25,11 @@ public class Achivement : MonoBehaviour
         }
     }
 
-    public Achivement(string name, string description, int points,int spriteIndex, GameObject achievementRef)
+    public Achivement()
+    {
+    }
+
+    public Achivement(string name, string description, int points,int spriteIndex, Image achievementRef)
     {
         this.Name = name;
         this.Description = description;
@@ -45,7 +49,7 @@ public class Achivement : MonoBehaviour
     public bool Unlocked { get => unlocked; set => unlocked = value; }
     public int Points { get => points; set => points = value; }
     public int SpriteIndex { get => spriteIndex; set => spriteIndex = value; }
-    public GameObject AchievementRef { get => achievementRef; set => achievementRef = value; }
+    public Image AchievementRef { get => achievementRef; set => achievementRef = value; }
 
     public bool EarnAchievement()
     {
@@ -70,6 +74,10 @@ public class Achivement : MonoBehaviour
         PlayerPrefs.SetInt("Points", tmpPoints+= points);
         PlayerPrefs.SetInt(name, value ? 1 : 0);
         PlayerPrefs.Save();
+        name = "adsadas";
+        AchivementManager.Instance.SaveToFirebase();
+
+
     }
     public void LoadAchievement()
     {
@@ -82,6 +90,4 @@ public class Achivement : MonoBehaviour
 
         }
     }
-    // Start is called before the first frame update
-
 }

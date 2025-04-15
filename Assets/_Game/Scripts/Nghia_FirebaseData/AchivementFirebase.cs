@@ -32,7 +32,7 @@ public class AchivementFirebase : Singleton<AchivementFirebase>
         }
     }
 
-    public void WritePlayerData(string id, AchivementData player)
+    public void WritePlayerData(string id, Achivement player)
     {
         string json = JsonUtility.ToJson(player);
 
