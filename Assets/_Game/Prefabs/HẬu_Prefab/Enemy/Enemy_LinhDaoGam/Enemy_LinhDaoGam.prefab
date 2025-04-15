@@ -103,19 +103,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseStats:
     maxHealth: 20
-    moveSpeed: 1
+    moveSpeed: 0.5
     damage: 3
     knokbackMultiplier: 1
     resistances:
       freeze: 0
       kill: 0
       debuff: 0
-    curseBoosts: 3
+    curseBoosts: 1
     levelBoosts: 0
   attackEffects: []
   damageColor: {r: 1, g: 0, b: 0, a: 1}
-  damageFlashDuration: 0.2
-  deathFadeTime: 0.6
+  damageFlashDuration: 0.8
+  deathFadeTime: 1
 --- !u!114 &7185156106132119493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,6 +133,8 @@ MonoBehaviour:
   outOffFrameAction: 0
   knockbackVariance: 2
   rezoSpeedMove: 1
+  minDistance: 0.8
+  pushForce: 2.5
 --- !u!114 &5616476323606178641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,7 +151,13 @@ MonoBehaviour:
   drops:
   - name: Ngoc
     itemPrefab: {fileID: 3017881812221728157, guid: de8320c11866da547a95fb988556d0ee, type: 3}
-    dropRate: 100
+    dropRate: 70
+  - name: Ngoc
+    itemPrefab: {fileID: 3017881812221728157, guid: 555950c2771ddf648ac4c6517b31ccfe, type: 3}
+    dropRate: 10
+  - name: Ngoc
+    itemPrefab: {fileID: 546542575014491154, guid: 35e87e090a95fdf4cbe32df58e373b45, type: 3}
+    dropRate: 2
 --- !u!95 &5150141823744670638
 Animator:
   serializedVersion: 5

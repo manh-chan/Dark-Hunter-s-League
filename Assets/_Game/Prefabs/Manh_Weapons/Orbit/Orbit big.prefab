@@ -137,8 +137,8 @@ MonoBehaviour:
   owner: {fileID: 0}
   weapon: {fileID: 0}
   orbitSpeed: 360
-  maxRadius: 1.5
-  expansionSpeed: 2
+  maxRadius: 1
+  expansionSpeed: 1.75
   maxRotations: 2
   startAngle: 0
 --- !u!50 &-8120788591488759294

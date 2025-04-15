@@ -32,10 +32,10 @@ MonoBehaviour:
     lifespan: 3
     damage: 30
     damageVariance: 2
-    area: 2
+    area: 0
     speed: 7
     cooldown: 2
-    projectileInterval: 0.5
+    projectileInterval: 0.3
     knocback: 0.5
     number: 2
     piercing: 2

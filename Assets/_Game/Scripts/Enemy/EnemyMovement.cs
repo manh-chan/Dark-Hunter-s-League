@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,6 +6,7 @@ public class EnemyMovement : Sortable
 {
     protected EnemyState stats;
     protected Transform player;
+    protected PlayerMovement playerMovement;
     protected Rigidbody2D rb;
 
     protected Vector2 knockbackVelocity;
@@ -20,6 +21,9 @@ public class EnemyMovement : Sortable
 
     protected bool spawnedOutOffFarme = false;
     public bool rezoSpeedMove = true;
+
+    public float minDistance = 0.8f;
+    public float pushForce = 3f;
     protected override void Start()
     {
         base.Start();
@@ -27,8 +31,12 @@ public class EnemyMovement : Sortable
         spawnedOutOffFarme = !SpawnManager.IsWithinBoundaries(transform);
         stats = GetComponent<EnemyState>();
 
+        PlayerMovement allPlayers = FindObjectOfType<PlayerMovement>();
+        player = allPlayers.transform;
+        playerMovement = player.GetComponent<PlayerMovement>();
+/*
         PlayerMovement[] allPlayers = FindObjectsOfType<PlayerMovement>();
-        player = allPlayers[Random.Range(0, allPlayers.Length)].transform;
+        player = allPlayers[Random.Range(0, allPlayers.Length)].transform;*/
     }
 
     protected virtual void Update()
@@ -44,7 +52,22 @@ public class EnemyMovement : Sortable
             HandleOutOffFrameAction();
         }
     }
+    private void FixedUpdate()
+    {
+        if (player == null) return;
 
+        
+        if (playerMovement == null || !playerMovement.wipeEnemy) return; // ❌ Không gạt nếu player đứng yên
+
+        Vector2 toEnemy = (Vector2)transform.position - (Vector2)player.position;
+        float distance = toEnemy.magnitude;
+
+        if (distance < minDistance)
+        {
+            Vector2 pushDir = toEnemy.normalized;
+            transform.position += (Vector3)(pushDir * pushForce * Time.deltaTime);
+        }
+    }
     protected virtual void HandleOutOffFrameAction()
     {
         if (!SpawnManager.IsWithinBoundaries(transform))

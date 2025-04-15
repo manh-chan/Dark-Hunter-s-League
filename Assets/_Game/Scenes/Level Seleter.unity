@@ -912,7 +912,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6581480338628007639, guid: 5665467c58753ab47956d3fb6fbe06d6, type: 3}
       propertyPath: levels.Array.data[0].timeLimit
-      value: 300
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 6581480338628007639, guid: 5665467c58753ab47956d3fb6fbe06d6, type: 3}
       propertyPath: levels.Array.data[0].playerModifiers.luck

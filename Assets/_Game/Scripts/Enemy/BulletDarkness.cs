@@ -20,7 +20,7 @@ public class BulletDarkness : MonoBehaviour
 
             moveDirection = (selectedPlayer.position - transform.position).normalized;
 
-            transform.up = moveDirection;
+            transform.right = -moveDirection;
         }
     }
 

@@ -32,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -103,14 +103,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseStats:
     maxHealth: 30
-    moveSpeed: 2
+    moveSpeed: 0.7
     damage: 3
     knokbackMultiplier: 1
     resistances:
       freeze: 0
       kill: 0
       debuff: 0
-    curseBoosts: 3
+    curseBoosts: 1
     levelBoosts: 0
   attackEffects: []
   damageColor: {r: 1, g: 0, b: 0, a: 1}
@@ -129,7 +129,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   active: 0
-  drops: []
+  drops:
+  - name: red jade
+    itemPrefab: {fileID: 3017881812221728157, guid: de8320c11866da547a95fb988556d0ee, type: 3}
+    dropRate: 60
+  - name: blue jade
+    itemPrefab: {fileID: 3017881812221728157, guid: 555950c2771ddf648ac4c6517b31ccfe, type: 3}
+    dropRate: 48
+  - name: Heal
+    itemPrefab: {fileID: 546542575014491154, guid: 35e87e090a95fdf4cbe32df58e373b45, type: 3}
+    dropRate: 2
 --- !u!114 &6190685012963724888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,10 +156,12 @@ MonoBehaviour:
   outOffFrameAction: 0
   knockbackVariance: 2
   rezoSpeedMove: 1
+  minDistance: 0.8
+  pushForce: 2.5
   cooldownTime: 0
-  distanceAttack: 3
-  moveSpeedAttack: 15
-  maxDistance: 5
+  distanceAttack: 1.5
+  moveSpeedAttack: 10
+  maxDistance: 2.5
 --- !u!95 &8066232305972726013
 Animator:
   serializedVersion: 5
@@ -204,6 +215,6 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.029373527, y: -0.05140364}
-  m_Size: {x: 0.8930074, y: 1.0507014}
+  m_Offset: {x: 0.02499178, y: -0.025090948}
+  m_Size: {x: 0.55123836, y: 0.9455875}
   m_Direction: 0

@@ -39,7 +39,7 @@ MonoBehaviour:
     projectileInterval: 0.5
     knocback: 0.5
     number: 1
-    piercing: 1
+    piercing: 80
     maxInstances: 70
     appliedBuffs: []
   linearGrowth:
