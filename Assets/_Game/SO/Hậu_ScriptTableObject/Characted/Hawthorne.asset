@@ -18,7 +18,7 @@ MonoBehaviour:
   fullName: Eleanor Hawthorne
   characterDescription: "s\u1EDF h\u0169u kh\u1EA3 n\u0103ng h\xF3a l\u01A1n m\u1ECDi
     th\u1EE9,v\xE0 c\xF3 kh\u1EA3 n\u0103ng h\u1ED3i ph\u1EE5c m\u1EA1nh m\u1EBD"
-  startingWeapon: {fileID: 11400000, guid: 669abf8e4e1e88d48ba25be1133426d6, type: 2}
+  startingWeapon: {fileID: 11400000, guid: ce0f0da8aa8422b47871c3e32bff51ea, type: 2}
   stats:
     maxHealth: 100
     recovery: 2

@@ -502,6 +502,7 @@ GameObject:
   m_Component:
   - component: {fileID: 316573536}
   - component: {fileID: 316573535}
+  - component: {fileID: 316573537}
   m_Layer: 0
   m_Name: Virtual Camera
   m_TagString: Untagged
@@ -564,6 +565,22 @@ Transform:
   - {fileID: 115277895}
   m_Father: {fileID: 935166227}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &316573537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 316573534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f453f694addf4275988fac205bc91968, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_BoundingShape2D: {fileID: 1332767315}
+  m_Damping: 0.5
+  m_MaxWindowSize: -1
+  m_Padding: 0
 --- !u!1 &324201211
 GameObject:
   m_ObjectHideFlags: 0
@@ -730,6 +747,7 @@ GameObject:
   - component: {fileID: 519420034}
   - component: {fileID: 519420029}
   - component: {fileID: 519420033}
+  - component: {fileID: 519420035}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -845,6 +863,50 @@ Camera:
   m_OcclusionCulling: 0
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &519420035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1018,6 +1080,7 @@ MonoBehaviour:
   referenceCamera: {fileID: 519420034}
   maximumEnemyCount: 300
   boostedByCurse: 1
+  playerStats: {fileID: 0}
 --- !u!1 &818918993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1068,7 +1131,7 @@ MonoBehaviour:
   previosState: 0
   damageCanvas: {fileID: 828243900}
   textFontsize: 40
-  textFont: {fileID: 0}
+  textFont: {fileID: 11400000, guid: f6575272290587c4cb2a8613b87ebc6d, type: 2}
   referenceCamera: {fileID: 0}
   pauseScreen: {fileID: 1251413524}
   resultsScreen: {fileID: 836383131}
@@ -1216,7 +1279,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8046108601730385326, guid: e153793231951bc4e85233a989df3a71, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1457,6 +1521,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!66 &1332767315 stripped
+CompositeCollider2D:
+  m_CorrespondingSourceObject: {fileID: 4041032909826093694, guid: e153793231951bc4e85233a989df3a71, type: 3}
+  m_PrefabInstance: {fileID: 1094008319}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1445221362
 GameObject:
   m_ObjectHideFlags: 0
@@ -1674,7 +1743,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1890808785
-  m_SortingLayer: 19
+  m_SortingLayer: 30
   m_SortingOrder: 15
   m_Sprite: {fileID: 202856492, guid: 539238f2eb612344696521ff7660f43c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1841,6 +1910,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1def4d63f7f37645be8023eac4ef559, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  upgradeStats:
+    maxHealthBonus: 0
+    recoveryBonus: 0
+    armorBonus: 0
+    moveSpeedBonus: 0
+    mightBonus: 0
+    areaBonus: 0
+    speedBonus: 0
+    durationBonus: 0
+    cooldownBonus: 0
+    luckBonus: 0
   charactedData: {fileID: 0}
   baseStats:
     maxHealth: 0
@@ -1879,9 +1959,11 @@ MonoBehaviour:
   damageEffect: {fileID: 0}
   blockeEffect: {fileID: 323779218160341399, guid: 74906b659f9a350489117479efcc6627, type: 3}
   lvUpEffect: {fileID: 2460430972624671715, guid: 298f32ed0efd8fb49a09bc9c72049860, type: 3}
+  targetEffect: {fileID: 0}
   experience: 0
   level: 1
   experienceCap: 0
+  coin: 100
   levelRanges:
   - statsLevel: 1
     endLevel: 3
@@ -1896,6 +1978,7 @@ MonoBehaviour:
   healthBar: {fileID: 324201213}
   expBar: {fileID: 1283920252}
   levelText: {fileID: 35824310}
+  coinText: {fileID: 6045714594180793616}
 --- !u!114 &1691638765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2214,6 +2297,10 @@ PrefabInstance:
       propertyPath: inventory
       value: 
       objectReference: {fileID: 1691638763}
+    - target: {fileID: 121031028985959008, guid: da84fbd91909b96488ae8bc43fab62a2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 129437069930533202, guid: da84fbd91909b96488ae8bc43fab62a2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2441,6 +2528,14 @@ PrefabInstance:
     - target: {fileID: 4588438515853330488, guid: da84fbd91909b96488ae8bc43fab62a2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 818918995}
+    - target: {fileID: 4588438515853330488, guid: da84fbd91909b96488ae8bc43fab62a2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PauseGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 4588438515853330488, guid: da84fbd91909b96488ae8bc43fab62a2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5443279249369448992, guid: da84fbd91909b96488ae8bc43fab62a2, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2663,6 +2758,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da84fbd91909b96488ae8bc43fab62a2, type: 3}
+--- !u!114 &6045714594180793616 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3228569637824347445, guid: da84fbd91909b96488ae8bc43fab62a2, type: 3}
+  m_PrefabInstance: {fileID: 6045714594180793615}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
