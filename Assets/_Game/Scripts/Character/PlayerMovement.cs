@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Windows;
 public class PlayerMovement : Sortable
 {
-    public const float DEFAULT_MOVESPEED = 3f;
+    public const float DEFAULT_MOVESPEED = 2f;
     private Vector2 moveDir;
     [HideInInspector]
     public float lastHorizontalVector;

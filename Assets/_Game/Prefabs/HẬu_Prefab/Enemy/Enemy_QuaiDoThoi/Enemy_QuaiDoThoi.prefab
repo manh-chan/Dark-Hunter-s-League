@@ -222,6 +222,8 @@ MonoBehaviour:
   outOffFrameAction: 0
   knockbackVariance: 2
   rezoSpeedMove: 1
+  minDistance: 0.8
+  pushForce: 1
   cooldownTime: 0
   distanceAttack: 0.5
   ani: {fileID: 4013837983174958462}

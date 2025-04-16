@@ -31,6 +31,11 @@ public class EnemyMovement : Sortable
         spawnedOutOffFarme = !SpawnManager.IsWithinBoundaries(transform);
         stats = GetComponent<EnemyState>();
 
+
+        Vector3 fixZ = transform.position;
+        fixZ.z = 0;
+        transform.position = fixZ;
+
         PlayerMovement allPlayers = FindObjectOfType<PlayerMovement>();
         player = allPlayers.transform;
         playerMovement = player.GetComponent<PlayerMovement>();
@@ -56,8 +61,7 @@ public class EnemyMovement : Sortable
     {
         if (player == null) return;
 
-        
-        if (playerMovement == null || !playerMovement.wipeEnemy) return; // ❌ Không gạt nếu player đứng yên
+        if (playerMovement == null || !playerMovement.wipeEnemy || pushForce == 0) return; // ❌ Không gạt nếu player đứng yên
 
         Vector2 toEnemy = (Vector2)transform.position - (Vector2)player.position;
         float distance = toEnemy.magnitude;
@@ -65,7 +69,18 @@ public class EnemyMovement : Sortable
         if (distance < minDistance)
         {
             Vector2 pushDir = toEnemy.normalized;
-            transform.position += (Vector3)(pushDir * pushForce * Time.deltaTime);
+
+            // Lấy vector vuông góc với pushDir (gạt ngang)
+            Vector2 perpendicular = new Vector2(-pushDir.y, pushDir.x);
+
+            // Gạt sang trái hoặc phải tùy theo cross product giữa hướng di chuyển của player và toEnemy
+            float cross = Vector3.Cross(playerMovement.LastMovedVector.normalized, pushDir).z;
+
+            if (cross < 0)
+                perpendicular *= -1; // Gạt sang bên ngược lại nếu cần
+
+            // Gạt nhẹ sang ngang
+            transform.position += (Vector3)(perpendicular * pushForce * Time.deltaTime);
         }
     }
     protected virtual void HandleOutOffFrameAction()

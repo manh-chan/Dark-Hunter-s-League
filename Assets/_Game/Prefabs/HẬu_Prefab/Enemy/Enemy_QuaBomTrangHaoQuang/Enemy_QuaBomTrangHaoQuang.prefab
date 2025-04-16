@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 844260266152869371}
   - component: {fileID: 7945763329885011948}
   - component: {fileID: 7646300896086450785}
+  - component: {fileID: -5562850786873196905}
   m_Layer: 0
   m_Name: Enemy_QuaBomTrangHaoQuang
   m_TagString: Untagged
@@ -133,6 +134,8 @@ MonoBehaviour:
   outOffFrameAction: 0
   knockbackVariance: 2
   rezoSpeedMove: 1
+  minDistance: 0.8
+  pushForce: 1
   distanceAttack: 0.7
   damageRadius: 1.5
   damageAmount: 20
@@ -229,3 +232,30 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.4734615, y: 2.0222223}
   m_EdgeRadius: 0
+--- !u!50 &-5562850786873196905
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4482443721187354152}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
