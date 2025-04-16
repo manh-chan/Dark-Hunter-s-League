@@ -95,7 +95,6 @@ public class SpawnManager : MonoBehaviour
     }
     private void WinGame()
     {
-        GameManager.instance.AssignLevelReacheUI(playerStats.level);
         GameManager.instance.GameOver();
     }
     public bool HasWaveEnded()

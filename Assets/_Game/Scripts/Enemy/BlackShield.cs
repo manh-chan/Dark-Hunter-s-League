@@ -28,6 +28,7 @@ public class BlackShield : EnemyMovement
 
         if (cooldownTime <= 0 && !isAttacking && distance <= distanceAttack)
         {
+            pushForce = 0;
             rezoSpeedMove = false;
             StartCoroutine(Shield());
         }
@@ -37,13 +38,13 @@ public class BlackShield : EnemyMovement
     {
         isAttacking = true;
         ani.enabled = false;
-        pushForce = 0;
+        
         transform.localScale = new Vector3(0.5f, 0.5f, 1f);
         yield return new WaitForSeconds(5f);
 
         ani.enabled = true;
         cooldownTime = 5f;
-        pushForce = 2.5f;
+        pushForce = 1f;
         isAttacking = false;
         rezoSpeedMove = true;
     }

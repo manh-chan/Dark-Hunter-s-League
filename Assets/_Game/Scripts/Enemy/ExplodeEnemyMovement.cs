@@ -26,9 +26,10 @@ public class ExplodeEnemyMovement : EnemyMovement
     {
         base.Move();
         float distance = Vector3.Distance(transform.position, player.position);
-
+        
         if (distance <= distanceAttack)
         {
+            pushForce = 0;
             rezoSpeedMove = false;
             StartCoroutine(ChangeColorLoop());
             Invoke(nameof(ExplodeEnemy), 1f);

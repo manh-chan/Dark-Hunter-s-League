@@ -28,6 +28,7 @@ public class SummonAttackEnemyMovement : EnemyMovement
 
         if (cooldownTime <= 0 && !isAttacking && distance <= distanceAttack)
         {
+            pushForce = 0;
             rezoSpeedMove = false;
             StartCoroutine(Summon());
         }
@@ -36,12 +37,13 @@ public class SummonAttackEnemyMovement : EnemyMovement
     private IEnumerator Summon()
     {
         isAttacking = true;
-
+        
         yield return new WaitForSeconds(1f);
 
         GameObject summonedObject = Instantiate(summonPrefab, player.position, Quaternion.identity);
 
         cooldownTime = 5f;
+        pushForce = 1;
         isAttacking = false;
         rezoSpeedMove = true;
     }

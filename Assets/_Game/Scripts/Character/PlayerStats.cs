@@ -295,7 +295,6 @@ public class PlayerStats : EntityStats
     {
         if (!GameManager.instance.isGameOver)
         {
-            GameManager.instance.AssignLevelReacheUI(level);
             GameManager.instance.GameOver();
         }
     }

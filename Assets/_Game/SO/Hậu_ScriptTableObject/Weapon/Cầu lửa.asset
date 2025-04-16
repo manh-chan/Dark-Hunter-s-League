@@ -31,14 +31,14 @@ MonoBehaviour:
       width: 0
       height: 0
     lifespan: 1
-    damage: 20
+    damage: 15
     damageVariance: 2
     area: 0
     speed: 0
     cooldown: 2
     projectileInterval: 0.5
     knocback: 0.5
-    number: 1
+    number: 0
     piercing: 80
     maxInstances: 70
     appliedBuffs: []
@@ -58,7 +58,7 @@ MonoBehaviour:
       height: 0
     lifespan: 0
     damage: 5
-    damageVariance: 0
+    damageVariance: 1
     area: 0
     speed: 0
     cooldown: 0
