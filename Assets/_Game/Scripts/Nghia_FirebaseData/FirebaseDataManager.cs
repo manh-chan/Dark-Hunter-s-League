@@ -114,7 +114,39 @@ public class FirebaseDataManager : Singleton<FirebaseDataManager>
             }
         });
     }
-public void ShowReadPlayerData(string message)
+    //save Character
+    public void SaveCharProgressToFirebase(string uid, CharProgressData charProgress)
+    {
+        string json = JsonUtility.ToJson(charProgress);
+
+        reference.Child("Users").Child(uid).Child("CharProgress").SetRawJsonValueAsync(json).ContinueWithOnMainThread(task =>
+        {
+            if (task.IsCompleted)
+                Debug.Log("✅ Đã lưu tiến độ bản đồ");
+            else
+                Debug.LogError("❌ Lỗi khi lưu: " + task.Exception);
+        });
+    }
+
+    public void LoadCharProgressFromFirebase(string uid, Action<CharProgressData> onLoaded)
+    {
+        reference.Child("Users").Child(uid).Child("CharProgress").GetValueAsync().ContinueWithOnMainThread(task =>
+        {
+            if (task.IsCompleted && task.Result.Exists)
+            {
+                string json = task.Result.GetRawJsonValue();
+                CharProgressData data = JsonUtility.FromJson<CharProgressData>(json);
+                onLoaded?.Invoke(data);
+            }
+            else
+            {
+                Debug.Log("⚠️ Không có dữ liệu, tạo mới.");
+                onLoaded?.Invoke(null);
+            }
+        });
+    }
+
+    public void ShowReadPlayerData(string message)
     {
         showReadPlayerData.text = message;
     }

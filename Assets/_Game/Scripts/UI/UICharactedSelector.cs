@@ -1,16 +1,19 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
+using static Cinemachine.DocumentationSortingAttribute;
 
 public class UICharactedSelector : MonoBehaviour
 {
     public CharacterData defaultCharacter;
     public static CharacterData selected;
     public UiStatsDisplay statsUI;
+
+    private CharProgressData charProgressData;
 
     [Header("Template")]
     public Toggle toggleTemplate;
@@ -27,7 +30,39 @@ public class UICharactedSelector : MonoBehaviour
 
     private void Start()
     {
-        if (defaultCharacter) Select(defaultCharacter);
+        string uid = PlayerPrefs.GetString("uid", "");
+
+        FirebaseDataManager.Instance.LoadCharProgressFromFirebase(uid, (loadedData) =>
+        {
+            if (loadedData == null || loadedData.unlockedChars.Count != selectableToggles.Count)
+            {
+                // Nếu không có hoặc sai kích thước, tạo mới
+                charProgressData = new CharProgressData(selectableToggles.Count);
+                FirebaseDataManager.Instance.SaveCharProgressToFirebase(uid, charProgressData);
+            }
+            else
+            {
+                charProgressData = loadedData;
+            }
+
+            UpdateUI();
+        });
+    }
+    private void UpdateUI()
+    {
+        for (int i = 0; i < selectableToggles.Count; i++)
+        {
+            if (i < charProgressData.unlockedChars.Count && charProgressData.unlockedChars[i])
+            {
+                selectableToggles[i].interactable = true;
+                selectableToggles[i].image.color = new Color32(140, 140, 140, 255);
+            }
+            else
+            {
+                selectableToggles[i].interactable = false;
+                selectableToggles[i].image.color = new Color32(67, 67, 67, 255);
+            }
+        }
     }
     public static CharacterData[] GetAllCharacterDataAssets()
     {
