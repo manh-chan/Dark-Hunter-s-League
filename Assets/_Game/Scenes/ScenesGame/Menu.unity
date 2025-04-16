@@ -763,6 +763,8 @@ MonoBehaviour:
     durationBonus: 0
     cooldownBonus: 0
     luckBonus: 0
+  mapProgressData:
+    unlockedMaps: 
 --- !u!1 &1945712415
 GameObject:
   m_ObjectHideFlags: 0

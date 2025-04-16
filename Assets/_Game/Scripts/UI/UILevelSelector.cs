@@ -97,12 +97,12 @@ Debug.LogWarning("this function cannot be called on builds.");
             if (i < mapProgressData.unlockedMaps.Count && mapProgressData.unlockedMaps[i])
             {
                 selectableToggles[i].interactable = true;
-                selectableToggles[i].image.color = Color.green;
+                selectableToggles[i].image.color = new Color32(140, 140, 140, 255);
             }
             else
             {
                 selectableToggles[i].interactable = false;
-                selectableToggles[i].image.color = Color.red;
+                selectableToggles[i].image.color = new Color32(67, 67, 67, 255);
             }
         }
     }
