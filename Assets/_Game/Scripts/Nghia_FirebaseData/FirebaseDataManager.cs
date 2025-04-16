@@ -1,6 +1,7 @@
 ﻿using Firebase;
 using Firebase.Database;
 using Firebase.Extensions;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -10,7 +11,7 @@ using UnityEngine.UI;
 public class FirebaseDataManager : Singleton<FirebaseDataManager>
 {
     public UpgradeStats player;
-
+    public MapProgressData mapProgressData;
     private TextMeshProUGUI showReadPlayerData;
     private TextMeshProUGUI showWritePlayerData;
 
@@ -83,49 +84,37 @@ public class FirebaseDataManager : Singleton<FirebaseDataManager>
     }
 
     //savemap
-    public void SaveMapProgressToFirebase(string userId, List<bool> unlockedMaps)
+    public void SaveMapProgressToFirebase(string uid, MapProgressData mapProgress)
     {
-        MapProgressData data = new MapProgressData(unlockedMaps);
-        string json = JsonUtility.ToJson(data);
+        string json = JsonUtility.ToJson(mapProgress);
 
-        reference.Child("Users").Child(userId).Child("MapProgress").SetRawJsonValueAsync(json).ContinueWithOnMainThread(task =>
+        reference.Child("Users").Child(uid).Child("mapProgress").SetRawJsonValueAsync(json).ContinueWithOnMainThread(task =>
         {
             if (task.IsCompleted)
-            {
-                Debug.Log("Lưu trạng thái map thành công.");
-            }
+                Debug.Log("✅ Đã lưu tiến độ bản đồ");
             else
-            {
-                Debug.LogError("Lỗi khi lưu map: " + task.Exception);
-            }
+                Debug.LogError("❌ Lỗi khi lưu: " + task.Exception);
         });
     }
-    public void LoadMapProgressFromFirebase(string userId, System.Action<List<bool>> onLoaded)
+
+    public void LoadMapProgressFromFirebase(string uid, Action<MapProgressData> onLoaded)
     {
-        reference.Child("Users").Child(userId).Child("MapProgress").GetValueAsync().ContinueWithOnMainThread(task =>
+        reference.Child("Users").Child(uid).Child("mapProgress").GetValueAsync().ContinueWithOnMainThread(task =>
         {
-            if (task.IsCompleted)
+            if (task.IsCompleted && task.Result.Exists)
             {
-                DataSnapshot snapshot = task.Result;
-                if (snapshot.Exists)
-                {
-                    MapProgressData data = JsonUtility.FromJson<MapProgressData>(snapshot.GetRawJsonValue());
-                    onLoaded?.Invoke(data.unlockedMaps);
-                }
-                else
-                {
-                    Debug.LogWarning("Chưa có dữ liệu MapProgress.");
-                    onLoaded?.Invoke(new List<bool>()); // hoặc tạo mặc định
-                }
+                string json = task.Result.GetRawJsonValue();
+                MapProgressData data = JsonUtility.FromJson<MapProgressData>(json);
+                onLoaded?.Invoke(data);
             }
             else
             {
-                Debug.LogError("Lỗi khi đọc dữ liệu MapProgress: " + task.Exception);
-                onLoaded?.Invoke(new List<bool>()); // fallback
+                Debug.Log("⚠️ Không có dữ liệu, tạo mới.");
+                onLoaded?.Invoke(null);
             }
         });
     }
-    public void ShowReadPlayerData(string message)
+public void ShowReadPlayerData(string message)
     {
         showReadPlayerData.text = message;
     }

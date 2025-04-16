@@ -1076,6 +1076,7 @@ MonoBehaviour:
   data:
   - {fileID: 11400000, guid: 114bd7424464fb245a7f738aeb793fbf, type: 2}
   referenceCamera: {fileID: 519420034}
+  currentMapIndex: 0
   maximumEnemyCount: 300
   boostedByCurse: 1
   playerStats: {fileID: 1691638764}

@@ -9,15 +9,14 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class UILevelSelector : MonoBehaviour
+public class UILevelSelector : Singleton<UILevelSelector>
 {
     public UISceneDataDisplay statsUI;
-
     public static int selectedLevel = -1;
     public static SceneData currentLevel;
     public List<SceneData> levels = new List<SceneData>();
     protected int currentMap;
-    MapProgressData mapProgressData;
+    public MapProgressData mapProgressData;
 
     [Header("Template")]
     public Toggle toggleTemplate;
@@ -74,26 +73,38 @@ Debug.LogWarning("this function cannot be called on builds.");
     public virtual void Awake()
     {
         string uid = PlayerPrefs.GetString("uid", "");
-        mapProgressData = new MapProgressData(levels.Count);
-        mapProgressData.unlockedMaps[0] = true;
-        FirebaseDataManager.Instance.SaveMapProgressToFirebase(uid, mapProgressData.unlockedMaps);
 
-        FirebaseDataManager.Instance.LoadMapProgressFromFirebase(uid, (unlockedMaps) =>
+        FirebaseDataManager.Instance.LoadMapProgressFromFirebase(uid, (loadedData) =>
         {
-            for (int i = 0; i < selectableToggles.Count; i++)
+            if (loadedData == null || loadedData.unlockedMaps.Count != levels.Count)
             {
-                if (i < unlockedMaps.Count && unlockedMaps[i])
-                {
-                    selectableToggles[i].interactable = true;
-                    selectableToggles[i].image.color = Color.green;
-                }
-                else
-                {
-                    selectableToggles[i].interactable = false;
-                    selectableToggles[i].image.color = Color.red;
-                }
+                // Nếu không có hoặc sai kích thước, tạo mới
+                mapProgressData = new MapProgressData(levels.Count);
+                FirebaseDataManager.Instance.SaveMapProgressToFirebase(uid, mapProgressData);
             }
+            else
+            {
+                mapProgressData = loadedData;
+            }
+
+            UpdateUI();
         });
+    }
+    private void UpdateUI()
+    {
+        for (int i = 0; i < selectableToggles.Count; i++)
+        {
+            if (i < mapProgressData.unlockedMaps.Count && mapProgressData.unlockedMaps[i])
+            {
+                selectableToggles[i].interactable = true;
+                selectableToggles[i].image.color = Color.green;
+            }
+            else
+            {
+                selectableToggles[i].interactable = false;
+                selectableToggles[i].image.color = Color.red;
+            }
+        }
     }
     public void SceneChange(string name)
     {
@@ -147,6 +158,15 @@ Debug.LogWarning("this function cannot be called on builds.");
         }
         return Mathf.Approximately(sum, 0);
     }
-
-   
+    public void UnlockNextMap(int currentMapIndex)
+    {
+        string uid = PlayerPrefs.GetString("uid", "");
+        mapProgressData = new MapProgressData(6);
+        if (currentMapIndex + 1 < mapProgressData.unlockedMaps.Count)
+        {
+            mapProgressData.unlockedMaps[currentMapIndex + 1] = true;
+            FirebaseDataManager.Instance.SaveMapProgressToFirebase(uid, mapProgressData);
+            UpdateUI();
+        }
+    }
 }
