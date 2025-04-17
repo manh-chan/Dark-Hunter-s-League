@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using static Cinemachine.DocumentationSortingAttribute;
@@ -10,7 +10,7 @@ public class SpawnManager : MonoBehaviour
 
     public WaveData[] data;
     public Camera referenceCamera;
-
+    public int currentMapIndex;
     [Tooltip("If there are more than this number of enemies, stop spawning any more. For performance.")]
     public int maximumEnemyCount = 300;
 
@@ -20,6 +20,7 @@ public class SpawnManager : MonoBehaviour
     public static SpawnManager instance;
 
     public PlayerStats playerStats;
+
     private void Start()
     {
         if (instance)
@@ -97,6 +98,8 @@ public class SpawnManager : MonoBehaviour
     {
         GameManager.instance.AssignLevelReacheUI(playerStats.level);
         GameManager.instance.GameOver();
+        //check map there
+        UILevelSelector.Instance.UnlockNextMap(currentMapIndex);
     }
     public bool HasWaveEnded()
     {

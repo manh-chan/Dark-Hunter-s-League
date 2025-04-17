@@ -7,7 +7,7 @@ public class ProjectileVisual : MonoBehaviour
 {
     [SerializeField] private Transform projectileVisual;
     [SerializeField] private Transform projectileShadow;
-    [SerializeField] private Projectile1 projectile;
+    [SerializeField] private ProjectileSunny projectile;
 
     private Transform target;
 

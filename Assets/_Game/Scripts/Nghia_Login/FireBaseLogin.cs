@@ -9,52 +9,24 @@ using UnityEngine.UI;
 
 public class FireBaseLogin : MonoBehaviour
 {
-    [Header("Register")]
-    public InputField isReEmail;
-    public InputField isRePassword;
-    public Button btnRegister;
+
 
     [Header("Login")]
     public InputField isLoginEmail;
     public InputField isLoginPassword;
     public Button btnLogin;
+    public Button btnRegister;
 
     private FirebaseAuth auth;
 
     void Start()
     {
         auth = FirebaseAuth.DefaultInstance;
-        btnRegister.onClick.AddListener(RegisterFirebase);
         btnLogin.onClick.AddListener(LoginFirebase);
+        btnRegister.onClick.AddListener(LoadRegister);
     }
 
-    public void RegisterFirebase()
-    {
-        string email = isReEmail.text;
-        string password = isRePassword.text;
 
-        auth.CreateUserWithEmailAndPasswordAsync(email, password).ContinueWithOnMainThread(task =>
-        {
-            if (task.IsCanceled || task.IsFaulted)
-            {
-                Debug.Log("Đăng ký thất bại");
-                return;
-            }
-            if (task.IsCompleted)
-            {
-                FirebaseUser newUser = task.Result.User;
-
-                UpgradeStats player = new UpgradeStats();
-
-                FirebaseDatabase.DefaultInstance.RootReference
-                    .Child("Users").Child(newUser.UserId).Child("Player")
-                    .SetRawJsonValueAsync(JsonUtility.ToJson(player));
-
-            }
-
-            Debug.Log("Đăng ký thành công");
-        });
-    }
 
     public void LoginFirebase()
     {
@@ -77,7 +49,12 @@ public class FireBaseLogin : MonoBehaviour
             PlayerPrefs.SetString("uid", user.UserId);
             PlayerPrefs.Save();
 
-            SceneManager.LoadScene("MainStory");
+            SceneManager.LoadScene("Menu");
         });
+    }
+
+    public void LoadRegister()
+    {
+        SceneManager.LoadScene("Register");
     }
 }

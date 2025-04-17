@@ -1,22 +1,22 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Text.RegularExpressions;
+using UnityEditor;
+using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-#if UNITY_EDITOR
-using UnityEditor;
-#endif
-
-public class UILevelSelector : MonoBehaviour
+public class UILevelSelector : Singleton<UILevelSelector>
 {
     public UISceneDataDisplay statsUI;
-
     public static int selectedLevel = -1;
     public static SceneData currentLevel;
     public List<SceneData> levels = new List<SceneData>();
+    protected int currentMap;
+    public MapProgressData mapProgressData;
 
     [Header("Template")]
     public Toggle toggleTemplate;
@@ -27,6 +27,7 @@ public class UILevelSelector : MonoBehaviour
     public List<Toggle> selectableToggles = new List<Toggle>();
 
     public static BuffData globaBuff;
+
     public static bool globalBuffAffectsPlayer = false, globalBuffAffectsEnemies = false;
 
     public const string MAP_NAME_FORMAT = "^(Level .*?) ?- ?(.*)$";
@@ -34,10 +35,7 @@ public class UILevelSelector : MonoBehaviour
     [System.Serializable]
     public class SceneData
     {
-#if UNITY_EDITOR
         public SceneAsset scene;
-#endif
-        public string sceneName; // Dùng để lưu tên scene cho runtime build
 
         [Header("UI Display")]
         public string displayName;
@@ -50,81 +48,83 @@ public class UILevelSelector : MonoBehaviour
         public EnemyState.Stats enemyModifiers;
         [Min(-1)] public float timeLimit = 0f, clockSpeed = 1f;
         [TextArea] public string extraNotes = "--";
-
-        public string GetSceneName()
-        {
-#if UNITY_EDITOR
-            return scene != null ? scene.name : sceneName;
-#else
-            return sceneName;
-#endif
-        }
     }
-
-#if UNITY_EDITOR
-    private void OnValidate()
-    {
-        foreach (var level in levels)
-        {
-            if (level.scene != null)
-                level.sceneName = level.scene.name;
-        }
-    }
-
     public static SceneAsset[] GetAllMaps()
     {
         List<SceneAsset> maps = new List<SceneAsset>();
 
+#if UNITY_EDITOR
         string[] allAssetPaths = AssetDatabase.GetAllAssetPaths();
         foreach (string assetPath in allAssetPaths)
         {
             if (assetPath.EndsWith(".unity"))
             {
                 SceneAsset map = AssetDatabase.LoadAssetAtPath<SceneAsset>(assetPath);
-                if (map != null && Regex.IsMatch(map.name, MAP_NAME_FORMAT)) maps.Add(map);
+                if(map != null && Regex.IsMatch(map.name,MAP_NAME_FORMAT)) maps.Add(map);
             }
         }
-
+#else
+Debug.LogWarning("this function cannot be called on builds.");
+#endif
         maps.Reverse();
         return maps.ToArray();
     }
-#else
-    public static object[] GetAllMaps()
-    {
-        Debug.LogWarning("This function cannot be called in build.");
-        return null;
-    }
-#endif
 
+    public virtual void Awake()
+    {
+        string uid = PlayerPrefs.GetString("uid", "");
+
+        FirebaseDataManager.Instance.LoadMapProgressFromFirebase(uid, (loadedData) =>
+        {
+            if (loadedData == null || loadedData.unlockedMaps.Count != levels.Count)
+            {
+                // Nếu không có hoặc sai kích thước, tạo mới
+                mapProgressData = new MapProgressData(levels.Count);
+                FirebaseDataManager.Instance.SaveMapProgressToFirebase(uid, mapProgressData);
+            }
+            else
+            {
+                mapProgressData = loadedData;
+            }
+
+            UpdateUI();
+        });
+    }
+    private void UpdateUI()
+    {
+        for (int i = 0; i < selectableToggles.Count; i++)
+        {
+            if (i < mapProgressData.unlockedMaps.Count && mapProgressData.unlockedMaps[i])
+            {
+                selectableToggles[i].interactable = true;
+                selectableToggles[i].image.color = new Color32(140, 140, 140, 255);
+            }
+            else
+            {
+                selectableToggles[i].interactable = false;
+                selectableToggles[i].image.color = new Color32(67, 67, 67, 255);
+            }
+        }
+    }
     public void SceneChange(string name)
     {
         SceneManager.LoadScene(name);
         Time.timeScale = 1f;
     }
-
     public void LoadselectedLevel()
     {
-        if (selectedLevel >= 0)
+        if(selectedLevel >= 0)
         {
-            string sceneToLoad = levels[selectedLevel].GetSceneName();
-            if (!string.IsNullOrEmpty(sceneToLoad))
-            {
-                SceneManager.LoadScene(sceneToLoad);
-                currentLevel = levels[selectedLevel];
-                selectedLevel = -1;
-                Time.timeScale = 1f;
-            }
-            else
-            {
-                Debug.LogError("Scene name is empty or null.");
-            }
+            SceneManager.LoadScene(levels[selectedLevel].scene.name);
+            currentLevel = levels[selectedLevel];
+            selectedLevel = -1;
+            Time.timeScale = 1f;
         }
         else
         {
             Debug.Log("No level was selected!");
         }
     }
-
     public void Select(int sceneIndex)
     {
         selectedLevel = sceneIndex;
@@ -136,7 +136,7 @@ public class UILevelSelector : MonoBehaviour
 
     public BuffData GenerateGlobalBuffData()
     {
-        BuffData bd = ScriptableObject.CreateInstance<BuffData>();
+       BuffData bd = ScriptableObject.CreateInstance<BuffData>();
         bd.name = "Global Level Buff";
         bd.variations[0].damagePerSecond = 0;
         bd.variations[0].duration = 0;
@@ -150,12 +150,23 @@ public class UILevelSelector : MonoBehaviour
         Type type = obj.GetType();
         FieldInfo[] fields = type.GetFields();
         float sum = 0;
-        foreach (FieldInfo f in fields)
+        foreach ( FieldInfo f in fields )
         {
             object val = f.GetValue(obj);
             if (val is int) sum += (int)val;
             else if (val is float) sum += (float)val;
         }
         return Mathf.Approximately(sum, 0);
+    }
+    public void UnlockNextMap(int currentMapIndex)
+    {
+        string uid = PlayerPrefs.GetString("uid", "");
+        mapProgressData = new MapProgressData(6);
+        if (currentMapIndex + 1 < mapProgressData.unlockedMaps.Count)
+        {
+            mapProgressData.unlockedMaps[currentMapIndex + 1] = true;
+            FirebaseDataManager.Instance.SaveMapProgressToFirebase(uid, mapProgressData);
+            UpdateUI();
+        }
     }
 }
