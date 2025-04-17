@@ -7,11 +7,12 @@ using UnityEngine.UI;
 
 public class UploadProfileData : MonoBehaviour
 {
+    public LoadProfileData loadProfileData;
     public TMP_InputField nameInputField;
     public RawImage previewImage;
 
     private string base64AvatarString = "";
-    //button chon anh
+
     public void PickImage()
     {
         NativeGallery.GetImageFromGallery((path) =>
@@ -27,7 +28,7 @@ public class UploadProfileData : MonoBehaviour
             }
         }, "Chọn ảnh đại diện", "image/*");
     }
-  
+
     public void UploadToFirebase()
     {
         string uid = PlayerPrefs.GetString("uid", "");
@@ -53,11 +54,17 @@ public class UploadProfileData : MonoBehaviour
                 if (task.IsCompleted)
                 {
                     Debug.Log("Upload dữ liệu thành công");
+                    //Load lại lên scene
+                    if (loadProfileData == null)
+                        loadProfileData = FindObjectOfType<LoadProfileData>();
+                    loadProfileData.LoadFromFirebase();
                 }
                 else
                 {
                     Debug.LogError("Upload thất bại: " + task.Exception);
                 }
             });
+
+
     }
 }
