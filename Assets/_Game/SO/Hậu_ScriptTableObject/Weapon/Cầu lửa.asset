@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: "C\u1EA7u l\u1EEDa"
   m_EditorClassIdentifier: 
   icon: {fileID: -1838105208, guid: c2441fbff301c934ea69c7e9849a537b, type: 3}
-  maxLevel: 5
+  maxLevel: 8
   evolutinData: []
   behaviour: OrbitWeapon
   baseStats:
@@ -57,7 +57,7 @@ MonoBehaviour:
       width: 0
       height: 0
     lifespan: 0
-    damage: 5
+    damage: -5
     damageVariance: 1
     area: 0
     speed: 0
@@ -82,7 +82,7 @@ MonoBehaviour:
       width: 0
       height: 0
     lifespan: 0
-    damage: 5
+    damage: -2
     damageVariance: 0
     area: 0
     speed: 0
@@ -107,7 +107,7 @@ MonoBehaviour:
       width: 0
       height: 0
     lifespan: 0
-    damage: 5
+    damage: -1
     damageVariance: 0
     area: 0
     speed: 0
@@ -132,7 +132,7 @@ MonoBehaviour:
       width: 0
       height: 0
     lifespan: 0
-    damage: 5
+    damage: -1
     damageVariance: 0
     area: 0
     speed: 0
@@ -144,11 +144,11 @@ MonoBehaviour:
     maxInstances: 0
     appliedBuffs: []
   randomGrowth:
-  - name: "c\u1EA7u l\u1EEDa l\u1EDBn"
+  - name: "\u0110\u1EB7c bi\u1EC7t"
     description: "c\xE1c qu\u1EA3 c\u1EA7u l\u1EEDa l\u1EDBn h\u01A1n"
     projectilePrefab: {fileID: 0}
     cannonPrefab: {fileID: 0}
-    OrbitPrefab: {fileID: 7549253302827061329, guid: 7be70868e7896a946a1ef8b9cd47f315, type: 3}
+    OrbitPrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariace:
       serializedVersion: 2
@@ -159,7 +159,7 @@ MonoBehaviour:
     lifespan: 0
     damage: 0
     damageVariance: 0
-    area: 0
+    area: 1
     speed: 0
     cooldown: 0
     projectileInterval: 0
@@ -168,8 +168,8 @@ MonoBehaviour:
     piercing: 0
     maxInstances: 0
     appliedBuffs: []
-  - name: "t\u0103ng s\xE1t th\u01B0\u01A1ng l\u1EDBn"
-    description: "t\u1EAFng s\xE1t th\u01B0\u01A1ng kh\u1ED5ng l\u1ED3"
+  - name: "\u0110\u1EB7c bi\u1EC7t"
+    description: "t\u0103ng s\xE1t th\u01B0\u01A1ng l\u1EDBn"
     projectilePrefab: {fileID: 0}
     cannonPrefab: {fileID: 0}
     OrbitPrefab: {fileID: 0}
@@ -181,7 +181,7 @@ MonoBehaviour:
       width: 0
       height: 0
     lifespan: 0
-    damage: 30
+    damage: 5
     damageVariance: 0
     area: 0
     speed: 0
@@ -192,9 +192,8 @@ MonoBehaviour:
     piercing: 0
     maxInstances: 0
     appliedBuffs: []
-  - name: "c\u1EA7u l\u1EEDa xuy\xEAn m\u1EE5c ti\xEAu"
-    description: "c\xE1c qu\u1EA3 c\u1EA7u c\xF3 th\u1EC3 g\xE2y s\xE1t th\u01B0\u01A1ng
-      nhi\xE8ue k\u1EBB \u0111\u1ECBch"
+  - name: "\u0110\u1EB7c bi\u1EC7t"
+    description: "th\xEAm 2 c\u1EA7u nh\u01B0ng gi\u1EA3m 50% damage"
     projectilePrefab: {fileID: 0}
     cannonPrefab: {fileID: 0}
     OrbitPrefab: {fileID: 0}
@@ -206,14 +205,14 @@ MonoBehaviour:
       width: 0
       height: 0
     lifespan: 0
-    damage: 30
+    damage: -5
     damageVariance: 0
     area: 0
     speed: 0
     cooldown: 0
     projectileInterval: 0
     knocback: 0
-    number: 0
-    piercing: 99
+    number: 2
+    piercing: 0
     maxInstances: 0
     appliedBuffs: []
