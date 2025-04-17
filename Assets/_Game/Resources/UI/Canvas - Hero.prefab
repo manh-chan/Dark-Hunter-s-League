@@ -429,10 +429,10 @@ RectTransform:
   - {fileID: 3979453267567616268}
   m_Father: {fileID: 4982277327961786271}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.78877777, y: 0.030673996}
-  m_AnchorMax: {x: 0.9710001, y: 0.12965198}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -115, y: -654.24}
+  m_SizeDelta: {x: 200, y: 158}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1557315397828886291
 CanvasRenderer:
@@ -1042,10 +1042,10 @@ RectTransform:
   - {fileID: 8618882500092115187}
   m_Father: {fileID: 3835677921513207263}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 131.93481, y: -315}
+  m_SizeDelta: {x: 190, y: 190}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6456194341766382008
 MonoBehaviour:
@@ -1070,8 +1070,8 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 1, g: 0.9764706, b: 0, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 1, g: 0.9764706, b: 0, a: 1}
+    m_SelectedColor: {r: 1, g: 0.9764706, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1796,7 +1796,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 357.98047}
+  m_AnchoredPosition: {x: 0, y: 375.3}
   m_SizeDelta: {x: 720, y: 301.07996}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7680226090313088434
@@ -1871,10 +1871,10 @@ RectTransform:
   - {fileID: 5970051127913529478}
   m_Father: {fileID: 4982277327961786271}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.026222223, y: 0.030673996}
-  m_AnchorMax: {x: 0.21222222, y: 0.12965198}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 122, y: -654.24}
+  m_SizeDelta: {x: 200, y: 158}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6470703193026002111
 CanvasRenderer:
@@ -2502,39 +2502,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Health
-
-    Max Health
-
-    Recovery
-
-    Armor
-
-    Move Speed
-
-    Might
-
-    Area
-
-    Speed
-
-    Duration
-
-    Amount
-
-    Cooldown
-
-    Luck
-
-    Growth
-
-    Greed
-
-    Curse
-
-    Magnet
-
-    Revival'
+  m_text: "M\xE1u\nM\xE1u T\u1ED1i \u0110a\nH\u1ED3i M\xE1u\nGi\xE1p\nT\u0110 Di
+    Chuy\u1EC3n\nS\u1EE9c M\u1EA1nh\nPh\u1EA1m Vi\nT\u1ED1c \u0110\u1ED9\nTG T\u1ED3n
+    T\u1EA1i\nSL \u0110\xF2n\nTh\u1EDDi Gian H\u1ED3i\nMay M\u1EAFn\nT\u0103ng KN\nTham
+    Lam\nNguy\u1EC1n\nPh\u1EA1m Vi H\xFAt\nH\u1ED3i Sinh"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3285,10 +3256,10 @@ RectTransform:
   - {fileID: 4022301851340534667}
   m_Father: {fileID: 3835677921513207263}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 131.93481, y: -110}
+  m_SizeDelta: {x: 190, y: 190}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4752048929765449339
 MonoBehaviour:
@@ -3313,8 +3284,8 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 1, g: 0.9764706, b: 0, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 1, g: 0.9764706, b: 0, a: 1}
+    m_SelectedColor: {r: 1, g: 0.9764706, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -3456,11 +3427,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 6034616615573024817}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.0058802767, y: 0.019000001}
-  m_AnchorMax: {x: 0.15400001, y: 0.62720513}
-  m_AnchoredPosition: {x: 22.999939, y: 0}
-  m_SizeDelta: {x: 0.0000076293945, y: 0.000061035156}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 26.999939, y: -48}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &333573577594384973
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3489,7 +3460,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -1151216977, guid: 9052e10f16fd2b44e827b9a4a410ba89, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3665,11 +3636,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 6034616615573024817}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.15852994, y: 0.049000002}
-  m_AnchorMax: {x: 0.24700001, y: 0.411}
-  m_AnchoredPosition: {x: 27, y: 0.000030517578}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 127, y: -72.999954}
+  m_SizeDelta: {x: 55, y: 55}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &868124585999840532
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3698,7 +3669,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -358592765, guid: eed553b0d63d6c54bb950ce4320a4768, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3856,10 +3827,10 @@ RectTransform:
   - {fileID: 2344197474577606974}
   m_Father: {fileID: 3835677921513207263}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 131.93481, y: -520}
+  m_SizeDelta: {x: 190, y: 190}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &685185719844769419
 MonoBehaviour:
@@ -3884,8 +3855,8 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 1, g: 0.9764706, b: 0, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 1, g: 0.9764706, b: 0, a: 1}
+    m_SelectedColor: {r: 1, g: 0.9764706, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -4239,10 +4210,10 @@ RectTransform:
   - {fileID: 8177719527370689143}
   m_Father: {fileID: 3835677921513207263}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 131.93481, y: -725}
+  m_SizeDelta: {x: 190, y: 190}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1327518600161845460
 MonoBehaviour:
@@ -4267,8 +4238,8 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 1, g: 0.9764706, b: 0, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 1, g: 0.9764706, b: 0, a: 1}
+    m_SelectedColor: {r: 1, g: 0.9764706, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1

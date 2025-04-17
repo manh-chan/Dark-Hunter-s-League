@@ -1,7 +1,9 @@
 ﻿using Firebase;
 using Firebase.Database;
 using Firebase.Extensions;
+using System;
 using System.Collections;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,7 +11,7 @@ using UnityEngine.UI;
 public class FirebaseDataManager : Singleton<FirebaseDataManager>
 {
     public UpgradeStats player;
-
+    public MapProgressData mapProgressData;
     private TextMeshProUGUI showReadPlayerData;
     private TextMeshProUGUI showWritePlayerData;
 
@@ -17,6 +19,7 @@ public class FirebaseDataManager : Singleton<FirebaseDataManager>
 
     private void Awake()
     {
+       DontDestroyOnLoad(this);
         reference = FirebaseDatabase.DefaultInstance.RootReference;
     }
 
@@ -80,7 +83,68 @@ public class FirebaseDataManager : Singleton<FirebaseDataManager>
         });
     }
 
+    //savemap
+    public void SaveMapProgressToFirebase(string uid, MapProgressData mapProgress)
+    {
+        string json = JsonUtility.ToJson(mapProgress);
 
+        reference.Child("Users").Child(uid).Child("mapProgress").SetRawJsonValueAsync(json).ContinueWithOnMainThread(task =>
+        {
+            if (task.IsCompleted)
+                Debug.Log("✅ Đã lưu tiến độ bản đồ");
+            else
+                Debug.LogError("❌ Lỗi khi lưu: " + task.Exception);
+        });
+    }
+
+    public void LoadMapProgressFromFirebase(string uid, Action<MapProgressData> onLoaded)
+    {
+        reference.Child("Users").Child(uid).Child("mapProgress").GetValueAsync().ContinueWithOnMainThread(task =>
+        {
+            if (task.IsCompleted && task.Result.Exists)
+            {
+                string json = task.Result.GetRawJsonValue();
+                MapProgressData data = JsonUtility.FromJson<MapProgressData>(json);
+                onLoaded?.Invoke(data);
+            }
+            else
+            {
+                Debug.Log("⚠️ Không có dữ liệu, tạo mới.");
+                onLoaded?.Invoke(null);
+            }
+        });
+    }
+    //save Character
+    public void SaveCharProgressToFirebase(string uid, CharProgressData charProgress)
+    {
+        string json = JsonUtility.ToJson(charProgress);
+
+        reference.Child("Users").Child(uid).Child("CharProgress").SetRawJsonValueAsync(json).ContinueWithOnMainThread(task =>
+        {
+            if (task.IsCompleted)
+                Debug.Log("✅ Đã lưu tiến độ bản đồ");
+            else
+                Debug.LogError("❌ Lỗi khi lưu: " + task.Exception);
+        });
+    }
+
+    public void LoadCharProgressFromFirebase(string uid, Action<CharProgressData> onLoaded)
+    {
+        reference.Child("Users").Child(uid).Child("CharProgress").GetValueAsync().ContinueWithOnMainThread(task =>
+        {
+            if (task.IsCompleted && task.Result.Exists)
+            {
+                string json = task.Result.GetRawJsonValue();
+                CharProgressData data = JsonUtility.FromJson<CharProgressData>(json);
+                onLoaded?.Invoke(data);
+            }
+            else
+            {
+                Debug.Log("⚠️ Không có dữ liệu, tạo mới.");
+                onLoaded?.Invoke(null);
+            }
+        });
+    }
 
     public void ShowReadPlayerData(string message)
     {
