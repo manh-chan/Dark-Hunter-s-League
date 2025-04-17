@@ -130,6 +130,12 @@ public class TutorialManager : MonoBehaviour
 
     }
 
+    public void WeaponButton()
+    {
+        UIManager.Instance.OpenUI<CanvasWeapon>();
+
+    }
+
     public void SelectHeroButton()
     {
         FindObjectOfType<CanvasHero>().gameObject.SetActive(false);
@@ -139,6 +145,12 @@ public class TutorialManager : MonoBehaviour
     public void UpdateGrowButton()
     {
         FindObjectOfType<CanvasGrowth>().gameObject.SetActive(false);
+
+    }
+
+    public void SelectWeaponButton()
+    {
+        FindObjectOfType<CanvasWeapon>().gameObject.SetActive(false);
 
     }
 }
