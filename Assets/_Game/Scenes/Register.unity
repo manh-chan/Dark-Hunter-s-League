@@ -313,6 +313,7 @@ MonoBehaviour:
   isRePassword: {fileID: 1158780751}
   btnRegister: {fileID: 1158780749}
   btnLogin: {fileID: 1158780750}
+  confirmPassword: {fileID: 1821493818}
 --- !u!1 &496721112
 GameObject:
   m_ObjectHideFlags: 0
@@ -709,11 +710,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4092052566655336748, guid: 343af68a28a882648b9c3f9ee25369da, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4092052566655336748, guid: 343af68a28a882648b9c3f9ee25369da, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 159
+      value: 162
       objectReference: {fileID: 0}
     - target: {fileID: 4894166718143774041, guid: 343af68a28a882648b9c3f9ee25369da, type: 3}
       propertyPath: m_SizeDelta.x
@@ -893,11 +894,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8550502871333683977, guid: 343af68a28a882648b9c3f9ee25369da, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8550502871333683977, guid: 343af68a28a882648b9c3f9ee25369da, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -10.499878
+      value: -14
       objectReference: {fileID: 0}
     - target: {fileID: 8940948030731992438, guid: 343af68a28a882648b9c3f9ee25369da, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1344,7 +1345,7 @@ GameObject:
   - component: {fileID: 1821493819}
   - component: {fileID: 1821493818}
   m_Layer: 5
-  m_Name: Name
+  m_Name: RePass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1368,7 +1369,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5, y: -183}
+  m_AnchoredPosition: {x: 3, y: -192.2268}
   m_SizeDelta: {x: 559.022, y: 108.46002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1821493818

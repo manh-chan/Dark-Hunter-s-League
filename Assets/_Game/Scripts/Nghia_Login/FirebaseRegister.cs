@@ -3,6 +3,7 @@ using Firebase.Database;
 using Firebase.Extensions;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -14,7 +15,7 @@ public class FirebaseRegister : MonoBehaviour
     public InputField isRePassword;
     public Button btnRegister;
     public Button btnLogin;
-
+    public InputField confirmPassword;
     private FirebaseAuth auth;
     void Start()
     {
@@ -28,6 +29,17 @@ public class FirebaseRegister : MonoBehaviour
         string email = isReEmail.text;
         string password = isRePassword.text;
 
+        string confirm = confirmPassword.text;
+
+       
+        if (password != confirm)
+        {
+            Debug.LogWarning("Mật khẩu và xác nhận mật khẩu không khớp!");
+            // Nếu có UI thông báo thì show ở đây nữa
+            return;
+        }
+
+
         auth.CreateUserWithEmailAndPasswordAsync(email, password).ContinueWithOnMainThread(task =>
         {
             if (task.IsCanceled || task.IsFaulted)
@@ -35,20 +47,25 @@ public class FirebaseRegister : MonoBehaviour
                 Debug.Log("Đăng ký thất bại");
                 return;
             }
+
             if (task.IsCompleted)
             {
                 FirebaseUser newUser = task.Result.User;
+                string userId = newUser.UserId;
 
                 UpgradeStats player = new UpgradeStats();
 
-                FirebaseDatabase.DefaultInstance.RootReference
-                    .Child("Users").Child(newUser.UserId).Child("Player")
+                DatabaseReference reference = FirebaseDatabase.DefaultInstance.RootReference;
+                reference.Child("Users").Child(userId).Child("Player")
                     .SetRawJsonValueAsync(JsonUtility.ToJson(player));
 
+                // Lưu email và mật khẩu để dùng cho chức năng quên mật khẩu
+                reference.Child("AccountInfos").Child(email.Replace(".", "_")).Child("Password")
+                    .SetValueAsync(password);
             }
 
-            SceneManager.LoadScene("Login");
             Debug.Log("Đăng ký thành công");
+            SceneManager.LoadScene("Login");
         });
     }
 
