@@ -1,0 +1,142 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4f4002ed8610ac479d8cd0854fd5692, type: 3}
+  m_Name: Rolling Fireball
+  m_EditorClassIdentifier: 
+  icon: {fileID: 21300000, guid: e76e9db89729d804a962877ee8ab1646, type: 3}
+  maxLevel: 5
+  evolutinData: []
+  behaviour: ProjectileWeapon
+  baseStats:
+    name: "C\u1EA7u \u0111i\u1EC7n"
+    description: "g\xE2y s\xE1t th\u01B0\u01A1ng cho t\u1EA5t c\u1EA3 k\u1EBB \u0111\u1ECBch
+      ch\u1EA1m v\xE0o"
+    projectilePrefab: {fileID: 8404588065268116969, guid: 77c1aa5ad98709846ba5c189c02aaffa, type: 3}
+    cannonPrefab: {fileID: 0}
+    OrbitPrefab: {fileID: 0}
+    hitEffect: {fileID: 0}
+    spawnVariace:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    lifespan: 3
+    damage: 10
+    damageVariance: 1
+    area: 0
+    speed: 3
+    cooldown: 4
+    projectileInterval: 1
+    knocback: 0.5
+    number: 1
+    piercing: 99
+    maxInstances: 70
+    appliedBuffs: []
+  linearGrowth:
+  - name: Level 2
+    description: "t\u0103ng s\xE1t th\u01B0\u01A1ng"
+    projectilePrefab: {fileID: 0}
+    cannonPrefab: {fileID: 0}
+    OrbitPrefab: {fileID: 0}
+    hitEffect: {fileID: 0}
+    spawnVariace:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    lifespan: 0
+    damage: 2
+    damageVariance: 0
+    area: 0
+    speed: 0
+    cooldown: 0
+    projectileInterval: 0
+    knocback: 0
+    number: 0
+    piercing: 0
+    maxInstances: 0
+    appliedBuffs: []
+  - name: Level 3
+    description: "th\xEAm m\u1ED9t qu\u1EA3 c\u1EA7u"
+    projectilePrefab: {fileID: 0}
+    cannonPrefab: {fileID: 0}
+    OrbitPrefab: {fileID: 0}
+    hitEffect: {fileID: 0}
+    spawnVariace:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    lifespan: 0
+    damage: 0
+    damageVariance: 0
+    area: 0
+    speed: 0
+    cooldown: 0
+    projectileInterval: 0
+    knocback: 0
+    number: 1
+    piercing: 0
+    maxInstances: 0
+    appliedBuffs: []
+  - name: Level 4
+    description: "t\u0103ng s\xE1t th\u01B0\u01A1ng"
+    projectilePrefab: {fileID: 0}
+    cannonPrefab: {fileID: 0}
+    OrbitPrefab: {fileID: 0}
+    hitEffect: {fileID: 0}
+    spawnVariace:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    lifespan: 0
+    damage: 2
+    damageVariance: 0
+    area: 0
+    speed: 0
+    cooldown: 0
+    projectileInterval: 0
+    knocback: 0
+    number: 0
+    piercing: 0
+    maxInstances: 0
+    appliedBuffs: []
+  - name: Level 5
+    description: "th\xEAm m\u1ED9t qu\u1EA3 c\u1EA7u"
+    projectilePrefab: {fileID: 0}
+    cannonPrefab: {fileID: 0}
+    OrbitPrefab: {fileID: 0}
+    hitEffect: {fileID: 0}
+    spawnVariace:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    lifespan: 0
+    damage: 2
+    damageVariance: 0
+    area: 0
+    speed: 0
+    cooldown: 0
+    projectileInterval: 0
+    knocback: 0
+    number: 1
+    piercing: 0
+    maxInstances: 0
+    appliedBuffs: []
+  randomGrowth: []

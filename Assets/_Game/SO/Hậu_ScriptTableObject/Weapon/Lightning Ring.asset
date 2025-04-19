@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4f4002ed8610ac479d8cd0854fd5692, type: 3}
+  m_Name: Lightning Ring
+  m_EditorClassIdentifier: 
+  icon: {fileID: 1020312906, guid: 6a6036d0d77735b49ad51bbe0359b793, type: 3}
+  maxLevel: 5
+  evolutinData: []
+  behaviour: LightningRingWeapon
+  baseStats:
+    name: "S\xE9t"
+    description: "g\xE2y s\xE1t th\u01B0\u01A1ng g\u1EABu nhi\xEAn cho enemy"
+    projectilePrefab: {fileID: 0}
+    cannonPrefab: {fileID: 0}
+    OrbitPrefab: {fileID: 0}
+    hitEffect: {fileID: 1633847752018258456, guid: d8fcbb1203a9e85418dbeee6717de467, type: 3}
+    spawnVariace:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    lifespan: 0
+    damage: 20
+    damageVariance: 2
+    area: 0
+    speed: 0
+    cooldown: 3.5
+    projectileInterval: 0.5
+    knocback: 0
+    number: 2
+    piercing: 0
+    maxInstances: 30
+    appliedBuffs: []
+  linearGrowth: []
+  randomGrowth: []
