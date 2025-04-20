@@ -13,6 +13,7 @@ public abstract class Weapon : Item
         public Projectile projectilePrefab;
         public Cannon cannonPrefab;
         public OrbitProjectile OrbitPrefab;
+        public Bomb bombPrefab;
         //public Aura auraPrefab;
         public ParticleSystem hitEffect;
         public Rect spawnVariace;
@@ -32,6 +33,7 @@ public abstract class Weapon : Item
             result.projectilePrefab = s2.projectilePrefab == null ? s1.projectilePrefab : s2.projectilePrefab;
             result.cannonPrefab = s2.cannonPrefab == null ? s1.cannonPrefab : s2.cannonPrefab;
             result.OrbitPrefab = s2.OrbitPrefab == null ? s1.OrbitPrefab : s2.OrbitPrefab;
+            result.bombPrefab = s2.bombPrefab == null ? s1.bombPrefab : s2.bombPrefab;
             //result.auraPrefab = s2.auraPrefab ?? s1.auraPrefab;
             result.hitEffect = s2.hitEffect == null ? s1.hitEffect : s2.hitEffect;
             result.spawnVariace = s2.spawnVariace;

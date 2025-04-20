@@ -23,6 +23,7 @@ MonoBehaviour:
     projectilePrefab: {fileID: 0}
     cannonPrefab: {fileID: 0}
     OrbitPrefab: {fileID: 7549253302827061329, guid: 5da294fc4c6422745a9c00130933b7b2, type: 3}
+    bombPrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariace:
       serializedVersion: 2
@@ -49,6 +50,7 @@ MonoBehaviour:
     projectilePrefab: {fileID: 0}
     cannonPrefab: {fileID: 0}
     OrbitPrefab: {fileID: 0}
+    bombPrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariace:
       serializedVersion: 2
@@ -74,6 +76,7 @@ MonoBehaviour:
     projectilePrefab: {fileID: 0}
     cannonPrefab: {fileID: 0}
     OrbitPrefab: {fileID: 0}
+    bombPrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariace:
       serializedVersion: 2
@@ -99,6 +102,7 @@ MonoBehaviour:
     projectilePrefab: {fileID: 0}
     cannonPrefab: {fileID: 0}
     OrbitPrefab: {fileID: 0}
+    bombPrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariace:
       serializedVersion: 2
@@ -124,6 +128,7 @@ MonoBehaviour:
     projectilePrefab: {fileID: 0}
     cannonPrefab: {fileID: 0}
     OrbitPrefab: {fileID: 0}
+    bombPrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariace:
       serializedVersion: 2
@@ -149,6 +154,7 @@ MonoBehaviour:
     projectilePrefab: {fileID: 0}
     cannonPrefab: {fileID: 0}
     OrbitPrefab: {fileID: 0}
+    bombPrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariace:
       serializedVersion: 2
@@ -173,6 +179,7 @@ MonoBehaviour:
     projectilePrefab: {fileID: 0}
     cannonPrefab: {fileID: 0}
     OrbitPrefab: {fileID: 0}
+    bombPrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariace:
       serializedVersion: 2
@@ -197,6 +204,7 @@ MonoBehaviour:
     projectilePrefab: {fileID: 0}
     cannonPrefab: {fileID: 0}
     OrbitPrefab: {fileID: 0}
+    bombPrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariace:
       serializedVersion: 2

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c4f4002ed8610ac479d8cd0854fd5692, type: 3}
-  m_Name: Rolling Fireball
+  m_Name: Rolling Lightning Ball
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: e76e9db89729d804a962877ee8ab1646, type: 3}
   maxLevel: 5
@@ -23,6 +23,7 @@ MonoBehaviour:
     projectilePrefab: {fileID: 8404588065268116969, guid: 77c1aa5ad98709846ba5c189c02aaffa, type: 3}
     cannonPrefab: {fileID: 0}
     OrbitPrefab: {fileID: 0}
+    bombPrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariace:
       serializedVersion: 2
@@ -37,8 +38,8 @@ MonoBehaviour:
     speed: 3
     cooldown: 4
     projectileInterval: 1
-    knocback: 0.5
-    number: 1
+    knocback: 0
+    number: 0
     piercing: 99
     maxInstances: 70
     appliedBuffs: []
@@ -48,6 +49,7 @@ MonoBehaviour:
     projectilePrefab: {fileID: 0}
     cannonPrefab: {fileID: 0}
     OrbitPrefab: {fileID: 0}
+    bombPrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariace:
       serializedVersion: 2
@@ -72,6 +74,7 @@ MonoBehaviour:
     projectilePrefab: {fileID: 0}
     cannonPrefab: {fileID: 0}
     OrbitPrefab: {fileID: 0}
+    bombPrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariace:
       serializedVersion: 2
@@ -96,6 +99,7 @@ MonoBehaviour:
     projectilePrefab: {fileID: 0}
     cannonPrefab: {fileID: 0}
     OrbitPrefab: {fileID: 0}
+    bombPrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariace:
       serializedVersion: 2
@@ -120,6 +124,7 @@ MonoBehaviour:
     projectilePrefab: {fileID: 0}
     cannonPrefab: {fileID: 0}
     OrbitPrefab: {fileID: 0}
+    bombPrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariace:
       serializedVersion: 2
