@@ -110,7 +110,7 @@ MonoBehaviour:
       freeze: 0
       kill: 0
       debuff: 0
-    curseBoosts: 3
+    curseBoosts: 1
     levelBoosts: 0
   attackEffects: []
   damageColor: {r: 1, g: 0, b: 0, a: 1}
@@ -133,6 +133,8 @@ MonoBehaviour:
   outOffFrameAction: 1
   knockbackVariance: 2
   rezoSpeedMove: 1
+  minDistance: 0.8
+  pushForce: 3
 --- !u!114 &5616476323606178641
 MonoBehaviour:
   m_ObjectHideFlags: 0

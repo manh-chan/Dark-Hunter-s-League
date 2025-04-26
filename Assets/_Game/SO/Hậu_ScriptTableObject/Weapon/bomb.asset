@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: bomb
   m_EditorClassIdentifier: 
   icon: {fileID: 57490756, guid: 6a6036d0d77735b49ad51bbe0359b793, type: 3}
-  maxLevel: 5
+  maxLevel: 8
   evolutinData: []
   behaviour: BombWeapon
   baseStats:
@@ -41,7 +41,185 @@ MonoBehaviour:
     knocback: 0
     number: 1
     piercing: 0
+    maxInstances: 50
+    appliedBuffs: []
+  linearGrowth:
+  - name: Level 2
+    description: "bomb to h\u01A1n"
+    projectilePrefab: {fileID: 0}
+    cannonPrefab: {fileID: 0}
+    OrbitPrefab: {fileID: 0}
+    bombPrefab: {fileID: 0}
+    hitEffect: {fileID: 0}
+    spawnVariace:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    lifespan: 0
+    damage: 5
+    damageVariance: 0
+    area: 0.2
+    speed: 0
+    cooldown: 0
+    projectileInterval: 0
+    knocback: 0
+    number: 0
+    piercing: 0
     maxInstances: 0
     appliedBuffs: []
-  linearGrowth: []
-  randomGrowth: []
+  - name: Level 3
+    description: "bomb to h\u01A1n"
+    projectilePrefab: {fileID: 0}
+    cannonPrefab: {fileID: 0}
+    OrbitPrefab: {fileID: 0}
+    bombPrefab: {fileID: 0}
+    hitEffect: {fileID: 0}
+    spawnVariace:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    lifespan: 0
+    damage: 5
+    damageVariance: 0
+    area: 0.2
+    speed: 0
+    cooldown: 0
+    projectileInterval: 0
+    knocback: 0
+    number: 1
+    piercing: 0
+    maxInstances: 0
+    appliedBuffs: []
+  - name: Level 4
+    description: "bomb to h\u01A1n"
+    projectilePrefab: {fileID: 0}
+    cannonPrefab: {fileID: 0}
+    OrbitPrefab: {fileID: 0}
+    bombPrefab: {fileID: 0}
+    hitEffect: {fileID: 0}
+    spawnVariace:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    lifespan: 0
+    damage: 5
+    damageVariance: 0
+    area: 0.2
+    speed: 0
+    cooldown: 0
+    projectileInterval: 0
+    knocback: 0
+    number: 0
+    piercing: 0
+    maxInstances: 0
+    appliedBuffs: []
+  - name: Level 5
+    description: "bomb to h\u01A1n"
+    projectilePrefab: {fileID: 0}
+    cannonPrefab: {fileID: 0}
+    OrbitPrefab: {fileID: 0}
+    bombPrefab: {fileID: 0}
+    hitEffect: {fileID: 0}
+    spawnVariace:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    lifespan: 0
+    damage: 5
+    damageVariance: 0
+    area: 0.2
+    speed: 0
+    cooldown: 0
+    projectileInterval: 0
+    knocback: 0
+    number: 1
+    piercing: 0
+    maxInstances: 0
+    appliedBuffs:
+    - data: {fileID: 0}
+      variant: 0
+      probability: 0
+  randomGrowth:
+  - name: "\u0111\u1EB7c bi\u1EC7t"
+    description: "m\u1ED9t s\u1EE9c m\u1EA1nh b\xED \u1EA9n"
+    projectilePrefab: {fileID: 0}
+    cannonPrefab: {fileID: 0}
+    OrbitPrefab: {fileID: 0}
+    bombPrefab: {fileID: 0}
+    hitEffect: {fileID: 0}
+    spawnVariace:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    lifespan: 0
+    damage: 0
+    damageVariance: 0
+    area: 0
+    speed: 0
+    cooldown: -0.3
+    projectileInterval: 0
+    knocback: 0
+    number: 0
+    piercing: 0
+    maxInstances: 0
+    appliedBuffs: []
+  - name: "\u0111\u1EB7c bi\u1EC7t"
+    description: "m\u1ED9t s\u1EE9c m\u1EA1nh b\xED \u1EA9n"
+    projectilePrefab: {fileID: 0}
+    cannonPrefab: {fileID: 0}
+    OrbitPrefab: {fileID: 0}
+    bombPrefab: {fileID: 0}
+    hitEffect: {fileID: 0}
+    spawnVariace:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    lifespan: 0
+    damage: -5
+    damageVariance: 0
+    area: -0.5
+    speed: 0
+    cooldown: 0
+    projectileInterval: 0
+    knocback: 0
+    number: 2
+    piercing: 0
+    maxInstances: 0
+    appliedBuffs: []
+  - name: "\u0111\u1EB7c bi\u1EC7t"
+    description: "m\u1ED9t s\u1EE9c m\u1EA1nh b\xED \u1EA9n"
+    projectilePrefab: {fileID: 0}
+    cannonPrefab: {fileID: 0}
+    OrbitPrefab: {fileID: 0}
+    bombPrefab: {fileID: 0}
+    hitEffect: {fileID: 0}
+    spawnVariace:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    lifespan: 0
+    damage: 20
+    damageVariance: 0
+    area: 0
+    speed: 0
+    cooldown: 0
+    projectileInterval: 0
+    knocback: 0
+    number: 0
+    piercing: 0
+    maxInstances: 0
+    appliedBuffs: []

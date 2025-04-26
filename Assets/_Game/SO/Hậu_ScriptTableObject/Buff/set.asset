@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e57d9accc42d9b4484be13dc2cd284e, type: 3}
-  m_Name: Buff Data
+  m_Name: set
   m_EditorClassIdentifier: 
-  name: bomb
+  name: New Buff
   icon: {fileID: 0}
   type: 0
   variations:
@@ -20,10 +20,10 @@ MonoBehaviour:
     effect: {fileID: 0}
     tint: {r: 0, g: 0, b: 0, a: 0}
     animationSpeed: 1
-    duration: 3
-    damagePerSecond: 0
+    duration: 5
+    damagePerSecond: 20
     healPerSecond: 0
-    tickInterval: 0
+    tickInterval: 0.5
     stackType: 0
     modifierType: 0
     playerModifier:
