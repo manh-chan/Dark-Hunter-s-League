@@ -41,10 +41,7 @@ MonoBehaviour:
     number: 2
     piercing: 1
     maxInstances: 70
-    appliedBuffs:
-    - data: {fileID: 11400000, guid: a718941a80687424e90076c14a888cfa, type: 2}
-      variant: 0
-      probability: 1
+    appliedBuffs: []
   linearGrowth:
   - name: Level 2
     description: "B\u1EAFn Th\xEAm 1 qu\u1EA3 \u0111\u1EA1n l\u1EEDa v\u1EC1 ph\xEDa

@@ -40,7 +40,7 @@ MonoBehaviour:
     projectileInterval: 0.5
     knocback: 0.5
     number: 0
-    piercing: 80
+    piercing: 5
     maxInstances: 70
     appliedBuffs: []
   linearGrowth:
@@ -93,7 +93,7 @@ MonoBehaviour:
     projectileInterval: 0
     knocback: 0
     number: 1
-    piercing: 0
+    piercing: 2
     maxInstances: 0
     appliedBuffs: []
   - name: Level 4
