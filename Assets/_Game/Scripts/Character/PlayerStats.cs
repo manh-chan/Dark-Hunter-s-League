@@ -230,7 +230,11 @@ public class PlayerStats : EntityStats
             level++;
             experience -= experienceCap;
             int experienceCapIncrease = 0;
-            if (lvUpEffect) Destroy(Instantiate(lvUpEffect, transform.position, Quaternion.identity), 5f);
+            if (lvUpEffect)
+            {
+                ParticleSystem effect = Instantiate(lvUpEffect, transform.position, Quaternion.identity);
+                effect.transform.SetParent(transform); // Gắn làm con
+            }
             foreach (LevelRange range in levelRanges)
             {
                 if (level >= range.statsLevel && level <= range.endLevel)

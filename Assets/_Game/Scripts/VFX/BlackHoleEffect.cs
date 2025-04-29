@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class BlackHoleEffect : MonoBehaviour
 {
+    public float start = 1;
     void Start()
     {
-        Destroy(gameObject, 1);
+        Destroy(gameObject, start);
     }
 }
