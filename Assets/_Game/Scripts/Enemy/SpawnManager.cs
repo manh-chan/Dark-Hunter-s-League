@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using static Cinemachine.DocumentationSortingAttribute;
 
@@ -18,6 +20,8 @@ public class SpawnManager : MonoBehaviour
     float currentWaveDuration = 0f;
     public bool boostedByCurse = true;
     public static SpawnManager instance;
+
+    public TMP_Text winGame;
 
     public PlayerStats playerStats;
     private void Start()
@@ -95,6 +99,7 @@ public class SpawnManager : MonoBehaviour
     }
     private void WinGame()
     {
+        winGame.gameObject.SetActive(true);
         GameManager.instance.GameOver();
     }
     public bool HasWaveEnded()

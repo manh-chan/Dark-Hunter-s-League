@@ -72,12 +72,15 @@ public class PlayerStats : EntityStats
 
     PlayerInventory inventory;
     PlayerCollector collector;
+    PlayerMovement playerMovement;
 
     [Header("UI")]
     public Image healthBar;
     public Image expBar;
     public TMP_Text levelText;
+    public TMP_Text loseGame;
     public TMP_Text coinText;
+    public GameObject healthBarCanvas;
 
     PlayerAnimator playerAnimator;
 
@@ -87,6 +90,7 @@ public class PlayerStats : EntityStats
 
         inventory = GetComponent<PlayerInventory>();
         collector = GetComponentInChildren<PlayerCollector>();
+        playerMovement = GetComponent<PlayerMovement>();
         
         baseStats = actualStats = charactedData.stats;
         collector.SetRadius(actualStats.magnet);
@@ -297,6 +301,19 @@ public class PlayerStats : EntityStats
     }
     public override void Kill()
     {
+        playerMovement.joystick.gameObject.SetActive(false);
+        playerMovement.movIng = false;
+        healthBarCanvas.SetActive(false);
+        Invoke(nameof(AniDead), 1);
+        Invoke(nameof(EndGame), 3);
+    }
+    public void AniDead()
+    {
+        animator.SetBool("Dead",true);
+    }
+    public void EndGame()
+    {
+        loseGame.gameObject.SetActive(true);
         if (!GameManager.instance.isGameOver)
         {
             GameManager.instance.GameOver();

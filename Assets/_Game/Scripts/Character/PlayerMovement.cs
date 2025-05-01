@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Windows;
 public class PlayerMovement : Sortable
 {
-    public const float DEFAULT_MOVESPEED = 2f;
+    public const float DEFAULT_MOVESPEED = 1.5f;
     private Vector2 moveDir;
     [HideInInspector]
     public float lastHorizontalVector;
@@ -18,7 +18,7 @@ public class PlayerMovement : Sortable
 
     public VariableJoystick joystick;
 
-    private bool movIng;
+    public bool movIng = true;
     float x;
     float y;
 
@@ -50,14 +50,11 @@ public class PlayerMovement : Sortable
     }
     private void InputManager()
     {
-        if (GameManager.instance.choosingUpgrade)
+        if (GameManager.instance.choosingUpgrade || GameManager.instance.isGameOver || movIng == false)
         {
             return;
         }
-        if (GameManager.instance.isGameOver)
-        {
-            return;
-        }
+
         x = UnityEngine.Input.GetAxisRaw("Horizontal");
         y = UnityEngine.Input.GetAxisRaw("Vertical");
 
@@ -89,7 +86,7 @@ public class PlayerMovement : Sortable
 
     private void Move()
     {
-        if (GameManager.instance.choosingUpgrade || GameManager.instance.isGameOver)
+        if (GameManager.instance.choosingUpgrade || GameManager.instance.isGameOver || movIng == false)
         {
             rb.velocity = Vector2.zero;
             wipeEnemy = false;
