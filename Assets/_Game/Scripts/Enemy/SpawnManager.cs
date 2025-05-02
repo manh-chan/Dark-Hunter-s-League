@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
@@ -12,7 +12,7 @@ public class SpawnManager : MonoBehaviour
 
     public WaveData[] data;
     public Camera referenceCamera;
-
+    public int currentMapIndex;
     [Tooltip("If there are more than this number of enemies, stop spawning any more. For performance.")]
     public int maximumEnemyCount = 300;
 
@@ -24,6 +24,7 @@ public class SpawnManager : MonoBehaviour
     public TMP_Text winGame;
 
     public PlayerStats playerStats;
+
     private void Start()
     {
         if (instance)
@@ -103,6 +104,8 @@ public class SpawnManager : MonoBehaviour
     {
         winGame.gameObject.SetActive(true);
         GameManager.instance.GameOver();
+        //check map there
+        UILevelSelector.Instance.UnlockNextMap(currentMapIndex);
     }
     public bool HasWaveEnded()
     {

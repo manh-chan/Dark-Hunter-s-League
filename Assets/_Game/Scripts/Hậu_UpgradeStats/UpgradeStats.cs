@@ -16,6 +16,8 @@ public class UpgradeStats
     public float luckBonus;
 
     public UpgradeStats() { }
+
+
     public UpgradeStats(float maxHealthBonus, float recoveryBonus, float armorBonus, float moveSpeedBonus, float mightBonus, float areaBonus, float speedBonus, float durationBonus, float cooldownBonus, float luckBonus)
     {
         this.maxHealthBonus = maxHealthBonus;

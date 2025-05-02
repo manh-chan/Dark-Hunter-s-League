@@ -24,7 +24,10 @@ public class CanvasMainMenu : UICanvas
     {
         UIManager.Instance.OpenUI<CanvasGrowth>();
     }
-
+    public void UpLoadButton()
+    {
+        UIManager.Instance.OpenUI<CanvasUpload>();
+    }
     public void HeroButton()
     {
         UIManager.Instance.OpenUI<CanvasHero>();
