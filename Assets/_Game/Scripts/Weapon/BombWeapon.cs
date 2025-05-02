@@ -28,6 +28,8 @@ public class BombWeapon : Weapon
     }
     protected override bool Attack(int attackCount = 1)
     {
+        if (playerMovement.movIng == false) return false;
+
         if (!currentStats.bombPrefab)
         {
             Debug.LogWarning("Orbit projectile prefab chưa được gán!");

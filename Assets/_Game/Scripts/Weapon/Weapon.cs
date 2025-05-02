@@ -102,6 +102,7 @@ public abstract class Weapon : Item
     }
     protected virtual bool Attack(int attackCount = 1)
     {
+
         if (CanAttack())
         {
             ActivateCooldown();

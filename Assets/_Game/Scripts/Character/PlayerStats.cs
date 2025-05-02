@@ -221,6 +221,7 @@ public class PlayerStats : EntityStats
 
     public void IncreaseExperience(int amount)
     {
+        if (playerMovement.movIng == false) return;
         experience += amount;
         coin += amount;
         LevelUpChecker();
