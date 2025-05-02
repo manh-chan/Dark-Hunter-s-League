@@ -16,7 +16,7 @@ public class UpgradeUI : MonoBehaviour
     public TextMeshProUGUI upgradeCostText;
     public TextMeshProUGUI[] statTexts;
     public Button[] upgradeButtons;
-    public int money = 1000;
+    public int money = 1000; // tien
     public int totalSpentMoney;
     public int level;
     private int upgradeCost = 50;
