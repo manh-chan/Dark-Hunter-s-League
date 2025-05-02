@@ -38,6 +38,8 @@ public class EventManager : Singleton<EventManager>
 
     public void Update()
     {
+        if (GameManager.instance.loadGameEnd == false) return;
+
         currentEventCooldown -= Time.deltaTime;
         if (currentEventCooldown <= 0)
         {

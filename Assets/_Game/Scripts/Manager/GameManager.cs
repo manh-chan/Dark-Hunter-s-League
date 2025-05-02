@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
@@ -56,6 +56,9 @@ public class GameManager : MonoBehaviour
     PlayerStats[] players;
     public VariableJoystick joystick;
 
+    public GameObject loadGame;
+    public bool loadGameEnd;
+
     public bool isGameOver { get { return currentState == GameState.Paused; } }
     public bool choosingUpgrade { get { return currentState == GameState.LevelUp; } }
 
@@ -84,6 +87,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+        StartCoroutine(HandleLoadGame());
         players = FindObjectsOfType<PlayerStats>();
 
         timeLimit = UILevelSelector.currentLevel.timeLimit;
@@ -99,6 +103,8 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
+        if(loadGameEnd == false) return;
+
         switch (currentState)
         {
             case GameState.GamePlay:
@@ -290,5 +296,17 @@ public class GameManager : MonoBehaviour
             t += Time.deltaTime;
 
         }
+    }
+    IEnumerator HandleLoadGame()
+    {
+        joystick.gameObject.SetActive(false);
+
+        float waitTime = Random.Range(1.5f, 3f);
+        yield return new WaitForSeconds(waitTime);
+
+        loadGame.SetActive(false);
+        loadGameEnd = true;
+
+        joystick.gameObject.SetActive(true);
     }
 }

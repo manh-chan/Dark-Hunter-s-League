@@ -38,6 +38,8 @@ public class SpawnManager : MonoBehaviour
 
     private void Update()
     {
+        if (GameManager.instance.loadGameEnd == false) return;
+
         spawnTimer -= Time.deltaTime;
         currentWaveDuration += Time.deltaTime;
 
