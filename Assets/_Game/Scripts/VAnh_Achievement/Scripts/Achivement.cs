@@ -1,11 +1,12 @@
-﻿using System.Collections;
+﻿
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Achivement : MonoBehaviour
 {
-   // private string name;
+    private string name;
     private string description;
     private bool unlocked;
     private int points;
