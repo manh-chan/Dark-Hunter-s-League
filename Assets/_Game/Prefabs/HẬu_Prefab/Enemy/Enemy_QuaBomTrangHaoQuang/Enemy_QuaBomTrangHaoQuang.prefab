@@ -138,7 +138,7 @@ MonoBehaviour:
   pushForce: 1
   distanceAttack: 0.7
   damageRadius: 1.5
-  damageAmount: 20
+  damageAmount: 10
   targetLayer:
     serializedVersion: 2
     m_Bits: 8

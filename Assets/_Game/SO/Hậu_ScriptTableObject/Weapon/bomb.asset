@@ -37,7 +37,7 @@ MonoBehaviour:
     area: 0
     speed: 0
     cooldown: 2
-    projectileInterval: 0.3
+    projectileInterval: 0.5
     knocback: 0
     number: 1
     piercing: 0

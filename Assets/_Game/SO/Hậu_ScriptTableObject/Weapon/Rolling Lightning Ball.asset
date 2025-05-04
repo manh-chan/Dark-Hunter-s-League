@@ -32,7 +32,7 @@ MonoBehaviour:
       width: 0
       height: 0
     lifespan: 3
-    damage: 10
+    damage: 15
     damageVariance: 1
     area: 0
     speed: 3

@@ -13,14 +13,13 @@ MonoBehaviour:
   m_Name: Wave Data
   m_EditorClassIdentifier: 
   possibleSpawnPrefabs:
-  - {fileID: 4260208873561234472, guid: 3646a4fd0ebcc094eb3ef4afb1d19ab2, type: 3}
-  - {fileID: 6522533994833770283, guid: df2cac8b06b04f143bc95bb08a57210e, type: 3}
-  - {fileID: 4482443721187354152, guid: f2f5adaacca24734d99df626a2dcb728, type: 3}
+  - {fileID: 4260208873561234472, guid: 2661722432f7e0347b229012d4979522, type: 3}
+  - {fileID: 6522533994833770283, guid: 9d26f9d564cc46f4eaaa952c8206e319, type: 3}
   spawnInterval: {x: 2, y: 3}
   spawnsPerTick: {x: 1, y: 4}
   duration: 60
-  startingCount: 5
-  totalSpawn: 120
+  startingCount: 4
+  totalSpawn: 40
   exitConditions: 1
   mustKillAll: 0
   spawnCount: 0

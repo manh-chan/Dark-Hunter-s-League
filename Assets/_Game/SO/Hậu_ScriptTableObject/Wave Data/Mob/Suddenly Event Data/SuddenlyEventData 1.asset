@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: SuddenlyEventData 1
   m_EditorClassIdentifier: 
   possibleSpawnPrefabs:
-  - {fileID: 6522533994833770283, guid: c6f262dfbbc88b84298ea7168a922745, type: 3}
-  spawnInterval: {x: 5, y: 7}
+  - {fileID: 6522533994833770283, guid: 9d26f9d564cc46f4eaaa952c8206e319, type: 3}
+  spawnInterval: {x: 10, y: 14}
   spawnsPerTick: {x: 1, y: 1}
   duration: 30
   probability: 1

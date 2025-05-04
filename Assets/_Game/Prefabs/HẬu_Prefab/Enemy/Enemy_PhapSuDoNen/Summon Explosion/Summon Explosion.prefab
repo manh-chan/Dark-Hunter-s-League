@@ -9678,7 +9678,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageRadius: 0.7
-  damageAmount: 20
+  damageAmount: 10
   timeAttack: 1
   targetLayer:
     serializedVersion: 2
