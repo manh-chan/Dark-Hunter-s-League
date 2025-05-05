@@ -3,13 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Text.RegularExpressions;
+using UnityEditor;
+using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-
-#if UNITY_EDITOR
-using UnityEditor;
-#endif
 
 public class UILevelSelector : Singleton<UILevelSelector>
 {
@@ -37,11 +35,7 @@ public class UILevelSelector : Singleton<UILevelSelector>
     [System.Serializable]
     public class SceneData
     {
-#if UNITY_EDITOR
-        public SceneAsset scene; // Chỉ sử dụng trong Editor
-#endif
-
-        public string sceneName; // Dùng cho việc load scene khi build
+        public SceneAsset scene;
 
         [Header("UI Display")]
         public string displayName;
@@ -55,32 +49,26 @@ public class UILevelSelector : Singleton<UILevelSelector>
         [Min(-1)] public float timeLimit = 0f, clockSpeed = 1f;
         [TextArea] public string extraNotes = "--";
     }
-
-#if UNITY_EDITOR
     public static SceneAsset[] GetAllMaps()
     {
         List<SceneAsset> maps = new List<SceneAsset>();
 
+#if UNITY_EDITOR
         string[] allAssetPaths = AssetDatabase.GetAllAssetPaths();
         foreach (string assetPath in allAssetPaths)
         {
             if (assetPath.EndsWith(".unity"))
             {
                 SceneAsset map = AssetDatabase.LoadAssetAtPath<SceneAsset>(assetPath);
-                if (map != null && Regex.IsMatch(map.name, MAP_NAME_FORMAT)) maps.Add(map);
+                if(map != null && Regex.IsMatch(map.name,MAP_NAME_FORMAT)) maps.Add(map);
             }
         }
-
+#else
+Debug.LogWarning("this function cannot be called on builds.");
+#endif
         maps.Reverse();
         return maps.ToArray();
     }
-#else
-    public static object[] GetAllMaps()
-    {
-        Debug.LogWarning("This function cannot be called on builds.");
-        return null;
-    }
-#endif
 
     public virtual void Awake()
     {
@@ -90,6 +78,7 @@ public class UILevelSelector : Singleton<UILevelSelector>
         {
             if (loadedData == null || loadedData.unlockedMaps.Count != levels.Count)
             {
+                // Nếu không có hoặc sai kích thước, tạo mới
                 mapProgressData = new MapProgressData(levels.Count);
                 FirebaseDataManager.Instance.SaveMapProgressToFirebase(uid, mapProgressData);
             }
@@ -100,19 +89,7 @@ public class UILevelSelector : Singleton<UILevelSelector>
 
             UpdateUI();
         });
-
-#if UNITY_EDITOR
-        // Đồng bộ sceneName từ scene (chỉ trong editor)
-        foreach (var level in levels)
-        {
-            if (level.scene != null)
-            {
-                level.sceneName = level.scene.name;
-            }
-        }
-#endif
     }
-
     private void UpdateUI()
     {
         for (int i = 0; i < selectableToggles.Count; i++)
@@ -129,18 +106,16 @@ public class UILevelSelector : Singleton<UILevelSelector>
             }
         }
     }
-
     public void SceneChange(string name)
     {
         SceneManager.LoadScene(name);
         Time.timeScale = 1f;
     }
-
     public void LoadselectedLevel()
     {
-        if (selectedLevel >= 0)
+        if(selectedLevel >= 0)
         {
-            SceneManager.LoadScene(levels[selectedLevel].sceneName);
+            SceneManager.LoadScene(levels[selectedLevel].scene.name);
             currentLevel = levels[selectedLevel];
             selectedLevel = -1;
             Time.timeScale = 1f;
@@ -150,7 +125,6 @@ public class UILevelSelector : Singleton<UILevelSelector>
             Debug.Log("No level was selected!");
         }
     }
-
     public void Select(int sceneIndex)
     {
         selectedLevel = sceneIndex;
@@ -162,7 +136,7 @@ public class UILevelSelector : Singleton<UILevelSelector>
 
     public BuffData GenerateGlobalBuffData()
     {
-        BuffData bd = ScriptableObject.CreateInstance<BuffData>();
+       BuffData bd = ScriptableObject.CreateInstance<BuffData>();
         bd.name = "Global Level Buff";
         bd.variations[0].damagePerSecond = 0;
         bd.variations[0].duration = 0;
@@ -176,7 +150,7 @@ public class UILevelSelector : Singleton<UILevelSelector>
         Type type = obj.GetType();
         FieldInfo[] fields = type.GetFields();
         float sum = 0;
-        foreach (FieldInfo f in fields)
+        foreach ( FieldInfo f in fields )
         {
             object val = f.GetValue(obj);
             if (val is int) sum += (int)val;
@@ -184,7 +158,6 @@ public class UILevelSelector : Singleton<UILevelSelector>
         }
         return Mathf.Approximately(sum, 0);
     }
-
     public void UnlockNextMap(int currentMapIndex)
     {
         string uid = PlayerPrefs.GetString("uid", "");
