@@ -13,7 +13,7 @@ public class TutorialManager : MonoBehaviour
     public bool tutorialCompleted;
     public GameObject panelToBringForward;
 
-   
+
     void Start()
     {
         DontDestroyOnLoad(this);
@@ -121,7 +121,7 @@ public class TutorialManager : MonoBehaviour
     public void HeroButton()
     {
         UIManager.Instance.OpenUI<CanvasHero>();
-      
+
     }
 
     public void GrowthButton()
@@ -130,16 +130,16 @@ public class TutorialManager : MonoBehaviour
 
     }
 
-    public void WeaponButton()
-    {
-        UIManager.Instance.OpenUI<CanvasWeapon>();
+    //public void WeaponButton()
+    //{
+    //    UIManager.Instance.OpenUI<CanvasWeapon>();
 
-    }
+    //}
 
     public void SelectHeroButton()
     {
         FindObjectOfType<CanvasHero>().gameObject.SetActive(false);
-         
+
     }
 
     public void UpdateGrowButton()
@@ -148,9 +148,9 @@ public class TutorialManager : MonoBehaviour
 
     }
 
-    public void SelectWeaponButton()
-    {
-        FindObjectOfType<CanvasWeapon>().gameObject.SetActive(false);
+    //public void SelectWeaponButton()
+    //{
+    //    FindObjectOfType<CanvasWeapon>().gameObject.SetActive(false);
 
-    }
+    //}
 }
