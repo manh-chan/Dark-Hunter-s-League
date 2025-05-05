@@ -10,32 +10,42 @@ public class TutorialManager : MonoBehaviour
     private const string TutorialCompletedKey = "TutorialCompleted";
 
     private int currentPanelIndex = 0;
-    public bool tutorialCompleted;
+    public bool tutorialCompleted = false;
     public GameObject panelToBringForward;
-
+    private TutorialData UserData;
 
     void Start()
     {
         DontDestroyOnLoad(this);
+        BringPanelToFront();
+        string uid = PlayerPrefs.GetString("uid", "");
+        UserFirebase.Instance.ReadTutorialFromFirebase(uid, (loadedData) =>
+        {
+            if (loadedData == null)
+            {
+                tutorialCompleted = false;
+                ShowPanel(currentPanelIndex);
+                UserData = new TutorialData(true);
+                UserFirebase.Instance.WriteTutorialData(uid, UserData);
+                Debug.Log("Bắt đầu Tutorial.");
+            }
+            else
+            {
+                HideAllPanels();
+                tutorialCompleted = true;
+                Debug.Log("Tutorial đã hoàn thành trước đó.");
+            }
+        });
         // Kiểm tra xem người chơi đã hoàn thành tutorial chưa
         // PlayerPrefs.GetInt trả về 0 nếu key chưa tồn tại (mặc định là chưa hoàn thành)
-        BringPanelToFront();
+       
         if (tutorialCompleted)
         {
-            // Nếu đã hoàn thành, không làm gì cả (hoặc có thể tự hủy GameObject này)
-            // Destroy(gameObject);
-            Debug.Log("Tutorial đã hoàn thành trước đó.");
-            // Đảm bảo tất cả các panel đều tắt nếu chúng vô tình được bật
-            HideAllPanels();
+           
         }
         else
         {
-            // Nếu chưa hoàn thành, bắt đầu hiển thị hướng dẫn
-            Debug.Log("Bắt đầu Tutorial.");
-            ShowPanel(currentPanelIndex);
-
-            // Tùy chọn: Có thể dừng game lại khi tutorial đang hiển thị
-            // Time.timeScale = 0f;
+            
         }
     }
 

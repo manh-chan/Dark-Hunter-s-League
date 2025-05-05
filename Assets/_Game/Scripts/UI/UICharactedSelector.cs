@@ -20,6 +20,7 @@ public class UICharactedSelector : MonoBehaviour
     public string characterNamePath = "Character Name";
     public string weaponIconPath = "Weapon Icon";
     public string characterIconPath = "Character Icon";
+    public string price = "Character Price";
     public List<Toggle> selectableToggles = new List<Toggle>();
 
     [Header("DescriptionBox")]

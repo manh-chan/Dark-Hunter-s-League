@@ -77,6 +77,11 @@ public class UICharacterSelectEditor : Editor
                 wpnIcon.sprite = characters[i].StartingWeapon.icon;
             }
 
+            Transform price = tog.transform.Find(selector.price);
+            if (price && price.TryGetComponent(out TextMeshProUGUI tmpp))
+            {
+                tmpp.text  = characters[i].Price.ToString();
+            }
             selector.selectableToggles.Add(tog);
 
             for (int j = 0; j < tog.onValueChanged.GetPersistentEventCount(); j++)

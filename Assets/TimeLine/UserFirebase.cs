@@ -50,4 +50,39 @@ public class UserFirebase : Singleton<UserFirebase>
             }
         });
     }
+    //load check tutorial
+    public void WriteTutorialData(string id, TutorialData player)
+    {
+        string json = JsonUtility.ToJson(player);
+
+        reference.Child("Users").Child(id).Child("CheckTutor").SetRawJsonValueAsync(json).ContinueWithOnMainThread(task =>
+        {
+            if (task.IsCompleted)
+            {
+                Debug.Log("Ghi dữ liệu người chơi thành công");
+            }
+            else
+            {
+                Debug.Log("Ghi dữ liệu người chơi thất bại: " + task.Exception);
+            }
+        });
+    }
+
+    public void ReadTutorialFromFirebase(string uid, Action<TutorialData> onLoaded)
+    {
+        reference.Child("Users").Child(uid).Child("CheckTutor").GetValueAsync().ContinueWithOnMainThread(task =>
+        {
+            if (task.IsCompleted && task.Result.Exists)
+            {
+                string json = task.Result.GetRawJsonValue();
+                TutorialData data = JsonUtility.FromJson<TutorialData>(json);
+                onLoaded?.Invoke(data);
+            }
+            else
+            {
+                Debug.Log("⚠️ Không có dữ liệu, tạo mới.");
+                onLoaded?.Invoke(null);
+            }
+        });
+    }
 }
