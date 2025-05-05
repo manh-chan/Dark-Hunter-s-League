@@ -40,7 +40,7 @@ public class EnemyState : EntityStats
         public Resistances resistances;
 
         [System.Flags]
-        public enum Boostable { health = 1, moveSpeed = 2, damage = 4, knocbackMultiplier = 8, resistances = 16 }
+        public enum Boostable { health = 1, moveSpeed = 1, damage = 4, knocbackMultiplier = 8, resistances = 16 }
         public Boostable curseBoosts, levelBoosts;
 
         private static Stats Boost(Stats s1, float factor, Boostable boostable)

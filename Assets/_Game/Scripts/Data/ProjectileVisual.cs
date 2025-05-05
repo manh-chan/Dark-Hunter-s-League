@@ -13,7 +13,6 @@ public class ProjectileVisual : MonoBehaviour
 
     private Vector3 trajectoryStartPosition;
 
-    private float shadowPositionYDiver = 6f;
 
 
     private void Update()

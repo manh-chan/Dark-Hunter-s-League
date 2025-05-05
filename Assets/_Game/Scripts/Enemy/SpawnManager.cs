@@ -1,5 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using static Cinemachine.DocumentationSortingAttribute;
 
@@ -19,6 +21,8 @@ public class SpawnManager : MonoBehaviour
     public bool boostedByCurse = true;
     public static SpawnManager instance;
 
+    public TMP_Text winGame;
+
     public PlayerStats playerStats;
 
     private void Start()
@@ -35,6 +39,8 @@ public class SpawnManager : MonoBehaviour
 
     private void Update()
     {
+        if (GameManager.instance.loadGameEnd == false) return;
+
         spawnTimer -= Time.deltaTime;
         currentWaveDuration += Time.deltaTime;
 
@@ -96,7 +102,7 @@ public class SpawnManager : MonoBehaviour
     }
     private void WinGame()
     {
-        GameManager.instance.AssignLevelReacheUI(playerStats.level);
+        winGame.gameObject.SetActive(true);
         GameManager.instance.GameOver();
         //check map there
         UILevelSelector.Instance.UnlockNextMap(currentMapIndex);

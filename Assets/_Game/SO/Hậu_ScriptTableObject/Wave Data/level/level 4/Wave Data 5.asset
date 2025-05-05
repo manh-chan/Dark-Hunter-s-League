@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d25cb5ea6ff70944296f02b7b1b0a062, type: 3}
+  m_Name: Wave Data 5
+  m_EditorClassIdentifier: 
+  possibleSpawnPrefabs:
+  - {fileID: 4260208873561234472, guid: 4fbf23c88e981144fa49914397413896, type: 3}
+  - {fileID: 4260208873561234472, guid: 8baecbf7a7f77d0408216819ba8bb9c3, type: 3}
+  - {fileID: 7519307235046858582, guid: 65ef6b0bf774e0e4abadd836d5387ed9, type: 3}
+  - {fileID: 4260208873561234472, guid: 56eb1a0f2d0020448917a4b8229ba12b, type: 3}
+  - {fileID: 4482443721187354152, guid: 4a9ef405af9948342876b5d2b98b07d0, type: 3}
+  - {fileID: 7788799408687049856, guid: f4b149fb790ac8741b1b86ec6df31a80, type: 3}
+  - {fileID: 6522533994833770283, guid: ed5015dab06a8e944b566c2be2024a6f, type: 3}
+  spawnInterval: {x: 3, y: 5}
+  spawnsPerTick: {x: 1, y: 4}
+  duration: 60
+  startingCount: 10
+  totalSpawn: 130
+  exitConditions: 1
+  mustKillAll: 0
+  spawnCount: 0

@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: Mob Event Data 3
   m_EditorClassIdentifier: 
   possibleSpawnPrefabs:
-  - {fileID: 4260208873561234472, guid: bd03c1fd504c2b148ad012082df13976, type: 3}
+  - {fileID: 4260208873561234472, guid: 0654d8262d933474680eb3a1ea6ae113, type: 3}
   spawnInterval: {x: 3, y: 6}
-  spawnsPerTick: {x: 60, y: 70}
+  spawnsPerTick: {x: 19, y: 24}
   duration: 15
   probability: 1
   luckFactor: 1
   activeAfter: 0
-  spawnEffectPrefab: {fileID: 2141021531875497792, guid: 1d7dc5260c273a945b4fea7b88f648aa, type: 3}
+  spawnEffectPrefab: {fileID: 0}
   possibleAngles: 360
-  spawnRadius: 2
+  spawnRadius: 5
   spawnDistance: 10

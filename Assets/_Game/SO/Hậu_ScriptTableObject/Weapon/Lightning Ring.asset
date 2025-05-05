@@ -1,0 +1,224 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4f4002ed8610ac479d8cd0854fd5692, type: 3}
+  m_Name: Lightning Ring
+  m_EditorClassIdentifier: 
+  icon: {fileID: 1020312906, guid: 6a6036d0d77735b49ad51bbe0359b793, type: 3}
+  maxLevel: 8
+  evolutinData: []
+  behaviour: LightningRingWeapon
+  baseStats:
+    name: "S\xE9t"
+    description: "g\xE2y s\xE1t th\u01B0\u01A1ng g\u1EABu nhi\xEAn cho enemy"
+    projectilePrefab: {fileID: 0}
+    cannonPrefab: {fileID: 0}
+    OrbitPrefab: {fileID: 0}
+    bombPrefab: {fileID: 0}
+    hitEffect: {fileID: 1633847752018258456, guid: d8fcbb1203a9e85418dbeee6717de467, type: 3}
+    spawnVariace:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    lifespan: 0
+    damage: 15
+    damageVariance: 2
+    area: 0
+    speed: 0
+    cooldown: 4.5
+    projectileInterval: 0.5
+    knocback: 0
+    number: 1
+    piercing: 0
+    maxInstances: 15
+    appliedBuffs: []
+  linearGrowth:
+  - name: Level 2
+    description: "Th\xEAm m\u1ED9t tia s\xE9t"
+    projectilePrefab: {fileID: 0}
+    cannonPrefab: {fileID: 0}
+    OrbitPrefab: {fileID: 0}
+    bombPrefab: {fileID: 0}
+    hitEffect: {fileID: 0}
+    spawnVariace:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    lifespan: 0
+    damage: 5
+    damageVariance: 0
+    area: 0
+    speed: 0
+    cooldown: 0
+    projectileInterval: 0
+    knocback: 0
+    number: 1
+    piercing: 0
+    maxInstances: 0
+    appliedBuffs: []
+  - name: Level 3
+    description: "Th\xEAm m\u1ED9t tia s\xE9t"
+    projectilePrefab: {fileID: 0}
+    cannonPrefab: {fileID: 0}
+    OrbitPrefab: {fileID: 0}
+    bombPrefab: {fileID: 0}
+    hitEffect: {fileID: 0}
+    spawnVariace:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    lifespan: 0
+    damage: 5
+    damageVariance: 0
+    area: 0
+    speed: 0
+    cooldown: 0
+    projectileInterval: 0
+    knocback: 0
+    number: 1
+    piercing: 0
+    maxInstances: 0
+    appliedBuffs: []
+  - name: Level 4
+    description: "Th\xEAm m\u1ED9t tia s\xE9t"
+    projectilePrefab: {fileID: 0}
+    cannonPrefab: {fileID: 0}
+    OrbitPrefab: {fileID: 0}
+    bombPrefab: {fileID: 0}
+    hitEffect: {fileID: 0}
+    spawnVariace:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    lifespan: 0
+    damage: 5
+    damageVariance: 0
+    area: 0
+    speed: 0
+    cooldown: 0
+    projectileInterval: 0
+    knocback: 0
+    number: 1
+    piercing: 0
+    maxInstances: 0
+    appliedBuffs: []
+  - name: Level 5
+    description: "Th\xEAm m\u1ED9t tia s\xE9t"
+    projectilePrefab: {fileID: 0}
+    cannonPrefab: {fileID: 0}
+    OrbitPrefab: {fileID: 0}
+    bombPrefab: {fileID: 0}
+    hitEffect: {fileID: 0}
+    spawnVariace:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    lifespan: 0
+    damage: 5
+    damageVariance: 0
+    area: 0
+    speed: 0
+    cooldown: 0
+    projectileInterval: 0
+    knocback: 0
+    number: 1
+    piercing: 0
+    maxInstances: 0
+    appliedBuffs:
+    - data: {fileID: 11400000, guid: f8539f2f235c936429e6e2f97ed2a84c, type: 2}
+      variant: 0
+      probability: 1
+  randomGrowth:
+  - name: "\u0111\u1EB7c bi\u1EC7t"
+    description: "m\u1ED9t s\u1EE9c m\u1EA1nh b\xED \u1EA9n"
+    projectilePrefab: {fileID: 0}
+    cannonPrefab: {fileID: 0}
+    OrbitPrefab: {fileID: 0}
+    bombPrefab: {fileID: 0}
+    hitEffect: {fileID: 0}
+    spawnVariace:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    lifespan: 0
+    damage: 0
+    damageVariance: 0
+    area: 0
+    speed: 0
+    cooldown: 0
+    projectileInterval: -0.3
+    knocback: 0
+    number: 0
+    piercing: 0
+    maxInstances: 0
+    appliedBuffs: []
+  - name: "\u0111\u1EB7c bi\u1EC7t"
+    description: "m\u1ED9t s\u1EE9c m\u1EA1nh b\xED \u1EA9n"
+    projectilePrefab: {fileID: 0}
+    cannonPrefab: {fileID: 0}
+    OrbitPrefab: {fileID: 0}
+    bombPrefab: {fileID: 0}
+    hitEffect: {fileID: 0}
+    spawnVariace:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    lifespan: 0
+    damage: 0
+    damageVariance: 0
+    area: 0
+    speed: 0
+    cooldown: -0.3
+    projectileInterval: 0
+    knocback: 0
+    number: 0
+    piercing: 0
+    maxInstances: 0
+    appliedBuffs: []
+  - name: "\u0111\u1EB7c bi\u1EC7t"
+    description: "m\u1ED9t s\u1EE9c m\u1EA1nh b\xED \u1EA9n"
+    projectilePrefab: {fileID: 0}
+    cannonPrefab: {fileID: 0}
+    OrbitPrefab: {fileID: 0}
+    bombPrefab: {fileID: 0}
+    hitEffect: {fileID: 0}
+    spawnVariace:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    lifespan: 0
+    damage: 0.3
+    damageVariance: 0
+    area: 0
+    speed: 0
+    cooldown: 0
+    projectileInterval: 0
+    knocback: 0
+    number: 0
+    piercing: 0
+    maxInstances: 0
+    appliedBuffs: []

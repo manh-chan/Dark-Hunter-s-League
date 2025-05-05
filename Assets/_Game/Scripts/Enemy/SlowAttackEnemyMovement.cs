@@ -63,4 +63,11 @@ public class SlowAttackEnemyMovement : EnemyMovement
         isAttacking = false;
         rezoSpeedMove = true;
     }
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, distanceAttack);
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(transform.position, maxDistance);
+    }
 }

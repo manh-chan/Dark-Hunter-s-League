@@ -13,7 +13,7 @@ public abstract class Weapon : Item
         public Projectile projectilePrefab;
         public Cannon cannonPrefab;
         public OrbitProjectile OrbitPrefab;
-        public ProjectileSunny SunnyPrefab;
+        public Bomb bombPrefab;
         //public Aura auraPrefab;
         public ParticleSystem hitEffect;
         public Rect spawnVariace;
@@ -23,13 +23,8 @@ public abstract class Weapon : Item
         public float damage, damageVariance, area, speed, cooldown, projectileInterval, knocback;
         public int number, piercing, maxInstances;
 
-        [Header("Bullet Line")]
-         public AnimationCurve trajectoryAnimationCurve;
-         public AnimationCurve axisCorrectionAnimtionCurve;
-         public AnimationCurve projectileSpeedAnimtionCurve;
-
         public EntityStats.BuffInfo[] appliedBuffs;
-        
+
         public static Stats operator +(Stats s1, Stats s2)
         {
             Stats result = new Stats();
@@ -38,10 +33,7 @@ public abstract class Weapon : Item
             result.projectilePrefab = s2.projectilePrefab == null ? s1.projectilePrefab : s2.projectilePrefab;
             result.cannonPrefab = s2.cannonPrefab == null ? s1.cannonPrefab : s2.cannonPrefab;
             result.OrbitPrefab = s2.OrbitPrefab == null ? s1.OrbitPrefab : s2.OrbitPrefab;
-            result.SunnyPrefab = s2.SunnyPrefab == null ? s1.SunnyPrefab : s2.SunnyPrefab;
-            result.projectileSpeedAnimtionCurve = s2.projectileSpeedAnimtionCurve == null ? s1.projectileSpeedAnimtionCurve : s2.projectileSpeedAnimtionCurve;
-            result.axisCorrectionAnimtionCurve = s2.axisCorrectionAnimtionCurve == null ? s1.axisCorrectionAnimtionCurve : s2.axisCorrectionAnimtionCurve;
-            result.trajectoryAnimationCurve = s2.trajectoryAnimationCurve == null ? s1.trajectoryAnimationCurve : s2.trajectoryAnimationCurve;
+            result.bombPrefab = s2.bombPrefab == null ? s1.bombPrefab : s2.bombPrefab;
             //result.auraPrefab = s2.auraPrefab ?? s1.auraPrefab;
             result.hitEffect = s2.hitEffect == null ? s1.hitEffect : s2.hitEffect;
             result.spawnVariace = s2.spawnVariace;
@@ -110,6 +102,7 @@ public abstract class Weapon : Item
     }
     protected virtual bool Attack(int attackCount = 1)
     {
+
         if (CanAttack())
         {
             ActivateCooldown();

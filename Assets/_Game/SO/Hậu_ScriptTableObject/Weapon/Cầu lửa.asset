@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: "C\u1EA7u l\u1EEDa"
   m_EditorClassIdentifier: 
   icon: {fileID: -1838105208, guid: c2441fbff301c934ea69c7e9849a537b, type: 3}
-  maxLevel: 5
+  maxLevel: 8
   evolutinData: []
   behaviour: OrbitWeapon
   baseStats:
@@ -23,6 +23,7 @@ MonoBehaviour:
     projectilePrefab: {fileID: 0}
     cannonPrefab: {fileID: 0}
     OrbitPrefab: {fileID: 7549253302827061329, guid: 5da294fc4c6422745a9c00130933b7b2, type: 3}
+    bombPrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariace:
       serializedVersion: 2
@@ -31,15 +32,15 @@ MonoBehaviour:
       width: 0
       height: 0
     lifespan: 1
-    damage: 20
+    damage: 15
     damageVariance: 2
     area: 0
     speed: 0
-    cooldown: 2
+    cooldown: 2.5
     projectileInterval: 0.5
     knocback: 0.5
     number: 1
-    piercing: 1
+    piercing: 5
     maxInstances: 70
     appliedBuffs: []
   linearGrowth:
@@ -49,6 +50,7 @@ MonoBehaviour:
     projectilePrefab: {fileID: 0}
     cannonPrefab: {fileID: 0}
     OrbitPrefab: {fileID: 0}
+    bombPrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariace:
       serializedVersion: 2
@@ -57,8 +59,8 @@ MonoBehaviour:
       width: 0
       height: 0
     lifespan: 0
-    damage: 5
-    damageVariance: 0
+    damage: -5
+    damageVariance: 1
     area: 0
     speed: 0
     cooldown: 0
@@ -74,6 +76,7 @@ MonoBehaviour:
     projectilePrefab: {fileID: 0}
     cannonPrefab: {fileID: 0}
     OrbitPrefab: {fileID: 0}
+    bombPrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariace:
       serializedVersion: 2
@@ -82,7 +85,7 @@ MonoBehaviour:
       width: 0
       height: 0
     lifespan: 0
-    damage: 5
+    damage: -2
     damageVariance: 0
     area: 0
     speed: 0
@@ -90,7 +93,7 @@ MonoBehaviour:
     projectileInterval: 0
     knocback: 0
     number: 1
-    piercing: 0
+    piercing: 2
     maxInstances: 0
     appliedBuffs: []
   - name: Level 4
@@ -99,6 +102,7 @@ MonoBehaviour:
     projectilePrefab: {fileID: 0}
     cannonPrefab: {fileID: 0}
     OrbitPrefab: {fileID: 0}
+    bombPrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariace:
       serializedVersion: 2
@@ -107,7 +111,7 @@ MonoBehaviour:
       width: 0
       height: 0
     lifespan: 0
-    damage: 5
+    damage: -1
     damageVariance: 0
     area: 0
     speed: 0
@@ -124,6 +128,7 @@ MonoBehaviour:
     projectilePrefab: {fileID: 0}
     cannonPrefab: {fileID: 0}
     OrbitPrefab: {fileID: 0}
+    bombPrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariace:
       serializedVersion: 2
@@ -132,7 +137,7 @@ MonoBehaviour:
       width: 0
       height: 0
     lifespan: 0
-    damage: 5
+    damage: -1
     damageVariance: 0
     area: 0
     speed: 0
@@ -142,13 +147,17 @@ MonoBehaviour:
     number: 1
     piercing: 2
     maxInstances: 0
-    appliedBuffs: []
+    appliedBuffs:
+    - data: {fileID: 11400000, guid: a718941a80687424e90076c14a888cfa, type: 2}
+      variant: 0
+      probability: 1
   randomGrowth:
-  - name: "c\u1EA7u l\u1EEDa l\u1EDBn"
-    description: "c\xE1c qu\u1EA3 c\u1EA7u l\u1EEDa l\u1EDBn h\u01A1n"
+  - name: "\u0110\u1EB7c bi\u1EC7t"
+    description: "s\u1EE9c m\u1EA1nh b\xED \u1EA9n"
     projectilePrefab: {fileID: 0}
     cannonPrefab: {fileID: 0}
-    OrbitPrefab: {fileID: 7549253302827061329, guid: 7be70868e7896a946a1ef8b9cd47f315, type: 3}
+    OrbitPrefab: {fileID: 0}
+    bombPrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariace:
       serializedVersion: 2
@@ -159,7 +168,7 @@ MonoBehaviour:
     lifespan: 0
     damage: 0
     damageVariance: 0
-    area: 0
+    area: 0.3
     speed: 0
     cooldown: 0
     projectileInterval: 0
@@ -168,11 +177,12 @@ MonoBehaviour:
     piercing: 0
     maxInstances: 0
     appliedBuffs: []
-  - name: "t\u0103ng s\xE1t th\u01B0\u01A1ng l\u1EDBn"
-    description: "t\u1EAFng s\xE1t th\u01B0\u01A1ng kh\u1ED5ng l\u1ED3"
+  - name: "\u0110\u1EB7c bi\u1EC7t"
+    description: "s\u1EE9c m\u1EA1nh b\xED \u1EA9n"
     projectilePrefab: {fileID: 0}
     cannonPrefab: {fileID: 0}
     OrbitPrefab: {fileID: 0}
+    bombPrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariace:
       serializedVersion: 2
@@ -181,7 +191,7 @@ MonoBehaviour:
       width: 0
       height: 0
     lifespan: 0
-    damage: 30
+    damage: 3
     damageVariance: 0
     area: 0
     speed: 0
@@ -192,12 +202,12 @@ MonoBehaviour:
     piercing: 0
     maxInstances: 0
     appliedBuffs: []
-  - name: "c\u1EA7u l\u1EEDa xuy\xEAn m\u1EE5c ti\xEAu"
-    description: "c\xE1c qu\u1EA3 c\u1EA7u c\xF3 th\u1EC3 g\xE2y s\xE1t th\u01B0\u01A1ng
-      nhi\xE8ue k\u1EBB \u0111\u1ECBch"
+  - name: "\u0110\u1EB7c bi\u1EC7t"
+    description: "s\u1EE9c m\u1EA1nh b\xED \u1EA9n"
     projectilePrefab: {fileID: 0}
     cannonPrefab: {fileID: 0}
     OrbitPrefab: {fileID: 0}
+    bombPrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariace:
       serializedVersion: 2
@@ -206,14 +216,14 @@ MonoBehaviour:
       width: 0
       height: 0
     lifespan: 0
-    damage: 30
+    damage: -5
     damageVariance: 0
     area: 0
     speed: 0
     cooldown: 0
     projectileInterval: 0
     knocback: 0
-    number: 0
-    piercing: 99
+    number: 2
+    piercing: 0
     maxInstances: 0
     appliedBuffs: []

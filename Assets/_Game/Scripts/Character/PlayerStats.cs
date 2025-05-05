@@ -72,12 +72,15 @@ public class PlayerStats : EntityStats
 
     PlayerInventory inventory;
     PlayerCollector collector;
+    PlayerMovement playerMovement;
 
     [Header("UI")]
     public Image healthBar;
     public Image expBar;
     public TMP_Text levelText;
+    public TMP_Text loseGame;
     public TMP_Text coinText;
+    public GameObject healthBarCanvas;
 
     PlayerAnimator playerAnimator;
 
@@ -87,6 +90,7 @@ public class PlayerStats : EntityStats
 
         inventory = GetComponent<PlayerInventory>();
         collector = GetComponentInChildren<PlayerCollector>();
+        playerMovement = GetComponent<PlayerMovement>();
         
         baseStats = actualStats = charactedData.stats;
         collector.SetRadius(actualStats.magnet);
@@ -102,7 +106,16 @@ public class PlayerStats : EntityStats
     protected override void Start()
     {
         base.Start();
-        
+         upgradeStats = new UpgradeStats();
+        string uid = PlayerPrefs.GetString("uid", "");
+        if (!string.IsNullOrEmpty(uid))
+        {
+            FirebaseDataManager.Instance.ReadPlayerData(uid);
+        }
+        else
+        {
+            Debug.LogWarning("Chưa đăng nhập, không có UID để đọc dữ liệu.");
+        }
         if (UILevelSelector.globaBuff && !UILevelSelector.globalBuffAffectsPlayer)
             ApplyBuff(UILevelSelector.globaBuff);
         
@@ -153,16 +166,17 @@ public class PlayerStats : EntityStats
         if (upgradeStats != null)
         {
             actualStats.maxHealth += upgradeStats.maxHealthBonus;
-            actualStats.recovery += upgradeStats.recoveryBonus;
-            actualStats.armor += upgradeStats.armorBonus;
-            actualStats.moveSpeed += upgradeStats.moveSpeedBonus;
-            actualStats.might += upgradeStats.mightBonus;
+            actualStats.maxHealth += FirebaseDataManager.Instance.player.maxHealthBonus;
+            actualStats.recovery += FirebaseDataManager.Instance.player.recoveryBonus;
+            actualStats.armor += FirebaseDataManager.Instance.player.armorBonus;
+            actualStats.moveSpeed += FirebaseDataManager.Instance.player.moveSpeedBonus;
+            actualStats.might += FirebaseDataManager.Instance.player.mightBonus;
             //actualStats.amount += upgradeStats.amountBonus;
-            actualStats.area += upgradeStats.areaBonus;
-            actualStats.speed += upgradeStats.speedBonus;
-            actualStats.duration += upgradeStats.durationBonus;
-            actualStats.cooldown += upgradeStats.cooldownBonus;
-            actualStats.luck += upgradeStats.luckBonus;
+            actualStats.area += FirebaseDataManager.Instance.player.areaBonus;
+            actualStats.speed += FirebaseDataManager.Instance.player.speedBonus;
+            actualStats.duration += FirebaseDataManager.Instance.player.durationBonus;
+            actualStats.cooldown += FirebaseDataManager.Instance.player.cooldownBonus;
+            actualStats.luck += FirebaseDataManager.Instance.player.luckBonus;
         }
 
         CharacterData.Stats multiplier = new CharacterData.Stats
@@ -217,6 +231,7 @@ public class PlayerStats : EntityStats
 
     public void IncreaseExperience(int amount)
     {
+        if (playerMovement.movIng == false) return;
         experience += amount;
         coin += amount;
         LevelUpChecker();
@@ -230,7 +245,11 @@ public class PlayerStats : EntityStats
             level++;
             experience -= experienceCap;
             int experienceCapIncrease = 0;
-            if (lvUpEffect) Destroy(Instantiate(lvUpEffect, transform.position, Quaternion.identity), 5f);
+            if (lvUpEffect)
+            {
+                ParticleSystem effect = Instantiate(lvUpEffect, transform.position, Quaternion.identity);
+                effect.transform.SetParent(transform); // Gắn làm con
+            }
             foreach (LevelRange range in levelRanges)
             {
                 if (level >= range.statsLevel && level <= range.endLevel)
@@ -293,9 +312,21 @@ public class PlayerStats : EntityStats
     }
     public override void Kill()
     {
+        playerMovement.joystick.gameObject.SetActive(false);
+        playerMovement.movIng = false;
+        healthBarCanvas.SetActive(false);
+        Invoke(nameof(AniDead), 1);
+        Invoke(nameof(EndGame), 3);
+    }
+    public void AniDead()
+    {
+        animator.SetBool("Dead",true);
+    }
+    public void EndGame()
+    {
+        loseGame.gameObject.SetActive(true);
         if (!GameManager.instance.isGameOver)
         {
-            GameManager.instance.AssignLevelReacheUI(level);
             GameManager.instance.GameOver();
         }
     }

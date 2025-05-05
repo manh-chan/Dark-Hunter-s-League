@@ -4796,7 +4796,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2000424739
-  m_SortingLayer: 18
+  m_SortingLayer: 29
   m_SortingOrder: 0
   m_RenderMode: 0
   m_MeshDistribution: 0
@@ -5120,7 +5120,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 3
+      scalar: 1.7
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -9631,7 +9631,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2000424739
-  m_SortingLayer: 18
+  m_SortingLayer: 29
   m_SortingOrder: 0
   m_RenderMode: 0
   m_MeshDistribution: 0
@@ -9677,13 +9677,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 148da62187c7ab24f8ef5e30f8a91bdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageRadius: 1.5
-  damageAmount: 27
-  timeAttack: 1
+  damageRadius: 0.7
+  damageAmount: 17
+  timeAttack: 0.9
   targetLayer:
     serializedVersion: 2
     m_Bits: 8
-  Explode: {fileID: 6095465258714957218, guid: 172937c17197897468cc1faa2763bffe, type: 3}
+  Explode: {fileID: 6095465258714957218, guid: c3d0bfde73e6bab4ba65472dc178ca02, type: 3}
 --- !u!1 &8018718989178197567
 GameObject:
   m_ObjectHideFlags: 0
@@ -10435,7 +10435,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 1
+      value: 0.7
       mode: 0
       spread: 0
       speed:
@@ -10554,7 +10554,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 10
+      scalar: 7
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -14480,7 +14480,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2000424739
-  m_SortingLayer: 18
+  m_SortingLayer: 29
   m_SortingOrder: 2
   m_RenderMode: 0
   m_MeshDistribution: 0

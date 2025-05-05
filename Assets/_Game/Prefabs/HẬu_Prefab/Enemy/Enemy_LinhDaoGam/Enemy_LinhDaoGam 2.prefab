@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5616476323606178641}
   - component: {fileID: 5150141823744670638}
   - component: {fileID: 7167646086068558581}
+  - component: {fileID: -2522272896882257291}
   m_Layer: 6
   m_Name: Enemy_LinhDaoGam 2
   m_TagString: Untagged
@@ -76,7 +77,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2000424739
-  m_SortingLayer: 18
+  m_SortingLayer: 29
   m_SortingOrder: 0
   m_Sprite: {fileID: -1738410335, guid: 8dca372f9388ec74b9227cdd9cbdec96, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -103,19 +104,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseStats:
     maxHealth: 40
-    moveSpeed: 1
+    moveSpeed: 0.5
     damage: 3
     knokbackMultiplier: 1
     resistances:
       freeze: 0
       kill: 0
       debuff: 0
-    curseBoosts: 3
+    curseBoosts: 1
     levelBoosts: 0
   attackEffects: []
   damageColor: {r: 1, g: 0, b: 0, a: 1}
-  damageFlashDuration: 0.2
-  deathFadeTime: 0.6
+  damageFlashDuration: 0.8
+  deathFadeTime: 1
 --- !u!114 &7185156106132119493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,9 +131,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sorted: {fileID: 0}
   sortingActive: 1
-  outOffFrameAction: 1
+  outOffFrameAction: 0
   knockbackVariance: 2
   rezoSpeedMove: 1
+  minDistance: 0.8
+  pushForce: 1
 --- !u!114 &5616476323606178641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,7 +152,13 @@ MonoBehaviour:
   drops:
   - name: Ngoc
     itemPrefab: {fileID: 3017881812221728157, guid: de8320c11866da547a95fb988556d0ee, type: 3}
-    dropRate: 100
+    dropRate: 70
+  - name: Ngoc
+    itemPrefab: {fileID: 3017881812221728157, guid: 555950c2771ddf648ac4c6517b31ccfe, type: 3}
+    dropRate: 10
+  - name: Ngoc
+    itemPrefab: {fileID: 546542575014491154, guid: 35e87e090a95fdf4cbe32df58e373b45, type: 3}
+    dropRate: 2
 --- !u!95 &5150141823744670638
 Animator:
   serializedVersion: 5
@@ -216,3 +225,30 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.94943076, y: 1.7178915}
   m_EdgeRadius: 0
+--- !u!50 &-2522272896882257291
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4260208873561234472}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4

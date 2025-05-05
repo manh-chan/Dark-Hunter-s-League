@@ -16,7 +16,7 @@ public class UpgradeUI : MonoBehaviour
     public TextMeshProUGUI upgradeCostText;
     public TextMeshProUGUI[] statTexts;
     public Button[] upgradeButtons;
-    public int money = 1000;
+    public int money = 1000; // tien
     public int totalSpentMoney;
     public int level;
     private int upgradeCost = 50;
@@ -62,16 +62,16 @@ public class UpgradeUI : MonoBehaviour
             upgradeCost = Mathf.FloorToInt(upgradeCost * 1.2f);
             switch (index)
             {
-                case 0: upgradeStats.maxHealthBonus += 2f; break;
-                case 1: upgradeStats.recoveryBonus += 2f; break;
-                case 2: upgradeStats.armorBonus += 2f; ; break;
-                case 3: upgradeStats.moveSpeedBonus += 2; ; break;
-                case 4: upgradeStats.mightBonus += 2f; ; break;
-                case 5: upgradeStats.areaBonus += 2f; ; break;
-                case 6: upgradeStats.speedBonus += 2f; ; break;
-                case 7: upgradeStats.durationBonus += 2f; ; break;
-                case 8: upgradeStats.cooldownBonus += 2f; ; break;
-                case 9: upgradeStats.luckBonus += 2f; ; break;
+                case 0: upgradeStats.maxHealthBonus += 0.1f; break;
+                case 1: upgradeStats.recoveryBonus += 0.05f; break;
+                case 2: upgradeStats.armorBonus += 0.05f; ; break;
+                case 3: upgradeStats.moveSpeedBonus += 0.05f; ; break;
+                case 4: upgradeStats.mightBonus += 0.05f; ; break;
+                case 5: upgradeStats.areaBonus += 0.05f; ; break;
+                case 6: upgradeStats.speedBonus += 0.05f; ; break;
+                case 7: upgradeStats.durationBonus += 0.05f; ; break;
+                case 8: upgradeStats.cooldownBonus += -0.05f; ; break;
+                case 9: upgradeStats.luckBonus += 0.05f; ; break;
             }
 
             UpdateUI();
@@ -102,6 +102,7 @@ public class UpgradeUI : MonoBehaviour
         UpdateUI();
         level = 0;
         upgradeCost = 50;
+        UpdateMoney();
         upgradeCostText.text = upgradeCost.ToString();
         levelText.text = level.ToString();
 
@@ -117,7 +118,7 @@ public class UpgradeUI : MonoBehaviour
             btn.interactable = money >= upgradeCost;
         }
 
-        statTexts[0].text = FirebaseDataManager.Instance.player.maxHealthBonus.ToString();
+        statTexts[0].text = FirebaseDataManager.Instance.player.maxHealthBonus.ToString("F1");
         statTexts[1].text = FirebaseDataManager.Instance.player.recoveryBonus.ToString("F2");
         statTexts[2].text = FirebaseDataManager.Instance.player.armorBonus.ToString("F2");
         statTexts[3].text = FirebaseDataManager.Instance.player.moveSpeedBonus.ToString("F2");

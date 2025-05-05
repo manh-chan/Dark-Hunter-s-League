@@ -39,6 +39,7 @@ public class BlackSniper : EnemyMovement
 
         if (cooldownTime <= 0 && !isAttacking && distance <= distanceAttack)
         {
+            pushForce = 0;
             rezoSpeedMove = false;
             StartCoroutine(Sniper());
         }
@@ -47,6 +48,7 @@ public class BlackSniper : EnemyMovement
     private IEnumerator Sniper()
     {
         isAttacking = true;
+        
         ani.enabled = false;
         colorCoroutine = StartCoroutine(ChangeColorLoop());
         yield return new WaitForSeconds(waitForTimeAttack);
@@ -61,6 +63,7 @@ public class BlackSniper : EnemyMovement
         }
         ani.enabled = true;
         cooldownTime = 5f;
+        pushForce = 1;
         isAttacking = false;
         if(distance >= distanceAttack) rezoSpeedMove = true;
     }
@@ -81,12 +84,16 @@ public class BlackSniper : EnemyMovement
                 rezoSpeedMove = false;
                 if (playerStats != null)
                 {
-                    playerStats.EnableEffect();
+                    playerStats.DisableEffect();
                 }
             }
 
             timeCheck = 0.5f;
         }
+    }
+    void OnDestroy()
+    {
+        playerStats.EnableEffect();
     }
     private void OnDrawGizmos()
     {

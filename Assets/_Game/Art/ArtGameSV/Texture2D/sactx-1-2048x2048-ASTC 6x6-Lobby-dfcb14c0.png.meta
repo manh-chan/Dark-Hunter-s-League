@@ -298,6 +298,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: sactx-1-2048x2048-ASTC 6x6-Lobby-dfcb14c0_9
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 6
+        width: 1278
+        height: 543
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92e3c2809ed918948875542718ee54a2
+      internalID: -795960203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -318,6 +339,7 @@ TextureImporter:
       sactx-1-2048x2048-ASTC 6x6-Lobby-dfcb14c0_6: 1491216961
       sactx-1-2048x2048-ASTC 6x6-Lobby-dfcb14c0_7: -771653626
       sactx-1-2048x2048-ASTC 6x6-Lobby-dfcb14c0_8: 1844945122
+      sactx-1-2048x2048-ASTC 6x6-Lobby-dfcb14c0_9: -795960203
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

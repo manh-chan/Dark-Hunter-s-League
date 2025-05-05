@@ -32,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2000424739
-  m_SortingLayer: 18
+  m_SortingLayer: 29
   m_SortingOrder: 0
   m_Sprite: {fileID: 1284364149, guid: 94870906afca6be4da7504025c558793, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -102,15 +102,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseStats:
-    maxHealth: 200
-    moveSpeed: 1
+    maxHealth: 50
+    moveSpeed: 0.7
     damage: 0
     knokbackMultiplier: 1
     resistances:
       freeze: 0
       kill: 0
       debuff: 0
-    curseBoosts: 3
+    curseBoosts: 1
     levelBoosts: 0
   attackEffects: []
   damageColor: {r: 1, g: 0, b: 0, a: 1}
@@ -130,9 +130,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 0
   drops:
-  - name: Ngoc
+  - name: red jade
     itemPrefab: {fileID: 3017881812221728157, guid: de8320c11866da547a95fb988556d0ee, type: 3}
-    dropRate: 100
+    dropRate: 50
+  - name: blue jade
+    itemPrefab: {fileID: 3017881812221728157, guid: de8320c11866da547a95fb988556d0ee, type: 3}
+    dropRate: 48
+  - name: Heal
+    itemPrefab: {fileID: 3017881812221728157, guid: de8320c11866da547a95fb988556d0ee, type: 3}
+    dropRate: 2
 --- !u!95 &4013837983174958462
 Animator:
   serializedVersion: 5
@@ -216,7 +222,9 @@ MonoBehaviour:
   outOffFrameAction: 0
   knockbackVariance: 2
   rezoSpeedMove: 1
+  minDistance: 0.8
+  pushForce: 1
   cooldownTime: 0
-  distanceAttack: 1
+  distanceAttack: 0.5
   ani: {fileID: 4013837983174958462}
   isAttacking: 0

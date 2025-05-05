@@ -15,7 +15,7 @@ public class ExplodeEnemyMovement : EnemyMovement
 
     private Color color1 = Color.white;
     private Color color2 = Color.red;
-    private float duration = 0.2f;
+    private float duration = 0.1f;
 
     protected override void Start()
     {
@@ -26,9 +26,10 @@ public class ExplodeEnemyMovement : EnemyMovement
     {
         base.Move();
         float distance = Vector3.Distance(transform.position, player.position);
-
+        
         if (distance <= distanceAttack)
         {
+            pushForce = 0;
             rezoSpeedMove = false;
             StartCoroutine(ChangeColorLoop());
             Invoke(nameof(ExplodeEnemy), 1f);
