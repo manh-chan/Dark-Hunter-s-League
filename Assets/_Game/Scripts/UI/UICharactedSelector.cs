@@ -7,7 +7,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using static Cinemachine.DocumentationSortingAttribute;
 
-public class UICharactedSelector : Singleton<UICharactedSelector>
+public class UICharactedSelector : MonoBehaviour
 {
     public CharacterData defaultCharacter;
     public static CharacterData selected;
@@ -105,16 +105,5 @@ public class UICharactedSelector : Singleton<UICharactedSelector>
         characterDescription.text = character.CharacterDescription;
         selectedCharacterIcon.sprite = character.Icon;
         selectedCharacterWeapon.sprite = character.StartingWeapon.icon;
-    }
-    public void UnlockNextChar(int currentIndex)
-    {
-        string uid = PlayerPrefs.GetString("uid", "");
-        charProgressData = new CharProgressData(4);
-        if (currentIndex + 1 < charProgressData.unlockedChars.Count)
-        {
-            charProgressData.unlockedChars[currentIndex + 1] = true;
-            FirebaseDataManager.Instance.SaveCharProgressToFirebase(uid, charProgressData);
-            UpdateUI();
-        }
     }
 }

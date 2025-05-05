@@ -105,12 +105,13 @@ public class SpawnManager : MonoBehaviour
     }
     private void WinGame()
     {
+        string uid = PlayerPrefs.GetString("uid", "");
         winGame.gameObject.SetActive(true);
         GameManager.instance.GameOver();
         //check map there
-        UICharactedSelector.Instance.UnlockNextChar(currentMapIndex);
+        charProgressData = new CharProgressData(currentMapIndex+1);
         UILevelSelector.Instance.UnlockNextMap(currentMapIndex);
-       
+        FirebaseDataManager.Instance.SaveCharProgressToFirebase(uid, charProgressData);
     }
     public bool HasWaveEnded()
     {
