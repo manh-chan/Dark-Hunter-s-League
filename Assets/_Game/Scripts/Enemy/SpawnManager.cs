@@ -112,9 +112,9 @@ public class SpawnManager : MonoBehaviour
         winGame.gameObject.SetActive(true);
         GameManager.instance.GameOver();
         //check map there
-        charProgressData = new CharProgressData(currentMapIndex+1);
+
         UILevelSelector.Instance.UnlockNextMap(currentMapIndex);
-        FirebaseDataManager.Instance.SaveCharProgressToFirebase(uid, charProgressData);
+        UICharactedSelector.Instance.UnlockNextChar(currentMapIndex);
         AchivementManager.Instance.EarnAchievement("Tân Binh Ra Trận");
     }
     public bool HasWaveEnded()

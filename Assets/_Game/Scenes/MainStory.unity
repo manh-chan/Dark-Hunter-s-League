@@ -192,9 +192,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Ng\u01B0\u1EDDi k\u1EC3: Sinh v\u1EADt k\u1EF3 l\u1EA1 v\u1EDBi \u0111\xF4i
-    m\u1EAFt tr\xF2n s\xE1ng l\u1EA5p l\xE1nh, \u0111\u1EE9ng gi\u1EEFa nh\u1EEFng
-    t\xE0n t\xEDch chi\u1EBFn tr\u01B0\u1EDDng.\n"
+  m_Text: "Sinh v\u1EADt k\u1EF3 l\u1EA1 v\u1EDBi \u0111\xF4i m\u1EAFt tr\xF2n s\xE1ng
+    l\u1EA5p l\xE1nh, \u0111\u1EE9ng gi\u1EEFa nh\u1EEFng t\xE0n t\xEDch chi\u1EBFn
+    tr\u01B0\u1EDDng.\n"
 --- !u!222 &109851333
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -688,8 +688,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Ng\u01B0\u1EDDi k\u1EC3: Xung quanh, nh\u1EEFng b\xF3ng ma \u0111en v\xF4
-    h\u1ED3n t\u1EEB t\u1EEB xu\u1EA5t hi\u1EC7n, bao v\xE2y n\xF3.\n"
+  m_Text: "Xung quanh, nh\u1EEFng b\xF3ng ma \u0111en v\xF4 h\u1ED3n t\u1EEB t\u1EEB
+    xu\u1EA5t hi\u1EC7n, bao v\xE2y n\xF3.\n"
 --- !u!222 &288206747
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -889,8 +889,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Ng\u01B0\u1EDDi k\u1EC3: Gi\u1EEFa t\xE0n t\xEDch \u0111\u1ED5 n\xE1t
-    v\xE0 b\xF3ng t\u1ED1i bao tr\xF9m\n"
+  m_Text: "Gi\u1EEFa t\xE0n t\xEDch \u0111\u1ED5 n\xE1t v\xE0 b\xF3ng t\u1ED1i bao
+    tr\xF9m\n"
 --- !u!222 &582131412
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1044,9 +1044,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Ng\u01B0\u1EDDi k\u1EC3: \xC1nh s\xE1ng t\u1EEB c\u01A1 th\u1EC3 n\xF3
-    b\xF9ng l\xEAn r\u1EF1c r\u1EE1. Sinh v\u1EADt nh\u1ECF lao l\xEAn ph\xEDa tr\u01B0\u1EDBc.
-    H\xE0nh tr\xECnh b\u1EAFt \u0111\u1EA7u!\n"
+  m_Text: "\xC1nh s\xE1ng t\u1EEB c\u01A1 th\u1EC3 n\xF3 b\xF9ng l\xEAn r\u1EF1c
+    r\u1EE1. Sinh v\u1EADt nh\u1ECF lao l\xEAn ph\xEDa tr\u01B0\u1EDBc. H\xE0nh tr\xECnh
+    b\u1EAFt \u0111\u1EA7u!\n"
 --- !u!222 &671922679
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1500,9 +1500,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Ng\u01B0\u1EDDi k\u1EC3: M\u1ED9t gi\u1ECDng n\xF3i vang l\xEAn t\u1EEB
-    xa:\r\nNg\u01B0\u1EDDi c\u1EA7m \u0111u\u1ED1c: \"Ng\u01B0\u01A1i l\xE0 hy v\u1ECDng
-    cu\u1ED1i c\xF9ng...\"\r\n"
+  m_Text: "M\u1ED9t gi\u1ECDng n\xF3i vang l\xEAn t\u1EEB xa:\r\nNg\u01B0\u1EDDi
+    c\u1EA7m \u0111u\u1ED1c: \"Ng\u01B0\u01A1i l\xE0 hy v\u1ECDng cu\u1ED1i c\xF9ng...\"\r\n"
 --- !u!222 &1249927992
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2271,8 +2270,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Ng\u01B0\u1EDDi k\u1EC3: M\u1ED9t \xE1nh s\xE1ng xanh nh\u1ECF b\xE9 xu\u1EA5t
-    hi\u1EC7n.\n"
+  m_Text: "M\u1ED9t \xE1nh s\xE1ng xanh nh\u1ECF b\xE9 xu\u1EA5t hi\u1EC7n.\n"
 --- !u!222 &1691308729
 CanvasRenderer:
   m_ObjectHideFlags: 0

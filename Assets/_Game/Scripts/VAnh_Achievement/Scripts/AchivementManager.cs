@@ -91,7 +91,7 @@ public class AchivementManager : MonoBehaviour
         {
             GameObject achievement = Instantiate(visualAchievement);
             SetAchievementInfor("EarnCanvas", achievement, title);
-            textPoints.text = "Points: " + PlayerPrefs.GetInt("Points");
+            textPoints.text = "Điểm: " + PlayerPrefs.GetInt("Points");
             StartCoroutine(FadeAchievement(achievement));
         }
     }

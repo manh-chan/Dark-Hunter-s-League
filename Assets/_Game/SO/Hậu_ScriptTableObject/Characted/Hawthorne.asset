@@ -16,7 +16,7 @@ MonoBehaviour:
   controller: {fileID: 9100000, guid: cb6a1299dfada83409928dd491cc16a2, type: 2}
   name: Hawthorne
   fullName: Eleanor Hawthorne
-  price: 100
+  price: 1
   characterDescription: "s\u1EDF h\u0169u kh\u1EA3 n\u0103ng h\xF3a l\u01A1n m\u1ECDi
     th\u1EE9,v\xE0 c\xF3 kh\u1EA3 n\u0103ng h\u1ED3i ph\u1EE5c m\u1EA1nh m\u1EBD"
   startingWeapon: {fileID: 11400000, guid: ae175977199b9aa47bd803a9256e2607, type: 2}

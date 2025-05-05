@@ -16,7 +16,7 @@ MonoBehaviour:
   controller: {fileID: 9100000, guid: aec7be8daaf43cd419fcb20df2bd821a, type: 2}
   name: Hargrove
   fullName: Winifred Hargrove
-  price: 9
+  price: 2
   characterDescription: "m\u1ED9t n\u1EEF ph\xE1p s\u01B0 t\xE0i n\u0103ng c\xF3
     kh\u1EA3 n\u0103ng ph\xE9p thu\u1EADt m\u1EA1nh m\u1EBD"
   startingWeapon: {fileID: 11400000, guid: 13103fa0944770640af4e3ae4d1a22f2, type: 2}

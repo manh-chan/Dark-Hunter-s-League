@@ -483,7 +483,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Achievements
+  m_text: "Th\xE0nh T\u1EF1u"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4a6a10e6d7c73f64592d25b35a0b4aea, type: 2}
   m_sharedMaterial: {fileID: 3366006198231119180, guid: 4a6a10e6d7c73f64592d25b35a0b4aea, type: 2}
@@ -618,7 +618,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Points: 0'
+  m_text: "\u0110i\u1EC3m: 0"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1074,7 +1074,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: General
+  m_text: "C\u0103n B\u1EA3n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4a6a10e6d7c73f64592d25b35a0b4aea, type: 2}
   m_sharedMaterial: {fileID: 3366006198231119180, guid: 4a6a10e6d7c73f64592d25b35a0b4aea, type: 2}
@@ -1208,7 +1208,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Other
+  m_text: "T\u1EA5t c\u1EA3"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4a6a10e6d7c73f64592d25b35a0b4aea, type: 2}
   m_sharedMaterial: {fileID: 3366006198231119180, guid: 4a6a10e6d7c73f64592d25b35a0b4aea, type: 2}
@@ -1748,7 +1748,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &522729942356089060
 MonoBehaviour:
   m_ObjectHideFlags: 0

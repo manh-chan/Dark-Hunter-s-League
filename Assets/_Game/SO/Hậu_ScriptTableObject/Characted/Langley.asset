@@ -16,7 +16,7 @@ MonoBehaviour:
   controller: {fileID: 9100000, guid: f7d6a95c2e654084ab6dbfadd5107bd3, type: 2}
   name: Langley
   fullName: Beatrix Langley
-  price: 123
+  price: 4
   characterDescription: "c\xF3 kh\u1EA3 n\u0103ng tri\u1EC7u h\u1ED3i nh\u1EEFng
     chi\u1EBFc r\xECu th\u1EA7n, c\xF3 s\u1EE9c kh\u1ECFe l\u1EDBn"
   startingWeapon: {fileID: 11400000, guid: b0ebab6eabbafd7438dd9a37e33e84b9, type: 2}

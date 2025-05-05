@@ -829,7 +829,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Base
+  m_text: "Th\xE0nh T\u1EF1u"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4a6a10e6d7c73f64592d25b35a0b4aea, type: 2}
   m_sharedMaterial: {fileID: 3366006198231119180, guid: 4a6a10e6d7c73f64592d25b35a0b4aea, type: 2}
@@ -1685,7 +1685,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Dungeon
+  m_text: "Nh\xE2n V\u1EADt"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4a6a10e6d7c73f64592d25b35a0b4aea, type: 2}
   m_sharedMaterial: {fileID: 3366006198231119180, guid: 4a6a10e6d7c73f64592d25b35a0b4aea, type: 2}
@@ -2837,7 +2837,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Growth
+  m_text: "Chi S\u1ED1"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4a6a10e6d7c73f64592d25b35a0b4aea, type: 2}
   m_sharedMaterial: {fileID: 3366006198231119180, guid: 4a6a10e6d7c73f64592d25b35a0b4aea, type: 2}

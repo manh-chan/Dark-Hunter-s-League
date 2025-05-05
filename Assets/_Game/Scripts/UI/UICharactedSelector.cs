@@ -7,7 +7,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using static Cinemachine.DocumentationSortingAttribute;
 
-public class UICharactedSelector : MonoBehaviour
+public class UICharactedSelector : Singleton<UICharactedSelector>
 {
     public CharacterData defaultCharacter;
     public static CharacterData selected;
@@ -105,5 +105,31 @@ public class UICharactedSelector : MonoBehaviour
         characterDescription.text = character.CharacterDescription;
         selectedCharacterIcon.sprite = character.Icon;
         selectedCharacterWeapon.sprite = character.StartingWeapon.icon;
+    }
+    public void UnlockNextChar(int currentIndex)
+    {
+        string uid = PlayerPrefs.GetString("uid", "");
+
+        // Tải dữ liệu hiện tại trước khi sửa
+        FirebaseDataManager.Instance.LoadCharProgressFromFirebase(uid, (loadedData) =>
+        {
+            if (loadedData == null || loadedData.unlockedChars.Count == 0)
+            {
+                charProgressData = new CharProgressData(5); // Tạo mới nếu chưa có gì
+            }
+            else
+            {
+                charProgressData = loadedData; // Dùng dữ liệu đã lưu
+            }
+
+            // Kiểm tra và mở khóa map tiếp theo
+            if (currentIndex + 1 < charProgressData.unlockedChars.Count)
+            {
+                charProgressData.unlockedChars[currentIndex + 1] = true;
+
+                FirebaseDataManager.Instance.SaveCharProgressToFirebase(uid, charProgressData);
+                UpdateUI();
+            }
+        });
     }
 }

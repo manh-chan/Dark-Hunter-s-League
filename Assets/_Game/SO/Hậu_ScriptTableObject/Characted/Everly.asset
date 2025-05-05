@@ -16,7 +16,7 @@ MonoBehaviour:
   controller: {fileID: 9100000, guid: 9a2e9b38324866e49a2b50cbf5c6c3f2, type: 2}
   name: Everly
   fullName: Rosalind Everly
-  price: 8
+  price: 3
   characterDescription: "M\u1ED9t con m\xE8o c\xF3 kh\u1EA3 n\u0103ng gi\u1EA3m h\u1ED3i
     c\xE1c v\u0169 kh\xED, v\xE0 m\u1ED9t ch\xFA may m\u1EAFn"
   startingWeapon: {fileID: 11400000, guid: ae175977199b9aa47bd803a9256e2607, type: 2}
