@@ -161,7 +161,7 @@ Debug.LogWarning("this function cannot be called on builds.");
     public void UnlockNextMap(int currentMapIndex)
     {
         string uid = PlayerPrefs.GetString("uid", "");
-        mapProgressData = new MapProgressData(6);
+        mapProgressData = new MapProgressData(15);
         if (currentMapIndex + 1 < mapProgressData.unlockedMaps.Count)
         {
             mapProgressData.unlockedMaps[currentMapIndex + 1] = true;

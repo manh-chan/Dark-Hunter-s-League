@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7945763329885011948}
   - component: {fileID: 7646300896086450785}
   - component: {fileID: -5562850786873196905}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enemy_QuaBomTrangHaoQuang 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}

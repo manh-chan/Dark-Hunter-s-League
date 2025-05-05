@@ -16,6 +16,11 @@ public class CharacterData : ScriptableObject
     [SerializeField]
     string fullName;
     public string FullName { get => fullName; set => fullName = value; }
+
+    [SerializeField]
+    int price;
+    public int Price { get => price; set => price = value; }
+
     [SerializeField]
     [TextArea]
     string characterDescription;
@@ -23,6 +28,8 @@ public class CharacterData : ScriptableObject
     [SerializeField]
     WeaponData startingWeapon;
     public WeaponData StartingWeapon { get => startingWeapon; set => startingWeapon = value; }
+    
+
     [System.Serializable]
     public struct Stats
     {
