@@ -20,11 +20,11 @@ MonoBehaviour:
   - {fileID: 4482443721187354152, guid: 4a9ef405af9948342876b5d2b98b07d0, type: 3}
   - {fileID: 7788799408687049856, guid: f4b149fb790ac8741b1b86ec6df31a80, type: 3}
   - {fileID: 6522533994833770283, guid: ed5015dab06a8e944b566c2be2024a6f, type: 3}
-  spawnInterval: {x: 3, y: 5}
-  spawnsPerTick: {x: 1, y: 4}
-  duration: 20
+  spawnInterval: {x: 2, y: 4}
+  spawnsPerTick: {x: 3, y: 7}
+  duration: 40
   startingCount: 10
-  totalSpawn: 120
+  totalSpawn: 140
   exitConditions: 1
   mustKillAll: 0
   spawnCount: 0

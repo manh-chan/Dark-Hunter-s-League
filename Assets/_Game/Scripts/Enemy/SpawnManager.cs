@@ -52,8 +52,8 @@ public class SpawnManager : MonoBehaviour
             if (HasWaveEnded())
             {
                 currentWaveIndex++;
+                Debug.Log(currentWaveIndex);
                 currentWaveDuration = currentWaveSpawnCount = 0;
-
                 if (currentWaveIndex >= data.Length)
                 {
                     Debug.Log("All waves have been spawned! Shutting down.", this);
@@ -65,7 +65,6 @@ public class SpawnManager : MonoBehaviour
                 }
                 return;
             }
-
             if (!CanSpawn())
             {
                 ActivateCooldown();
@@ -81,7 +80,6 @@ public class SpawnManager : MonoBehaviour
                 Instantiate(prefab, GeneratePosition(), Quaternion.identity);
                 currentWaveSpawnCount++;
             }
-
             ActivateCooldown();
         }
     }
@@ -93,8 +91,8 @@ public class SpawnManager : MonoBehaviour
     public bool CanSpawn()
     {
         if (HasExceededMaxEnemies()) return false;
-        if (currentWaveSpawnCount > data[currentWaveIndex].totalSpawn) return false;
-        if (currentWaveDuration > data[currentWaveIndex].duration) return false;
+        if (instance.currentWaveSpawnCount > instance.data[instance.currentWaveIndex].totalSpawn) return false;
+        if (instance.currentWaveDuration > instance.data[instance.currentWaveIndex].duration) return false;
         return true;
     }
     public static bool HasExceededMaxEnemies()

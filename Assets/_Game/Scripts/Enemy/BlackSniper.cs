@@ -84,7 +84,7 @@ public class BlackSniper : EnemyMovement
                 rezoSpeedMove = false;
                 if (playerStats != null)
                 {
-                    playerStats.DisableEffect();
+                    playerStats.EnableEffect();
                 }
             }
 
@@ -93,7 +93,7 @@ public class BlackSniper : EnemyMovement
     }
     void OnDestroy()
     {
-        playerStats.EnableEffect();
+        playerStats.DisableEffect();
     }
     private void OnDrawGizmos()
     {
