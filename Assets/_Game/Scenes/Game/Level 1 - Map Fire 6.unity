@@ -1151,7 +1151,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f6f52884e4b4e2e439ad63a2bc270d21, type: 2}
   - {fileID: 11400000, guid: 3b8ae1778d4ac9140962059ae4a32ae3, type: 2}
   referenceCamera: {fileID: 519420034}
-  currentMapIndex: 7
+  currentMapIndex: 6
   maximumEnemyCount: 300
   boostedByCurse: 1
   winGame: {fileID: 1461111095}
