@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Ring_Enemy_QuaBomTrangHaoQuang 2
   m_EditorClassIdentifier: 
   possibleSpawnPrefabs:
-  - {fileID: 4482443721187354152, guid: 3165c0b820984f749a6ccc749d65fd0c, type: 3}
+  - {fileID: 4482443721187354152, guid: 9c609f94114690c42bd6f55860d94af6, type: 3}
   spawnInterval: {x: 1, y: 1}
-  spawnsPerTick: {x: 15, y: 20}
+  spawnsPerTick: {x: 12, y: 15}
   duration: 1
   probability: 1
   luckFactor: 1
@@ -23,4 +23,4 @@ MonoBehaviour:
   spawnEffectPrefab: {fileID: 5828572034633411155, guid: 25e7dd3e55b9f8b49b5c93803ffe535b, type: 3}
   scale: {x: 4, y: 4}
   spawnRadius: 0
-  lifespan: 15
+  lifespan: 10

@@ -31,8 +31,8 @@ MonoBehaviour:
       width: 0
       height: 0
     lifespan: 3
-    damage: 25
-    damageVariance: 2
+    damage: 45
+    damageVariance: 5
     area: 0
     speed: 7
     cooldown: 2
@@ -57,14 +57,14 @@ MonoBehaviour:
       width: 0
       height: 0
     lifespan: 0
-    damage: 10
+    damage: 5
     damageVariance: 0
     area: 0
     speed: 0
     cooldown: 0
     projectileInterval: 0
     knocback: 0
-    number: 0
+    number: 1
     piercing: 0
     maxInstances: 0
     appliedBuffs: []
@@ -90,7 +90,7 @@ MonoBehaviour:
     projectileInterval: 0
     knocback: 0
     number: 0
-    piercing: 0
+    piercing: 1
     maxInstances: 0
     appliedBuffs: []
   - name: Level 4
@@ -115,7 +115,7 @@ MonoBehaviour:
     projectileInterval: 0
     knocback: 0
     number: 1
-    piercing: 0
+    piercing: 1
     maxInstances: 0
     appliedBuffs:
     - data: {fileID: 11400000, guid: c94614e4d46b8ac468af6dd1282472e9, type: 2}

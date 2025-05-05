@@ -103,7 +103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseStats:
-    maxHealth: 80
+    maxHealth: 20
     moveSpeed: 0.4
     damage: 0
     knokbackMultiplier: 1
@@ -227,7 +227,7 @@ MonoBehaviour:
   pushForce: 1
   cooldownTime: 0
   distanceAttack: 1.5
-  summonPrefab: {fileID: 3489055248132405350, guid: bda1a6273da1f9a41be3201119810c06, type: 3}
+  summonPrefab: {fileID: 3489055248132405350, guid: 81c2cdca6b8add5428b570b6b044c4b2, type: 3}
 --- !u!50 &4285496945356595419
 Rigidbody2D:
   serializedVersion: 4

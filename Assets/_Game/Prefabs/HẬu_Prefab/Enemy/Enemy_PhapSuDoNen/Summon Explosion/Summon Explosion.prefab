@@ -9678,12 +9678,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageRadius: 0.7
-  damageAmount: 20
+  damageAmount: 10
   timeAttack: 1
   targetLayer:
     serializedVersion: 2
     m_Bits: 8
-  Explode: {fileID: 6095465258714957218, guid: 172937c17197897468cc1faa2763bffe, type: 3}
+  Explode: {fileID: 6095465258714957218, guid: c3d0bfde73e6bab4ba65472dc178ca02, type: 3}
 --- !u!1 &8018718989178197567
 GameObject:
   m_ObjectHideFlags: 0

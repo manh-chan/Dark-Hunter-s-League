@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CanvasGamePlay : UICanvas
 {
@@ -21,5 +22,9 @@ public class CanvasGamePlay : UICanvas
     public void SettingsButton()
     {
         UIManager.Instance.OpenUI<CanvasSettings>().SetState(this);
+    }
+    public void QuitButton()
+    {
+        SceneManager.LoadScene("Menu");
     }
 }

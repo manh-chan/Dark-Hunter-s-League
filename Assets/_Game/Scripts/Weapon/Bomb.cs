@@ -20,7 +20,7 @@ public class Bomb : WeaponEffect
         explosionRadius = area * 1f - 0.7f;
         explosionRadius = Mathf.Max(0.1f, explosionRadius); 
 
-        Invoke(nameof(Explode), 1f);
+        Invoke(nameof(Explode), 1.5f);
     }
 
     private void Explode()

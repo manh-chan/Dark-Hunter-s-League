@@ -36,10 +36,10 @@ MonoBehaviour:
     damageVariance: 2
     area: 0
     speed: 0
-    cooldown: 2
+    cooldown: 2.5
     projectileInterval: 0.5
     knocback: 0.5
-    number: 0
+    number: 1
     piercing: 5
     maxInstances: 70
     appliedBuffs: []

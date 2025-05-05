@@ -106,7 +106,16 @@ public class PlayerStats : EntityStats
     protected override void Start()
     {
         base.Start();
-        
+         upgradeStats = new UpgradeStats();
+        string uid = PlayerPrefs.GetString("uid", "");
+        if (!string.IsNullOrEmpty(uid))
+        {
+            FirebaseDataManager.Instance.ReadPlayerData(uid);
+        }
+        else
+        {
+            Debug.LogWarning("Chưa đăng nhập, không có UID để đọc dữ liệu.");
+        }
         if (UILevelSelector.globaBuff && !UILevelSelector.globalBuffAffectsPlayer)
             ApplyBuff(UILevelSelector.globaBuff);
         
@@ -157,16 +166,17 @@ public class PlayerStats : EntityStats
         if (upgradeStats != null)
         {
             actualStats.maxHealth += upgradeStats.maxHealthBonus;
-            actualStats.recovery += upgradeStats.recoveryBonus;
-            actualStats.armor += upgradeStats.armorBonus;
-            actualStats.moveSpeed += upgradeStats.moveSpeedBonus;
-            actualStats.might += upgradeStats.mightBonus;
+            actualStats.maxHealth += FirebaseDataManager.Instance.player.maxHealthBonus;
+            actualStats.recovery += FirebaseDataManager.Instance.player.recoveryBonus;
+            actualStats.armor += FirebaseDataManager.Instance.player.armorBonus;
+            actualStats.moveSpeed += FirebaseDataManager.Instance.player.moveSpeedBonus;
+            actualStats.might += FirebaseDataManager.Instance.player.mightBonus;
             //actualStats.amount += upgradeStats.amountBonus;
-            actualStats.area += upgradeStats.areaBonus;
-            actualStats.speed += upgradeStats.speedBonus;
-            actualStats.duration += upgradeStats.durationBonus;
-            actualStats.cooldown += upgradeStats.cooldownBonus;
-            actualStats.luck += upgradeStats.luckBonus;
+            actualStats.area += FirebaseDataManager.Instance.player.areaBonus;
+            actualStats.speed += FirebaseDataManager.Instance.player.speedBonus;
+            actualStats.duration += FirebaseDataManager.Instance.player.durationBonus;
+            actualStats.cooldown += FirebaseDataManager.Instance.player.cooldownBonus;
+            actualStats.luck += FirebaseDataManager.Instance.player.luckBonus;
         }
 
         CharacterData.Stats multiplier = new CharacterData.Stats

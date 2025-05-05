@@ -31,16 +31,16 @@ MonoBehaviour:
       width: 0
       height: 0
     lifespan: 0
-    damage: 20
+    damage: 15
     damageVariance: 2
     area: 0
     speed: 0
-    cooldown: 3.5
+    cooldown: 4.5
     projectileInterval: 0.5
     knocback: 0
     number: 1
     piercing: 0
-    maxInstances: 30
+    maxInstances: 15
     appliedBuffs: []
   linearGrowth:
   - name: Level 2
