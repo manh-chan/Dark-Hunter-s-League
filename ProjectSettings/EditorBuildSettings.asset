@@ -15,15 +15,6 @@ EditorBuildSettings:
     path: Assets/_Game/Scenes/LoadingG.unity
     guid: 63b86c44d8887de4c9641a172c100156
   - enabled: 1
-    path: Assets/_Game/Scenes/Game/Level 1 - Map Fire.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 1
-    path: Assets/_Game/Scenes/Level 2 - Map Fire.unity
-    guid: 387b6800d923c00429eb3e797e1e35fc
-  - enabled: 1
-    path: Assets/_Game/Scenes/Level 3 - Map Fire.unity
-    guid: dd7a62dbe4c5d2d4d9539b34687cd3da
-  - enabled: 1
     path: Assets/_Game/Scenes/Level Seleter.unity
     guid: 21d6ebd8fc0cad44fb7bddaf365fd878
   - enabled: 1
@@ -38,4 +29,31 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Game/Scenes/Register.unity
     guid: c0d49cceda695ab4ba8f007981d7f9b3
+  - enabled: 1
+    path: Assets/_Game/Scenes/Game/Level 1 - Map Fire.unity
+    guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/_Game/Scenes/Game/Level 1 - Map Fire 1.unity
+    guid: f4827784d5b2f2642b15e43378d08b65
+  - enabled: 1
+    path: Assets/_Game/Scenes/Game/Level 1 - Map Fire 2.unity
+    guid: cd307c3aa554713409a15d2ab3883f53
+  - enabled: 1
+    path: Assets/_Game/Scenes/Game/Level 1 - Map Fire 3.unity
+    guid: d61a8fc676d20a34bba5b17955889e84
+  - enabled: 1
+    path: Assets/_Game/Scenes/Game/Level 1 - Map Fire 4.unity
+    guid: cf41514ebd489ff4090af3474114f6ff
+  - enabled: 1
+    path: Assets/_Game/Scenes/Game/Level 1 - Map Fire 5.unity
+    guid: c51e0afaf5c854146a2094ab00a39cb8
+  - enabled: 1
+    path: Assets/_Game/Scenes/Game/Level 1 - Map Fire 6.unity
+    guid: 6a285d74f5bcd7a48b1fc84d2daa1fb5
+  - enabled: 1
+    path: Assets/_Game/Scenes/Game/Level 1 - Map Fire 7.unity
+    guid: bde3dd7bc23519d47889d3ac5a84420f
+  - enabled: 1
+    path: Assets/_Game/Scenes/Game/Level 1 - Map Fire 8.unity
+    guid: 509f35bedba8808468942e4c376954d0
   m_configObjects: {}

@@ -1277,9 +1277,9 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fea8ef5234803894eae4e41954872547, type: 3}
---- !u!61 &1023491694 stripped
-BoxCollider2D:
-  m_CorrespondingSourceObject: {fileID: 415908853879606459, guid: fea8ef5234803894eae4e41954872547, type: 3}
+--- !u!66 &1023491694 stripped
+CompositeCollider2D:
+  m_CorrespondingSourceObject: {fileID: 6202391499257200478, guid: fea8ef5234803894eae4e41954872547, type: 3}
   m_PrefabInstance: {fileID: 1023491693}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1073668203 stripped

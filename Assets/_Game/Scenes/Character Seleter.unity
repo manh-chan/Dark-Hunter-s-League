@@ -3575,6 +3575,7 @@ MonoBehaviour:
   characterNamePath: Character Name
   weaponIconPath: Weapon Icon
   characterIconPath: Character Icon
+  price: Character Price
   selectableToggles:
   - {fileID: 568074735}
   - {fileID: 1654013428}

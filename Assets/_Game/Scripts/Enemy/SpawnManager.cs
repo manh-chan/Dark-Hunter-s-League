@@ -25,6 +25,8 @@ public class SpawnManager : MonoBehaviour
 
     public PlayerStats playerStats;
 
+
+    private CharProgressData charProgressData;
     private void Start()
     {
         if (instance)
@@ -35,6 +37,7 @@ public class SpawnManager : MonoBehaviour
 
         if (!referenceCamera)
             referenceCamera = Camera.main;
+        
     }
 
     private void Update()
@@ -102,10 +105,13 @@ public class SpawnManager : MonoBehaviour
     }
     private void WinGame()
     {
+        string uid = PlayerPrefs.GetString("uid", "");
         winGame.gameObject.SetActive(true);
         GameManager.instance.GameOver();
         //check map there
+        charProgressData = new CharProgressData(currentMapIndex+1);
         UILevelSelector.Instance.UnlockNextMap(currentMapIndex);
+        FirebaseDataManager.Instance.SaveCharProgressToFirebase(uid, charProgressData);
     }
     public bool HasWaveEnded()
     {
