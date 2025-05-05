@@ -2499,6 +2499,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 7438463531650587486, guid: 343af68a28a882648b9c3f9ee25369da, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7763673547345060473, guid: 343af68a28a882648b9c3f9ee25369da, type: 3}
       propertyPath: m_FontData.m_MaxSize
       value: 45
