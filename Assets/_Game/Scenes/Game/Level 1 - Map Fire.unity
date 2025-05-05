@@ -1104,7 +1104,6 @@ GameObject:
   m_Component:
   - component: {fileID: 818918994}
   - component: {fileID: 818918995}
-  - component: {fileID: 818918996}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -1165,18 +1164,6 @@ MonoBehaviour:
   joystick: {fileID: 1073668203}
   loadGame: {fileID: 48859563}
   loadGameEnd: 0
---- !u!114 &818918996
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 818918993}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0711f6537900f974292bc5f5cd5e316d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!223 &828243900 stripped
 Canvas:
   m_CorrespondingSourceObject: {fileID: 957777466098425445, guid: da84fbd91909b96488ae8bc43fab62a2, type: 3}
@@ -2401,6 +2388,10 @@ PrefabInstance:
       propertyPath: inventory
       value: 
       objectReference: {fileID: 1691638763}
+    - target: {fileID: 121031028985959008, guid: da84fbd91909b96488ae8bc43fab62a2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 129437069930533202, guid: da84fbd91909b96488ae8bc43fab62a2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2432,11 +2423,11 @@ PrefabInstance:
     - target: {fileID: 763650550379816844, guid: da84fbd91909b96488ae8bc43fab62a2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 818918996}
+      objectReference: {fileID: 0}
     - target: {fileID: 820061608232583561, guid: da84fbd91909b96488ae8bc43fab62a2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 818918996}
+      objectReference: {fileID: 0}
     - target: {fileID: 1512727128432876425, guid: da84fbd91909b96488ae8bc43fab62a2, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2803,7 +2794,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9045271066761762165, guid: da84fbd91909b96488ae8bc43fab62a2, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9078747455679003812, guid: da84fbd91909b96488ae8bc43fab62a2, type: 3}
       propertyPath: player
