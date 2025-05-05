@@ -2703,6 +2703,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3018197360397398297, guid: da84fbd91909b96488ae8bc43fab62a2, type: 3}
+      propertyPath: m_text
+      value: Victory
+      objectReference: {fileID: 0}
     - target: {fileID: 3187718202343196791, guid: da84fbd91909b96488ae8bc43fab62a2, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2994,6 +2998,10 @@ PrefabInstance:
     - target: {fileID: 6586697731848786576, guid: da84fbd91909b96488ae8bc43fab62a2, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6920255819735138017, guid: da84fbd91909b96488ae8bc43fab62a2, type: 3}
+      propertyPath: m_text
+      value: Lose
       objectReference: {fileID: 0}
     - target: {fileID: 7165706968582604064, guid: da84fbd91909b96488ae8bc43fab62a2, type: 3}
       propertyPath: m_AnchorMax.y

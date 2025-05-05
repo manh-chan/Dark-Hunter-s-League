@@ -211,8 +211,10 @@ public class GameManager : MonoBehaviour
         if (stopwatchTime >= timeLimit &&!levelEnded)
         {
             levelEnded = true;
-            FindObjectOfType<SpawnManager>().gameObject.SetActive(false);
-            foreach(EnemyState e in FindObjectsOfType<EnemyState>())
+            SpawnManager spawnManager = FindObjectOfType<SpawnManager>();
+            spawnManager.Delay3s();
+            spawnManager.gameObject.SetActive(false);
+            foreach (EnemyState e in FindObjectsOfType<EnemyState>())
             {
                 e.SendMessage("Kill");
             }
