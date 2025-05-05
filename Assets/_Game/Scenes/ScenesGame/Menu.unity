@@ -2224,6 +2224,7 @@ MonoBehaviour:
   - {fileID: 931762680}
   - {fileID: 1137265262}
   tutorialCompleted: 0
+  panelToBringForward: {fileID: 1044582227}
 --- !u!222 &1044582229
 CanvasRenderer:
   m_ObjectHideFlags: 0
