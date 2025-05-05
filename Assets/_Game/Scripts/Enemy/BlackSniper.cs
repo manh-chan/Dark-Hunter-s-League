@@ -84,12 +84,16 @@ public class BlackSniper : EnemyMovement
                 rezoSpeedMove = false;
                 if (playerStats != null)
                 {
-                    playerStats.EnableEffect();
+                    playerStats.DisableEffect();
                 }
             }
 
             timeCheck = 0.5f;
         }
+    }
+    void OnDestroy()
+    {
+        playerStats.EnableEffect();
     }
     private void OnDrawGizmos()
     {
