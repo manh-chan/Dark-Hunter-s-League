@@ -112,6 +112,7 @@ public class SpawnManager : MonoBehaviour
         charProgressData = new CharProgressData(currentMapIndex+1);
         UILevelSelector.Instance.UnlockNextMap(currentMapIndex);
         FirebaseDataManager.Instance.SaveCharProgressToFirebase(uid, charProgressData);
+        AchivementManager.Instance.EarnAchievement("Tân Binh Ra Trận");
     }
     public bool HasWaveEnded()
     {

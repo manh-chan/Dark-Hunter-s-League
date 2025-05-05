@@ -10,6 +10,7 @@ public class UiStatsDisplay : UIPropertyDisplay
 {
     public PlayerStats player;
     public CharacterData character;
+    public WeaponData weaponData;
     public bool displayCurrentHealth = false;
 
     public override object GetReadObject()

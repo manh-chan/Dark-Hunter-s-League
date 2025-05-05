@@ -39,14 +39,6 @@ public class TutorialManager : MonoBehaviour
         // Kiểm tra xem người chơi đã hoàn thành tutorial chưa
         // PlayerPrefs.GetInt trả về 0 nếu key chưa tồn tại (mặc định là chưa hoàn thành)
        
-        if (tutorialCompleted)
-        {
-           
-        }
-        else
-        {
-            
-        }
     }
 
     void Update()
@@ -105,16 +97,10 @@ public class TutorialManager : MonoBehaviour
     {
         Debug.Log("Kết thúc Tutorial.");
         HideAllPanels(); // Ẩn tất cả các panel
-
+        AchivementManager.Instance.EarnAchievement("Chào mừng người chơi mới");
         // Đánh dấu là đã hoàn thành tutorial
         PlayerPrefs.SetInt(TutorialCompletedKey, 1);
         PlayerPrefs.Save(); // Lưu thay đổi vào PlayerPrefs
-
-        // Tùy chọn: Tiếp tục chạy game nếu đã dừng trước đó
-        // Time.timeScale = 1f;
-
-        // Tùy chọn: Có thể hủy GameObject này đi để tiết kiệm tài nguyên
-        // Destroy(gameObject);
     }
 
     // Hàm ẩn tất cả các panel

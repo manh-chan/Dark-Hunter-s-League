@@ -113,6 +113,8 @@ public class UILevelSelectorEditor : Editor
             {
                 lvlImage.sprite = selector.levels[i].icon;
             }
+
+           
             selector.selectableToggles.Add(tog);
 
             for(int j = 0;j < tog.onValueChanged.GetPersistentEventCount(); j++)
