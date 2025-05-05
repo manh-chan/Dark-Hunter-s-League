@@ -11,6 +11,7 @@ public class UpgradeUI : MonoBehaviour
     private DatabaseReference reference;
     // code them level 
     public UpgradeStats upgradeStats;
+    public CoinData coinData;
     public TextMeshProUGUI moneyText;
     public TextMeshProUGUI levelText;
     public TextMeshProUGUI upgradeCostText;
