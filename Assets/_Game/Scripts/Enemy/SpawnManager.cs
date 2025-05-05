@@ -59,9 +59,10 @@ public class SpawnManager : MonoBehaviour
                     Debug.Log("All waves have been spawned! Shutting down.", this);
                     if (!GameManager.instance.isGameOver)
                     {
-                        Invoke(nameof(WinGame),3);
+                        Delay3s();
                     }
                     enabled = false;
+
                 }
                 return;
             }
@@ -101,7 +102,11 @@ public class SpawnManager : MonoBehaviour
         if (EnemyState.count > instance.maximumEnemyCount) return true;
         return false;
     }
-    private void WinGame()
+    public void Delay3s()
+    {
+        Invoke(nameof(WinGame), 3);
+    }
+    public void WinGame()
     {
         string uid = PlayerPrefs.GetString("uid", "");
         winGame.gameObject.SetActive(true);
