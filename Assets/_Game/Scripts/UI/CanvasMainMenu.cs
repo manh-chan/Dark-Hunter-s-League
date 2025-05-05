@@ -32,4 +32,9 @@ public class CanvasMainMenu : UICanvas
     {
         UIManager.Instance.OpenUI<CanvasHero>();
     }
+
+    public void WeaponButton()
+    {
+        UIManager.Instance.OpenUI<CanvasWeapon>();
+    }
 }

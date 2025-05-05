@@ -130,11 +130,11 @@ public class TutorialManager : MonoBehaviour
 
     }
 
-    //public void WeaponButton()
-    //{
-    //    UIManager.Instance.OpenUI<CanvasWeapon>();
+    public void WeaponButton()
+    {
+        UIManager.Instance.OpenUI<CanvasWeapon>();
 
-    //}
+    }
 
     public void SelectHeroButton()
     {
@@ -148,9 +148,9 @@ public class TutorialManager : MonoBehaviour
 
     }
 
-    //public void SelectWeaponButton()
-    //{
-    //    FindObjectOfType<CanvasWeapon>().gameObject.SetActive(false);
+    public void SelectWeaponButton()
+    {
+        FindObjectOfType<CanvasWeapon>().gameObject.SetActive(false);
 
-    //}
+    }
 }
