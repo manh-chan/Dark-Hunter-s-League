@@ -730,7 +730,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 445643a02efa62543b2b926ae711419a, type: 3}
 --- !u!66 &394003763 stripped
 CompositeCollider2D:
-  m_CorrespondingSourceObject: {fileID: 5397508407058331515, guid: 445643a02efa62543b2b926ae711419a, type: 3}
+  m_CorrespondingSourceObject: {fileID: 8915983084355090509, guid: 445643a02efa62543b2b926ae711419a, type: 3}
   m_PrefabInstance: {fileID: 394003762}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &504053587
