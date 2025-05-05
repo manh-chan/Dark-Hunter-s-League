@@ -161,12 +161,27 @@ Debug.LogWarning("this function cannot be called on builds.");
     public void UnlockNextMap(int currentMapIndex)
     {
         string uid = PlayerPrefs.GetString("uid", "");
-        mapProgressData = new MapProgressData(15);
-        if (currentMapIndex + 1 < mapProgressData.unlockedMaps.Count)
+
+        // Tải dữ liệu hiện tại trước khi sửa
+        FirebaseDataManager.Instance.LoadMapProgressFromFirebase(uid, (loadedData) =>
         {
-            mapProgressData.unlockedMaps[currentMapIndex + 1] = true;
-            FirebaseDataManager.Instance.SaveMapProgressToFirebase(uid, mapProgressData);
-            UpdateUI();
-        }
+            if (loadedData == null || loadedData.unlockedMaps.Count == 0)
+            {
+                mapProgressData = new MapProgressData(15); // Tạo mới nếu chưa có gì
+            }
+            else
+            {
+                mapProgressData = loadedData; // Dùng dữ liệu đã lưu
+            }
+
+            // Kiểm tra và mở khóa map tiếp theo
+            if (currentMapIndex + 1 < mapProgressData.unlockedMaps.Count)
+            {
+                mapProgressData.unlockedMaps[currentMapIndex + 1] = true;
+
+                FirebaseDataManager.Instance.SaveMapProgressToFirebase(uid, mapProgressData);
+                UpdateUI();
+            }
+        });
     }
 }
