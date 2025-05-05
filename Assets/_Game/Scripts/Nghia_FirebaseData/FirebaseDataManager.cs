@@ -14,6 +14,7 @@ public class FirebaseDataManager : Singleton<FirebaseDataManager>
     public MapProgressData mapProgressData;
     private TextMeshProUGUI showReadPlayerData;
     private TextMeshProUGUI showWritePlayerData;
+    public CoinData coinDataf;
 
     private DatabaseReference reference;
 
@@ -143,6 +144,49 @@ public class FirebaseDataManager : Singleton<FirebaseDataManager>
                 Debug.Log("⚠️ Không có dữ liệu, tạo mới.");
                 onLoaded?.Invoke(null);
             }
+        });
+    }
+
+
+    public void SaveCoinToFirebase(string uid, CoinData coinData)
+    {
+        string json = JsonUtility.ToJson(coinData);
+
+        reference.Child("Users").Child(uid).Child("CoinPlayer").SetRawJsonValueAsync(json).ContinueWithOnMainThread(task =>
+        {
+            if (task.IsCompleted)
+                Debug.Log("✅ Đã lưu coin");
+            else
+                Debug.LogError("❌ Lỗi khi lưu: " + task.Exception);
+        });
+    }
+
+    public void ReadCoinData(string id)
+    {
+        reference.Child("Users").Child(id).Child("CoinPlayer").GetValueAsync().ContinueWithOnMainThread(task =>
+        {
+            if (task.IsCompleted)
+            {
+                DataSnapshot snapshot = task.Result;
+                if (snapshot.Exists)
+                {
+                    // Đọc dữ liệu từ Firebase
+                    coinDataf = JsonUtility.FromJson<CoinData>(snapshot.GetRawJsonValue());
+
+                    // Cập nhật dữ liệu vào UI ngay khi đọc thành công
+                    UpgradeUI ui = FindObjectOfType<UpgradeUI>();
+                    if (ui != null)
+                    {
+                        ui.coinData = coinDataf; // Cập nhật upgradeStats
+                        ui.UpdateUI(); // Cập nhật UI ngay lập tức
+                    }
+
+                    Debug.Log("Đọc dữ liệu người chơi thành công.");
+
+                }
+
+            }
+
         });
     }
 
