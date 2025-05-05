@@ -19,7 +19,7 @@ MonoBehaviour:
   - {fileID: 6522533994833770283, guid: ea6d5303bca860944b5b4b66d5c6b35b, type: 3}
   spawnInterval: {x: 3, y: 5}
   spawnsPerTick: {x: 1, y: 4}
-  duration: 55
+  duration: 30
   startingCount: 10
   totalSpawn: 120
   exitConditions: 1
