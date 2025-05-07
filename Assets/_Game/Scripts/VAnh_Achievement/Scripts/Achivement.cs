@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class Achivement : MonoBehaviour
 {
+    private string name;
     private string description;
     private bool unlocked;
     private int points;

@@ -36,6 +36,7 @@ public class AchivementManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //PlayerPrefs.DeleteAll();
         activeButton = GameObject.Find("GeneralBtn").GetComponent<AchieveButton>();
         CreateAchievement("General", "Chào mừng người chơi mới", "Chơi ván game đầu tiên.", 5, 0);
         CreateAchievement("General", "Tân Binh Ra Trận", "Hoàn thành Map 1.", 10, 1);
